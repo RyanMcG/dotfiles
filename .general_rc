@@ -27,7 +27,7 @@ if [[ $NODENAME == "arcbase" ]]; then
 	export PROMPT_COLOR=blue
 elif [[ $NODENAME == "eeebase" ]]; then
 	export PROMPT_COLOR=green
-elif [[ $NODENAME == "ryanmcgowan" ]]; then
+elif [[ $NODENAME == "alarmpi" ]]; then
 	export PROMPT_COLOR=red
 elif [[ $NODENAME == "zenbook" ]]; then
 	export PROMPT_COLOR=green
