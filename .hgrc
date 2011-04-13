@@ -1,0 +1,8 @@
+[ui]
+username = Ryan McGowan <ryan@ryanmcg.com>
+merge = vimdiff
+ignore = ~/.hgignore
+
+[merge-tools]
+vimdiff.executable = vim
+vimdiff.args = -d $base $local $output $other +close +close
