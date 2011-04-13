@@ -8,9 +8,6 @@ alias cpro="cd ~/cur/rent/CSE\ 560/project"
 alias chltheme="cd ~/cur/web/halfline/wordpress/wp-content/themes/halfline"    
 
 #SSH/SFTP/rDESKTOP
-alias ssheng="ssh -p 42333 mcgowan.98@r1rhl7.engr1.ohio-state.edu"
-alias sshosc="ssh -p 722 roinator@opensource.osu.edu"
-alias rdesktop1="rdesktop -u mcgowan.98 -p - -z -r disk:eng=/home/roin/cur/eng/ -a 16 -x broadband -d engr1 164.107.36.248"
 
 #SSHFS/RSYNC
 alias sshfs="sshfs -o allow_other -o sshfs_sync -o follow_symlinks -C"
@@ -39,9 +36,8 @@ alias yar="yaourt"
 #OTHER STUFF
 alias cl="clear"
 alias cls="clear && ls"
-alias transloc="transmission-remote -p 791 --auth=roinator:shaddow7044"
+alias transloc="transmission-remote --auth=roinator:shaddow7044"
 alias lg="ls -A -l | grep"
-alias wchat="weechat-curses"
 alias svim="sudo vim"
 alias :q="exit"
 alias umplayer="urxvt -e mplayer"
@@ -51,7 +47,6 @@ alias vimba="vim ~/.bash_aliases"
 alias by="byobu"
 alias ncm="ncmpcpp"
 alias mpc="mpc -f \"[[[%artist% - ]%album% - ]%title%]\""
-alias relbash="source ~/.profile"
 alias vimget="vim ~/Documents/get.list"
 alias sudo="sudo "
 alias g="git"
@@ -59,12 +54,4 @@ alias gcam="git commit -am"
 alias lp="lp -o cpi=17 -o lpi=8"
 alias scn="screen -DR"
 alias relterm="export TERM=$TERM"
-alias dodj="djmount ~/mnt/upnp"
-alias rm="rm -i"
-alias rmf="rm -f"
-
-# Custom Functions
-wiki() {
-    dig +short txt $1.wp.dg.cx
-}
-
+alias relbash="source ~/.profile"
