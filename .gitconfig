@@ -1,3 +1,5 @@
 [user]
 	name = Ryan McGowan
 	email = ryan@ryanmcg.com
+[merge]
+	tool = vimdiff
