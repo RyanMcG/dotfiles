@@ -21,17 +21,14 @@ alias rsy-vonnie-pull="rsync -auzP -e 'ssh' ryanm_vonnie@ssh.phx.nearlyfreespeec
 alias rsync-hafline-put="rsync -auzP -e 'ssh' /home/roin/cur/web/halfline/wordpress/wp-content/ halfline:www/wordpress/wp-content --exclude '*.sass*' --exclude '*.swp' --exclude 'pg-db-info.inc'"
 
 #PACAKGE MANAGERS
-alias addpkg="yaourt -S"
-alias rmpkg="yaourt -Rs"
-alias update="yaourt -Sy"
-alias uppkg="yaourt -Su"
-alias uuppkg="yaourt -Syu"
-alias search="yaourt -Ss"
-alias query="yaourt -Qs"
-alias autormpkg="yaourt -Qdt"
-
-alias spc="sudo pacman"
-alias yar="yaourt"
+alias addpkg="sudo apt-get install"
+alias rmpkg="sudo apt-get remove"
+alias update="sudo apt-get update"
+alias uppkg="sudo apt-get upgrade"
+alias uuppkg="sudo apt-get update && sudo apt-get upgrade"
+alias search="apt-cache search"
+alias autormpkg="sudo apt-get autoremove"
+alias sapt="sudo apt-get"
 
 #OTHER STUFF
 alias cl="clear"
