@@ -1,5 +1,10 @@
+[status]
+	showUntrackedFiles = no
 [user]
 	name = Ryan McGowan
 	email = ryan@ryanmcg.com
+[color]
+    status = auto
+    diff = auto
 [merge]
 	tool = vimdiff

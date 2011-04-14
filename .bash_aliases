@@ -17,8 +17,9 @@ alias sshfsh="sshfs -o allow_other -o sshfs_sync -o follow_symlinks -C -p 722 th
 alias sshfsvonnie="sshfs -o allow_other -o sshfs_sync -o follow_symlinks -C ryanm_vonnie@ssh.phx.nearlyfreespeech.net: ~/mnt/vonnie"
 alias sshfsryanmcg="sshfs -o allow_other -o sshfs_sync -o follow_symlinks -C ryanm_ryanmcg@ssh.phx.nearlyfreespeech.net: ~/mnt/ryanmcg"
 alias sshfshalfline="sshfs -o allow_other -o sshfs_sync -o follow_symlinks -C -p 2468 halfline@74.118.64.10: ~/mnt/halfline"
-alias rsy-vonnie-pull="rsync -auzP -e 'ssh' ryanm_vonnie@ssh.phx.nearlyfreespeech.net:wordpress/wp-content/themes/vonnie/ ~/cur/web/vonnie/themes/vonnie"
-alias rsync-hafline-put="rsync -auzP -e 'ssh' /home/roin/cur/web/halfline/wordpress/wp-content/ halfline:www/wordpress/wp-content --exclude '*.sass*' --exclude '*.swp' --exclude 'pg-db-info.inc'"
+alias rsy-vonnie-pull="rsync -azP -e 'ssh' ryanm_vonnie@ssh.phx.nearlyfreespeech.net:wordpress/wp-content/themes/vonnie/ ~/cur/web/vonnie/themes/vonnie"
+alias rsync-hafline-put="rsync -azP -e 'ssh' /home/roin/cur/web/halfline/wordpress/wp-content/ halfline:www/wordpress/wp-content --exclude 'tags' --exclude '*.sass*' --exclude '*.swp' --exclude '*.scss' --exclude 'pg-db-info.inc'"
+alias rsync-wow-put="rsync -azP --delete -e 'ssh' /home/roin/cur/work/Drupaly/themes/wow/ wow:/var/www/vhosts/wow/themes/wow --exclude 'tags' --exclude '.git*' --exclude '*.sass*' --exclude '*.swp' --exclude '*.scss' --exclude 'uploaded' --exclude 'NOTES.txt' --exclude 'demo' --exclude 'mmcschol_drp11.sql'" 
 
 #PACAKGE MANAGERS
 alias addpkg="yaourt -S"
@@ -53,5 +54,14 @@ alias g="git"
 alias gcam="git commit -am"
 alias lp="lp -o cpi=17 -o lpi=8"
 alias scn="screen -DR"
+alias dodj="djmount ~/mnt/upnp"
+alias ftp="tnftp"
+
 alias relterm="export TERM=$TERM"
 alias relbash="source ~/.profile"
+
+# Custom Functions
+wiki() {
+    dig +short txt $1.wp.dg.cx
+}
+
