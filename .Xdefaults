@@ -1,7 +1,10 @@
 Xcursor.theme:          Vanilla-DMZ
-!URxvt.font:		-*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
-!URxvt.font:		xft:Inconsolata:prgba=vbgr:pixelsize=14.5
-URxvt.font:		xft:DejaVu Sans Mono:prgba=vbgr:pixelsize=13
+!urxvt.font:		xft:Dina:pixelsize=16:antialias=false
+!urxvt.font:		xft:Inconsolata:prgba=vbgr:pixelsize=14.5
+urxvt.font:		xft:Inconsolata:pixelsize=14.5
+!urxvt.font:		xft:Anonymous Pro:prgba=vbgr:pixelsize=14.5
+!urxvt.font:		xft:DejaVu Sans Mono:prgba=vbgr:pixelsize=13
+
 urxvt-bg.font:		xft:FreeSerif:rgba=vbgr:pixelsize=12
 URxvt*termName:         rxvt-unicode
 *background:       #060606
@@ -15,10 +18,11 @@ URxvt*urlLauncher:      /usr/bin/firefox
 
 URxvt*scrollBar:        false
 
-Xft*dpi:                96
-Xft*antialias:          true
-Xft*hinting:            true
-Xft*hintstyle:		hintslight
+Xft.dpi:                96
+Xft.antialias:          true
+Xft.rgba:		rgb
+Xft.hinting:            true
+Xft.hintstyle:		hintslight
 
 urxvt-bg.transparent:   true
 urxvt-bg.tintColor:     black
