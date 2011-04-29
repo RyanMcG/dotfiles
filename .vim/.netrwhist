@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/roin/.vimbackups'
 let g:netrw_dirhist_2='/etc/init.d'
 let g:netrw_dirhist_3='/etc/httpd/conf'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/var/lib/mysql'
 let g:netrw_dirhist_6='/opt/cisco-vpnclient'
 let g:netrw_dirhist_7='/home/roin/Documents/2010-2011/3.Spring/CSE 560/project/lab2/doxydoc'
 let g:netrw_dirhist_8='/etc/dovecot'
+let g:netrw_dirhist_9='/tmp/yaourt-tmp-roin/aur-eclim/src/eclim_1.6.3'

@@ -1,5 +1,6 @@
 "The necessities
 
+
 " An example for a vimrc file.
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
@@ -58,16 +59,16 @@ if has("autocmd")
   " Also load indent files, to automatically do language-dependent indenting.
   filetype plugin indent on
 
-  "javacomplete.vim fun
-  autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-  autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
-  autocmd Filetype java setlocal textwidth=80
+  ""javacomplete.vim fun
+  "autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+  "autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
+  "autocmd Filetype java setlocal textwidth=80
 
-  "JavaImp.vim fun
-  let g:JavaImpPathSep = ':'
-  let g:JavaImpPaths = $HOME."/cur/rent/CSE\ 560/project/lab1/src/:".$HOME."/.vim/JavaImp/jmplst/"
-  let g:JavaImpDataDir = $HOME."/.vim/JavaImp" 
-  let g:JavaImpSortPkgSep = 0
+  ""JavaImp.vim fun
+  "let g:JavaImpPathSep = ':'
+  "let g:JavaImpPaths = $HOME."/cur/rent/CSE\ 560/project/lab1/src/:".$HOME."/.vim/JavaImp/jmplst/"
+  "let g:JavaImpDataDir = $HOME."/.vim/JavaImp" 
+  "let g:JavaImpSortPkgSep = 0
 
 
 inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P> 
@@ -102,6 +103,7 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+set expandtab
 set softtabstop=4
 set shiftwidth=4
 set smartindent

@@ -106,7 +106,7 @@ song_columns_list_format = "(3)[red]{n} (36)[default]{t} (27)[yellow]{a} (27)[cy
 #
 playlist_display_mode = "columns" (classic/columns)
 #
-user_interface = "alternative"
+#user_interface = "alternative"
 #
 #incremental_seeking = "yes"
 #

@@ -9,4 +9,3 @@ tint2 &
 volwheel&
 Thunar --daemon &
 conky &
-xcompmgr -cC &
