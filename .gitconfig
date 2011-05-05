@@ -1,3 +1,19 @@
 [user]
 	name = Ryan McGowan
-	email = ryan@ryanmcg.com
+	email = roinsmith@gmail.com
+[status]
+	showUntrackedFiles = no
+[color]
+    diff = auto
+    branch = auto
+    status = auto
+
+[alias]
+    b = branch
+    c = commit
+    cam = commit -am
+    ch = checkout
+    d = diff
+    s = status
+    l = log
+
