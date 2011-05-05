@@ -7,6 +7,7 @@ alias ccse="cd ~/cur/rent/CSE\ 560"
 alias cpro="cd ~/cur/rent/CSE\ 560/project"
 alias chltheme="cd ~/cur/web/halfline/wordpress/wp-content/themes/halfline"    
 alias chlplug="cd ~/cur/web/halfline/wordpress/wp-content/plugins/hlwidgets"    
+alias cdot="cd ~/repo/dotfiles"
 
 #SSH/SFTP/rDESKTOP
 alias ssheng="ssh -p 42333 mcgowan.98@r1rhl7.engr1.ohio-state.edu"
