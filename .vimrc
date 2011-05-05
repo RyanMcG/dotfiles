@@ -59,19 +59,19 @@ if has("autocmd")
   filetype plugin indent on
 
   "javacomplete.vim fun
-  autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-  autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
-  autocmd Filetype java setlocal textwidth=80
+  "autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+  "autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
+  "autocmd Filetype java setlocal textwidth=80
 
   "JavaImp.vim fun
-  let g:JavaImpPathSep = ':'
-  let g:JavaImpPaths = $HOME."/cur/rent/CSE\ 560/project/lab1/src/:".$HOME."/.vim/JavaImp/jmplst/"
-  let g:JavaImpDataDir = $HOME."/.vim/JavaImp" 
-  let g:JavaImpSortPkgSep = 0
+  "let g:JavaImpPathSep = ':'
+  "let g:JavaImpPaths = $HOME."/cur/rent/CSE\ 560/project/lab1/src/:".$HOME."/.vim/JavaImp/jmplst/"
+  "let g:JavaImpDataDir = $HOME."/.vim/JavaImp" 
+  "let g:JavaImpSortPkgSep = 0
+  "inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P> 
 
-
-inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P> 
-
+  "Java Fun
+  autocmd FileType java setlocal textwidth=80
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
@@ -138,7 +138,6 @@ colorscheme elflord
 highlight LineNr term=NONE ctermfg=grey
 
 "latexsuite plugin told me to add this
-filetype plugin indent on
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 

@@ -3,3 +3,20 @@
 	email = ryan@ryanmcg.com
 [merge]
 	tool = vimdiff
+
+[status]
+	showUntrackedFiles = no
+
+[color]
+    diff = auto
+    branch = auto
+    status = auto
+
+[alias]
+    b = branch
+    c = commit
+    cam = commit -am
+    ch = checkout
+    d = diff
+    s = status
+    l = log

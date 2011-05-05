@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+exec /home/roin/.config/autostart.sh &
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+exec ck-launch-session openbox-session
+#exec ck-launch-session dwm
+#exec ck-launch-session xmonad
+#exec ck-launch-session awesome

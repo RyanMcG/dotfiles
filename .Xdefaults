@@ -1,9 +1,15 @@
 Xcursor.theme:          Vanilla-DMZ
-URxvt.font:		xft:DejaVu Sans Mono:prgba=vbgr:pixelsize=12
+!urxvt.font:		xft:Dina:pixelsize=16:antialias=false
+!urxvt.font:		xft:Inconsolata:prgba=vbgr:pixelsize=14.5
+urxvt.font:		xft:Inconsolata:pixelsize=14.5
+!urxvt.font:		xft:Anonymous Pro:prgba=vbgr:pixelsize=14.5
+!urxvt.font:		xft:DejaVu Sans Mono:prgba=vbgr:pixelsize=13
+!urxvt.font:		-*-dina-*-r-*-*-*-120-*-*-*-*-*-*
+
 urxvt-bg.font:		xft:FreeSerif:rgba=vbgr:pixelsize=12
 URxvt*termName:         rxvt-unicode
-URxvt*background:       #000000
-URxvt*foreground:       #ffffff
+*background:       #060606
+*foreground:       #f6f6f6
 URxvt*perl-lib:         /usr/lib/urxvt/perl/
 URxvt*perl-ext-common:  default,matcher
 URxvt*matcher.button:   1
@@ -13,28 +19,29 @@ URxvt*urlLauncher:      /usr/bin/firefox
 
 URxvt*scrollBar:        false
 
-Xft*dpi:                96
-Xft*antialias:          true
-Xft*hinting:            full
+Xft.dpi:                96
+Xft.antialias:          true
+Xft.rgba:		rgb
+Xft.hinting:            true
+Xft.hintstyle:		hintslight
 
-URxvt.transparent:   true
-URxvt.tintColor:     black
-URxvt.shading:       5 
-urxvt-bg.shading:    10 
+urxvt-bg.transparent:   true
+urxvt-bg.tintColor:     black
+urxvt-bg.shading:	10 
  
-URxvt*color0:      #000000
-URxvt*color1:      #9e1828
-URxvt*color2:      #aece92
-URxvt*color3:      #968a38
-URxvt*color4:      #2670cc
-URxvt*color5:      #963c59
-URxvt*color6:      #418179
-URxvt*color7:      #bebebe
-URxvt*color8:      #111111
-URxvt*color9:      #cf6171
-URxvt*color10:     #c5f779
-URxvt*color11:     #fff796
-URxvt*color12:     #75abdf
-URxvt*color13:     #cf9ebe
-URxvt*color14:     #71bebe
-URxvt*color15:     #ffffff
+*color0:      #000000
+*color1:      #9e1828
+*color2:      #aece92
+*color3:      #968a38
+*color4:      #2670cc
+*color5:      #963c59
+*color6:      #418179
+*color7:      #bebebe
+*color8:      #111111
+*color9:      #cf6171
+*color10:     #c5f779
+*color11:     #fff796
+*color12:     #75abdf
+*color13:     #cf9ebe
+*color14:     #71bebe
+*color15:     #ffffff
