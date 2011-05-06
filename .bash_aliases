@@ -42,7 +42,6 @@ alias yar="yaourt"
 #OTHER STUFF
 alias cl="clear"
 alias cls="clear && ls"
-alias transloc="transmission-remote -p 791 --auth=roinator:shaddow7044"
 alias lg="ls -A -l | grep"
 alias wchat="weechat-curses"
 alias svim="sudo vim"
