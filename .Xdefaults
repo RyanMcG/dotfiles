@@ -1,6 +1,6 @@
 Xcursor.theme:          Vanilla-DMZ
-!urxvt.font:		xft:Dina:pixelsize=16:antialias=false
-urxvt.font:		xft:Inconsolata:prgba=vbgr:pixelsize=14.5
+urxvt.font:		xft:Dina:pixelsize=16:antialias=false
+!urxvt.font:		xft:Inconsolata:prgba=vbgr:pixelsize=14.5
 !urxvt.font:		xft:Inconsolata:pixelsize=14.5
 !urxvt.font:		xft:Anonymous Pro:prgba=vbgr:pixelsize=14.5
 !urxvt.font:		xft:DejaVu Sans Mono:prgba=vbgr:pixelsize=13

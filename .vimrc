@@ -24,6 +24,27 @@ set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+" MY STUFF
+set expandtab
+set softtabstop=4
+set shiftwidth=4
+set smartindent
+set wrap
+set linebreak
+
+"Some fun stuff which makes life easier
+set showmatch
+set number
+set hidden
+set history=1000
+set undolevels=1000
+
+"Foldiness
+set foldenable
+set foldmethod=syntax
+set foldlevel=20
+
+
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
 else
@@ -62,7 +83,9 @@ if has("autocmd")
   ""javacomplete.vim fun
   "autocmd Filetype java setlocal omnifunc=javacomplete#Complete
   "autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
-  "autocmd Filetype java setlocal textwidth=80
+  autocmd Filetype java setlocal textwidth=80
+  autocmd Filetype javascript setlocal softtabstop=2
+  autocmd Filetype javascript setlocal shiftwidth=2
 
   ""JavaImp.vim fun
   "let g:JavaImpPathSep = ':'
@@ -102,26 +125,6 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
-
-set expandtab
-set softtabstop=4
-set shiftwidth=4
-set smartindent
-set wrap
-set linebreak
-
-"Some fun stuff which makes life easier
-set showmatch
-set number
-set hidden
-set history=1000
-set undolevels=1000
-
-"Foldiness
-set foldenable
-set foldmethod=syntax
-set foldlevel=20
-
 
 "Some mappin'
 "Easily edit and source vim
