@@ -1,1 +1,10 @@
 ..
+tags
+*.class
+*.DS_Store*
+.sass*
+*.swp
+.project
+.classpath
+.checkstyle
+.fbprefs
