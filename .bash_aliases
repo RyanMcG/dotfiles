@@ -5,6 +5,7 @@ alias cwww="cd ~/www/"
 alias ccur="cd ~/cur/rent/"
 alias ccse="cd ~/cur/rent/CSE\ 560"
 alias cpro="cd ~/cur/rent/CSE\ 560/project"
+alias crep="cd ~/repo"
 alias chltheme="cd ~/cur/web/halfline/wordpress/wp-content/themes/halfline"    
 alias chlplug="cd ~/cur/web/halfline/wordpress/wp-content/plugins/hlwidgets"
 

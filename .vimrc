@@ -81,17 +81,17 @@ if has("autocmd")
   filetype plugin indent on
 
   ""javacomplete.vim fun
-  "autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-  "autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
+  autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+  autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
   autocmd Filetype java setlocal textwidth=80
   autocmd Filetype javascript setlocal softtabstop=2
   autocmd Filetype javascript setlocal shiftwidth=2
 
   ""JavaImp.vim fun
-  "let g:JavaImpPathSep = ':'
-  "let g:JavaImpPaths = $HOME."/cur/rent/CSE\ 560/project/lab1/src/:".$HOME."/.vim/JavaImp/jmplst/"
-  "let g:JavaImpDataDir = $HOME."/.vim/JavaImp" 
-  "let g:JavaImpSortPkgSep = 0
+  let g:JavaImpPathSep = ':'
+  let g:JavaImpPaths = $HOME."/cur/rent/CSE\ 560/project/lab1/src/:".$HOME."/.vim/JavaImp/jmplst/"
+  let g:JavaImpDataDir = $HOME."/.vim/JavaImp" 
+  let g:JavaImpSortPkgSep = 0
 
 
 inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P> 
