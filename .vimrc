@@ -23,6 +23,22 @@ set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+"MY CUSTOM TABING
+set wrap
+set linebreak
+
+"Some fun stuff which makes life easier
+set showmatch
+set number
+set hidden
+set history=1000
+set undolevels=1000
+
+"Foldiness
+set foldenable
+set foldmethod=syntax
+set foldlevel=20
+
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
 else
@@ -52,6 +68,11 @@ endif
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
+  "My custom indenting
+  "set softtabstop=4
+  "set shiftwidth=4
+  "set smartindent
+
   " Enable file type detection.
   " Use the default filetype settings, so that mail gets 'tw' set to 72,
   " 'cindent' is on in C files, etc.
@@ -69,9 +90,6 @@ if has("autocmd")
   "let g:JavaImpDataDir = $HOME."/.vim/JavaImp" 
   "let g:JavaImpSortPkgSep = 0
   "inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P> 
-
-  "Java Fun
-  autocmd FileType java setlocal textwidth=80
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
@@ -101,25 +119,6 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
-
-set softtabstop=4
-set shiftwidth=4
-set smartindent
-set wrap
-set linebreak
-
-"Some fun stuff which makes life easier
-set showmatch
-set number
-set hidden
-set history=1000
-set undolevels=1000
-
-"Foldiness
-set foldenable
-set foldmethod=syntax
-set foldlevel=20
-
 
 "Some mappin'
 "Easily edit and source vim

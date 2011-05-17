@@ -5,9 +5,9 @@ alias cwww="cd ~/www/"
 alias ccur="cd ~/cur/rent/"
 alias ccse="cd ~/cur/rent/CSE\ 560"
 alias cpro="cd ~/cur/rent/CSE\ 560/project"
+alias crep="cd ~/repo"
 alias chltheme="cd ~/cur/web/halfline/wordpress/wp-content/themes/halfline"    
 alias chlplug="cd ~/cur/web/halfline/wordpress/wp-content/plugins/hlwidgets"    
-alias cdot="cd ~/repo/dotfiles"
 
 #SSH/SFTP/rDESKTOP
 alias ssheng="ssh -p 42333 mcgowan.98@r1rhl7.engr1.ohio-state.edu"
@@ -22,8 +22,8 @@ alias sshfsh="sshfs -o allow_other -o sshfs_sync -o follow_symlinks -C -p 722 th
 alias sshfsvonnie="sshfs -o allow_other -o sshfs_sync -o follow_symlinks -C ryanm_vonnie@ssh.phx.nearlyfreespeech.net: ~/mnt/vonnie"
 alias sshfsryanmcg="sshfs -o allow_other -o sshfs_sync -o follow_symlinks -C ryanm_ryanmcg@ssh.phx.nearlyfreespeech.net: ~/mnt/ryanmcg"
 alias sshfshalfline="sshfs -o allow_other -o sshfs_sync -o follow_symlinks -C -p 2468 halfline@74.118.64.10: ~/mnt/halfline"
-alias rsy-vonnie-pull="rsync -auzP -e 'ssh' ryanm_vonnie@ssh.phx.nearlyfreespeech.net:wordpress/wp-content/themes/vonnie/ ~/cur/web/vonnie/themes/vonnie"
-alias rsync-wow-put="rsync -auzP --delete -e 'ssh' /home/roin/cur/work/Drupaly/themes/wow/ wow:/var/www/vhosts/wow/themes/wow --exclude 'tags' --exclude '.git*' --exclude '*.sass*' --exclude '*.swp' --exclude '*.scss' --exclude 'uploaded' --exclude 'NOTES.txt' --exclude 'demo' --exclude 'mmcschol_drp11.sql'" 
+alias rsy-vonnie-pull="rsync -azP -e 'ssh' ryanm_vonnie@ssh.phx.nearlyfreespeech.net:wordpress/wp-content/themes/vonnie/ ~/cur/web/vonnie/themes/vonnie"
+alias rsync-wow-put="rsync -azP --delete -e 'ssh' /home/roin/cur/work/Drupaly/themes/wow/ wow:/var/www/vhosts/wow/themes/wow --exclude 'tags' --exclude '.git*' --exclude '*.sass*' --exclude '*.swp' --exclude '*.scss' --exclude 'uploaded' --exclude 'NOTES.txt' --exclude 'demo' --exclude 'mmcschol_drp11.sql'" 
 
 #PACAKGE MANAGERS
 alias addpkg="yaourt -S"
