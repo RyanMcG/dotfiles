@@ -366,6 +366,12 @@
       </action>
     </keybind>
     <!-- Keybindings for running audio stuff -->
+    <keybind key="A-S-F2">
+      <action name="Execute">
+        <command>urxvtcd -g +0+16 -e ncmpcpp</command>
+      </action>
+    </keybind>
+
     <keybind key="A-F2">
       <action name="Execute">
         <command>urxvtcd -g +0+16 -e ncmpcpp</command>

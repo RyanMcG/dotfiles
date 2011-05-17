@@ -1,6 +1,5 @@
 "The necessities
 
-
 " An example for a vimrc file.
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
@@ -23,27 +22,6 @@ set nocompatible
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-
-" MY STUFF
-set expandtab
-set softtabstop=4
-set shiftwidth=4
-set smartindent
-set wrap
-set linebreak
-
-"Some fun stuff which makes life easier
-set showmatch
-set number
-set hidden
-set history=1000
-set undolevels=1000
-
-"Foldiness
-set foldenable
-set foldmethod=syntax
-set foldlevel=20
-
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
@@ -80,22 +58,17 @@ if has("autocmd")
   " Also load indent files, to automatically do language-dependent indenting.
   filetype plugin indent on
 
-  ""javacomplete.vim fun
-  autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-  autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
-  autocmd Filetype java setlocal textwidth=80
-  autocmd Filetype javascript setlocal softtabstop=2
-  autocmd Filetype javascript setlocal shiftwidth=2
+  "javacomplete.vim fun
+  "autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+  "autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
+  "autocmd Filetype java setlocal textwidth=80
 
-  ""JavaImp.vim fun
-  let g:JavaImpPathSep = ':'
-  let g:JavaImpPaths = $HOME."/cur/rent/CSE\ 560/project/lab1/src/:".$HOME."/.vim/JavaImp/jmplst/"
-  let g:JavaImpDataDir = $HOME."/.vim/JavaImp" 
-  let g:JavaImpSortPkgSep = 0
-
-
-inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P> 
-
+  "JavaImp.vim fun
+  "let g:JavaImpPathSep = ':'
+  "let g:JavaImpPaths = $HOME."/cur/rent/CSE\ 560/project/lab1/src/:".$HOME."/.vim/JavaImp/jmplst/"
+  "let g:JavaImpDataDir = $HOME."/.vim/JavaImp" 
+  "let g:JavaImpSortPkgSep = 0
+  "inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P> 
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
@@ -143,7 +116,6 @@ colorscheme elflord
 highlight LineNr term=NONE ctermfg=grey
 
 "latexsuite plugin told me to add this
-filetype plugin indent on
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 

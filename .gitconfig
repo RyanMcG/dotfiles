@@ -8,3 +8,20 @@
     diff = auto
 [merge]
 	tool = vimdiff
+
+[status]
+	showUntrackedFiles = no
+
+[color]
+    diff = auto
+    branch = auto
+    status = auto
+
+[alias]
+    b = branch
+    c = commit
+    cam = commit -am
+    co = checkout
+    d = diff
+    s = status
+    l = log
