@@ -4,8 +4,8 @@
 	name = Ryan McGowan
 	email = ryan@ryanmcg.com
 [color]
-    status = auto
-    diff = auto
+	status = auto
+	diff = auto
 [merge]
 	tool = vimdiff
 
@@ -13,15 +13,17 @@
 	showUntrackedFiles = no
 
 [color]
-    diff = auto
-    branch = auto
-    status = auto
+	diff = auto
+	branch = auto
+	status = auto
 
 [alias]
-    b = branch
-    c = commit
-    cam = commit -am
-    co = checkout
-    d = diff
-    s = status
-    l = log
+	b = branch
+	c = commit
+	cam = commit -am
+	co = checkout
+	d = diff
+	s = status
+	l = log
+[core]
+	excludesfile = /home/roin/.gitignore.global

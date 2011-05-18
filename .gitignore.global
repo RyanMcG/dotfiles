@@ -1,0 +1,13 @@
+..
+*.swp
+*.swo
+tags
+*.class
+*.DS_Store*
+javadoc*
+.sass-*
+.project
+.settings
+.classpath
+.checkstyle
+.fbprefs
