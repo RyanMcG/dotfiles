@@ -1,6 +1,3 @@
-" Editing settings
-set softtabstop=4 shiftwidth=4 expandtab textwidth=90
-
 " Syntax highlighting settings.
 let g:java_allow_cpp_keywords=1
 syntax on
