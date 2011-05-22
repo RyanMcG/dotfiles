@@ -21,7 +21,7 @@ alias sshfsvonnie="sshfs -o allow_other -o sshfs_sync -o follow_symlinks -C ryan
 alias sshfsryanmcg="sshfs -o allow_other -o sshfs_sync -o follow_symlinks -C ryanm_ryanmcg@ssh.phx.nearlyfreespeech.net: ~/mnt/ryanmcg"
 alias sshfshalfline="sshfs -o allow_other -o sshfs_sync -o follow_symlinks -C -p 2468 halfline@74.118.64.10: ~/mnt/halfline"
 alias rsy-vonnie-pull="rsync -auzP -e 'ssh' ryanm_vonnie@ssh.phx.nearlyfreespeech.net:wordpress/wp-content/themes/vonnie/ ~/cur/web/vonnie/themes/vonnie"
-alias rsync-wow-put="rsync -auzP --delete -e 'ssh' /home/roin/cur/work/Drupaly/themes/wow/ wow:/var/www/vhosts/wow/themes/wow --exclude 'tags' --exclude '.git*' --exclude '*.sass*' --exclude '*.swp' --exclude '*.scss' --exclude 'uploaded' --exclude 'NOTES.txt' --exclude 'demo' --exclude 'mmcschol_drp11.sql'" 
+alias rsync-wow-put="rsync -auzP --delete -e 'ssh' /home/roin/cur/work/StudioCT/Drupaly/themes/wow/ wow:/var/www/vhosts/wow/themes/wow --exclude 'tags' --exclude '.git*' --exclude '*.sass*' --exclude '*.swp' --exclude '*.scss' --exclude 'uploaded' --exclude 'NOTES.txt' --exclude 'demo' --exclude 'mmcschol_drp11.sql' --exclude 'wowpics'" 
 
 #PACAKGE MANAGERS
 alias addpkg="yaourt -S"
