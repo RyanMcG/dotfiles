@@ -29,8 +29,7 @@ own_window_colour 000000
 
 #font
 use_xft yes
-xftfont Dina:pixelsize=16:antialias=false
-#xftfont FreeSerif:charwidth=12:rgba=vbgr:spacing=charcell:pixelsize=12
+xftfont FreeSerif:charwidth=12:rgba=vbgr:spacing=charcell:pixelsize=12
 use_spacer left
 max_text_width 0
 
@@ -39,4 +38,4 @@ mpd_host localhost
 mpd_port 6600
 
 TEXT
-${color0}${font OpenLogos:pixelsize=17}A${font} ${voffset -5}${time %m/%d/%Y %H:%M:%S} |CPU1:${cpugraph cpu1 10,48} 2:${cpugraph cpu2 10,48} RAM:${memgraph 10,30} |/${fs_bar 8,40 /} /home${fs_bar 8,40 /home} |DN:${downspeedgraph 10,40} UP:${upspeedgraph 10,40} | ${mpd_smart}
+${color0}${font OpenLogos:pixelsize=17}A${font} ${voffset -5}$kernel ${time %m/%d/%Y %H:%M:%S} |CPU1:${cpugraph cpu1 10,48} 2:${cpugraph cpu2 10,48} RAM:${memgraph 10,30} |/${fs_bar 8,40 /} /home${fs_bar 8,40 /home} |DN:${downspeedgraph 10,40} UP:${upspeedgraph 10,40} | ${mpd_smart}
