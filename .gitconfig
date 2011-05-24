@@ -1,6 +1,11 @@
+[status]
+	showUntrackedFiles = no
 [user]
 	name = Ryan McGowan
 	email = ryan@ryanmcg.com
+[color]
+	status = auto
+	diff = auto
 [merge]
 	tool = vimdiff
 
@@ -20,5 +25,9 @@
 	d = diff
 	s = status
 	l = log
+
 [branch]
 	autosetupmerge = always
+
+[core]
+	excludesfile = /home/roin/.gitignore.global

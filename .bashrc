@@ -48,8 +48,8 @@ BMAG="\[\033[45m\]" # background magenta
 BCYN="\[\033[46m\]" # background cyan
 BWHT="\[\033[47m\]" # background white
 
-PS1="$FBLE${debian_chroot:+($debian_chroot)}\u@\h:$RS$HC\w$RS
-$FBLE$HC\$$RS "
+PS1="$FGRN${debian_chroot:+($debian_chroot)}\u@\h:$RS$HC\w$RS
+$FGRN$HC\$$RS "
 
 unset color_prompt force_color_prompt
 

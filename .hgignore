@@ -1,10 +1,13 @@
 syntax: glob
+*.swp
+*.swo
 tags
 *.class
 *.DS_Store*
-.sass*
-*.swp
+javadoc*
+.sass-*
 .project
+.settings
 .classpath
 .checkstyle
 .fbprefs

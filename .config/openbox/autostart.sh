@@ -5,8 +5,7 @@
 #-----------------------------------------
 
 tint2 &
-#urxvt -name urxvt-bg -e ncmpcpp &
 volwheel&
+#urxvt -name urxvt-bg -e ncmpcpp &
 Thunar --daemon &
 conky &
-xcompmgr -cC &
