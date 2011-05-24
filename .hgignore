@@ -8,3 +8,4 @@ tags
 .classpath
 .checkstyle
 .fbprefs
+.~lock*
