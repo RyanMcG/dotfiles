@@ -17,6 +17,9 @@ export CLASSPATH=.:src/:bin/
 #Enable vi-esque stuff
 set -o vi
 
+#autojump says to
+source /etc/profile
+
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
