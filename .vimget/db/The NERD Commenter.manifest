@@ -1,0 +1,12 @@
+# this file is automatical generate by vim-get. Do not motifiy it manualy.
+     
+name The NERD Commenter
+id 1218
+author Marty Grenfell
+installed  2.3.0
+version 2.3.0
+download download_script.php?src_id=14455
+
+manifest {
+["  doc/NERD_commenter.txt  \n", "  plugin/NERD_commenter.vim  \n"]}
+

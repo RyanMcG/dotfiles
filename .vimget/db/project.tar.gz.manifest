@@ -1,0 +1,12 @@
+# this file is automatical generate by vim-get. Do not motifiy it manualy.
+     
+name project.tar.gz
+id 69
+author Aric Blumer
+installed  1.4.1
+version 1.4.1
+download download_script.php?src_id=6273
+
+manifest {
+["  plugin/project.vim\n", "  doc/project.txt\n"]}
+

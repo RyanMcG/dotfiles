@@ -1,0 +1,12 @@
+# this file is automatical generate by vim-get. Do not motifiy it manualy.
+     
+name The NERD tree
+id 1658
+author Marty Grenfell
+installed  4.1.0
+version 4.1.0
+download download_script.php?src_id=11834
+
+manifest {
+["  doc/NERD_tree.txt  \n", "  nerdtree_plugin/exec_menuitem.vim  \n", "  nerdtree_plugin/fs_menu.vim  \n", "  plugin/NERD_tree.vim  \n"]}
+

@@ -1,0 +1,12 @@
+# this file is automatical generate by vim-get. Do not motifiy it manualy.
+     
+name surround.vim
+id 1697
+author Tim Pope
+installed  1.90
+version 1.90
+download download_script.php?src_id=12566
+
+manifest {
+["  doc/surround.txt  \n", "  plugin/surround.vim  \n"]}
+

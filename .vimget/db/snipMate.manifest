@@ -1,0 +1,12 @@
+# this file is automatical generate by vim-get. Do not motifiy it manualy.
+     
+name snipMate
+id 2540
+author Michael Sanders
+installed  0.83
+version 0.83
+download download_script.php?src_id=11006
+
+manifest {
+["  after/plugin/snipMate.vim  \n", "  autoload/snipMate.vim  \n", "  doc/snipMate.txt  \n", "  ftplugin/html_snip_helper.vim  \n", "  plugin/snipMate.vim  \n", "  snippets/_.snippets  \n", "  snippets/autoit.snippets  \n", "  snippets/c.snippets  \n", "  snippets/cpp.snippets  \n", "  snippets/html.snippets  \n", "  snippets/java.snippets  \n", "  snippets/javascript.snippets  \n", "  snippets/mako.snippets  \n", "  snippets/objc.snippets  \n", "  snippets/perl.snippets  \n", "  snippets/php.snippets  \n", "  snippets/python.snippets  \n", "  snippets/ruby.snippets  \n", "  snippets/sh.snippets  \n", "  snippets/snippet.snippets  \n", "  snippets/tcl.snippets  \n", "  snippets/tex.snippets  \n", "  snippets/vim.snippets  \n", "  snippets/zsh.snippets  \n", "  syntax/snippet.vim  \n"]}
+
