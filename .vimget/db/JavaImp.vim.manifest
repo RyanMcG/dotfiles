@@ -8,5 +8,5 @@ version 2.2.3
 download download_script.php?src_id=3094
 
 manifest {
-["  plugin/JavaImp.vim\n"]}
+[]}
 

@@ -8,5 +8,5 @@ version 7.2.8
 download download_script.php?src_id=14208
 
 manifest {
-["  doc/bufexplorer.txt  \n", "  plugin/bufexplorer.vim  \n"]}
+[]}
 

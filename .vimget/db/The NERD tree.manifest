@@ -8,5 +8,5 @@ version 4.1.0
 download download_script.php?src_id=11834
 
 manifest {
-["  doc/NERD_tree.txt  \n", "  nerdtree_plugin/exec_menuitem.vim  \n", "  nerdtree_plugin/fs_menu.vim  \n", "  plugin/NERD_tree.vim  \n"]}
+[]}
 

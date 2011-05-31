@@ -8,5 +8,5 @@ version 6.3.2
 download download_script.php?src_id=3640
 
 manifest {
-["  plugin/minibufexpl.vim\n"]}
+[]}
 

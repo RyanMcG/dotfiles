@@ -8,5 +8,5 @@ version 1.90
 download download_script.php?src_id=12566
 
 manifest {
-["  doc/surround.txt  \n", "  plugin/surround.vim  \n"]}
+[]}
 
