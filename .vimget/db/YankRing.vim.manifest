@@ -1,0 +1,12 @@
+# this file is automatical generate by vim-get. Do not motifiy it manualy.
+     
+name YankRing.vim
+id 1234
+author David Fishburn
+installed  11.0
+version 11.0
+download download_script.php?src_id=13554
+
+manifest {
+["  doc/yankring.txt  \n", "  plugin/yankring.vim  \n"]}
+
