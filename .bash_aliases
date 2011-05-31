@@ -15,7 +15,7 @@ alias rsync-vonnie-pull="rsync -azP -e 'ssh' ryanm_vonnie@ssh.phx.nearlyfreespee
 alias rsync-wow-put="rsync -azP --delete -e 'ssh' /home/roin/cur/work/StudioCT/Drupaly/themes/wow/ wow:/var/www/vhosts/wow/themes/wow --exclude 'tags' --exclude '.git*' --exclude '*.sass*' --exclude '*.swp' --exclude '*.scss' --exclude 'uploaded' --exclude 'NOTES.txt' --exclude 'demo' --exclude 'mmcschol_drp11.sql' --exclude 'wowpics*'" 
 
 #PACAKGE MANAGERS
-if [ -f ~/.bash_aliases_pkg ]
+if [ -f ~/.bash_aliases_pkg ]; then
 	. ~/.bash_aliases_pkg
 fi
 
