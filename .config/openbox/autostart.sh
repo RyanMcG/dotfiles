@@ -9,4 +9,6 @@ tint2 &
 volwheel&
 Thunar --daemon &
 conky &
-xcompmgr -cC &
+
+#Now our host specific autostart
+./autostart_extra.sh &
