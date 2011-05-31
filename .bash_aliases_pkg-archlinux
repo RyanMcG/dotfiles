@@ -1,0 +1,12 @@
+alias addpkg="yaourt -S"
+alias rmpkg="yaourt -Rs"
+alias udpkg="yaourt -Sy"
+alias ugpkg="yaourt -Su"
+alias udgpkg="yaourt -Syu"
+alias spkg="yaourt -Ss"
+alias qpkg="yaourt -Qs"
+alias cleanpkg="yaourt -Sc"
+alias autormpkg="yaourt -Qdt"
+
+alias spc="sudo pacman"
+alias yar="yaourt"

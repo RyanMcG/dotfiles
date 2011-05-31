@@ -51,15 +51,21 @@ BMAG="\[\033[45m\]" # background magenta
 BCYN="\[\033[46m\]" # background cyan
 BWHT="\[\033[47m\]" # background white
 
-PS1="$FBLE${debian_chroot:+($debian_chroot)}\u@\h:$RS$HC\w$RS
-$FBLE$HC\$$RS "
+P_COLOR=$FBLK$BWHT
+
+if [ -f ~/.bash_prompt_color ]; then
+	. ~/.bash_prompt_color
+fi
+	
+PS1="$P_COLOR${debian_chroot:+($debian_chroot)}\u@\h:$RS$HC\w$RS
+$P_COLOR$HC\$$RS "
 
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
+	PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
     ;;
 *)
     ;;
