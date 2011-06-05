@@ -14,6 +14,9 @@ export TRANSMISSION_HOME=$HOME/.config/transmission-daemon
 export PATH=$PATH:/usr/share/eclipse/:/opt/maven/bin/:/opt/android-sdk/platform-tools/:$HOME/bin/:$HOME/bin/node/bin/
 export CLASSPATH=.:src/:bin/
 
+unset HISTSIZE HISTFILESIZE
+export HISTSIZE=20000
+
 #autojump says to
 source /etc/profile
 
