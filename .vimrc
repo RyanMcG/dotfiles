@@ -19,7 +19,31 @@ endif
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
+filetype off
 
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+"Make vundel manage vundle
+Bundle 'gmarik/vundle'
+
+"Git bundles
+Bundle 'tpope/vim-fugitive'
+Bundle 'majutsushi/tagbar'
+Bundle 'vim-scripts/The-NERD-tree'
+Bundle 'vim-scripts/The-NERD-Commenter'
+Bundle 'vim-scripts/YankRing.vim'
+Bundle 'vim-scripts/JavaImp.vim--Lee'
+Bundle 'msanders/snipmate.vim'
+Bundle 'vim-scripts/javaimp.vim'
+Bundle 'slack/vim-bufexplorer'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'VictorDenisov/javacomplete'
+
+
+"Vim Script bundles
+Bundle 'project.tar.gz'
+"
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 set number
