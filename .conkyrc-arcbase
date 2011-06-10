@@ -31,7 +31,8 @@ own_window_colour 000000
 use_xft yes
 xftfont FreeSerif:charwidth=12:rgba=vbgr:spacing=charcell:pixelsize=12
 use_spacer left
-max_text_width 0
+max_text_width 1000
+text_buffer_size 1024
 
 #mpd
 mpd_host localhost

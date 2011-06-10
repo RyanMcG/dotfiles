@@ -11,4 +11,6 @@ Thunar --daemon &
 conky &
 
 #Now our host specific autostart
-./autostart_extra.sh &
+if [ $HOSTNAME = "arcbase" ]; then
+	xcompmgr -cC &
+fi

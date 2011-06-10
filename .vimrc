@@ -28,17 +28,19 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 "Git bundles
-Bundle 'tpope/vim-fugitive'
-Bundle 'majutsushi/tagbar'
 Bundle 'vim-scripts/The-NERD-tree'
 Bundle 'vim-scripts/The-NERD-Commenter'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'vim-scripts/JavaImp.vim--Lee'
+Bundle 'vim-scripts/cake.vim'
+
+Bundle 'tpope/vim-fugitive'
+Bundle 'majutsushi/tagbar'
 Bundle 'msanders/snipmate.vim'
-Bundle 'vim-scripts/javaimp.vim'
 Bundle 'slack/vim-bufexplorer'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'VictorDenisov/javacomplete'
+Bundle 'spiiph/vim-space'
 
 
 "Vim Script bundles
@@ -63,6 +65,10 @@ set undolevels=1000
 set foldenable
 set foldmethod=syntax
 set foldlevel=20
+
+"Easier tabbing
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
