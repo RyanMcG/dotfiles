@@ -2,6 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+#autojump says to
+source /etc/profile
+
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
@@ -16,9 +19,6 @@ export CLASSPATH=.:src/:bin/
 
 unset HISTSIZE HISTFILESIZE
 export HISTSIZE=20000
-
-#autojump says to
-source /etc/profile
 
 #Set editing type to vi
 set -o vi
