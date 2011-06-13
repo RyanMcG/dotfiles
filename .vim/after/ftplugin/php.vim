@@ -1,2 +1,2 @@
 "Editor Settings
-setlocal softtabstop=4 shiftwidth=4 expandtab textwidth=85
+setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=85
