@@ -28,4 +28,4 @@
 	autosetupmerge = always
 
 [core]
-	excludesfile = /home/roin/.gitignore.global
+	excludesfile = ~/.gitignore.global
