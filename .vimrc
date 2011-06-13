@@ -40,7 +40,6 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'slack/vim-bufexplorer'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'VictorDenisov/javacomplete'
-Bundle 'spiiph/vim-space'
 
 
 "Vim Script bundles
@@ -98,29 +97,11 @@ endif
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
-
-  "My custom indenting
-  "set softtabstop=4
-  "set shiftwidth=4
-  "set smartindent
-
   " Enable file type detection.
   " Use the default filetype settings, so that mail gets 'tw' set to 72,
   " 'cindent' is on in C files, etc.
   " Also load indent files, to automatically do language-dependent indenting.
   filetype plugin indent on
-
-  "javacomplete.vim fun
-  "autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-  "autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
-  "autocmd Filetype java setlocal textwidth=80
-
-  "JavaImp.vim fun
-  "let g:JavaImpPathSep = ':'
-  "let g:JavaImpPaths = $HOME."/cur/rent/CSE\ 560/project/lab1/src/:".$HOME."/.vim/JavaImp/jmplst/"
-  "let g:JavaImpDataDir = $HOME."/.vim/JavaImp" 
-  "let g:JavaImpSortPkgSep = 0
-  "inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P> 
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
