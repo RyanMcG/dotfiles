@@ -25,21 +25,22 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 "Make vundel manage vundle
-Bundle 'gmarik/vundle'
+Bundle 'git://github.com/gmarik/vundle'
 
 "Git bundles
-Bundle 'vim-scripts/The-NERD-tree'
-Bundle 'vim-scripts/The-NERD-Commenter'
-Bundle 'vim-scripts/YankRing.vim'
-Bundle 'vim-scripts/JavaImp.vim--Lee'
-Bundle 'vim-scripts/cake.vim'
+Bundle 'git://github.com/vim-scripts/The-NERD-tree'
+Bundle 'git://github.com/vim-scripts/The-NERD-Commenter'
+Bundle 'git://github.com/vim-scripts/YankRing.vim'
+Bundle 'git://github.com/vim-scripts/JavaImp.vim--Lee'
+Bundle 'git://github.com/vim-scripts/cake.vim'
 
-Bundle 'tpope/vim-fugitive'
-Bundle 'majutsushi/tagbar'
-Bundle 'msanders/snipmate.vim'
-Bundle 'slack/vim-bufexplorer'
-Bundle 'fholgado/minibufexpl.vim'
-Bundle 'VictorDenisov/javacomplete'
+Bundle 'git://github.com/tpope/vim-fugitive'
+Bundle 'git://github.com/majutsushi/tagbar'
+Bundle 'git://github.com/msanders/snipmate.vim'
+Bundle 'git://github.com/slack/vim-bufexplorer'
+Bundle 'git://github.com/fholgado/minibufexpl.vim'
+Bundle 'git://github.com/VictorDenisov/javacomplete'
+Bundle 'git://github.com/wincent/Command-T'
 
 
 "Vim Script bundles
