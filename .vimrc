@@ -66,6 +66,9 @@ set foldenable
 set foldmethod=syntax
 set foldlevel=20
 
+"Tagbar Fun
+nnoremap <silent> <F9> :TagbarOpenAutoClose<CR>
+
 "Easier tabbing
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
