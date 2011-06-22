@@ -10,7 +10,7 @@ alias chltheme="cd ~/cur/web/halfline/wordpress/wp-content/themes/halfline"
 alias chlplug="cd ~/cur/web/halfline/wordpress/wp-content/plugins/hlwidgets"    
 
 #SSHFS/RSYNC
-alias sshfs="sshfs -o allow_other -o reconnect -o sshfs_sync -o follow_symlinks"
+alias sshfs="sshfs -o allow_other -o reconnect -o follow_symlinks"
 alias rsync-vonnie-pull="rsync -azP -e 'ssh' ryanm_vonnie@ssh.phx.nearlyfreespeech.net:wordpress/wp-content/themes/vonnie/ ~/cur/web/vonnie/themes/vonnie"
 alias rsync-wow-put="rsync -azP --delete -e 'ssh' /home/roin/cur/work/StudioCT/Drupaly/themes/wow/ wow:/var/www/vhosts/wow/themes/wow --exclude 'tags' --exclude '.git*' --exclude '*.sass*' --exclude '*.swp' --exclude '*.scss' --exclude 'uploaded' --exclude 'NOTES.txt' --exclude 'demo' --exclude 'mmcschol_drp11.sql' --exclude 'wowpics*'" 
 
