@@ -1,1 +1,2 @@
 P_COLOR=$FCYN
+export PATH=$PATH:/home/ryan/camp26/cake/cake/console:/home/camp/bin

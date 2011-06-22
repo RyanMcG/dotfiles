@@ -48,7 +48,7 @@ alias dodj="djmount ~/mnt/upnp"
 alias ftp="tnftp"
 alias rm="rm -i"
 alias rmf="rm -f"
-alias diff="colordiff"
+alias cdiff="colordiff"
 
 # Custom Functions
 wiki() {
