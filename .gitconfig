@@ -23,6 +23,7 @@
 	d = diff
 	s = status
 	l = log
+	rl = reflog
 
 [branch]
 	autosetupmerge = always
