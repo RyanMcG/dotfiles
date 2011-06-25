@@ -41,6 +41,7 @@ Bundle 'git://github.com/slack/vim-bufexplorer'
 Bundle 'git://github.com/fholgado/minibufexpl.vim'
 Bundle 'git://github.com/VictorDenisov/javacomplete'
 Bundle 'git://github.com/wincent/Command-T'
+Bundle 'git://github.com/ciaranm/detectindent.git'
 
 
 "Vim Script bundles
@@ -68,6 +69,9 @@ set foldlevel=20
 
 "Tagbar Fun
 nnoremap <silent> <F9> :TagbarOpenAutoClose<CR>
+nnoremap <silent> <leader>nt :NERDTreeToggle<CR>
+nnoremap <silent> <leader>tb :TagbarToggle<CR>
+nnoremap <silent> <leader>di :DetectIndent<CR>
 
 "Easier tabbing
 let g:miniBufExplMapWindowNavVim = 1
