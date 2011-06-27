@@ -58,7 +58,7 @@ taskbar_active_background_id = 5
 #---------------------------------------------
 task_icon = 1
 task_text = 1
-task_maximum_size = 1000 28
+task_maximum_size = 2000 28
 task_centered = 0
 task_padding = 3 2
 task_font = DejaVu Sans 7
