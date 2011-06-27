@@ -68,10 +68,10 @@ set foldmethod=syntax
 set foldlevel=20
 
 "Tagbar Fun
-nnoremap <silent> <F9> :TagbarOpenAutoClose<CR>
-nnoremap <silent> <leader>nt :NERDTreeToggle<CR>
-nnoremap <silent> <leader>tb :TagbarToggle<CR>
-nnoremap <silent> <leader>di :DetectIndent<CR>
+nmap <silent> <F9> :TagbarOpenAutoClose<CR>
+nmap <silent> <leader>nt :NERDTreeToggle<CR>
+nmap <silent> <leader>tb :TagbarToggle<CR>
+nmap <silent> <leader>di :DetectIndent<CR>
 
 "Easier tabbing
 let g:miniBufExplMapWindowNavVim = 1
