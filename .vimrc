@@ -38,7 +38,7 @@ Bundle 'git://github.com/tpope/vim-fugitive'
 Bundle 'git://github.com/majutsushi/tagbar'
 Bundle 'git://github.com/msanders/snipmate.vim'
 Bundle 'git://github.com/slack/vim-bufexplorer'
-Bundle 'git://github.com/fholgado/minibufexpl.vim'
+"Bundle 'git://github.com/fholgado/minibufexpl.vim'
 Bundle 'git://github.com/VictorDenisov/javacomplete'
 Bundle 'git://github.com/wincent/Command-T'
 Bundle 'git://github.com/ciaranm/detectindent.git'
@@ -74,8 +74,15 @@ nmap <silent> <leader>tb :TagbarToggle<CR>
 nmap <silent> <leader>di :DetectIndent<CR>
 
 "Easier tabbing
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
+nnoremap <silent> <Tab> :bn<CR>
+nnoremap <silent> <S-Tab> :bp<CR>
+nmap <silent> <C-k> <C-w>k
+nmap <silent> <C-j> <C-w>j
+nmap <silent> <C-l> <C-w>l
+nmap <silent> <C-h> <C-w>h
+"Only works with minibufexplorer
+"let g:miniBufExplMapWindowNavVim = 1
+"let g:miniBufExplMapCTabSwitchBufs = 1
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
