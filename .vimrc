@@ -42,6 +42,8 @@ Bundle 'git://github.com/slack/vim-bufexplorer'
 Bundle 'git://github.com/VictorDenisov/javacomplete'
 Bundle 'git://github.com/wincent/Command-T'
 Bundle 'git://github.com/ciaranm/detectindent.git'
+Bundle 'git://github.com/jonyamo/dbext.vim.git'
+Bundle 'git://github.com/plasticboy/vim-markdown.git'
 
 
 "Vim Script bundles
