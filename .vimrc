@@ -32,7 +32,6 @@ Bundle 'git://github.com/vim-scripts/The-NERD-tree'
 Bundle 'git://github.com/vim-scripts/The-NERD-Commenter'
 Bundle 'git://github.com/vim-scripts/YankRing.vim'
 Bundle 'git://github.com/vim-scripts/JavaImp.vim--Lee'
-Bundle 'git://github.com/vim-scripts/cake.vim'
 
 Bundle 'git://github.com/tpope/vim-fugitive'
 Bundle 'git://github.com/majutsushi/tagbar'
@@ -44,47 +43,11 @@ Bundle 'git://github.com/wincent/Command-T'
 Bundle 'git://github.com/ciaranm/detectindent.git'
 Bundle 'git://github.com/jonyamo/dbext.vim.git'
 Bundle 'git://github.com/plasticboy/vim-markdown.git'
+Bundle 'git://github.com/xolox/vim-easytags.git'
 
 
 "Vim Script bundles
 Bundle 'project.tar.gz'
-"
-" allow backspacing over everything in insert mode
-set backspace=indent,eol,start
-set number
-
-"MY CUSTOM TABING
-set wrap
-set linebreak
-
-"Some fun stuff which makes life easier
-set showmatch
-set number
-set hidden
-set history=1000
-set undolevels=1000
-
-"Foldiness
-set foldenable
-set foldmethod=syntax
-set foldlevel=20
-
-"Tagbar Fun
-nmap <silent> <F9> :TagbarOpenAutoClose<CR>
-nmap <silent> <leader>nt :NERDTreeToggle<CR>
-nmap <silent> <leader>tb :TagbarToggle<CR>
-nmap <silent> <leader>di :DetectIndent<CR>
-
-"Easier tabbing
-nnoremap <silent> <Tab> :bn<CR>
-nnoremap <silent> <S-Tab> :bp<CR>
-nmap <silent> <C-k> <C-w>k
-nmap <silent> <C-j> <C-w>j
-nmap <silent> <C-l> <C-w>l
-nmap <silent> <C-h> <C-w>h
-"Only works with minibufexplorer
-"let g:miniBufExplMapWindowNavVim = 1
-"let g:miniBufExplMapCTabSwitchBufs = 1
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
@@ -149,6 +112,44 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+set number
+
+"MY CUSTOM TABING
+set wrap
+set linebreak
+
+"Some fun stuff which makes life easier
+set number
+set hidden
+set history=1000
+set undolevels=1000
+let loaded_matchparen = 1 "Slows moving around down if on
+set showmatch 
+
+"Foldiness
+set foldenable
+set foldlevel=20
+set foldmethod=syntax
+
+"Tagbar Fun
+nmap <silent> <F9> :TagbarOpenAutoClose<CR>
+nmap <silent> <leader>nt :NERDTreeToggle<CR>
+nmap <silent> <leader>tb :TagbarToggle<CR>
+nmap <silent> <leader>di :DetectIndent<CR>
+
+"Easier tabbing
+nnoremap <silent> <Tab> :bn<CR>
+nnoremap <silent> <S-Tab> :bp<CR>
+nmap <silent> <C-k> <C-w>k
+nmap <silent> <C-j> <C-w>j
+nmap <silent> <C-l> <C-w>l
+nmap <silent> <C-h> <C-w>h
+"Only works with minibufexplorer
+"let g:miniBufExplMapWindowNavVim = 1
+"let g:miniBufExplMapCTabSwitchBufs = 1
+
 "Some mappin'
 "Easily edit and source vim
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
@@ -168,6 +169,3 @@ highlight LineNr term=NONE ctermfg=grey
 "latexsuite plugin told me to add this
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
-
-"Make Tag list appear on the right side
-let Tlist_Use_Right_Window = 1
