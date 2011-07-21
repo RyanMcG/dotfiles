@@ -34,7 +34,7 @@ Bundle 'git://github.com/vim-scripts/The-NERD-Commenter'
 Bundle 'git://github.com/vim-scripts/JavaImp.vim--Lee'
 
 Bundle 'git://github.com/tpope/vim-fugitive'
-Bundle 'git://github.com/majutsushi/tagbar'
+"Bundle 'git://github.com/majutsushi/tagbar'
 Bundle 'git://github.com/msanders/snipmate.vim'
 "Bundle 'git://github.com/slack/vim-bufexplorer'
 "Bundle 'git://github.com/fholgado/minibufexpl.vim'
@@ -44,7 +44,8 @@ Bundle 'git://github.com/ciaranm/detectindent.git'
 "Bundle 'git://github.com/jonyamo/dbext.vim.git'
 Bundle 'git://github.com/plasticboy/vim-markdown.git'
 Bundle 'git://github.com/xolox/vim-easytags.git'
-Bundle 'git://github.com/vim-scripts/Source-Explorer-srcexpl.vim.git'
+"Bundle 'git://github.com/vim-scripts/Source-Explorer-srcexpl.vim.git'
+Bundle 'git://github.com/vim-scripts/taglist.vim.git'
 
 
 "Vim Script bundles
@@ -135,9 +136,9 @@ set foldenable
 "set foldmethod=syntax
 
 "Tagbar Fun
-nmap <silent> <F9> :TagbarOpenAutoClose<CR>
-nmap <silent> <leader>nt :NERDTreeToggle<CR>
-nmap <silent> <leader>tb :TagbarToggle<CR>
+nnoremap <silent> <F7> :NERDTreeToggle<CR>
+"nmap <silent> <leader>tb :TagbarToggle<CR>
+nnoremap <silent> <F8> :TlistToggle<CR>
 nmap <silent> <leader>di :DetectIndent<CR>
 
 "Easier tabbing
@@ -157,12 +158,21 @@ nmap <silent> <C-h> <C-w>h
 let g:easytags_on_cursorhold = 0 "Turns auto everything off
 let g:easytags_dynamic_files = 1
 
+"Configure Tlist
+let Tlist_Use_Right_Window = 1
+let Tlist_Max_Submenu_Items = 18
+let Tlist_Highlight_Tag_On_BufEnter = 0
+let Tlist_Enable_Fold_Column = 0
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Auto_Highlight_Tag = 0
+let Tlist_WinWidth = 22
+
 "Configure language specifc options
 "PHP
 let php_htmlInStrings = 1
 let php_folding = 2
-let php_parent_error_open = 1
 let php_parent_error_close = 1
+let php_parent_error_open = 1
 "let php_baselib = 1
 
 " Don't screw up folds when inserting text that might affect them, until
