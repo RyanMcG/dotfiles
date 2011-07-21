@@ -130,8 +130,8 @@ let loaded_matchparen = 1 "Slows moving around down if on
 
 "Foldiness
 set foldenable
-set foldlevel=20
-set foldmethod=syntax
+"set foldlevel=20
+"set foldmethod=syntax
 
 "Tagbar Fun
 nmap <silent> <F9> :TagbarOpenAutoClose<CR>
@@ -159,10 +159,16 @@ let g:easytags_dynamic_files = 1
 "Configure language specifc options
 "PHP
 let php_htmlInStrings = 1
-let php_folding = 1
+let php_folding = 2
 let php_parent_error_open = 1
 let php_parent_error_close = 1
-let php_baselib = 1
+"let php_baselib = 1
+
+" Don't screw up folds when inserting text that might affect them, until
+" leaving insert mode. Foldmethod is local to the window. Protect against
+" screwing up folding when switching between windows.
+autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
+autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
 
 "Some mappin'
 "Easily edit and source vim
@@ -183,3 +189,31 @@ highlight LineNr term=NONE ctermfg=grey
 "latexsuite plugin told me to add this
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
+
+"
+" Some Custom functions
+"
+
+"Show and Trim Spaced Function
+function ShowSpaces(...)
+  let @/='\v(\s+$)|( +\ze\t)'
+  let oldhlsearch=&hlsearch
+  if !a:0
+    let &hlsearch=!&hlsearch
+  else
+    let &hlsearch=a:1
+  end
+  return oldhlsearch
+endfunction
+
+function TrimSpaces() range
+  let oldhlsearch=ShowSpaces(1)
+  execute a:firstline.",".a:lastline."substitute ///gec"
+  let &hlsearch=oldhlsearch
+endfunction
+
+command -bar -nargs=? ShowSpaces call ShowSpaces(<args>)
+command -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
+nnoremap <silent> <leader>ss     :ShowSpaces 1<CR>
+nnoremap <silent> <leader>ts  m`:TrimSpaces<CR>``
+vnoremap <silent> <leader>ts   :TrimSpaces<CR>
