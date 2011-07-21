@@ -156,6 +156,14 @@ nmap <silent> <C-h> <C-w>h
 let g:easytags_on_cursorhold = 0 "Turns auto everything off
 let g:easytags_dynamic_files = 1
 
+"Configure language specifc options
+"PHP
+let php_htmlInStrings = 1
+let php_folding = 1
+let php_parent_error_open = 1
+let php_parent_error_close = 1
+let php_baselib = 1
+
 "Some mappin'
 "Easily edit and source vim
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
