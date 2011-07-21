@@ -44,6 +44,8 @@ Bundle 'git://github.com/ciaranm/detectindent.git'
 Bundle 'git://github.com/jonyamo/dbext.vim.git'
 Bundle 'git://github.com/plasticboy/vim-markdown.git'
 Bundle 'git://github.com/xolox/vim-easytags.git'
+Bundle 'git://github.com/vim-scripts/Source-Explorer-srcexpl.vim.git'
+Bundle 'git://github.com/vim-scripts/taglist.vim.git'
 
 
 "Vim Script bundles
