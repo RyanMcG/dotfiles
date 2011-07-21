@@ -126,7 +126,7 @@ set hidden
 set history=1000
 set undolevels=1000
 let loaded_matchparen = 1 "Slows moving around down if on
-set showmatch 
+"set showmatch 
 
 "Foldiness
 set foldenable
@@ -149,6 +149,12 @@ nmap <silent> <C-h> <C-w>h
 "Only works with minibufexplorer
 "let g:miniBufExplMapWindowNavVim = 1
 "let g:miniBufExplMapCTabSwitchBufs = 1
+
+"Configure EasyTag
+"let g:easytags_auto_update = 0
+"let g:easytags_autorecurse = 1
+let g:easytags_on_cursorhold = 0 "Turns auto everything off
+let g:easytags_dynamic_files = 1
 
 "Some mappin'
 "Easily edit and source vim
