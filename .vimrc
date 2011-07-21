@@ -30,22 +30,21 @@ Bundle 'git://github.com/gmarik/vundle'
 "Git bundles
 Bundle 'git://github.com/vim-scripts/The-NERD-tree'
 Bundle 'git://github.com/vim-scripts/The-NERD-Commenter'
-Bundle 'git://github.com/vim-scripts/YankRing.vim'
+"Bundle 'git://github.com/vim-scripts/YankRing.vim'
 Bundle 'git://github.com/vim-scripts/JavaImp.vim--Lee'
 
 Bundle 'git://github.com/tpope/vim-fugitive'
 Bundle 'git://github.com/majutsushi/tagbar'
 Bundle 'git://github.com/msanders/snipmate.vim'
-Bundle 'git://github.com/slack/vim-bufexplorer'
+"Bundle 'git://github.com/slack/vim-bufexplorer'
 "Bundle 'git://github.com/fholgado/minibufexpl.vim'
 Bundle 'git://github.com/VictorDenisov/javacomplete'
 Bundle 'git://github.com/wincent/Command-T'
 Bundle 'git://github.com/ciaranm/detectindent.git'
-Bundle 'git://github.com/jonyamo/dbext.vim.git'
+"Bundle 'git://github.com/jonyamo/dbext.vim.git'
 Bundle 'git://github.com/plasticboy/vim-markdown.git'
 Bundle 'git://github.com/xolox/vim-easytags.git'
 Bundle 'git://github.com/vim-scripts/Source-Explorer-srcexpl.vim.git'
-Bundle 'git://github.com/vim-scripts/taglist.vim.git'
 
 
 "Vim Script bundles
