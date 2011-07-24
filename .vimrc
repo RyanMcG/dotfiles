@@ -185,6 +185,9 @@ autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:las
 "Easily edit and source vim
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
+"I just wanted this to be easier
+nnoremap <silent> <leader>] $
+nnoremap <silent> <leader>[ 0
 "Get rid of highlighting after search with space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 "Forget sudo? Here ya go!
@@ -206,7 +209,7 @@ let g:tex_flavor = "latex"
 "
 
 "Show and Trim Spaced Function
-function ShowSpaces(...)
+function! ShowSpaces(...)
   let @/='\v(\s+$)|( +\ze\t)'
   let oldhlsearch=&hlsearch
   if !a:0
@@ -217,14 +220,14 @@ function ShowSpaces(...)
   return oldhlsearch
 endfunction
 
-function TrimSpaces() range
+function! TrimSpaces() range
   let oldhlsearch=ShowSpaces(1)
   execute a:firstline.",".a:lastline."substitute ///gec"
   let &hlsearch=oldhlsearch
 endfunction
 
-command -bar -nargs=? ShowSpaces call ShowSpaces(<args>)
-command -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
+command! -bar -nargs=? ShowSpaces call ShowSpaces(<args>)
+command! -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
 nnoremap <silent> <leader>ss     :ShowSpaces 1<CR>
 nnoremap <silent> <leader>ts  m`:TrimSpaces<CR>``
 vnoremap <silent> <leader>ts   :TrimSpaces<CR>
