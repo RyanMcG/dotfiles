@@ -127,6 +127,7 @@ set number
 set hidden
 set history=1000
 set undolevels=1000
+set scrolloff=6
 let loaded_matchparen = 1 "Slows moving around down if on
 "set showmatch 
 
