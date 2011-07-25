@@ -2,7 +2,7 @@
 #---- Autostart regardless of WM ----#
 
 nitrogen --restore &    #Restores wallpaper
-#xmodmap ~/.Xmodmap &
+xmodmap ~/.Xmodmap &
 xset m 5 10 &
 xset b off &
 unclutter -idle 2 &

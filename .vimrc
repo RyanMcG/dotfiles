@@ -145,6 +145,7 @@ nmap <silent> <leader>di :DetectIndent<CR>
 "Easier tabbing
 nnoremap <silent> <Tab> :bn<CR>
 nnoremap <silent> <S-Tab> :bp<CR>
+"Easier window movement
 nmap <silent> <C-k> <C-w>k
 nmap <silent> <C-j> <C-w>j
 nmap <silent> <C-l> <C-w>l
@@ -189,11 +190,16 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 "I just wanted this to be easier
 nnoremap <silent> <leader>] $
 nnoremap <silent> <leader>[ 0
+
+imap <silent> <C-q> <Esc>
+imap ;; <Esc>
+
 "Get rid of highlighting after search with space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 "Forget sudo? Here ya go!
 cmap w!! w !sudo tee % >/dev/null
 set pastetoggle=<F12>
+
 
 "Set our colorscheme
 colorscheme elflord
