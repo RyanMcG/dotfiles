@@ -13,6 +13,7 @@ export HISTCONTROL=ignoredups
 # ... and ignore same sucessive entries.
 export HISTCONTROL=ignoreboth
 export EDITOR="vim"
+export EDITOR=$EDITOR
 export TRANSMISSION_HOME=$HOME/.config/transmission-daemon
 export PATH=$PATH:/usr/share/eclipse/:/opt/maven/bin/:/opt/android-sdk/platform-tools/:$HOME/bin/:$HOME/bin/node/bin/
 export CLASSPATH=.:src/:bin/
@@ -59,8 +60,12 @@ P_COLOR=$FBLK$BWHT
 if [ -f ~/.bash_prompt_color ]; then
 	. ~/.bash_prompt_color
 fi
+
+parse_git_branch() {
+	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
+}
 	
-PS1="$P_COLOR${debian_chroot:+($debian_chroot)}\u@\h:$RS$HC\w$RS
+PS1="$P_COLOR$HC$RS$P_COLOR${debian_chroot:+($debian_chroot)}\u@\h:$RS$HC\w$RS$FGRN$HC\$(parse_git_branch)$RS
 $P_COLOR$HC\$$RS "
 
 unset color_prompt force_color_prompt
