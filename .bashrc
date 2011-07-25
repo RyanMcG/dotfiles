@@ -62,10 +62,13 @@ if [ -f ~/.bash_prompt_color ]; then
 fi
 
 parse_git_branch() {
-	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
+	#branch or ...
+	#git name-rev 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
+	#name-rev is better
+	git name-rev HEAD 2> /dev/null | awk "{ print \$2 }"
 }
 	
-PS1="$P_COLOR$HC$RS$P_COLOR${debian_chroot:+($debian_chroot)}\u@\h:$RS$HC\w$RS$FGRN$HC\$(parse_git_branch)$RS
+PS1="$P_COLOR$HC$RS$P_COLOR${debian_chroot:+($debian_chroot)}\u@\h:$RS$HC\w$RS $FGRN$HC\$(parse_git_branch)$RS
 $P_COLOR$HC\$$RS "
 
 unset color_prompt force_color_prompt
