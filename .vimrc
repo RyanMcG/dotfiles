@@ -191,9 +191,6 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 nnoremap <silent> <leader>] $
 nnoremap <silent> <leader>[ 0
 
-imap <silent> <C-q> <Esc>
-imap ;; <Esc>
-
 "Get rid of highlighting after search with space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 "Forget sudo? Here ya go!
