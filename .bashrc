@@ -67,6 +67,10 @@ parse_git_branch() {
 		if [[ $(pwd) != $HOME/mnt/* ]]; then
 			timeout 1 git name-rev HEAD 2> /dev/null | awk "{ print \$2 }"
 		fi
+	else
+		if [[ $(pwd) != $HOME/mnt/* ]]; then
+			git name-rev HEAD 2> /dev/null | awk "{ print \$2 }"
+		fi
 	fi
 }
 	
