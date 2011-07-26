@@ -12,7 +12,7 @@ own_window_hints undecorate,sticky,skip_taskbar,skip_pager
 draw_borders no
 
 #shades
-draw_shades no
+draw_shades yes
 
 #position
 gap_x 2
