@@ -177,6 +177,9 @@ let php_parent_error_close = 1
 let php_parent_error_open = 1
 "let php_baselib = 1
 
+"Configure Eclim
+let g:EclimXmlValidate = 0
+
 " Don't screw up folds when inserting text that might affect them, until
 " leaving insert mode. Foldmethod is local to the window. Protect against
 " screwing up folding when switching between windows.

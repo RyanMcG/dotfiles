@@ -19,7 +19,8 @@ export PATH=$PATH:/usr/share/eclipse/:/opt/maven/bin/:/opt/android-sdk/platform-
 export CLASSPATH=.:src/:bin/
 
 #Autossh fun
-export AUTOSSH_PORT=29011
+export MY_AUTOSSH_PORT=29011
+export MY_AUTOSSH_PORT=$(expr $MY_AUTOSSH_PORT + $(pgrep -u $USER -x autossh | wc -l))
 
 unset HISTSIZE HISTFILESIZE
 export HISTSIZE=20000

@@ -1,209 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu>
-	<menu id="root-menu" label="OpenBox 3">
-		<menu id="client-list-menu"/>
-		<separator/>
-		<item label="Terminal">
-			<action name="Execute">
-				<execute>
-					urxvtcd
-				</execute>
-			</action>
-		</item>
-		<item label="File Manager">
-			<action name="Execute">
-				<execute>
-					thunar
-				</execute>
-			</action>
-		</item>
-		<separator/>
-		<menu id="2" label="Editors">
-			<item label="Vim">
-				<action name="Execute">
-					<execute>
-						urxvtcd -e vim
-					</execute>
-				</action>
-			</item>
-			<item label="Mousepad">
-				<action name="Execute">
-					<execute>
-						mousepad
-					</execute>
-				</action>
-			</item>
-			<item label="Nano">
-				<action name="Execute">
-					<execute>
-						urxvtcd -e nano
-					</execute>
-				</action>
-			</item>
-		</menu>
-		<menu id="5" label="Internet">
-                        <item label="Chromium">
-				<action name="Execute">
-					<execute>
-						chromium
-					</execute>
-				</action>
-			</item>
-			<item label="Firefox">
-				<action name="Execute">
-					<execute>
-						firefox
-					</execute>
-				</action>
-			</item>
-			<item label="Pidgin">
-				<action name="Execute">
-					<execute>
-						pidgin
-					</execute>
-				</action>
-			</item>
-			<item label="Skype">
-				<action name="Execute">
-					<execute>
-						skype
-					</execute>
-				</action>
-			</item>
-			<item label="wicd">
-				<action name="Execute">
-					<execute>
-						urxvtcd -e wicd-curses
-					</execute>
-				</action>
-			</item>
-			<item label="Dropbox">
-				<action name="Execute">
-					<execute>
-						dropboxd
-					</execute>
-				</action>
-			</item>
-		</menu>
-		<menu id="7" label="Multimedia">
-			<item label="ALSA mixer">
-				<action name="Execute">
-					<execute>
-						urxvtcd -e alsamixer
-					</execute>
-				</action>
-			</item>
-			<item label="ncmpcpp">
-				<action name="Execute">
-					<execute>
-						urxvtcd -e ncmpcpp
-					</execute>
-				</action>
-			</item>
-			<item label="Sonata">
-				<action name="Execute">
-					<execute>
-						sonata
-					</execute>
-				</action>
-			</item>
-			<item label="CD Juicer">
-				<action name="Execute">
-					<execute>
-						sound-juicer
-					</execute>
-				</action>
-			</item>
-			<item label="Sound Recorder">
-				<action name="Execute">
-					<execute>
-						gnome-sound-recorder
-					</execute>
-				</action>
-			</item>
-			<item label="Volume Control">
-				<action name="Execute">
-					<execute>
-						gnome-volume-control
-					</execute>
-				</action>
-			</item>
-		</menu>
-		<menu id="root-menu-335433" label="Office">
-			<item label="Open Office">
-				<action name="Execute">
-					<execute>
-						soffice
-					</execute>
-				</action>
-			</item>
-			<item label="PDF Reader">
-				<action name="Execute">
-					<execute>
-						evince
-					</execute>
-				</action>
-			</item>
-		</menu>
-		<menu id="37" label="System">
-			<menu id="36" label="Settings">
-				<item label="Appearance Editor">
-					<action name="Execute">
-						<execute>
-							lxappearance
-						</execute>
-					</action>
-				</item>
-				<item label="Openbox Menu Editor">
-					<action name="Execute">
-						<execute>
-							command
-						</execute>
-					</action>
-				</item>
-				<item label="Openbox Configuration Manager">
-					<action name="Execute">
-						<execute>
-							obconf
-						</execute>
-					</action>
-				</item>
-				<item label="Xvidtune">
-					<action name="Execute">
-						<execute>
-							xvidtune
-						</execute>
-					</action>
-				</item>
-			</menu>
-			<item label="Bulk Rename">
-				<action name="Execute">
-					<execute>
-						/usr/lib/ThunarBulkRename
-					</execute>
-				</action>
-			</item>
-			<item label="pstree">
-				<action name="Execute">
-					<execute>
-						urxvtcd -e pstree.x11
-					</execute>
-				</action>
-			</item>
-			<item label="hTop">
-				<action name="Execute">
-					<execute>
-						urxvtcd -e htop
-					</execute>
-				</action>
-			</item>
-		</menu>
-		<separator/>
-		<item label="Reconfigure">
-			<action name="Reconfigure"/>
-		</item>
-		<item label="Exit">
-			<action name="Exit"/>
-		</item>
-	</menu>
+  <menu id="root-menu" label="OpenBox 3">
+    <menu id="client-list-menu"/>
+    <separator/>
+    <item label="Terminal">
+      <action name="Execute">
+        <execute>
+          urxvtcd
+        </execute>
+      </action>
+    </item>
+    <item label="File Manager">
+      <action name="Execute">
+        <execute>
+          pcmanfm
+        </execute>
+      </action>
+    </item>
+    <separator/>
+    <menu id="2" label="Editors">
+      <item label="Vim">
+        <action name="Execute">
+          <execute>
+            urxvtcd -e vim
+          </execute>
+        </action>
+      </item>
+      <item label="Mousepad">
+        <action name="Execute">
+          <execute>
+            mousepad
+          </execute>
+        </action>
+      </item>
+      <item label="Nano">
+        <action name="Execute">
+          <execute>
+            urxvtcd -e nano
+          </execute>
+        </action>
+      </item>
+    </menu>
+    <menu id="5" label="Internet">
+      <item label="Chromium">
+        <action name="Execute">
+          <execute>
+            chromium
+          </execute>
+        </action>
+      </item>
+      <item label="Firefox">
+        <action name="Execute">
+          <execute>
+            firefox
+          </execute>
+        </action>
+      </item>
+      <item label="Pidgin">
+        <action name="Execute">
+          <execute>
+            pidgin
+          </execute>
+        </action>
+      </item>
+      <item label="Skype">
+        <action name="Execute">
+          <execute>
+            skype
+          </execute>
+        </action>
+      </item>
+      <item label="wicd">
+        <action name="Execute">
+          <execute>
+            urxvtcd -e wicd-curses
+          </execute>
+        </action>
+      </item>
+      <item label="Dropbox">
+        <action name="Execute">
+          <execute>
+            dropboxd
+          </execute>
+        </action>
+      </item>
+    </menu>
+    <menu id="7" label="Multimedia">
+      <item label="ALSA mixer">
+        <action name="Execute">
+          <execute>
+            urxvtcd -e alsamixer
+          </execute>
+        </action>
+      </item>
+      <item label="ncmpcpp">
+        <action name="Execute">
+          <execute>
+            urxvtcd -e ncmpcpp
+          </execute>
+        </action>
+      </item>
+      <item label="Sonata">
+        <action name="Execute">
+          <execute>
+            sonata
+          </execute>
+        </action>
+      </item>
+      <item label="CD Juicer">
+        <action name="Execute">
+          <execute>
+            sound-juicer
+          </execute>
+        </action>
+      </item>
+      <item label="Sound Recorder">
+        <action name="Execute">
+          <execute>
+            gnome-sound-recorder
+          </execute>
+        </action>
+      </item>
+      <item label="Volume Control">
+        <action name="Execute">
+          <execute>
+            gnome-volume-control
+          </execute>
+        </action>
+      </item>
+    </menu>
+    <menu id="root-menu-335433" label="Office">
+      <item label="Open Office">
+        <action name="Execute">
+          <execute>
+            soffice
+          </execute>
+        </action>
+      </item>
+      <item label="PDF Reader">
+        <action name="Execute">
+          <execute>
+            evince
+          </execute>
+        </action>
+      </item>
+    </menu>
+    <menu id="37" label="System">
+      <menu id="36" label="Settings">
+        <item label="Appearance Editor">
+          <action name="Execute">
+            <execute>
+              lxappearance
+            </execute>
+          </action>
+        </item>
+        <item label="Openbox Menu Editor">
+          <action name="Execute">
+            <execute>
+              command
+            </execute>
+          </action>
+        </item>
+        <item label="Openbox Configuration Manager">
+          <action name="Execute">
+            <execute>
+              obconf
+            </execute>
+          </action>
+        </item>
+        <item label="Xvidtune">
+          <action name="Execute">
+            <execute>
+              xvidtune
+            </execute>
+          </action>
+        </item>
+      </menu>
+      <item label="pstree">
+        <action name="Execute">
+          <execute>
+            urxvtcd -e pstree.x11
+          </execute>
+        </action>
+      </item>
+      <item label="hTop">
+        <action name="Execute">
+          <execute>
+            urxvtcd -e htop
+          </execute>
+        </action>
+      </item>
+    </menu>
+    <separator/>
+    <item label="Reconfigure">
+      <action name="Reconfigure"/>
+    </item>
+    <item label="Exit">
+      <action name="Exit"/>
+    </item>
+  </menu>
 </openbox_menu>
