@@ -43,7 +43,7 @@ alias ftp="tnftp"
 alias rm="rm -i"
 alias rmf="rm -f"
 alias cdiff="colordiff"
-alias fif="find -type f -print0 | xargs -0 grep" 
+alias fif="find -type f -print0 | xargs -0 grep -n" 
 
 # Custom Functions
 wiki() {
