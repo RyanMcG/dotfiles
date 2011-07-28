@@ -46,6 +46,7 @@ Bundle 'git://github.com/plasticboy/vim-markdown.git'
 Bundle 'git://github.com/xolox/vim-easytags.git'
 "Bundle 'git://github.com/vim-scripts/Source-Explorer-srcexpl.vim.git'
 Bundle 'git://github.com/vim-scripts/taglist.vim.git'
+Bundle 'git://github.com/cburroughs/pep8.py.git'
 
 
 "Vim Script bundles
@@ -176,6 +177,9 @@ let php_folding = 2
 let php_parent_error_close = 1
 let php_parent_error_open = 1
 "let php_baselib = 1
+
+"Python
+let python_highlight_all = 1
 
 "Configure Eclim
 let g:EclimXmlValidate = 0

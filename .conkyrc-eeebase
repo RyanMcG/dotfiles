@@ -1,7 +1,7 @@
 #avoid flicker
 double_buffer yes
 #own window to run simultanious 2 or more conkys
-own_window  yes
+own_window  no
 own_window_transparent yes
 #own_window_argb_visual yes
 #own_window_argb_value 80%
@@ -16,7 +16,7 @@ draw_shades yes
 
 #position
 gap_x 2
-gap_y 2
+gap_y 1
 alignment top_left
 
 #behaviour
@@ -32,11 +32,11 @@ use_xft yes
 xftfont Dina:pixelsize=16:antialias=false
 #xftfont FreeSerif:charwidth=12:rgba=vbgr:spacing=charcell:pixelsize=12
 use_spacer left
-max_text_width 0
+#max_text_width 999999
 
 #mpd
 mpd_host localhost
 mpd_port 6600
 
 TEXT
-${color0}${font OpenLogos:pixelsize=17}A${font} ${voffset -5}${time %m/%d/%Y %H:%M:%S} |CPU1:${cpugraph cpu1 10,48} 2:${cpugraph cpu2 10,48} RAM:${memgraph 10,30} |/${fs_bar 8,40 /} /home${fs_bar 8,40 /home} |DN:${downspeedgraph 10,40} UP:${upspeedgraph 10,40} | ${mpd_smart}
+${color0}${font OpenLogos:pixelsize=17}A${font} ${voffset -4}${time %m/%d/%Y %H:%M:%S} |CPU1:${cpugraph cpu1 13,48} 2:${cpugraph cpu2 13,48} RAM:${memgraph 13,30} |/${fs_bar 13,40 /} /home${fs_bar 13,40 /home} |DN:${downspeedgraph 13,40} UP:${upspeedgraph 13,40} | ${mpd_smart}
