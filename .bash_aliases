@@ -44,6 +44,8 @@ alias rm="rm -i"
 alias rmf="rm -f"
 alias cdiff="colordiff"
 alias fif="find -type f -print0 | xargs -0 grep -n" 
+alias intersection="grep -Fx -f"
+alias in2not1="grep -Fxv -f"
 
 # Custom Functions
 wiki() {
