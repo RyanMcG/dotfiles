@@ -50,7 +50,6 @@ Bundle 'git://github.com/cburroughs/pep8.py.git'
 
 
 "Vim Script bundles
-Bundle 'project.tar.gz'
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
