@@ -69,11 +69,13 @@ parse_git_branch() {
 	if [ `which timeout` ]; then
 		#if [ ! `fuser -s -M $(pwd) &> /dev/null` ]; then
 		if [[ $(pwd) != $HOME/mnt/* ]]; then
-			timeout 1 git name-rev HEAD 2> /dev/null | awk "{ print \$2 }"
+			#timeout 1 git name-rev HEAD 2> /dev/null | awk "{ print \$2 }"
+			timeout 1 git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 		fi
 	else
 		if [[ $(pwd) != $HOME/mnt/* ]]; then
-			git name-rev HEAD 2> /dev/null | awk "{ print \$2 }"
+			#git name-rev HEAD 2> /dev/null | awk "{ print \$2 }"
+			git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 		fi
 	fi
 }
