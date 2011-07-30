@@ -7,9 +7,6 @@
 [merge]
 	tool = vimdiff
 
-[status]
-	showUntrackedFiles = no
-
 [color]
 	diff = auto
 	branch = auto

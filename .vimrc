@@ -47,6 +47,7 @@ Bundle 'git://github.com/xolox/vim-easytags.git'
 "Bundle 'git://github.com/vim-scripts/Source-Explorer-srcexpl.vim.git'
 Bundle 'git://github.com/vim-scripts/taglist.vim.git'
 Bundle 'git://github.com/cburroughs/pep8.py.git'
+Bundle 'git://github.com/mattn/zencoding-vim.git'
 
 
 "Vim Script bundles
