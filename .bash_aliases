@@ -7,6 +7,7 @@ alias cpro="cd ~/cur/rent/CSE\ 560/project"
 
 #SSHFS/RSYNC
 alias sshfs="sshfs -o reconnect -o allow_other -o follow_symlinks"
+alias asshfs="sshfs -o ssh_command='autossh -M $MY_AUTOSSH_PORT' -o allow_other -o follow_symlinks"
 alias assh="autossh -M $MY_AUTOSSH_PORT"
 alias rsync-vonnie-pull="rsync -azP -e 'ssh' ryanm_vonnie@ssh.phx.nearlyfreespeech.net:wordpress/wp-content/themes/vonnie/ ~/cur/web/vonnie/themes/vonnie"
 alias rsync-wow-put="rsync -azP --delete -e 'ssh' /home/roin/cur/work/StudioCT/Drupaly/themes/wow/ wow:/var/www/vhosts/wow/themes/wow --exclude 'tags' --exclude '.git*' --exclude '*.sass*' --exclude '*.swp' --exclude '*.scss' --exclude 'uploaded' --exclude 'NOTES.txt' --exclude 'demo' --exclude 'mmcschol_drp11.sql' --exclude 'wowpics*'" 
