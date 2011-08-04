@@ -22,6 +22,8 @@
 	l = log
 	rl = reflog
 	rs = remote show
+	p = pull
+	pr = pull --rebase
 
 [branch]
 	autosetupmerge = always
