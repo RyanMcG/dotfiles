@@ -43,11 +43,12 @@ Bundle 'git://github.com/wincent/Command-T'
 Bundle 'git://github.com/ciaranm/detectindent.git'
 "Bundle 'git://github.com/jonyamo/dbext.vim.git'
 Bundle 'git://github.com/plasticboy/vim-markdown.git'
-Bundle 'git://github.com/xolox/vim-easytags.git'
+"Bundle 'git://github.com/xolox/vim-easytags.git' "Removed because it's slow
 "Bundle 'git://github.com/vim-scripts/Source-Explorer-srcexpl.vim.git'
 Bundle 'git://github.com/vim-scripts/taglist.vim.git'
 Bundle 'git://github.com/cburroughs/pep8.py.git'
 Bundle 'git://github.com/mattn/zencoding-vim.git'
+Bundle 'git://github.com/xolox/vim-session.git'
 
 
 "Vim Script bundles
@@ -158,8 +159,8 @@ nmap <silent> <C-h> <C-w>h
 "Configure EasyTag
 "let g:easytags_auto_update = 0
 "let g:easytags_autorecurse = 1
-let g:easytags_on_cursorhold = 0 "Turns auto everything off
-let g:easytags_dynamic_files = 1
+"let g:easytags_on_cursorhold = 0 "Turns auto everything off
+"let g:easytags_dynamic_files = 1
 
 "Configure Tlist
 let Tlist_Use_Right_Window = 1
