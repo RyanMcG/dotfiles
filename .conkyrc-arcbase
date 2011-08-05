@@ -12,11 +12,11 @@ own_window_hints undecorate,sticky,skip_taskbar,skip_pager
 draw_borders no
 
 #shades
-draw_shades no
+draw_shades yes
 
 #position
 gap_x 2
-gap_y 2
+gap_y 1
 alignment top_left
 
 #behaviour
@@ -29,10 +29,9 @@ own_window_colour 000000
 
 #font
 use_xft yes
+#xftfont Dina:pixelsize=16:antialias=false
 xftfont FreeSerif:charwidth=12:rgba=vbgr:spacing=charcell:pixelsize=12
 use_spacer left
-max_text_width 1000
-text_buffer_size 1024
 
 #mpd
 mpd_host localhost

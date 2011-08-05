@@ -1,7 +1,7 @@
 #avoid flicker
 double_buffer yes
 #own window to run simultanious 2 or more conkys
-own_window  no
+own_window  yes
 own_window_transparent yes
 #own_window_argb_visual yes
 #own_window_argb_value 80%
@@ -32,7 +32,6 @@ use_xft yes
 xftfont Dina:pixelsize=16:antialias=false
 #xftfont FreeSerif:charwidth=12:rgba=vbgr:spacing=charcell:pixelsize=12
 use_spacer left
-#max_text_width 999999
 
 #mpd
 mpd_host localhost
