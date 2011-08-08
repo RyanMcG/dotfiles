@@ -67,7 +67,7 @@ fi
 
 parse_git_branch() {
 	if [[ $(pwd) != $HOME/mnt/* ]]; then
-		if [ `which __git_ps1` ]; then
+		if type __git_ps1 >/dev/null 2>&1; then
 			__git_ps1 " %s"
 		else
 			git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'

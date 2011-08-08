@@ -34,7 +34,7 @@ alias vim-todo="vim ~/Documents/Lists/todo.list"
 alias sudo="sudo "
 alias g="git"
 #Make autocompleteion work for g alias too
-if [ `which _git` ]; then
+if type __git_ps1 >/dev/null 2>&1; then
 	complete -o default -o nospace -F _git g
 fi
 alias h="hg"
