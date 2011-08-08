@@ -67,12 +67,14 @@ fi
 
 parse_git_branch() {
 	if [[ $(pwd) != $HOME/mnt/* ]]; then
-		__git_ps1 " (%s)"
+		if [ `which __git_ps1` ]; then
+			__git_ps1 " %s"
+		else
+			git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+		fi
 	fi
 }
 	
-#PS1="$P_COLOR$HC$RS$P_COLOR${debian_chroot:+($debian_chroot)}\u@\h:$RS$HC\w$RS
-#$P_COLOR$HC\$$RS "
 PS1="$P_COLOR$HC$RS$P_COLOR${debian_chroot:+($debian_chroot)}\u@\h:$RS$HC\w$RS $FGRN$HC\$(parse_git_branch)$RS
 $P_COLOR$HC\$$RS "
 
