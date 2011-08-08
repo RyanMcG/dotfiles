@@ -3,7 +3,7 @@
 # for examples
 
 #autojump says to
-source /etc/profile
+#source /etc/profile
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -75,7 +75,7 @@ parse_git_branch() {
 	fi
 }
 	
-PS1="$P_COLOR$HC$RS$P_COLOR${debian_chroot:+($debian_chroot)}\u@\h:$RS$HC\w$RS $FGRN$HC\$(parse_git_branch)$RS
+PS1="$P_COLOR$HC$RS$P_COLOR${debian_chroot:+($debian_chroot)}\u@\h:$RS$HC\w$RS$FGRN$HC\$(parse_git_branch)$RS
 $P_COLOR$HC\$$RS "
 
 unset color_prompt force_color_prompt
@@ -116,6 +116,6 @@ alias la='ls -A'
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
-if [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-fi
+#if [ -f /etc/bash_completion ]; then
+    #. /etc/bash_completion
+#fi
