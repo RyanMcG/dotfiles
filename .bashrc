@@ -3,7 +3,7 @@
 # for examples
 
 #autojump says to
-#source /etc/profile
+source /etc/profile
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
