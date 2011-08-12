@@ -68,14 +68,14 @@ fi
 parse_git_branch() {
 	if [[ $(pwd) != $HOME/mnt/* ]]; then
 		if type __git_ps1 >/dev/null 2>&1; then
-			__git_ps1 " %s"
+			__git_ps1 "%s"
 		else
 			git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 		fi
 	fi
 }
 	
-PS1="$P_COLOR$HC$RS$P_COLOR${debian_chroot:+($debian_chroot)}\u@\h:$RS$HC\w$RS$FGRN$HC\$(parse_git_branch)$RS
+PS1="$P_COLOR$HC$RS$P_COLOR${debian_chroot:+($debian_chroot)}\u@\h:$RS$HC\w$RS $FGRN$HC\$(parse_git_branch)$RS
 $P_COLOR$HC\$$RS "
 
 unset color_prompt force_color_prompt
