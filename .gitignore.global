@@ -17,4 +17,5 @@ javadoc*
 .classpath
 .checkstyle
 .fbprefs
+.netrwhist
 notes.txt

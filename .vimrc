@@ -30,25 +30,37 @@ Bundle 'git://github.com/gmarik/vundle'
 "Git bundles
 Bundle 'git://github.com/vim-scripts/The-NERD-tree'
 Bundle 'git://github.com/vim-scripts/The-NERD-Commenter'
-"Bundle 'git://github.com/vim-scripts/YankRing.vim'
-Bundle 'git://github.com/vim-scripts/JavaImp.vim--Lee'
-
-Bundle 'git://github.com/tpope/vim-fugitive'
-"Bundle 'git://github.com/majutsushi/tagbar'
-Bundle 'git://github.com/msanders/snipmate.vim'
-"Bundle 'git://github.com/slack/vim-bufexplorer'
-"Bundle 'git://github.com/fholgado/minibufexpl.vim'
-Bundle 'git://github.com/VictorDenisov/javacomplete'
-Bundle 'git://github.com/wincent/Command-T'
+Bundle 'git://github.com/majutsushi/tagbar'
 Bundle 'git://github.com/ciaranm/detectindent.git'
-"Bundle 'git://github.com/jonyamo/dbext.vim.git'
+Bundle 'git://github.com/msanders/snipmate.vim'
+Bundle 'git://github.com/tpope/vim-fugitive'
+Bundle 'git://github.com/wincent/Command-T'
+Bundle 'git://github.com/xolox/vim-session.git'
+Bundle 'git://github.com/fholgado/minibufexpl.vim'
+"Testing this one
+Bundle 'git://github.com/ervandew/supertab.git'
+Bundle 'git://github.com/vim-scripts/Color-Sampler-Pack.git'
+
+"Languge specific
+"Java
+Bundle 'git://github.com/VictorDenisov/javacomplete'
+Bundle 'git://github.com/vim-scripts/JavaImp.vim--Lee'
+"Markdown
 Bundle 'git://github.com/plasticboy/vim-markdown.git'
+"Python
+Bundle 'git://github.com/cburroughs/pep8.py.git'
+"HTML/CSS
+Bundle 'git://github.com/mattn/zencoding-vim.git'
+"Javascript
+Bundle 'git://github.com/pangloss/vim-javascript.git'
+
+"Removed
+"Bundle 'git://github.com/joestelmach/javaScriptLint.vim.git'
+"Bundle 'git://github.com/vim-scripts/YankRing.vim'
+"Bundle 'git://github.com/slack/vim-bufexplorer'
+"Bundle 'git://github.com/jonyamo/dbext.vim.git'
 "Bundle 'git://github.com/xolox/vim-easytags.git' "Removed because it's slow
 "Bundle 'git://github.com/vim-scripts/Source-Explorer-srcexpl.vim.git'
-Bundle 'git://github.com/vim-scripts/taglist.vim.git'
-Bundle 'git://github.com/cburroughs/pep8.py.git'
-Bundle 'git://github.com/mattn/zencoding-vim.git'
-Bundle 'git://github.com/xolox/vim-session.git'
 
 
 "Vim Script bundles
@@ -58,7 +70,6 @@ if has("vms")
 else
   set backup		" keep a backup file
 endif
-set history=500		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
@@ -118,7 +129,6 @@ endif
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-set number
 
 "MY CUSTOM TABING
 set wrap
@@ -126,11 +136,11 @@ set linebreak
 
 "Some fun stuff which makes life easier
 set number
-set hidden
+"set hidden
 set history=1000
 set undolevels=1000
 set scrolloff=6
-let loaded_matchparen = 1 "Slows moving around down if on
+"let loaded_matchparen = 1 "Slows moving around down if on
 "set showmatch 
 
 "Foldiness
@@ -140,13 +150,12 @@ set foldenable
 
 "Tagbar Fun
 nnoremap <silent> <F7> :NERDTreeToggle<CR>
-"nmap <silent> <leader>tb :TagbarToggle<CR>
-nnoremap <silent> <F8> :TlistToggle<CR>
+nnoremap <silent> <F8> :TagbarToggle<CR>
 nmap <silent> <leader>di :DetectIndent<CR>
 
 "Easier tabbing
-nnoremap <silent> <Tab> :bn<CR>
-nnoremap <silent> <S-Tab> :bp<CR>
+"nnoremap <silent> <Tab> :bn<CR>
+"nnoremap <silent> <S-Tab> :bp<CR>
 "Easier window movement
 nmap <silent> <C-k> <C-w>k
 nmap <silent> <C-j> <C-w>j
@@ -163,13 +172,13 @@ nmap <silent> <C-h> <C-w>h
 "let g:easytags_dynamic_files = 1
 
 "Configure Tlist
-let Tlist_Use_Right_Window = 1
-let Tlist_Max_Submenu_Items = 18
-let Tlist_Highlight_Tag_On_BufEnter = 0
-let Tlist_Enable_Fold_Column = 0
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_Auto_Highlight_Tag = 0
-let Tlist_WinWidth = 22
+"let Tlist_Use_Right_Window = 1
+"let Tlist_Max_Submenu_Items = 18
+"let Tlist_Highlight_Tag_On_BufEnter = 0
+"let Tlist_Enable_Fold_Column = 0
+"let Tlist_Exit_OnlyWindow = 1
+"let Tlist_Auto_Highlight_Tag = 0
+"let Tlist_WinWidth = 22
 
 "Configure language specifc options
 "PHP
@@ -181,6 +190,12 @@ let php_parent_error_open = 1
 
 "Python
 let python_highlight_all = 1
+
+"Ruby
+let ruby_operators = 1
+let ruby_space_errors = 1
+let ruby_fold = 1
+let ruby_no_comment_fold = 1
 
 "Configure Eclim
 let g:EclimXmlValidate = 0
@@ -195,10 +210,7 @@ autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:las
 "Easily edit and source vim
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
-"I just wanted this to be easier
-nnoremap <silent> <leader>] $
-nnoremap <silent> <leader>[ 0
-
+"
 "Get rid of highlighting after search with space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 "Forget sudo? Here ya go!
