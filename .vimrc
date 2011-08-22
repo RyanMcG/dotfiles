@@ -40,6 +40,7 @@ Bundle 'git://github.com/fholgado/minibufexpl.vim'
 "Testing this one
 Bundle 'git://github.com/ervandew/supertab.git'
 Bundle 'git://github.com/vim-scripts/Color-Sampler-Pack.git'
+Bundle 'git://github.com/scrooloose/syntastic.git'
 
 "Languge specific
 "Java
