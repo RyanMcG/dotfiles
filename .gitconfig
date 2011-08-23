@@ -19,6 +19,7 @@
 	co = checkout
 	d = diff
 	s = status
+	sn = show --name-only
 	l = log
 	rl = reflog
 	rs = remote show
