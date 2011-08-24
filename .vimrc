@@ -137,7 +137,7 @@ set linebreak
 
 "Some fun stuff which makes life easier
 set number
-"set hidden
+set hidden
 set history=1000
 set undolevels=1000
 set scrolloff=6
