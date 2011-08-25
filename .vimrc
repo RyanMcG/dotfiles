@@ -37,10 +37,10 @@ Bundle 'git://github.com/tpope/vim-fugitive'
 Bundle 'git://github.com/wincent/Command-T'
 Bundle 'git://github.com/xolox/vim-session.git'
 Bundle 'git://github.com/fholgado/minibufexpl.vim'
-"Testing this one
 Bundle 'git://github.com/ervandew/supertab.git'
-Bundle 'git://github.com/vim-scripts/Color-Sampler-Pack.git'
 Bundle 'git://github.com/scrooloose/syntastic.git'
+"Testing
+Bundle 'git://github.com/mattn/gist-vim.git'
 
 "Languge specific
 "Java
@@ -153,6 +153,8 @@ set foldenable
 nnoremap <silent> <F7> :NERDTreeToggle<CR>
 nnoremap <silent> <F8> :TagbarToggle<CR>
 nmap <silent> <leader>di :DetectIndent<CR>
+let g:tagbar_foldlevel = 2
+let g:tagbar_width = 30
 
 "Easier tabbing
 "nnoremap <silent> <Tab> :bn<CR>
@@ -223,6 +225,7 @@ set pastetoggle=<F12>
 colorscheme elflord
 
 "Change the way numbers look
+nmap <silent> <leader>hl :highlight LineNr term=NONE ctermfg=grey<CR>
 highlight LineNr term=NONE ctermfg=grey
 
 "latexsuite plugin told me to add this
