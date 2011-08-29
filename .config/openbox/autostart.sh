@@ -6,7 +6,6 @@
 
 tint2 &
 #urxvt -name urxvt-bg -e ncmpcpp &
-volwheel&
 Thunar --daemon &
 conky &
 
