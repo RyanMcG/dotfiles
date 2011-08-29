@@ -1,15 +1,4 @@
-"The necessities
-
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2008 Dec 17
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
+" Ryan McGowan's .vimrc
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
@@ -155,6 +144,9 @@ nnoremap <silent> <F8> :TagbarToggle<CR>
 nmap <silent> <leader>di :DetectIndent<CR>
 let g:tagbar_foldlevel = 2
 let g:tagbar_width = 30
+" Gist
+" let g:gist_clip_command = 'xclip -selection clipboard'
+let g:gist_detect_filetype = 1
 
 "Easier tabbing
 "nnoremap <silent> <Tab> :bn<CR>
@@ -259,3 +251,5 @@ command! -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
 nnoremap <silent> <leader>ss     :ShowSpaces 1<CR>
 nnoremap <silent> <leader>ts  m`:TrimSpaces<CR>``
 vnoremap <silent> <leader>ts   :TrimSpaces<CR>
+
+runtime! ~/.vimrc_private

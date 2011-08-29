@@ -31,3 +31,5 @@
 
 [core]
 	excludesfile = ~/.gitignore.global
+[github]
+	user = RyanMcG
