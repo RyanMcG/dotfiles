@@ -9,7 +9,7 @@ urxvt*geometry: 90x25
 
 urxvt-bg.font: xft:FreeSerif:rgba=vbgr:pixelsize=12
 URxvt*termName: rxvt-unicode
-*background: #060606
+*background: #101010
 *foreground: #f6f6f6
 URxvt*perl-lib: /usr/lib/urxvt/perl/
 URxvt*perl-ext-common: default,matcher

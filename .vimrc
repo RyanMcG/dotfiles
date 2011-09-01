@@ -131,6 +131,12 @@ set hidden
 set history=1000
 set undolevels=1000
 set scrolloff=6
+"Ignore case unless there's a capital
+set ignorecase
+set smartcase
+"Split below and to the right instead of default
+set splitbelow
+set splitright
 "let loaded_matchparen = 1 "Slows moving around down if on
 "set showmatch 
 
@@ -148,6 +154,8 @@ set statusline+=%*
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=1
+let g:syntastic_quiet_warnings=1
+nnoremap <silent> <leader>se :Errors<CR>
 
 "Session 
 "let g:session_autoload='no'
@@ -156,43 +164,34 @@ let g:syntastic_auto_loc_list=1
 "let g:loaded_session=1 "Uncomment to not load session plugin
 
 "Snipmate
+"Supertab
+set completeopt+=longest
+let g:SuperTabContextDefaultCompletionType='context'
+"let g:SuperTabMappingForward = '<C-l>'
+"let g:SuperTabMappingBackward = '<S-C-l>'
+let g:SuperTabLongestEnhanced=1
+let g:SuperTabLongestHighlight=1
 
-"Tagbar Fun
+"NERDTree
 nnoremap <silent> <F7> :NERDTreeToggle<CR>
+
+"Tagbar
 nnoremap <silent> <F8> :TagbarToggle<CR>
-nmap <silent> <leader>di :DetectIndent<CR>
 let g:tagbar_foldlevel = 2
 let g:tagbar_width = 30
-" Gist
-" let g:gist_clip_command = 'xclip -selection clipboard'
-let g:gist_detect_filetype = 1
 
-"Easier tabbing
-"nnoremap <silent> <Tab> :bn<CR>
-"nnoremap <silent> <S-Tab> :bp<CR>
-"Easier window movement
-nmap <silent> <C-k> <C-w>k
-nmap <silent> <C-j> <C-w>j
-nmap <silent> <C-l> <C-w>l
-nmap <silent> <C-h> <C-w>h
-"Only works with minibufexplorer
-"let g:miniBufExplMapWindowNavVim = 1
-"let g:miniBufExplMapCTabSwitchBufs = 1
+"DetectIndent
+nmap <silent> <leader>di :DetectIndent<CR>
+
+"Gist
+let g:gist_clip_command = 'xclip -selection clipboard'
+let g:gist_detect_filetype = 1
 
 "Configure EasyTag
 "let g:easytags_auto_update = 0
 "let g:easytags_autorecurse = 1
 "let g:easytags_on_cursorhold = 0 "Turns auto everything off
 "let g:easytags_dynamic_files = 1
-
-"Configure Tlist
-"let Tlist_Use_Right_Window = 1
-"let Tlist_Max_Submenu_Items = 18
-"let Tlist_Highlight_Tag_On_BufEnter = 0
-"let Tlist_Enable_Fold_Column = 0
-"let Tlist_Exit_OnlyWindow = 1
-"let Tlist_Auto_Highlight_Tag = 0
-"let Tlist_WinWidth = 22
 
 "Configure language specifc options
 "PHP
@@ -224,6 +223,11 @@ autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:las
 "Easily edit and source vim
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
+"Easier window movement
+nmap <silent> <C-k> <C-w>k
+nmap <silent> <C-j> <C-w>j
+nmap <silent> <C-l> <C-w>l
+nmap <silent> <C-h> <C-w>h
 "
 "Get rid of highlighting after search with space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
@@ -236,8 +240,8 @@ set pastetoggle=<F12>
 colorscheme elflord
 
 "Change the way numbers look
-nmap <silent> <leader>hl :highlight LineNr term=NONE ctermfg=grey<CR>
-highlight LineNr term=NONE ctermfg=grey
+nmap <silent> <leader>hl :highlight LineNr term=NONE ctermfg=grey ctermbg=black<CR>
+highlight LineNr term=NONE ctermfg=grey ctermbg=black
 
 "latexsuite plugin told me to add this
 set grepprg=grep\ -nH\ $*
