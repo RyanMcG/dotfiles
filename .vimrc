@@ -28,8 +28,9 @@ Bundle 'git://github.com/xolox/vim-session.git'
 Bundle 'git://github.com/fholgado/minibufexpl.vim'
 Bundle 'git://github.com/ervandew/supertab.git'
 Bundle 'git://github.com/scrooloose/syntastic.git'
-"Testing
 Bundle 'git://github.com/mattn/gist-vim.git'
+"Testing
+Bundle 'git://github.com/scrooloose/snipmate-snippets.git'
 
 "Languge specific
 "Java
@@ -137,6 +138,24 @@ set scrolloff=6
 set foldenable
 "set foldlevel=20
 "set foldmethod=syntax
+
+"Plugin Config
+
+"Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=1
+let g:syntastic_auto_loc_list=1
+
+"Session 
+"let g:session_autoload='no'
+"let g:session_autosave='prompt'
+"let g:session_default_to_last=1
+"let g:loaded_session=1 "Uncomment to not load session plugin
+
+"Snipmate
 
 "Tagbar Fun
 nnoremap <silent> <F7> :NERDTreeToggle<CR>
