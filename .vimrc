@@ -89,6 +89,14 @@ if has("autocmd")
   " Also load indent files, to automatically do language-dependent indenting.
   filetype plugin indent on
 
+  " Don't screw up folds when inserting text that might affect them, until
+  " leaving insert mode. Foldmethod is local to the window. Protect against
+  " screwing up folding when switching between windows.
+  autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
+  autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
+  " Run stastic automatically, even on scp files.
+  "autocmd bufreadpost,bufwritepost * call s:UpdateErrors()
+
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
   au!
@@ -148,6 +156,7 @@ set foldenable
 "Plugin Config
 
 "Syntastic
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -158,6 +167,7 @@ let g:syntastic_quiet_warnings=1
 nnoremap <silent> <leader>se :Errors<CR>
 
 "Session 
+set sessionoptions-=curdir,help,options
 "let g:session_autoload='no'
 "let g:session_autosave='prompt'
 "let g:session_default_to_last=1
@@ -214,11 +224,6 @@ let ruby_no_comment_fold = 1
 "Configure Eclim
 let g:EclimXmlValidate = 0
 
-" Don't screw up folds when inserting text that might affect them, until
-" leaving insert mode. Foldmethod is local to the window. Protect against
-" screwing up folding when switching between windows.
-autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
-autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
 
 "Some mappin'
 "Easily edit and source vim
