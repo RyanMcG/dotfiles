@@ -1,22 +1,18 @@
 " Ryan McGowan's .vimrc
 
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-  finish
-endif
-
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
+" Make sure filetype is off for vundle
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
+set runtimepath+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-"Make vundel manage vundle
+"Make vundle manage vundle
 Bundle 'git://github.com/gmarik/vundle'
 
-"Git bundles
+"My bundles
 Bundle 'git://github.com/vim-scripts/The-NERD-tree'
 Bundle 'git://github.com/vim-scripts/The-NERD-Commenter'
 Bundle 'git://github.com/majutsushi/tagbar'
@@ -53,8 +49,9 @@ Bundle 'git://github.com/pangloss/vim-javascript.git'
 "Bundle 'git://github.com/xolox/vim-easytags.git' "Removed because it's slow
 "Bundle 'git://github.com/vim-scripts/Source-Explorer-srcexpl.vim.git'
 
-
-"Vim Script bundles
+"Make sure my after is really at the end.
+set runtimepath-=~/.vim/after/
+set runtimepath+=~/.vim/after/
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
@@ -65,9 +62,6 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 set backupdir=~/.vimbackups
-
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
-" let &guioptions = substitute(&guioptions, "t", "", "g")
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
@@ -81,28 +75,25 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
+" Enable file type detection.
+" Use the default filetype settings, so that mail gets 'tw' set to 72,
+" 'cindent' is on in C files, etc.
+" Also load indent files, to automatically do language-dependent indenting.
+filetype plugin indent on
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
-  " Enable file type detection.
-  " Use the default filetype settings, so that mail gets 'tw' set to 72,
-  " 'cindent' is on in C files, etc.
-  " Also load indent files, to automatically do language-dependent indenting.
-  filetype plugin indent on
-
-  " Don't screw up folds when inserting text that might affect them, until
-  " leaving insert mode. Foldmethod is local to the window. Protect against
-  " screwing up folding when switching between windows.
-  autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
-  autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
   " Run stastic automatically, even on scp files.
   "autocmd bufreadpost,bufwritepost * call s:UpdateErrors()
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
   au!
-
-  " For all text files set 'textwidth' to 80 characters.
-  autocmd FileType text setlocal textwidth=80
+  " Don't screw up folds when inserting text that might affect them, until
+  " leaving insert mode. Foldmethod is local to the window. Protect against
+  " screwing up folding when switching between windows.
+  autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
+  autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
@@ -118,18 +109,10 @@ if has("autocmd")
 
 endif " has("autocmd")
 
-" Convenient command to see the difference between the current buffer and the
-" file it was loaded from, thus the changes you made.
-" Only define it when not defined already.
-if !exists(":DiffOrig")
-  command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
-endif
-
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-"MY CUSTOM TABING
+"Linebreak and Wrap
 set wrap
 set linebreak
 
@@ -145,7 +128,7 @@ set smartcase
 "Split below and to the right instead of default
 "set splitbelow "Makes MiniBufExplorer appear at the bottom
 set splitright
-"let loaded_matchparen = 1 "Slows moving around down if on
+let loaded_matchparen = 1 "Slows moving around down if on
 "set showmatch 
 
 "Foldiness
@@ -234,13 +217,12 @@ nmap <silent> <C-k> <C-w>k
 nmap <silent> <C-j> <C-w>j
 nmap <silent> <C-l> <C-w>l
 nmap <silent> <C-h> <C-w>h
-"
+
 "Get rid of highlighting after search with space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 "Forget sudo? Here ya go!
 cmap w!! w !sudo tee % >/dev/null
 set pastetoggle=<F12>
-
 
 "Set our colorscheme
 colorscheme elflord
@@ -249,13 +231,17 @@ colorscheme elflord
 nmap <silent> <leader>hl :highlight LineNr term=NONE ctermfg=grey ctermbg=black<CR>
 highlight LineNr term=NONE ctermfg=grey ctermbg=black
 
-"latexsuite plugin told me to add this
-set grepprg=grep\ -nH\ $*
-let g:tex_flavor = "latex"
-
 "
 " Some Custom functions
 "
+
+" Convenient command to see the difference between the current buffer and the
+" file it was loaded from, thus the changes you made.
+" Only define it when not defined already.
+if !exists(":DiffOrig")
+  command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+		  \ | wincmd p | diffthis
+endif
 
 "Show and Trim Spaced Function
 function! ShowSpaces(...)
@@ -280,5 +266,3 @@ command! -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
 nnoremap <silent> <leader>ss     :ShowSpaces 1<CR>
 nnoremap <silent> <leader>ts  m`:TrimSpaces<CR>``
 vnoremap <silent> <leader>ts   :TrimSpaces<CR>
-
-runtime! ~/.vimrc_private
