@@ -128,7 +128,7 @@ set smartcase
 "Split below and to the right instead of default
 "set splitbelow "Makes MiniBufExplorer appear at the bottom
 set splitright
-let loaded_matchparen = 1 "Slows moving around down if on
+"let loaded_matchparen = 0 "Slows moving around down if on
 "set showmatch 
 
 "Foldiness
