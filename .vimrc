@@ -25,8 +25,9 @@ Bundle 'git://github.com/fholgado/minibufexpl.vim'
 Bundle 'git://github.com/ervandew/supertab.git'
 Bundle 'git://github.com/scrooloose/syntastic.git'
 Bundle 'git://github.com/mattn/gist-vim.git'
-"Testing
 Bundle 'git://github.com/scrooloose/snipmate-snippets.git'
+"Testing
+Bundle "git://github.com/vim-scripts/Color-Sampler-Pack.git"
 
 "Languge specific
 "Java

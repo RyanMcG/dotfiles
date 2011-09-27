@@ -13,8 +13,7 @@ export HISTCONTROL=ignoredups
 # ... and ignore same sucessive entries.
 export HISTCONTROL=ignoreboth
 export EDITOR="vim"
-export EDITOR=$EDITOR
-export TRANSMISSION_HOME=$HOME/.config/transmission-daemon
+export VISUAL=$EDITOR
 export PATH=$PATH:/usr/share/eclipse/:/opt/maven/bin/:/opt/android-sdk/platform-tools/:$HOME/bin/:$HOME/bin/node/bin/
 export CLASSPATH=.:src/:bin/
 
