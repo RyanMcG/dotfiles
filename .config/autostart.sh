@@ -1,7 +1,6 @@
 #!/bin/sh
 #---- Autostart regardless of WM ----#
 
-#nitrogen --restore &    #Restores wallpaper
 xmodmap ~/.Xmodmap &
 xset m 5 10 &
 xset b off &
@@ -12,3 +11,4 @@ start-pulseaudio-x11 &
 gnome-keyring-daemon &
 #padevchooser &
 pnmixer &
+nitrogen --restore &    #Restores wallpaper
