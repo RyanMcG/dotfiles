@@ -8,6 +8,10 @@ conky &
 tint2 &
 
 #Now our host specific autostart
-if [ $HOSTNAME = "arcbase" ]; then
+if [ $ENABLE_COMPMGR = "yes" ]; then
 	xcompmgr -cC &
+fi
+
+if [ -f ~/.config/autostart.sh ]; then
+	. ~/.config/autostart.sh
 fi

@@ -18,6 +18,9 @@ export TRANSMISSION_HOME=$HOME/.config/transmission-daemon
 export PATH=$PATH:/usr/share/eclipse/:/opt/maven/bin/:/opt/android-sdk/platform-tools/:$HOME/bin/:$HOME/bin/node/bin/
 export CLASSPATH=.:src/:bin/
 
+#Custom Var to enable composite manager
+export ENABLE_COMPMGR="no"
+
 #Autossh fun
 export MY_AUTOSSH_PORT=29011
 export MY_AUTOSSH_PORT=$(expr $MY_AUTOSSH_PORT + $(pgrep -u $USER -x autossh | wc -l))
