@@ -26,8 +26,13 @@ Bundle 'git://github.com/ervandew/supertab.git'
 Bundle 'git://github.com/scrooloose/syntastic.git'
 Bundle 'git://github.com/mattn/gist-vim.git'
 Bundle 'git://github.com/scrooloose/snipmate-snippets.git'
+Bundle 'git://github.com/vim-scripts/Color-Sampler-Pack.git'
 "Testing
-Bundle "git://github.com/vim-scripts/Color-Sampler-Pack.git"
+Bundle 'git://github.com/vim-scripts/AutoComplPop.git'
+Bundle 'git://github.com/vim-scripts/xoria256.vim.git'
+Bundle 'git://github.com/sjl/gundo.vim.git'
+Bundle 'git://github.com/vim-scripts/AutoClose.git'
+"Bundle 'https://github.com/Townk/vim-autoclose'
 
 "Languge specific
 "Java
@@ -53,6 +58,9 @@ Bundle 'git://github.com/pangloss/vim-javascript.git'
 "Make sure my after is really at the end.
 set runtimepath-=~/.vim/after/
 set runtimepath+=~/.vim/after/
+
+"Source matchit.vim (included in vim 7)
+runtime macros/matchit.vim
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
@@ -129,8 +137,13 @@ set smartcase
 "Split below and to the right instead of default
 "set splitbelow "Makes MiniBufExplorer appear at the bottom
 set splitright
-"let loaded_matchparen = 0 "Slows moving around down if on
+set title
+"let loaded_matchparen = 0 "Uncomment to turn off
 "set showmatch 
+
+"Completeion in command mode
+set wildmenu
+set wildmode=list:longest
 
 "Foldiness
 set foldenable
@@ -226,7 +239,7 @@ cmap w!! w !sudo tee % >/dev/null
 set pastetoggle=<F12>
 
 "Set our colorscheme
-colorscheme elflord
+colorscheme xoria256
 
 "Change the way numbers look
 nmap <silent> <leader>hl :highlight LineNr term=NONE ctermfg=grey ctermbg=black<CR>

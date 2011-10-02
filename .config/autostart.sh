@@ -1,9 +1,6 @@
 #!/bin/sh
 #---- Autostart regardless of WM ----#
 
-xmodmap ~/.Xmodmap &
-xset m 5 10 &
-xset b off &
 unclutter -idle 2 &
 urxvtd &                #Runs rxvt-unicode deamon
 #dropbox start &
@@ -12,3 +9,6 @@ gnome-keyring-daemon &
 #padevchooser &
 pnmixer &
 nitrogen --restore &    #Restores wallpaper
+xmodmap ~/.Xmodmap &
+xset m 5 10 &
+xset b off &
