@@ -11,7 +11,7 @@ urxvt*geometry: 90x25
 urxvt-bg.font: xft:FreeSerif:rgba=vbgr:pixelsize=12
 URxvt*termName: rxvt-unicode
 *background: #101010
-*foreground: #f6f6f6
+*foreground: #f0f0f0
 URxvt*perl-lib: /usr/lib/urxvt/perl/
 URxvt*perl-ext-common: default,matcher
 URxvt*matcher.button: 1
@@ -32,14 +32,14 @@ urxvt-bg.tintColor: black
 urxvt-bg.shading: 10 
  
 *color0: #000000
-*color1: #9e1828
+*color1: #a6404c
 *color2: #aece92
 *color3: #968a38
 *color4: #2670cc
 *color5: #963c59
 *color6: #418179
 *color7: #bebebe
-*color8: #111111
+*color8: #333333
 *color9: #cf6171
 *color10: #c5f779
 *color11: #fff796
