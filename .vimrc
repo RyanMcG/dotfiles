@@ -181,7 +181,7 @@ set completeopt+=longest
 let g:SuperTabContextDefaultCompletionType='context'
 "let g:SuperTabMappingForward = '<C-l>'
 "let g:SuperTabMappingBackward = '<S-C-l>'
-let g:SuperTabLongestEnhanced=1
+"let g:SuperTabLongestEnhanced=1
 "let g:SuperTabLongestHighlight=1
 
 "NERDTree
