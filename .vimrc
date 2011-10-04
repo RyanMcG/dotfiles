@@ -163,6 +163,11 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_quiet_warnings=1
 nnoremap <silent> <leader>se :Errors<CR>
 
+"AutoComplPop"
+let g:acp_enableAtStartup = 0
+let g:acp_mappingDriven = 1
+let g:acp_ignorecaseOption = 0
+
 "Session 
 set sessionoptions-=curdir,help,options
 "let g:session_autoload='no'
@@ -177,7 +182,7 @@ let g:SuperTabContextDefaultCompletionType='context'
 "let g:SuperTabMappingForward = '<C-l>'
 "let g:SuperTabMappingBackward = '<S-C-l>'
 let g:SuperTabLongestEnhanced=1
-let g:SuperTabLongestHighlight=1
+"let g:SuperTabLongestHighlight=1
 
 "NERDTree
 nnoremap <silent> <F7> :NERDTreeToggle<CR>
