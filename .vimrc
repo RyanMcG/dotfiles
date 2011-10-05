@@ -31,8 +31,6 @@ Bundle 'git://github.com/vim-scripts/Color-Sampler-Pack.git'
 Bundle 'git://github.com/vim-scripts/AutoComplPop.git'
 Bundle 'git://github.com/vim-scripts/xoria256.vim.git'
 Bundle 'git://github.com/sjl/gundo.vim.git'
-Bundle 'git://github.com/vim-scripts/AutoClose.git'
-"Bundle 'https://github.com/Townk/vim-autoclose'
 
 "Languge specific
 "Java
@@ -153,10 +151,6 @@ set foldenable
 "Plugin Config
 
 "Syntastic
-set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=1
@@ -164,12 +158,12 @@ let g:syntastic_quiet_warnings=1
 nnoremap <silent> <leader>se :Errors<CR>
 
 "AutoComplPop"
-let g:acp_enableAtStartup = 0
+let g:acp_enableAtStartup = 1
 let g:acp_mappingDriven = 1
 let g:acp_ignorecaseOption = 0
 
 "Session 
-set sessionoptions-=curdir,help,options
+"set sessionoptions-=curdir,help,options
 "let g:session_autoload='no'
 "let g:session_autosave='prompt'
 "let g:session_default_to_last=1
@@ -181,8 +175,8 @@ set completeopt+=longest
 let g:SuperTabContextDefaultCompletionType='context'
 "let g:SuperTabMappingForward = '<C-l>'
 "let g:SuperTabMappingBackward = '<S-C-l>'
-"let g:SuperTabLongestEnhanced=1
-"let g:SuperTabLongestHighlight=1
+let g:SuperTabLongestEnhanced=1
+let g:SuperTabLongestHighlight=1
 
 "NERDTree
 nnoremap <silent> <F7> :NERDTreeToggle<CR>
@@ -226,6 +220,12 @@ let ruby_no_comment_fold = 1
 "Configure Eclim
 let g:EclimXmlValidate = 0
 
+" Modify Status line
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+set statusline+=%{fugitive#statusline()}
 
 "Some mappin'
 "Easily edit and source vim

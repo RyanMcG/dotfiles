@@ -1,2 +1,2 @@
 P_COLOR=$FRED
-export PATH=$PATH:/home/ryan/camp26/cake/cake/console:/home/camp/bin
+export PATH=$PATH:$HOME/.eclipse/org.eclipse.platform_3.7.0_155965261/

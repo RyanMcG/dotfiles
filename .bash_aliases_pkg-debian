@@ -7,3 +7,7 @@ alias spkg="apt-cache search"
 alias autormpkg="sudo apt-get autoremove"
 
 alias sapt="sudo apt-get"
+#autojump says to
+if [ -f /usr/share/autojump/autojump.sh ]; then
+	. /usr/share/autojump/autojump.sh
+fi

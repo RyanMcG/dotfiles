@@ -23,6 +23,7 @@
 	l = log
 	rl = reflog
 	rs = remote show
+	rhh = reset --hard HEAD
 	p = pull
 	pr = pull --rebase
 
