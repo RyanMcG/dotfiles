@@ -21,6 +21,7 @@
 	s = status
 	sn = show --name-only
 	l = log
+	hs = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	rl = reflog
 	rs = remote show
 	rhh = reset --hard HEAD
