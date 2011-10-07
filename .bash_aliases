@@ -51,6 +51,8 @@ alias cdiff="colordiff"
 alias fif="find -type f -print0 | xargs -0 grep -n" 
 alias intersection="grep -Fx -f"
 alias in2not1="grep -Fxv -f"
+alias jrs="jruby -S"
+alias jgem="jruby -S gem"
 
 # Custom Functions
 wiki() {
