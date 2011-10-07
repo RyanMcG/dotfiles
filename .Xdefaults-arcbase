@@ -16,6 +16,7 @@ URxvt*perl-lib: /usr/lib/urxvt/perl/
 URxvt*perl-ext-common: default,matcher
 URxvt*matcher.button: 1
 URxvt*urlLauncher: /usr/bin/firefox
+URxvt*iconFile: /usr/share/icons/Faenza/apps/scalable/Terminal.svg
 !URxvt*fading: 50
 !URxvt*fadeColor: #000000
 
