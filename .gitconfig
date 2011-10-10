@@ -19,10 +19,11 @@
 	co = checkout
 	d = diff
 	s = status
-	sn = show --name-only
-	l = log
-	hs = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-	rl = reflog
+	sn = show --name-only --decorate
+	l = log --decorate=short --graph
+	l1 = log --decorate=short --graph --oneline
+	hs = log --decorate --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	rl = reflog --decorate
 	rs = remote show
 	rhh = reset --hard HEAD
 	p = pull

@@ -27,10 +27,11 @@ Bundle 'git://github.com/scrooloose/syntastic.git'
 Bundle 'git://github.com/mattn/gist-vim.git'
 Bundle 'git://github.com/scrooloose/snipmate-snippets.git'
 Bundle 'git://github.com/vim-scripts/Color-Sampler-Pack.git'
-"Testing
-Bundle 'git://github.com/vim-scripts/AutoComplPop.git'
 Bundle 'git://github.com/vim-scripts/xoria256.vim.git'
 Bundle 'git://github.com/sjl/gundo.vim.git'
+"Testing
+Bundle 'git://github.com/vim-scripts/AutoComplPop.git'
+Bundle 'git://github.com/kchmck/vim-coffee-script.git'
 
 "Languge specific
 "Java
