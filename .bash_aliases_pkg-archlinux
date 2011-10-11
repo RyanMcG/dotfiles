@@ -1,6 +1,3 @@
-#autojump says to
-source /etc/profile
-
 alias addpkg="yaourt -S"
 alias rmpkg="yaourt -Rcs"
 alias udpkg="yaourt -Sy"
