@@ -37,7 +37,12 @@ alias g="git"
 if type __git_ps1 >/dev/null 2>&1; then
 	complete -o default -o nospace -F _git g
 fi
+
 alias h="hg"
+if type _hg >/dev/null 2>&1; then
+	complete -o default -o nospace -F _hg h
+fi
+
 alias lp="lp -o cpi=17 -o lpi=8"
 alias scn="screen -DR"
 alias dodj="djmount ~/mnt/upnp"

@@ -249,8 +249,8 @@ set pastetoggle=<F12>
 colorscheme xoria256
 
 "Change the way numbers look
-nmap <silent> <leader>hl :highlight LineNr term=NONE ctermfg=grey ctermbg=black<CR>
-highlight LineNr term=NONE ctermfg=grey ctermbg=black
+"nmap <silent> <leader>hl :highlight LineNr term=NONE ctermfg=grey ctermbg=black<CR>
+"highlight LineNr term=NONE ctermfg=grey ctermbg=black
 
 "
 " Some Custom functions
