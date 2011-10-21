@@ -31,7 +31,6 @@ Bundle 'git://github.com/vim-scripts/xoria256.vim.git'
 Bundle 'git://github.com/sjl/gundo.vim.git'
 Bundle 'git://github.com/kchmck/vim-coffee-script.git'
 "Testing
-Bundle 'git://github.com/vim-scripts/AutoComplPop.git'
 Bundle 'git://github.com/shemerey/vim-project.git'
 
 "Languge specific
@@ -48,6 +47,7 @@ Bundle 'git://github.com/mattn/zencoding-vim.git'
 Bundle 'git://github.com/pangloss/vim-javascript.git'
 
 "Removed
+"Bundle 'git://github.com/vim-scripts/AutoComplPop.git'
 "Bundle 'git://github.com/joestelmach/javaScriptLint.vim.git'
 "Bundle 'git://github.com/vim-scripts/YankRing.vim'
 "Bundle 'git://github.com/slack/vim-bufexplorer'
