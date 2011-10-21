@@ -36,8 +36,8 @@ Bundle 'git://github.com/shemerey/vim-project.git'
 
 "Languge specific
 "Java
-Bundle 'git://github.com/VictorDenisov/javacomplete'
-Bundle 'git://github.com/vim-scripts/JavaImp.vim--Lee'
+"Bundle 'git://github.com/VictorDenisov/javacomplete'
+"Bundle 'git://github.com/vim-scripts/JavaImp.vim--Lee'
 "Markdown
 Bundle 'git://github.com/plasticboy/vim-markdown.git'
 "Python
@@ -148,7 +148,7 @@ set wildmode=list:longest
 "Foldiness
 set foldenable
 "set foldlevel=20
-"set foldmethod=syntax
+set foldmethod=syntax
 
 "Plugin Config
 
@@ -160,8 +160,8 @@ let g:syntastic_quiet_warnings=1
 nnoremap <silent> <leader>se :Errors<CR>
 
 "AutoComplPop"
-let g:acp_enableAtStartup = 1
-let g:acp_mappingDriven = 1
+let g:acp_enableAtStartup = 0
+let g:acp_mappingDriven = 0
 let g:acp_ignorecaseOption = 0
 
 "Session 
@@ -174,6 +174,7 @@ let g:acp_ignorecaseOption = 0
 "Snipmate
 "Supertab
 set completeopt+=longest
+set completeopt-=preview
 let g:SuperTabContextDefaultCompletionType='context'
 "let g:SuperTabMappingForward = '<C-l>'
 "let g:SuperTabMappingBackward = '<S-C-l>'
