@@ -40,3 +40,9 @@
 	excludesfile = ~/.gitignore.global
 [github]
 	user = RyanMcG
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 700x533+139+17
+	file-view-vpane-position = 288
+	history-view-vpane-position = 399
+	main-window-view = FileView
