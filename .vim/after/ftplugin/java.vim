@@ -1,6 +1,14 @@
 " Tabs Settings
 setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab textwidth=80
 
+"Eclim
+nnoremap <silent> <buffer> <leader>ji :JavaImportMissing<cr>
+nnoremap <silent> <buffer> <leader>jd :JavaDocSearch -x declarations<cr>
+nnoremap <silent> <buffer> <leader>js :JavaSearchContext<cr>
+nnoremap <silent> <buffer> <leader>jr :JavaCorrect<cr>
+nnoremap <silent> <buffer> <leader>jc :JavaImportClean<cr>:JavaImportSort<cr>
+
+
 "javacomplete.vim fun
 "setlocal omnifunc=javacomplete#Complete
 "setlocal completefunc=javacomplete#CompleteParamsInfo
