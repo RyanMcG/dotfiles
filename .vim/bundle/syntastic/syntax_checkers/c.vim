@@ -72,6 +72,20 @@ function! s:GetIncludeDirs()
     return join(map(copy(include_dirs), '"-I" . v:val'), ' ')
 endfunction
 
+let s:default_includes = [ '.', '..', 'include', 'includes',
+            \ '../include', '../includes' ]
+
+function! s:GetIncludeDirs()
+    let include_dirs = s:default_includes
+
+    if exists('g:syntastic_c_include_dirs')
+        " TODO: check for duplicates
+        call extend(include_dirs, g:syntastic_c_include_dirs)
+    endif
+
+    return join(map(copy(include_dirs), '"-I" . v:val'), ' ')
+endfunction
+
 function! SyntaxCheckers_c_GetLocList()
     let makeprg = 'gcc -fsyntax-only '.shellescape(expand('%')).
                \ ' '.s:GetIncludeDirs()

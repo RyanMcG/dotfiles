@@ -1,5 +1,5 @@
 " Tabs Settings
-setlocal softtabstop=4 shiftwidth=4 expandtab textwidth=80
+setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab textwidth=80
 
 "javacomplete.vim fun
 "setlocal omnifunc=javacomplete#Complete
