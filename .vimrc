@@ -32,6 +32,7 @@ Bundle 'git://github.com/sjl/gundo.vim.git'
 Bundle 'git://github.com/kchmck/vim-coffee-script.git'
 "Testing
 Bundle 'git://github.com/shemerey/vim-project.git'
+Bundle 'git://github.com/vim-scripts/VimClojure.git'
 
 "Languge specific
 "Java

@@ -17,6 +17,7 @@ export EDITOR="vim"
 export VISUAL=$EDITOR
 export PATH=$PATH:/usr/share/eclipse/:/opt/maven/bin/:/opt/android-sdk/platform-tools/:$HOME/bin/:$HOME/bin/node/bin/
 export CLASSPATH=.:src/:bin/
+export PYTHONDOCS=/usr/share/doc/python2/html/
 
 #Custom Var to enable composite manager
 export ENABLE_COMPMGR="no"
