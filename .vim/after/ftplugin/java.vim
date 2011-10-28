@@ -2,11 +2,11 @@
 setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab textwidth=80
 
 "Eclim
-nnoremap <silent> <buffer> <leader>ji :JavaImportMissing<cr>
-nnoremap <silent> <buffer> <leader>jd :JavaDocSearch -x declarations<cr>
-nnoremap <silent> <buffer> <leader>js :JavaSearchContext<cr>
-nnoremap <silent> <buffer> <leader>jr :JavaCorrect<cr>
-nnoremap <silent> <buffer> <leader>jc :JavaImportClean<cr>:JavaImportSort<cr>
+nnoremap <silent> <buffer> <leader>eji :JavaImportMissing<cr>
+nnoremap <silent> <buffer> <leader>ejd :JavaDocSearch -x declarations<cr>
+nnoremap <silent> <buffer> <leader>ejs :JavaSearchContext<cr>
+nnoremap <silent> <buffer> <leader>ejr :JavaCorrect<cr>
+nnoremap <silent> <buffer> <leader>ejc :JavaImportClean<cr>:JavaImportSort<cr>
 
 
 "javacomplete.vim fun
