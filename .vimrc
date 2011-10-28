@@ -26,27 +26,36 @@ Bundle 'git://github.com/ervandew/supertab.git'
 Bundle 'git://github.com/scrooloose/syntastic.git'
 Bundle 'git://github.com/mattn/gist-vim.git'
 Bundle 'git://github.com/scrooloose/snipmate-snippets.git'
-Bundle 'git://github.com/vim-scripts/Color-Sampler-Pack.git'
 Bundle 'git://github.com/vim-scripts/xoria256.vim.git'
 Bundle 'git://github.com/sjl/gundo.vim.git'
-Bundle 'git://github.com/kchmck/vim-coffee-script.git'
 "Testing
-Bundle 'git://github.com/vim-scripts/VimClojure.git'
-"Bundle 'git://github.com/shemerey/vim-project.git'
 Bundle 'git://github.com/vim-scripts/localvimrc.git'
+"Bundle 'git://github.com/shemerey/vim-project.git'
 
 "Languge specific
+
 "Java
 "Bundle 'git://github.com/VictorDenisov/javacomplete'
 "Bundle 'git://github.com/vim-scripts/JavaImp.vim--Lee'
+
+"Lisp
+"Bundle 'git://github.com/vim-scripts/slimv.vim.git'
+
+"Clojure
+Bundle 'git://github.com/vim-scripts/VimClojure.git'
+
 "Markdown
 Bundle 'git://github.com/plasticboy/vim-markdown.git'
+
 "Python
 Bundle 'git://github.com/cburroughs/pep8.py.git'
+
 "HTML/CSS
 Bundle 'git://github.com/mattn/zencoding-vim.git'
+
 "Javascript
 Bundle 'git://github.com/pangloss/vim-javascript.git'
+Bundle 'git://github.com/kchmck/vim-coffee-script.git'
 
 "Removed
 "Bundle 'git://github.com/vim-scripts/AutoComplPop.git'
