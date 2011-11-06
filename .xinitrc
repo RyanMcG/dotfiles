@@ -8,6 +8,7 @@
 # exec startkde
 # exec startxfce4
 # ...or the Window Manager of your choice
+export DE="xfce"
 exec ck-launch-session openbox-session
 #exec ck-launch-session dwm
 #exec ck-launch-session wmii
