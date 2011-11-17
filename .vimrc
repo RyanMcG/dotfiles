@@ -30,7 +30,6 @@ Bundle 'git://github.com/vim-scripts/xoria256.vim.git'
 Bundle 'git://github.com/sjl/gundo.vim.git'
 "Testing
 Bundle 'git://github.com/vim-scripts/localvimrc.git'
-Bundle 'git://github.com/vim-scripts/Jinja.git'
 "Bundle 'git://github.com/shemerey/vim-project.git'
 
 "Languge specific
