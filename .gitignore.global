@@ -1,5 +1,6 @@
 ..
 Gemfile.lock
+env
 tags
 TAGS
 *.class
