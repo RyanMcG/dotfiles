@@ -4,6 +4,7 @@ setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab textwidth=80
 "Eclim
 nnoremap <silent> <buffer> <leader>eji :JavaImportMissing<cr>
 nnoremap <silent> <buffer> <leader>ejd :JavaDocSearch -x declarations<cr>
+nnoremap <silent> <buffer> <leader>ejm :JavaDocComment<cr>
 nnoremap <silent> <buffer> <leader>ejs :JavaSearchContext<cr>
 nnoremap <silent> <buffer> <leader>ejr :JavaCorrect<cr>
 nnoremap <silent> <buffer> <leader>ejc :JavaImportClean<cr>:JavaImportSort<cr>
