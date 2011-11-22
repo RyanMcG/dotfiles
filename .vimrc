@@ -167,7 +167,8 @@ set foldmethod=syntax
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=1
-let g:syntastic_quiet_warnings=1
+let g:syntastic_stl_format = '[%E{E: %fe #%e}%B{, }%W{W: %fw #%w}]'
+"let g:syntastic_quiet_warnings=1 "Breaks everything!
 nnoremap <silent> <leader>se :Errors<CR>
 
 "AutoComplPop"
@@ -271,6 +272,7 @@ colorscheme xoria256
 "Change the way numbers look
 "nmap <silent> <leader>hl :highlight LineNr term=NONE ctermfg=grey ctermbg=black<CR>
 "highlight LineNr term=NONE ctermfg=grey ctermbg=black
+highlight WarningMsg term=bold cterm=bold ctermbg=239 ctermfg=yellow guifg=yellow guifg=#4e4e4e
 
 "
 " Some Custom functions
