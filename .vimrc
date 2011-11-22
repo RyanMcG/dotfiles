@@ -242,9 +242,9 @@ let g:EclimCValidate = 0
 let g:EclimPythonValidate = 0
 
 " Modify Status line
+set laststatus=2
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set statusline+=%#warningmsg#
-set statusline+=%*
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 set statusline+=%{fugitive#statusline()}
