@@ -244,11 +244,13 @@ let g:EclimPythonValidate = 0
 
 " Modify Status line
 set laststatus=2
-set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+set statusline=%<%f\ %h%m%r\ 
+set statusline+=%{fugitive#statusline()}
+set statusline+=%=%-14.(%l,%c%V%)
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-set statusline+=%{fugitive#statusline()}
+set statusline+=\ %P
 
 "Some mappin'
 "Easily edit and source vim
