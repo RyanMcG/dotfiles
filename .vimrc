@@ -238,10 +238,13 @@ let ruby_no_comment_fold = 1
 
 "Configure Eclim
 let g:EclimXmlValidate = 0
+let g:EclimCValidate = 0
+let g:EclimPythonValidate = 0
 
 " Modify Status line
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set statusline+=%#warningmsg#
+set statusline+=%*
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 set statusline+=%{fugitive#statusline()}
