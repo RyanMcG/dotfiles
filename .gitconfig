@@ -19,6 +19,7 @@
 	cam = commit -am
 	co = checkout
 	d = diff
+	dc = diff --cached
 	ds = diff --stat
 	s = status
 	sn = show --name-only --decorate
