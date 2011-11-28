@@ -228,6 +228,11 @@ let php_parent_error_close = 1
 let php_parent_error_open = 1
 "let php_baselib = 1
 
+"C
+"let g:syntastic_c_compiler_options = ' -std=gnu99'
+let c_space_errors = 1
+"let c_syntax_for_h = 1
+
 "Python
 let python_highlight_all = 1
 
