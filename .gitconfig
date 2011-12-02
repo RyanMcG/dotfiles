@@ -30,7 +30,6 @@
 	wc = whatchanged --decorate --graph
 	rl = reflog --decorate
 	rs = remote show
-	rhh = reset --hard HEAD
 	p = pull
 	pr = pull --rebase
 

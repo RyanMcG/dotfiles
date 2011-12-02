@@ -15,7 +15,7 @@ export HISTCONTROL=ignoredups
 export HISTCONTROL=ignoreboth
 export EDITOR="vim"
 export VISUAL=$EDITOR
-export PATH=$PATH:/usr/share/eclipse/:/opt/maven/bin/:/opt/android-sdk/platform-tools/:$HOME/bin/:$HOME/bin/node/bin/
+export PATH=$PATH:/usr/share/eclipse/:/opt/maven/bin/:/opt/android-sdk/platform-tools/:$HOME/bin/:$HOME/.cabal/bin/:$HOME/bin/node/bin/
 export CLASSPATH=.:src/:bin/
 export PYTHONDOCS=/usr/share/doc/python2/html/
 
