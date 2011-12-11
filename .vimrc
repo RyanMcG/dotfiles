@@ -150,7 +150,7 @@ set smartcase
 set splitright
 set title
 "let loaded_matchparen = 0 "Uncomment to turn off
-"set showmatch 
+"set showmatch
 
 "Completeion in command mode
 set wildmenu
@@ -176,7 +176,7 @@ let g:acp_enableAtStartup = 0
 let g:acp_mappingDriven = 0
 let g:acp_ignorecaseOption = 0
 
-"Session 
+"Session
 "set sessionoptions-=curdir,help,options
 "let g:session_autoload='no'
 "let g:session_autosave='prompt'
@@ -249,7 +249,7 @@ let g:EclimPythonValidate = 0
 
 " Modify Status line
 set laststatus=2
-set statusline=%<%f\ %h%m%r\ 
+set statusline=%<%f\ %h%m%r\
 set statusline+=%{fugitive#statusline()}
 set statusline+=%=%-14.(%l,%c%V%)
 set statusline+=%#warningmsg#
@@ -311,8 +311,20 @@ function! TrimSpaces() range
   let &hlsearch=oldhlsearch
 endfunction
 
+function! AutoindentToggle(...)
+  if &formatoptions =~ 'a'
+    set formatoptions-=a
+    echo "-- Auto Indent Off --"
+  else
+    set formatoptions+=a
+    echo "-- Auto Indent On --"
+  endif
+endfunction
+command! -bar -nargs=0 AutoindentToggle call AutoindentToggle()
+
 command! -bar -nargs=? ShowSpaces call ShowSpaces(<args>)
 command! -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
-nnoremap <silent> <leader>ss     :ShowSpaces 1<CR>
+nnoremap <silent> <leader>ss    :ShowSpaces 1<CR>
 nnoremap <silent> <leader>ts  m`:TrimSpaces<CR>``
-vnoremap <silent> <leader>ts   :TrimSpaces<CR>
+vnoremap <silent> <leader>ts    :TrimSpaces<CR>
+nnoremap <silent> <leader>ai	:AutoindentToggle<CR>
