@@ -33,9 +33,6 @@ alias vim-music="vim ~/Documents/Lists/get.list"
 alias vim-todo="vim ~/Documents/Lists/todo.list"
 alias sudo="sudo "
 
-if type hub >/dev/null 2>&1; then
-	alias git="hub"
-fi
 alias g="git"
 #Make autocompleteion work for g alias too
 if type __git_ps1 >/dev/null 2>&1; then
