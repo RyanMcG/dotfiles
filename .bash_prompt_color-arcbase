@@ -1,1 +1,2 @@
+export ENABLE_COMPMGR="yes"
 P_COLOR=$FBLE

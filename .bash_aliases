@@ -32,12 +32,17 @@ alias relbash="source ~/.profile"
 alias vim-music="vim ~/Documents/Lists/get.list"
 alias vim-todo="vim ~/Documents/Lists/todo.list"
 alias sudo="sudo "
+
 alias g="git"
 #Make autocompleteion work for g alias too
 if type __git_ps1 >/dev/null 2>&1; then
 	complete -o default -o nospace -F _git g
 fi
 alias h="hg"
+if type _hg >/dev/null 2>&1; then
+	complete -o default -o nospace -F _hg h
+fi
+
 alias lp="lp -o cpi=17 -o lpi=8"
 alias scn="screen -DR"
 alias dodj="djmount ~/mnt/upnp"
@@ -45,12 +50,12 @@ alias ftp="tnftp"
 alias relterm="export TERM=$TERM"
 alias dodj="djmount ~/mnt/upnp"
 alias ftp="tnftp"
-alias rm="rm -i"
-alias rmf="rm -f"
 alias cdiff="colordiff"
-alias fif="find -type f -print0 | xargs -0 grep -n" 
+alias fif="find -type f -print0 | xargs -0 grep --color -n" 
 alias intersection="grep -Fx -f"
 alias in2not1="grep -Fxv -f"
+alias jrs="jruby -S"
+alias jgem="jruby -S gem"
 
 # Custom Functions
 wiki() {

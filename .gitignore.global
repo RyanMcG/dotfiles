@@ -1,4 +1,6 @@
 ..
+Gemfile.lock
+env
 tags
 TAGS
 *.class
@@ -19,3 +21,7 @@ javadoc*
 .fbprefs
 .netrwhist
 notes.txt
+.iws
+.ipr
+.lvimrc
+.ropeproject/

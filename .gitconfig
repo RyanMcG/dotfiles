@@ -15,14 +15,22 @@
 [alias]
 	b = branch
 	cm = commit -m
+	ca = commit -a
 	cam = commit -am
 	co = checkout
 	d = diff
+	dc = diff --cached
+	ds = diff --stat
 	s = status
-	sn = show --name-only
-	l = log
-	rl = reflog
+	sn = show --name-only --decorate
+	l = log --decorate --graph
+	ls = log --decorate --graph --stat
+	l1 = log --decorate --graph --oneline
+	hs = log --decorate --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	wc = whatchanged --decorate --graph
+	rl = reflog --decorate
 	rs = remote show
+	rhh = reset --hard HEAD
 	p = pull
 	pr = pull --rebase
 
@@ -33,3 +41,9 @@
 	excludesfile = ~/.gitignore.global
 [github]
 	user = RyanMcG
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 700x533+139+17
+	file-view-vpane-position = 288
+	history-view-vpane-position = 399
+	main-window-view = FileView

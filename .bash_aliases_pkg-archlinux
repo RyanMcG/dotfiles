@@ -1,5 +1,5 @@
 alias addpkg="yaourt -S"
-alias rmpkg="yaourt -Rs"
+alias rmpkg="yaourt -Rcs"
 alias udpkg="yaourt -Sy"
 alias ugpkg="yaourt -Su"
 alias udgpkg="yaourt -Syu"

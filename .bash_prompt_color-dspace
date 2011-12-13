@@ -1,0 +1,2 @@
+P_COLOR=$FRED
+export PATH=$PATH:$HOME/.eclipse/org.eclipse.platform_3.7.0_155965261/

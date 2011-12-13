@@ -2,8 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-#autojump says to
-source /etc/profile
+if [ -f ~/.bash_top ]; then
+	. ~/.bash_top
+fi
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -13,10 +14,13 @@ export HISTCONTROL=ignoredups
 # ... and ignore same sucessive entries.
 export HISTCONTROL=ignoreboth
 export EDITOR="vim"
-export EDITOR=$EDITOR
-export TRANSMISSION_HOME=$HOME/.config/transmission-daemon
+export VISUAL=$EDITOR
 export PATH=$PATH:/usr/share/eclipse/:/opt/maven/bin/:/opt/android-sdk/platform-tools/:$HOME/bin/:$HOME/bin/node/bin/
 export CLASSPATH=.:src/:bin/
+export PYTHONDOCS=/usr/share/doc/python2/html/
+
+#Custom Var to enable composite manager
+export ENABLE_COMPMGR="no"
 
 #Autossh fun
 export MY_AUTOSSH_PORT=29011
@@ -88,6 +92,10 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+
+if [ $TERM == "rxvt-unicode" ]; then
+	export TERM="rxvt-unicode-256color"
+fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
