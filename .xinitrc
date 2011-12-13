@@ -6,9 +6,9 @@
 /home/roin/.config/autostart.sh &
 # exec gnome-session
 # exec startkde
-# exec startxfce4
 # ...or the Window Manager of your choice
-exec ck-launch-session openbox-session
+#exec ck-launch-session openbox-session
+exec ck-launch-session startxfce4
 #exec ck-launch-session dwm
 #exec ck-launch-session wmii
 #exec ck-launch-session xmonad
