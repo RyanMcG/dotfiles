@@ -1,5 +1,6 @@
 alias addpkg="sudo apt-get install"
 alias rmpkg="sudo apt-get remove"
+alias purpkg="sudo apt-get purge"
 alias udpkg="sudo apt-get update"
 alias ugpkg="sudo apt-get upgrade"
 alias udgpkg="sudo apt-get update && sudo apt-get upgrade"
