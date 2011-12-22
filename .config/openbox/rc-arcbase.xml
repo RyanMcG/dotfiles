@@ -371,7 +371,6 @@
         <command>urxvtcd -g +0+16 -e ncmpcpp</command>
       </action>
     </keybind>
-
     <keybind key="A-F2">
       <action name="Execute">
         <command>urxvtcd -g +0+16 -e ncmpcpp</command>
@@ -394,17 +393,17 @@
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>amixer -c 0 set Master toggle</command>
+        <command>mute_toggle</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>amixer -c 0 set Master 4%+</command>
+        <command>vol_up</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>amixer -c 0 set Master 4%-</command>
+        <command>vol_down</command>
       </action>
     </keybind>
   </keyboard>
