@@ -20,7 +20,8 @@ javadoc*
 .checkstyle
 .fbprefs
 .netrwhist
-notes.txt
+notes.*
+todo.*
 .iws
 .ipr
 .lvimrc

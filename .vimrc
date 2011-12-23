@@ -95,6 +95,13 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
+"Set our colorscheme
+if &t_Co >= 256 || has("gui_running")
+  colorscheme xoria256
+else
+  colorscheme elflord
+endif
+
 " Enable file type detection.
 " Use the default filetype settings, so that mail gets 'tw' set to 72,
 " 'cindent' is on in C files, etc.
@@ -249,7 +256,7 @@ let g:EclimPythonValidate = 0
 
 " Modify Status line
 set laststatus=2
-set statusline=%<%f\ %h%m%r\
+set statusline=%<%f\ %h%m%r
 set statusline+=%{fugitive#statusline()}
 set statusline+=%=%-14.(%l,%c%V%)
 set statusline+=%#warningmsg#
@@ -272,9 +279,6 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 "Forget sudo? Here ya go!
 cmap w!! w !sudo tee % >/dev/null
 set pastetoggle=<F12>
-
-"Set our colorscheme
-colorscheme xoria256
 
 "Change the way numbers look
 "nmap <silent> <leader>hl :highlight LineNr term=NONE ctermfg=grey ctermbg=black<CR>
