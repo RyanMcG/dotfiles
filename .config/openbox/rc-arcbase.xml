@@ -406,6 +406,16 @@
         <command>vol_down</command>
       </action>
     </keybind>
+    <keybind key="XF86AudioMedia">
+      <action name="Execute">
+        <command>pavucontrol</command>
+      </action>
+    </keybind>
+    <keybind key="XF86Email">
+      <action name="Execute">
+        <command>chromium</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>5</dragThreshold>
