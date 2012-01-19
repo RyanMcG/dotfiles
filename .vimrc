@@ -191,9 +191,7 @@ let g:acp_ignorecaseOption = 0
 "let g:loaded_session=1 "Uncomment to not load session plugin
 
 "VimClojure
-"let vimclojure#WantNailgun = 1
-"let vimclojure#NailgunServer = \"127.0.0.1\"
-"let vimclojure#NailgunPort = \"9092\"
+let vimclojure#WantNailgun = 1
 
 "Snipmate
 "Supertab
