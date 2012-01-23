@@ -11,6 +11,7 @@ TAGS
 *.swo
 tags
 *.class
+*.pyc
 *.DS_Store*
 javadoc*
 .sass-*
