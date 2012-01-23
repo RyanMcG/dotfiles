@@ -1,6 +1,6 @@
 ..
 Gemfile.lock
-env
+/env*/
 tags
 TAGS
 *.class
@@ -16,13 +16,13 @@ tags
 javadoc*
 .sass-*
 .project
-.settings
+/.settings
 .classpath
 .checkstyle
 .fbprefs
 .netrwhist
-notes.*
-todo.*
+/notes.*
+/todo.*
 .iws
 .ipr
 .lvimrc
