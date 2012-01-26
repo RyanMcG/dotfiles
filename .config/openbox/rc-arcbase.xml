@@ -332,7 +332,7 @@
           <enabled>true</enabled>
           <name>dmenu</name>
         </startupnotify>
-        <command>dmenu_run -fn '-*-dejavu sans mono-medium-r-*-*-10-*-*-*-*-*-*-*' -nb '#000' -nf '#fff' -sb '#2670cc' -sf '#fff' -p '$'</command>
+        <command>dmenu_run -fn '-*-dina-medium-r-*-*-15-*-*-*-*-*-*-*' -nb '#000' -nf '#fff' -sb '#2670cc' -sf '#fff' -p '$'</command>
       </action>
     </keybind>
     <keybind key="W-z">
