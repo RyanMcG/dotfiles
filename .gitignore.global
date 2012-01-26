@@ -27,3 +27,5 @@ javadoc*
 .ipr
 .lvimrc
 .ropeproject/
+/MANIFEST
+/dist
