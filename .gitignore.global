@@ -16,7 +16,7 @@ tags
 javadoc*
 .sass-*
 .project
-/.settings
+.settings
 .classpath
 .checkstyle
 .fbprefs
