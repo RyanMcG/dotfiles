@@ -12,4 +12,5 @@ xfce4-power-manager &
 xmodmap ~/.Xmodmap &
 xset m 5 10 &
 xset b off &
-nitrogen --restore    #Restores wallpaper
+skippy-xd &
+nitrogen --restore &   #Restores wallpaper
