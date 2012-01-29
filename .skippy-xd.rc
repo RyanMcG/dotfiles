@@ -32,11 +32,11 @@ keysym = Menu
 distance = 50
 useNetWMFullscreen = true
 ignoreSkipTaskbar = true
-updateFreq = 2.0
-lazyTrans = false
+updateFreq = 50.0
+lazyTrans = true
 
 [xinerama]
-showAll = false
+showAll = true
 
 [normal]
 tint = black
