@@ -49,6 +49,8 @@ Bundle 'git://github.com/plasticboy/vim-markdown.git'
 
 "Python
 Bundle 'git://github.com/cburroughs/pep8.py.git'
+Bundle 'git://github.com/ivanov/vim-ipython.git'
+Bundle 'git://github.com/vim-scripts/python.vim--Vasiliev.git'
 
 "HTML/CSS
 Bundle 'git://github.com/mattn/zencoding-vim.git'
@@ -240,6 +242,7 @@ let c_space_errors = 1
 
 "Python
 let python_highlight_all = 1
+let g:ipy_perform_mappings = 0
 
 "Ruby
 let ruby_operators = 1
