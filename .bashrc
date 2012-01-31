@@ -25,6 +25,7 @@ export ENABLE_COMPMGR="no"
 #Autossh fun
 export MY_AUTOSSH_PORT=29011
 export MY_AUTOSSH_PORT=$(expr $MY_AUTOSSH_PORT + $(pgrep -u $USER -x autossh | wc -l))
+export NOSE_REDNOSE=1
 
 unset HISTSIZE HISTFILESIZE
 export HISTSIZE=20000
