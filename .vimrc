@@ -25,12 +25,14 @@ Bundle 'git://github.com/fholgado/minibufexpl.vim'
 Bundle 'git://github.com/ervandew/supertab.git'
 Bundle 'git://github.com/scrooloose/syntastic.git'
 Bundle 'git://github.com/mattn/gist-vim.git'
-Bundle 'git://github.com/scrooloose/snipmate-snippets.git'
-Bundle 'git://github.com/vim-scripts/xoria256.vim.git'
+"Bundle 'git://github.com/scrooloose/snipmate-snippets.git'
 Bundle 'git://github.com/sjl/gundo.vim.git'
 "Testing
 Bundle 'git://github.com/vim-scripts/localvimrc.git'
 "Bundle 'git://github.com/shemerey/vim-project.git'
+" Colorschemes
+Bundle 'git://github.com/noahfrederick/Hemisu.git'
+Bundle 'git://github.com/vim-scripts/xoria256.vim.git'
 
 "Languge specific
 
@@ -95,6 +97,7 @@ endif
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
+  set background=dark
 endif
 
 "Set our colorscheme
@@ -321,6 +324,11 @@ function! TrimSpaces() range
   execute a:firstline.",".a:lastline."substitute ///gec"
   let &hlsearch=oldhlsearch
 endfunction
+command! -bar -nargs=? ShowSpaces call ShowSpaces(<args>)
+command! -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
+nnoremap <silent> <leader>ss    :ShowSpaces 1<CR>
+nnoremap <silent> <leader>ts  m`:TrimSpaces<CR>``
+vnoremap <silent> <leader>ts    :TrimSpaces<CR>
 
 function! AutoindentToggle(...)
   if &formatoptions =~ 'a'
@@ -332,10 +340,7 @@ function! AutoindentToggle(...)
   endif
 endfunction
 command! -bar -nargs=0 AutoindentToggle call AutoindentToggle()
-
-command! -bar -nargs=? ShowSpaces call ShowSpaces(<args>)
-command! -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
-nnoremap <silent> <leader>ss    :ShowSpaces 1<CR>
-nnoremap <silent> <leader>ts  m`:TrimSpaces<CR>``
-vnoremap <silent> <leader>ts    :TrimSpaces<CR>
 nnoremap <silent> <leader>ai	:AutoindentToggle<CR>
+
+command! CDC cd %:p:h
+nnoremap <silent> <leader>cd 	:CDC<CR>:pwd<CR>
