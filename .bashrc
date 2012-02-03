@@ -28,7 +28,9 @@ export MY_AUTOSSH_PORT=$(expr $MY_AUTOSSH_PORT + $(pgrep -u $USER -x autossh | w
 export NOSE_REDNOSE=1
 
 unset HISTSIZE HISTFILESIZE
-export HISTSIZE=20000
+export HISTSIZE=20001
+shopt -s histappend
+shopt -s checkwinsize
 
 #Set editing type to vi
 set -o vi
@@ -128,3 +130,6 @@ fi
 alias ll='ls -a -l'
 alias la='ls -A'
 #alias l='ls -CF'
+
+# add an alert alias for long running commands
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'

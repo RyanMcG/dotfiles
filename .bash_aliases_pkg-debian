@@ -1,4 +1,5 @@
 alias addpkg="sudo apt-get install"
+alias addrepo="sudo apt-add-repository"
 alias rmpkg="sudo apt-get remove"
 alias purpkg="sudo apt-get purge"
 alias udpkg="sudo apt-get update"
