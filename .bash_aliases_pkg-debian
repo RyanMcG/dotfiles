@@ -8,4 +8,8 @@ alias udgpkg="sudo apt-get update && sudo apt-get upgrade"
 alias spkg="apt-cache search"
 alias autormpkg="sudo apt-get autoremove"
 
-alias sapt="sudo apt-get"
+alias serv="sudo service"
+#Make autocompleteion work for serv alias too
+if type _service >/dev/null 2>&1; then
+	complete -o default -o nospace -F _service serv
+fi
