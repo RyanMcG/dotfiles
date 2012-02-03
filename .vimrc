@@ -39,10 +39,10 @@ Bundle 'git://github.com/vim-scripts/localvimrc.git'
 "Bundle 'git://github.com/vim-scripts/JavaImp.vim--Lee'
 
 "Lisp
-"Bundle 'git://github.com/vim-scripts/slimv.vim.git'
 
 "Clojure
 Bundle 'git://github.com/vim-scripts/VimClojure.git'
+Bundle 'git://github.com/jpalardy/vim-slime.git'
 
 "Markdown
 Bundle 'git://github.com/plasticboy/vim-markdown.git'
@@ -194,6 +194,12 @@ let g:acp_ignorecaseOption = 0
 
 "VimClojure
 "let vimclojure#WantNailgun = 1
+let g:vimclojure#ParenRainbow=1
+let g:vimclojure#DynamicHighlighting=1
+
+"Slime
+let g:paredit_mode = 0 "Used by slimv actually
+let g:slime_target = "tmux"
 
 "Snipmate
 "Supertab
