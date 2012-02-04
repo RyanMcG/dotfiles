@@ -294,6 +294,7 @@ set pastetoggle=<F12>
 "nmap <silent> <leader>hl :highlight LineNr term=NONE ctermfg=grey ctermbg=black<CR>
 "highlight LineNr term=NONE ctermfg=grey ctermbg=black
 highlight WarningMsg term=bold cterm=bold ctermbg=239 ctermfg=yellow guifg=yellow guifg=#4e4e4e
+highlight Cursor guibg=white
 
 "
 " Some Custom functions
