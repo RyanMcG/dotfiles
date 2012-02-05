@@ -85,7 +85,7 @@ endif
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
-set backupdir=~/.vimbackups
+set backupdir=~/.vim/backups
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
@@ -143,6 +143,9 @@ endif " has("autocmd")
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
+
+" Set encoding to utf-8
+set encoding=utf-8
 
 "Linebreak and Wrap
 set wrap
