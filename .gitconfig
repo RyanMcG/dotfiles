@@ -13,6 +13,9 @@
 	status = auto
 
 [alias]
+	a = add
+	ap = add -p
+	ae = add -e
 	b = branch
 	cm = commit -m
 	ca = commit -a
@@ -32,6 +35,7 @@
 	rs = remote show
 	p = pull
 	pr = pull --rebase
+	rh = reset HEAD
 
 [branch]
 	autosetupmerge = always
