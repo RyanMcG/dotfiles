@@ -50,3 +50,5 @@
 	file-view-vpane-position = 288
 	history-view-vpane-position = 399
 	main-window-view = FileView
+[web]
+	browser = chromium
