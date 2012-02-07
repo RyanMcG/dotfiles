@@ -29,6 +29,7 @@ Bundle 'git://github.com/mattn/gist-vim.git'
 Bundle 'git://github.com/sjl/gundo.vim.git'
 "Testing
 Bundle 'git://github.com/vim-scripts/localvimrc.git'
+Bundle 'git://github.com/rson/vim-conque.git'
 "Bundle 'git://github.com/shemerey/vim-project.git'
 " Colorschemes
 Bundle 'git://github.com/noahfrederick/Hemisu.git'
@@ -177,6 +178,12 @@ set foldenable
 set foldmethod=syntax
 
 "Plugin Config
+
+"Slime
+let g:slime_target = "tmux"
+
+"Conque Term
+let g:ConqueTerm_TERM = 'xterm'
 
 "Syntastic
 let g:syntastic_enable_signs=1
