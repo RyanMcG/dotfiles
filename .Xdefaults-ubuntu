@@ -1,7 +1,7 @@
 Xcursor.theme: Vanilla-DMZ
 !urxvt.font: xft:Dina:pixelsize=16:antialias=false
 !urxvt.font: xft:Inconsolata:prgba=vbgr:pixelsize=14.5
-urxvt.font: xft:Inconsolata:pixelsize=14.5
+urxvt.font: xft:Inconsolata:size=11
 !urxvt.font: xft:Anonymous Pro:prgba=vbgr:pixelsize=14.5
 !urxvt.font: xft:DejaVu Sans Mono:prgba=vbgr:pixelsize=13
 !urxvt.font: -*-dina-*-r-*-*-*-120-*-*-*-*-*-*
@@ -15,7 +15,8 @@ URxvt*termName: rxvt-unicode
 URxvt*perl-lib: /usr/lib/urxvt/perl/
 URxvt*perl-ext-common: default,matcher
 URxvt*matcher.button: 1
-URxvt*urlLauncher: /usr/bin/google-chrome
+URxvt*urlLauncher: /usr/bin/chromium
+URxvt*iconFile: /usr/share/icons/Faenza/apps/scalable/Terminal.svg
 !URxvt*fading: 50
 !URxvt*fadeColor: #000000
 

@@ -317,7 +317,7 @@
         <command>urxvtcd -e vim</command>
       </action>
     </keybind>
-    <keybind key="A-F4">
+    <keybind key="XF86Launch1">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -325,6 +325,38 @@
         </startupnotify>
         <command>urxvtcd -e htop</command>
       </action>
+    </keybind>
+    <keybind key="W-Left">
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <width>512</width>
+      </action>
+      <action name="MoveToEdgeWest"/>
+    </keybind>
+    <keybind key="W-Right">
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <width>512</width>
+      </action>
+      <action name="MoveToEdgeEast"/>
+    </keybind>
+    <keybind key="W-S-Left">
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <width>324</width>
+      </action>
+      <action name="MoveToEdgeWest"/>
+    </keybind>
+    <keybind key="W-S-Right">
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <width>700</width>
+      </action>
+      <action name="MoveToEdgeEast"/>
     </keybind>
     <keybind key="W-space">
       <action name="Execute">

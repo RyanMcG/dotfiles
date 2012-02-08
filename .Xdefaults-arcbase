@@ -48,3 +48,20 @@ urxvt-bg.shading: 10
 *color13: #cf9ebe
 *color14: #71bebe
 *color15: #ffffff
+
+xterm*color0: #000000
+xterm*color1: #a6404c
+xterm*color2: #aece92
+xterm*color3: #968a38
+xterm*color4: #2670cc
+xterm*color5: #963c59
+xterm*color6: #418179
+xterm*color7: #bebebe
+xterm*color8: #333333
+xterm*color9: #cf6171
+xterm*color10: #c5f779
+xterm*color11: #fff796
+xterm*color12: #75abdf
+xterm*color13: #cf9ebe
+xterm*color14: #71bebe
+xterm*color15: #ffffff
