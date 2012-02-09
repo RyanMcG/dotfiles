@@ -312,12 +312,12 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>VIM</name>
+          <name>GVIM</name>
         </startupnotify>
-        <command>urxvtcd -e vim</command>
+        <command>gvim</command>
       </action>
     </keybind>
-    <keybind key="XF86Launch1">
+    <keybind key="XF86HomePage">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -330,7 +330,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>512</width>
+        <width>960</width>
       </action>
       <action name="MoveToEdgeWest"/>
     </keybind>
@@ -338,7 +338,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>512</width>
+        <width>960</width>
       </action>
       <action name="MoveToEdgeEast"/>
     </keybind>
@@ -346,7 +346,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>324</width>
+        <width>800</width>
       </action>
       <action name="MoveToEdgeWest"/>
     </keybind>
@@ -354,7 +354,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>700</width>
+        <width>1180</width>
       </action>
       <action name="MoveToEdgeEast"/>
     </keybind>
@@ -398,11 +398,6 @@
       </action>
     </keybind>
     <!-- Keybindings for running audio stuff -->
-    <keybind key="A-S-F2">
-      <action name="Execute">
-        <command>urxvtcd -g +0+16 -e ncmpcpp</command>
-      </action>
-    </keybind>
     <keybind key="A-F2">
       <action name="Execute">
         <command>urxvtcd -g +0+16 -e ncmpcpp</command>
@@ -443,7 +438,7 @@
         <command>pavucontrol</command>
       </action>
     </keybind>
-    <keybind key="XF86Email">
+    <keybind key="XF86Mail">
       <action name="Execute">
         <command>chromium</command>
       </action>
