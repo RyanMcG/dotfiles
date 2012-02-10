@@ -73,6 +73,7 @@ Bundle 'git://github.com/kchmck/vim-coffee-script.git'
 
 "Make sure my after is really at the end.
 set runtimepath-=~/.vim/after/
+set runtimepath+=~/.vim/bundle/eclim/
 set runtimepath+=~/.vim/after/
 
 "Source matchit.vim (included in vim 7)
