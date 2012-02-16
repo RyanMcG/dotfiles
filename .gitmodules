@@ -1,0 +1,3 @@
+[submodule ".themes/Sassamon"]
+	path = .themes/Sassamon
+	url = /home/ryanmcg/repo/dotfiles/Sassamon
