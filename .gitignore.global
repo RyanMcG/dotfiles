@@ -28,3 +28,4 @@ javadoc*
 .ropeproject/
 /MANIFEST
 /dist
+.lein-deps-sum
