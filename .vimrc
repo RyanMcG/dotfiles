@@ -213,7 +213,7 @@ let g:session_autoload='no'
 let vimclojure#WantNailgun = 1
 let g:vimclojure#ParenRainbow=1
 let g:vimclojure#DynamicHighlighting=1
-let vimclojure#FuzzyIndent = 1
+"let vimclojure#FuzzyIndent = 1
 
 "Slime
 let g:paredit_mode = 0 "Used by slimv actually
