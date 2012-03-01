@@ -14,5 +14,5 @@ tint2 &
 
 #Now our host specific autostart
 if [ $ENABLE_COMPMGR = "yes" ]; then
-	xcompmgr -cC &
+	compton -cC &
 fi
