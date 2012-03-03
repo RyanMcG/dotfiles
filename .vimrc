@@ -65,6 +65,11 @@ Bundle 'git://github.com/mattn/zencoding-vim.git'
 Bundle 'git://github.com/pangloss/vim-javascript.git'
 Bundle 'git://github.com/kchmck/vim-coffee-script.git'
 
+"Ruby
+Bundle 'git://github.com/vim-ruby/vim-ruby.git'
+Bundle 'git://github.com/tpope/vim-rails.git'
+Bundle 'git://github.com/astashov/vim-ruby-debugger.git'
+
 "Removed
 "Bundle 'git://github.com/vim-scripts/AutoComplPop.git'
 "Bundle 'git://github.com/joestelmach/javaScriptLint.vim.git'
