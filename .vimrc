@@ -44,10 +44,11 @@ Bundle 'git://github.com/vim-scripts/xoria256.vim.git'
 "Bundle 'git://github.com/vim-scripts/JavaImp.vim--Lee'
 
 "Latex
-Bundle 'git://github.com/vim-scripts/LaTeX-Suite-aka-Vim-LaTeX.git'
+"Bundle 'git://github.com/vim-scripts/LaTeX-Suite-aka-Vim-LaTeX.git'
 
 "Clojure
 Bundle 'git://github.com/vim-scripts/VimClojure.git'
+Bundle 'slimv.vim'
 Bundle 'git://github.com/jpalardy/vim-slime.git'
 
 "Markdown
@@ -67,8 +68,8 @@ Bundle 'git://github.com/kchmck/vim-coffee-script.git'
 
 "Ruby
 Bundle 'git://github.com/vim-ruby/vim-ruby.git'
-Bundle 'git://github.com/tpope/vim-rails.git'
-Bundle 'git://github.com/astashov/vim-ruby-debugger.git'
+"Bundle 'git://github.com/tpope/vim-rails.git'
+"Bundle 'git://github.com/astashov/vim-ruby-debugger.git'
 
 "Removed
 "Bundle 'git://github.com/vim-scripts/AutoComplPop.git'
@@ -216,12 +217,20 @@ let g:session_autoload='no'
 
 "VimClojure
 let vimclojure#WantNailgun = 1
-let g:vimclojure#ParenRainbow=1
+let g:vimclojure#ParenRainbow = 1
+let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#DynamicHighlighting=1
 "let vimclojure#FuzzyIndent = 1
 
-"Slime
+"Slimv
+"let g:slimv_loaded = 1
+"let g:slimv_keybindings = 1
+let g:slimv_leader = '\'
+let g:lisp_rainbow = 1
+let g:slimv_repl_syntax = 1
 let g:paredit_mode = 0 "Used by slimv actually
+
+"Slime
 let g:slime_target = "tmux"
 
 "Snipmate
