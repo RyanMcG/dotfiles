@@ -29,6 +29,7 @@ Bundle 'git://github.com/rson/vim-conque.git'
 "Testing
 Bundle 'git://github.com/tpope/vim-surround.git'
 Bundle 'git://github.com/vim-scripts/localvimrc.git'
+"Bundle 'git://github.com/njackson/paredit-vim.git'
 "Bundle 'git://github.com/shemerey/vim-project.git'
 "Bundle 'git://github.com/msanders/snipmate.vim'
 "Bundle 'git://github.com/scrooloose/snipmate-snippets.git'
