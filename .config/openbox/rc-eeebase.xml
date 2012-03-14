@@ -312,9 +312,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>VIM</name>
+          <name>GVIM</name>
         </startupnotify>
-        <command>urxvtcd -e vim</command>
+        <command>gvim</command>
       </action>
     </keybind>
     <keybind key="XF86Launch1">
@@ -364,7 +364,7 @@
           <enabled>true</enabled>
           <name>dmenu</name>
         </startupnotify>
-        <command>dmenu_run -fn '-*-dina-medium-r-*-*-15-*-*-*-*-*-*-*' -nb '#000' -nf '#fff' -sb '#2670cc' -sf '#fff' -p '$'</command>
+        <command>dmenu_run -fn '-*-dina-medium-r-*-*-15-*-*-*-*-*-*-*' -nb '#090909' -nf '#fafafa' -sb '#2670cc' -sf '#f0f0f0' -p '$'</command>
       </action>
     </keybind>
     <keybind key="W-z">
@@ -398,11 +398,6 @@
       </action>
     </keybind>
     <!-- Keybindings for running audio stuff -->
-    <keybind key="A-S-F2">
-      <action name="Execute">
-        <command>urxvtcd -g +0+16 -e ncmpcpp</command>
-      </action>
-    </keybind>
     <keybind key="A-F2">
       <action name="Execute">
         <command>urxvtcd -g +0+16 -e ncmpcpp</command>
@@ -425,17 +420,17 @@
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>mute_toggle</command>
+        <command>amixer -D pulse set Master toggle</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>vol_up</command>
+        <command>amixer -D pulse set Master 2%+ unmute</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>vol_down</command>
+        <command>amixer -D pulse set Master 2%- unmute</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMedia">
@@ -443,7 +438,7 @@
         <command>pavucontrol</command>
       </action>
     </keybind>
-    <keybind key="XF86Email">
+    <keybind key="XF86Mail">
       <action name="Execute">
         <command>nchrm</command>
       </action>
