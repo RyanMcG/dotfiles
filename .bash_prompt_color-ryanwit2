@@ -1,2 +1,4 @@
 P_COLOR=$FRED
 export PATH=$PATH:$HOME/.eclipse/org.eclipse.platform_3.7.0_155965261/
+alias mytom_start=/opt/apache-tomcat-6.0.35/bin/startup.sh
+alias mytom_stop=/opt/apache-tomcat-6.0.35/bin/shutdown.sh
