@@ -35,7 +35,7 @@
 	rs = remote show
 	p = pull
 	pr = pull --rebase
-	rh = reset HEAD
+	unstage = reset HEAD
 
 [branch]
 	autosetupmerge = always
@@ -45,10 +45,10 @@
 [github]
 	user = RyanMcG
 [giggle]
-	main-window-maximized = true
-	main-window-geometry = 700x533+139+17
-	file-view-vpane-position = 288
-	history-view-vpane-position = 399
+	main-window-maximized = false
+	main-window-geometry = 995x563+208+225
+	file-view-vpane-position = 494
+	history-view-vpane-position = 258
 	main-window-view = FileView
 [web]
 	browser = chromium
