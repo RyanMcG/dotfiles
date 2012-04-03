@@ -54,6 +54,8 @@ Bundle 'git://github.com/jpalardy/vim-slime.git'
 
 "Markdown
 Bundle 'git://github.com/tpope/vim-markdown.git'
+"Bundle 'git://github.com/plasticboy/vim-markdown.git'
+"Bundle 'git://github.com/hallison/vim-markdown.git'
 
 "Python
 Bundle 'git://github.com/cburroughs/pep8.py.git'
