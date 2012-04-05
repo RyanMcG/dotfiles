@@ -15,7 +15,7 @@ export HISTCONTROL=ignoredups
 export HISTCONTROL=ignoreboth
 export EDITOR="vim"
 export VISUAL=$EDITOR
-export PATH=$PATH:/usr/share/eclipse/:/opt/maven/bin/:/opt/android-sdk/platform-tools/:$HOME/bin/:$HOME/.cabal/bin/:$HOME/bin/node/bin/:$HOME/.gem/ruby/1.9.1/bin/
+export PATH=$PATH:/usr/share/eclipse/:/opt/maven/bin/:/opt/android-sdk/platform-tools/:$HOME/bin/:$HOME/.cabal/bin/:$HOME/bin/node/bin/:$HOME/.gem/ruby/1.9.1/bin/:$HOME/.rvm/bin
 export CLASSPATH=.:src/:bin/
 export PYTHONDOCS=/usr/share/doc/python2/html/
 export JAVAOPTS=$JAVA_OPTS" -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n " #Make JVM's run with transport socket.
@@ -139,5 +139,3 @@ alias la='ls -A'
 
 # add an alert alias for long running commands
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

@@ -35,11 +35,12 @@ alias sudo="sudo "
 
 alias g="git"
 #Make autocompleteion work for g alias too
-if type __git_ps1 >/dev/null 2>&1; then
-	complete -o default -o nospace -F _git g
+if type _git > /dev/null 2>&1; then
+	complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
+		|| complete -o default -o nospace -F _git g
 fi
 alias h="hg"
-if type _hg >/dev/null 2>&1; then
+if type _hg > /dev/null 2>&1; then
 	complete -o default -o nospace -F _hg h
 fi
 
