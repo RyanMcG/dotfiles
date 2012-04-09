@@ -295,6 +295,7 @@ let ruby_no_comment_fold = 1
 let g:EclimXmlValidate = 0
 let g:EclimCValidate = 0
 let g:EclimPythonValidate = 0
+let g:EclimJavascriptValidate = 0
 
 " Modify Status line
 set laststatus=2
