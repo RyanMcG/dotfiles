@@ -49,7 +49,7 @@ Bundle 'git://github.com/vim-scripts/xoria256.vim.git'
 
 "Clojure
 Bundle 'git://github.com/vim-scripts/VimClojure.git'
-Bundle 'slimv.vim'
+"Bundle 'slimv.vim'
 Bundle 'git://github.com/jpalardy/vim-slime.git'
 
 "Markdown
