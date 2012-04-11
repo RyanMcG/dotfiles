@@ -8,6 +8,7 @@ filetype off
 
 set runtimepath+=~/.vim/bundle/vundle/
 call vundle#rc()
+let g:vundle_default_git_proto = 'git'
 
 "Make vundle manage vundle
 Bundle 'git://github.com/gmarik/vundle'
@@ -28,7 +29,6 @@ Bundle 'git://github.com/sjl/gundo.vim.git'
 Bundle 'git://github.com/rson/vim-conque.git'
 "Testing
 Bundle 'git://github.com/tpope/vim-surround.git'
-Bundle 'git://github.com/vim-scripts/localvimrc.git'
 "Bundle 'git://github.com/njackson/paredit-vim.git'
 "Bundle 'git://github.com/shemerey/vim-project.git'
 "Bundle 'git://github.com/msanders/snipmate.vim'
