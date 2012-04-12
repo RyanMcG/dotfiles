@@ -55,7 +55,7 @@ Bundle 'git://github.com/jpalardy/vim-slime.git'
 "Markdown
 Bundle 'git://github.com/tpope/vim-markdown.git'
 "Bundle 'git://github.com/plasticboy/vim-markdown.git'
-"Bundle 'git://github.com/hallison/vim-markdown.git'
+Bundle 'git://github.com/hallison/vim-markdown.git'
 
 "Python
 Bundle 'git://github.com/cburroughs/pep8.py.git'
@@ -224,6 +224,8 @@ let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#DynamicHighlighting=1
 "let vimclojure#FuzzyIndent = 1
+" Set *.cljs files to the clojure filetype
+autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
 "Slimv
 "let g:slimv_loaded = 1
