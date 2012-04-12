@@ -36,6 +36,8 @@ Bundle 'git://github.com/tpope/vim-surround.git'
 
 " Colorschemes
 Bundle 'git://github.com/noahfrederick/Hemisu.git'
+Bundle 'git://github.com/altercation/vim-colors-solarized.git'
+Bundle 'git://github.com/jeffreyiacono/vim-colors-wombat.git'
 Bundle 'git://github.com/vim-scripts/xoria256.vim.git'
 
 "Languge specific
@@ -116,10 +118,21 @@ endif
 
 "Set our colorscheme
 if &t_Co >= 256 || has("gui_running")
-  colorscheme xoria256
+  "let g:solarized_contrast="low"
+  "colorscheme xoria256
+  "colorscheme solarized
+  colorscheme wombat
+  highlight Cursor guibg=bg gui=reverse
+  "highlight Cursor guibg=white
 else
-  colorscheme elflord
+  "colorscheme elflord
+  colorscheme xoria256
 endif
+
+"Change the way numbers look
+"nmap <silent> <leader>hl :highlight LineNr term=NONE ctermfg=grey ctermbg=black<CR>
+"highlight LineNr term=NONE ctermfg=grey ctermbg=black
+highlight WarningMsg term=bold cterm=bold ctermbg=239 ctermfg=yellow guifg=yellow guifg=#4e4e4e
 
 " Enable file type detection.
 " Use the default filetype settings, so that mail gets 'tw' set to 72,
@@ -294,6 +307,7 @@ let ruby_fold = 1
 let ruby_no_comment_fold = 1
 
 "Configure Eclim
+let g:EclimSignLevel = 0
 let g:EclimXmlValidate = 0
 let g:EclimCValidate = 0
 let g:EclimPythonValidate = 0
@@ -324,12 +338,6 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 "Forget sudo? Here ya go!
 cmap w!! w !sudo tee % >/dev/null
 set pastetoggle=<F12>
-
-"Change the way numbers look
-"nmap <silent> <leader>hl :highlight LineNr term=NONE ctermfg=grey ctermbg=black<CR>
-"highlight LineNr term=NONE ctermfg=grey ctermbg=black
-highlight WarningMsg term=bold cterm=bold ctermbg=239 ctermfg=yellow guifg=yellow guifg=#4e4e4e
-highlight Cursor guibg=white
 
 "
 " Some Custom functions
