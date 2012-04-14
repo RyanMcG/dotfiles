@@ -122,6 +122,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [ -f ~/.bash_secret ]; then
+    . ~/.bash_secret
+fi
+
 # enable color support of ls and also add handy aliases
     eval "`dircolors -b`"
     alias ls='ls -h --color=auto'

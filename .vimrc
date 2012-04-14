@@ -234,6 +234,9 @@ vnoremap > >gv
 " Plugin Config
 "
 
+" Powerline
+let g:Powerline_symbols = 'fancy'
+
 " minibufexpl
 "let g:miniBufExplVSplit = 25
 let g:miniBufExplorerMoreThanOne = 0
