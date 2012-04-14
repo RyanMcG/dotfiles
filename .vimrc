@@ -19,7 +19,7 @@ Bundle 'git://github.com/vim-scripts/The-NERD-Commenter'
 Bundle 'git://github.com/majutsushi/tagbar'
 Bundle 'git://github.com/ciaranm/detectindent.git'
 Bundle 'git://github.com/tpope/vim-fugitive'
-Bundle 'git://github.com/wincent/Command-T'
+"Bundle 'git://github.com/wincent/Command-T'
 Bundle 'git://github.com/xolox/vim-session.git'
 Bundle 'git://github.com/fholgado/minibufexpl.vim'
 Bundle 'git://github.com/ervandew/supertab.git'
@@ -27,8 +27,12 @@ Bundle 'git://github.com/scrooloose/syntastic.git'
 Bundle 'git://github.com/mattn/gist-vim.git'
 Bundle 'git://github.com/sjl/gundo.vim.git'
 Bundle 'git://github.com/rson/vim-conque.git'
-"Testing
 Bundle 'git://github.com/tpope/vim-surround.git'
+"Testing
+Bundle 'git://github.com/kien/ctrlp.vim.git'
+Bundle 'git://github.com/sjl/threesome.vim.git'
+Bundle 'https://github.com/Lokaltog/vim-powerline.git'
+Bundle 'git://github.com/chrismetcalf/vim-yankring.git'
 "Bundle 'git://github.com/njackson/paredit-vim.git'
 "Bundle 'git://github.com/shemerey/vim-project.git'
 "Bundle 'git://github.com/msanders/snipmate.vim'
@@ -166,6 +170,13 @@ if has("autocmd")
 
   augroup END
 
+  " Highlight trailing whitespace when not in insert-mode
+  augroup trailing
+	  au!
+	  au InsertEnter * :set listchars-=trail:⌴
+	  au InsertLeave * :set listchars+=trail:⌴
+  augroup END
+
 endif " has("autocmd")
 
 " allow backspacing over everything in insert mode
@@ -189,12 +200,13 @@ set ignorecase
 set smartcase
 "Split below and to the right instead of default
 "set splitbelow "Makes MiniBufExplorer appear at the bottom
-set splitright
+"set splitright
 set title
 "let loaded_matchparen = 0 "Uncomment to turn off
 "set showmatch
 
 "Completeion in command mode
+set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,.DS_Store,*.aux,*.out,*.toc
 set wildmenu
 set wildmode=list:longest
 
@@ -203,7 +215,35 @@ set foldenable
 "set foldlevel=20
 set foldmethod=syntax
 
-"Plugin Config
+" Set omnifunc to syntax completion
+set omnifunc=syntaxcomplete@Complete
+
+set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
+
+" Add charater to front of wrapped lines
+set showbreak=↪
+
+" Highlight VCS conflict markers
+match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
+
+" Reselect visual block after indent/outdent
+vnoremap < <gv
+vnoremap > >gv
+
+"
+" Plugin Config
+"
+
+" minibufexpl
+"let g:miniBufExplVSplit = 25
+let g:miniBufExplorerMoreThanOne = 0
+let g:miniBufExplUseSingleClick = 1
+nmap <Leader>b :MiniBufExplorer<cr>
+
+" yankring
+let g:yankring_replace_n_pkey = '<leader>['
+let g:yankring_replace_n_nkey = '<leader>]'
+nmap <leader>y :YRShow<cr>
 
 "Slime
 let g:slime_target = "tmux"
