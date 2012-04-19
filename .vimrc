@@ -216,7 +216,7 @@ set foldenable
 set foldmethod=syntax
 
 " Set omnifunc to syntax completion
-set omnifunc=syntaxcomplete@Complete
+"set omnifunc=syntaxcomplete@Complete
 
 set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
 
@@ -240,7 +240,7 @@ let g:Powerline_symbols = 'fancy'
 " minibufexpl
 "let g:miniBufExplVSplit = 25
 let g:miniBufExplorerMoreThanOne = 0
-let g:miniBufExplUseSingleClick = 1
+"let g:miniBufExplUseSingleClick = 1
 nmap <Leader>b :MiniBufExplorer<cr>
 
 " yankring
