@@ -35,7 +35,7 @@
 	rs = remote show
 	p = pull
 	pr = pull --rebase
-	unstage = reset HEAD
+	rp = reset -p
 
 [branch]
 	autosetupmerge = always
