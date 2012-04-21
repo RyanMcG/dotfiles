@@ -71,6 +71,9 @@ Bundle 'git://github.com/vim-scripts/python.vim--Vasiliev.git'
 "HTML/CSS
 Bundle 'git://github.com/mattn/zencoding-vim.git'
 
+" Less
+Bundle 'git://github.com/groenewege/vim-less.git'
+
 "Javascript
 Bundle 'git://github.com/pangloss/vim-javascript.git'
 Bundle 'git://github.com/kchmck/vim-coffee-script.git'
