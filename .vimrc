@@ -54,8 +54,9 @@ Bundle 'git://github.com/vim-scripts/xoria256.vim.git'
 "Bundle 'git://github.com/vim-scripts/LaTeX-Suite-aka-Vim-LaTeX.git'
 
 "Clojure
-Bundle 'git://github.com/vim-scripts/VimClojure.git'
+"Bundle 'git://github.com/vim-scripts/VimClojure.git'
 "Bundle 'slimv.vim'
+Bundle 'git://github.com/RyanMcG/slimVimClojure.git'
 Bundle 'git://github.com/jpalardy/vim-slime.git'
 
 "Markdown
@@ -278,21 +279,21 @@ let g:session_autoload='no'
 "let g:loaded_session=1 "Uncomment to not load session plugin
 
 "VimClojure
-let vimclojure#WantNailgun = 1
+"let vimclojure#WantNailgun = 1
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#HighlightBuiltins = 1
-let g:vimclojure#DynamicHighlighting=1
-"let vimclojure#FuzzyIndent = 1
+"let g:vimclojure#DynamicHighlighting=1
+let vimclojure#FuzzyIndent = 0
 " Set *.cljs files to the clojure filetype
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
 "Slimv
-"let g:slimv_loaded = 1
-"let g:slimv_keybindings = 1
+"let g:slimv_loaded = 1 "Comment to disable paredit
+let g:slimv_keybindings = 1
 let g:slimv_leader = '\'
 let g:lisp_rainbow = 1
 let g:slimv_repl_syntax = 1
-let g:paredit_mode = 0 "Used by slimv actually
+"let g:paredit_mode = 0 "Un comment to disable paredit
 
 "Slime
 let g:slime_target = "tmux"
