@@ -243,7 +243,7 @@ let g:Powerline_symbols = 'fancy'
 
 " minibufexpl
 "let g:miniBufExplVSplit = 25
-let g:miniBufExplorerMoreThanOne = 0
+"let g:miniBufExplorerMoreThanOne = 0
 "let g:miniBufExplUseSingleClick = 1
 nmap <Leader>b :MiniBufExplorer<cr>
 
