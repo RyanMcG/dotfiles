@@ -30,7 +30,7 @@ own_window_colour 000000
 #font
 use_xft yes
 #xftfont Dina:pixelsize=16:antialias=false
-xftfont CMU Conrete:charwidth=11:rgba=vbgr:spacing=charcell:pixelsize=12
+xftfont Inconsolata:bold:charwidth=11:rgba=vbgr:spacing=charcell:pixelsize=12
 use_spacer left
 
 #mpd
