@@ -130,9 +130,10 @@ endif
 if &t_Co >= 256 || has("gui_running")
   "let g:solarized_contrast="low"
   "colorscheme xoria256
-  "colorscheme solarized
-  colorscheme wombat
-  highlight Cursor guibg=bg gui=reverse
+  colorscheme solarized
+  let g:Powerline_colorscheme = 'skwp'
+  "colorscheme wombat
+  "highlight Cursor guibg=bg gui=reverse
   "highlight Cursor guibg=white
 else
   "colorscheme elflord
