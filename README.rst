@@ -17,15 +17,3 @@ directory.  Some files have a hostname or distro appened to them of the form::
 The purpose of this is to allow for different dotfiles on different machines
 while still keeping it in version control. I might change this at a latter date
 to some sort folder structure.
-
-Distros and Hostnames:
-----------------------
-
-Arch Linux:
-~~~~~~~~~~~
-* eeebase
-* arcbase
-
-Debian:
-~~~~~~~
-* rmcghome
