@@ -33,7 +33,6 @@ Bundle 'git://github.com/kien/ctrlp.vim.git'
 Bundle 'git://github.com/sjl/threesome.vim.git'
 Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 Bundle 'git://github.com/chrismetcalf/vim-yankring.git'
-"Bundle 'git://github.com/njackson/paredit-vim.git'
 "Bundle 'git://github.com/shemerey/vim-project.git'
 "Bundle 'git://github.com/msanders/snipmate.vim'
 "Bundle 'git://github.com/scrooloose/snipmate-snippets.git'
@@ -55,6 +54,7 @@ Bundle 'git://github.com/vim-scripts/xoria256.vim.git'
 
 "Clojure
 Bundle 'git://github.com/vim-scripts/VimClojure.git'
+Bundle 'git://github.com/vim-scripts/paredit.vim.git'
 "Bundle 'slimv.vim'
 "Bundle 'git://github.com/RyanMcG/slimVimClojure.git'
 Bundle 'git://github.com/jpalardy/vim-slime.git'
@@ -285,12 +285,11 @@ let vimclojure#WantNailgun = 1
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#DynamicHighlighting=1
-let vimclojure#FuzzyIndent = 0
+let vimclojure#FuzzyIndent = 1
 " Set *.cljs files to the clojure filetype
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
 "Slimv
-"let g:slimv_loaded = 1 "Comment to disable paredit
 let g:slimv_keybindings = 1
 let g:slimv_leader = '\'
 let g:lisp_rainbow = 1
