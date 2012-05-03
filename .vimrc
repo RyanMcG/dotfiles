@@ -31,7 +31,7 @@ Bundle 'git://github.com/tpope/vim-surround.git'
 "Testing
 Bundle 'git://github.com/kien/ctrlp.vim.git'
 Bundle 'git://github.com/sjl/threesome.vim.git'
-Bundle 'https://github.com/Lokaltog/vim-powerline.git'
+Bundle 'git://github.com/Lokaltog/vim-powerline.git'
 Bundle 'git://github.com/chrismetcalf/vim-yankring.git'
 "Bundle 'git://github.com/shemerey/vim-project.git'
 "Bundle 'git://github.com/msanders/snipmate.vim'
