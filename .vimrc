@@ -248,7 +248,6 @@ let g:Powerline_symbols = 'fancy'
 "let g:miniBufExplVSplit = 25
 "let g:miniBufExplorerMoreThanOne = 0
 "let g:miniBufExplUseSingleClick = 1
-nmap <Leader>b :MiniBufExplorer<cr>
 
 " yankring
 let g:yankring_replace_n_pkey = '<leader>['
@@ -284,7 +283,7 @@ let g:session_autoload='no'
 "VimClojure
 "let vimclojure#WantNailgun = 1
 let g:vimclojure#ParenRainbow = 1
-let g:vimclojure#HighlightBuiltins = 1
+"let g:vimclojure#HighlightBuiltins = 1
 "let g:vimclojure#DynamicHighlighting=1
 let vimclojure#FuzzyIndent = 1
 " Set *.cljs files to the clojure filetype
@@ -297,7 +296,7 @@ let g:slimv_repl_split = 0
 "let g:slimv_lisp = '"java -cp clojure.jar;clojure-contrib.jar clojure.main"'
 let g:slimv_lisp = '"lein repl"'
 let g:slimv_leader = '\'
-let g:lisp_rainbow = 1
+"let g:lisp_rainbow = 1
 let g:slimv_repl_syntax = 1
 "let g:paredit_mode = 0 "Un comment to disable paredit
 
