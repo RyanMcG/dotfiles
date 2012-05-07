@@ -1,9 +1,0 @@
-
-[cse630/hw1]
-checkout = git clone 'mcgowanr@stdlogin.cse.ohio-state.edu:repo/cse630/hw1.git' 'hw1'
-
-[honew]
-checkout = git clone 'mcgowanr@stdlogin.cse.ohio-state.edu:repo/honew.git' 'honew'
-
-[class_projects/cse670/bits-books]
-checkout = git clone 'git@bitbucket.org:RyanMcG/bits-books.git' 'bits-books'
