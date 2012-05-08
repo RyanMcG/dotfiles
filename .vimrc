@@ -33,6 +33,7 @@ Bundle 'git://github.com/kien/ctrlp.vim.git'
 Bundle 'git://github.com/sjl/threesome.vim.git'
 Bundle 'git://github.com/Lokaltog/vim-powerline.git'
 Bundle 'git://github.com/chrismetcalf/vim-yankring.git'
+Bundle 'git://github.com/Lokaltog/vim-easymotion.git'
 "Bundle 'git://github.com/shemerey/vim-project.git'
 "Bundle 'git://github.com/msanders/snipmate.vim'
 "Bundle 'git://github.com/scrooloose/snipmate-snippets.git'
@@ -64,6 +65,8 @@ Bundle 'git://github.com/tpope/vim-markdown.git'
 "Bundle 'git://github.com/plasticboy/vim-markdown.git'
 Bundle 'git://github.com/hallison/vim-markdown.git'
 
+" Jade
+
 "Python
 Bundle 'git://github.com/cburroughs/pep8.py.git'
 Bundle 'git://github.com/ivanov/vim-ipython.git'
@@ -78,6 +81,10 @@ Bundle 'git://github.com/groenewege/vim-less.git'
 "Javascript
 Bundle 'git://github.com/pangloss/vim-javascript.git'
 Bundle 'git://github.com/kchmck/vim-coffee-script.git'
+Bundle 'git://github.com/digitaltoad/vim-jade.git'
+Bundle 'git://github.com/felixge/vim-nodejs-errorformat.git'
+Bundle 'git://github.com/godlygeek/tabular.git'
+Bundle 'git://github.com/wavded/vim-stylus.git'
 
 "Ruby
 Bundle 'git://github.com/vim-ruby/vim-ruby.git'
