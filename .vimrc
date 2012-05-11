@@ -133,6 +133,8 @@ if &t_Co > 2 || has("gui_running")
   set background=dark
 endif
 
+set noballooneval
+
 "Set our colorscheme
 if &t_Co >= 256 || has("gui_running")
   "let g:solarized_contrast="low"
