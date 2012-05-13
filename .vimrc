@@ -140,6 +140,7 @@ if &t_Co >= 256 || has("gui_running")
   "let g:solarized_contrast="low"
   "colorscheme xoria256
   colorscheme solarized
+  let g:Powerline_symbols = 'fancy'
   let g:Powerline_colorscheme = 'skwp'
   "colorscheme wombat
   "highlight Cursor guibg=bg gui=reverse
@@ -249,9 +250,6 @@ vnoremap > >gv
 "
 " Plugin Config
 "
-
-" Powerline
-let g:Powerline_symbols = 'fancy'
 
 " minibufexpl
 "let g:miniBufExplVSplit = 25
