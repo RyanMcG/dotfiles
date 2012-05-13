@@ -8,5 +8,10 @@
                   ;[lein-autodoc "0.9.0"]
                   [lein-marginalia "0.7.0"]
                   [lein-noir "1.2.0"]]
+        ;:injections [(let [orig (ns-resolve (doto 'clojure.stacktrace require)
+                                            ;'print-cause-trace)
+                           ;new (ns-resolve (doto 'clj-stacktrace.repl require)
+                                           ;'pst)]
+                       ;(alter-var-root orig (constantly @new)))]
         :vimclojure-opts {:repl true
                           :port 2113}}}
