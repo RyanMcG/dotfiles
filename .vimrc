@@ -136,7 +136,7 @@ endif
 set noballooneval
 
 "Set our colorscheme
-if &t_Co >= 256 || has("gui_running")
+if has("gui_running")
   "let g:solarized_contrast="low"
   "colorscheme xoria256
   colorscheme solarized
@@ -145,9 +145,10 @@ if &t_Co >= 256 || has("gui_running")
   "colorscheme wombat
   "highlight Cursor guibg=bg gui=reverse
   "highlight Cursor guibg=white
-else
-  "colorscheme elflord
+elseif &t_Co >= 256
   colorscheme xoria256
+else
+  colorscheme elflord
 endif
 
 "Change the way numbers look
