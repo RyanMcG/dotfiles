@@ -15,5 +15,5 @@ directory.  Some files have a hostname or distro appened to them of the form::
     .<dotfile>-<hostnameORdistro>
 
 The purpose of this is to allow for different dotfiles on different machines
-while still keeping it in version control. I might change this at a latter date
+while still keeping it in version control. I might change this at a later date
 to some sort folder structure.
