@@ -29,3 +29,4 @@ javadoc*
 /MANIFEST
 /dist
 .lein-deps-sum
+*.iml
