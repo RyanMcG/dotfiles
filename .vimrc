@@ -50,6 +50,10 @@ Bundle 'git://github.com/vim-scripts/xoria256.vim.git'
 "Bundle 'git://github.com/VictorDenisov/javacomplete'
 "Bundle 'git://github.com/vim-scripts/JavaImp.vim--Lee'
 
+" Scala
+Bundle 'git://github.com/derekwyatt/vim-scala.git'
+Bundle 'git://github.com/derekwyatt/vim-sbt.git'
+
 "Latex
 "Bundle 'git://github.com/vim-scripts/LaTeX-Suite-aka-Vim-LaTeX.git'
 
