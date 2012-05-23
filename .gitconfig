@@ -52,3 +52,5 @@
 	main-window-view = FileView
 [web]
 	browser = chromium
+[push]
+	default = tracking
