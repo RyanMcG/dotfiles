@@ -310,7 +310,8 @@ let g:slimv_lisp = '"lein repl"'
 let g:slimv_leader = '\'
 "let g:lisp_rainbow = 1
 let g:slimv_repl_syntax = 1
-let g:paredit_mode = 0 "Un comment to disable paredit
+"let g:paredit_mode = 0 "Un comment to disable paredit
+let g:paredit_shortmaps = 1
 
 "Slime
 let g:slime_target = "tmux"
