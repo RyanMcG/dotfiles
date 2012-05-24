@@ -9,7 +9,7 @@
                   ;[lein-autodoc "0.9.0"]
                   [lein-marginalia "0.7.0"]
                   [lein-noir "1.2.0"]]
-        :repl-options {:timeout 40000}
+        :repl-options {:timeout 60000}
         :injections [(let [orig (ns-resolve (doto 'clojure.stacktrace require)
                                             'print-cause-trace)
                            new (ns-resolve (doto 'clj-stacktrace.repl require)
