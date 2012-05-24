@@ -5,9 +5,11 @@
                   [lein-pprint "1.1.1"]
                   [slamhound "1.2.0"]
                   [lein-cljsbuild "0.1.9"]
+                  [lein-deps-tree "0.1.1"]
                   ;[lein-autodoc "0.9.0"]
                   [lein-marginalia "0.7.0"]
                   [lein-noir "1.2.0"]]
+        :repl-options {:timeout 40000}
         :injections [(let [orig (ns-resolve (doto 'clojure.stacktrace require)
                                             'print-cause-trace)
                            new (ns-resolve (doto 'clj-stacktrace.repl require)
