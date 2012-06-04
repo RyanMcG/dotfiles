@@ -144,6 +144,7 @@ if has("gui_running")
   "let g:solarized_contrast="low"
   "colorscheme xoria256
   colorscheme solarized
+  set cc=80
   let g:Powerline_symbols = 'fancy'
   let g:Powerline_colorscheme = 'skwp'
   "colorscheme wombat
