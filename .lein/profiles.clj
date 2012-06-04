@@ -2,6 +2,7 @@
                   [lein-swank "1.4.4"]
                   [lein-difftest "1.3.7"]
                   [lein-clojars "0.8.0"]
+                  [jark/jark-server "0.4.0"]
                   [clj-stacktrace "0.2.4"]
                   [lein-pprint "1.1.1"]
                   [slamhound "1.2.0"]
