@@ -320,7 +320,7 @@ let g:slime_target = "tmux"
 "Supertab
 set completeopt+=longest
 set completeopt-=preview
-"let g:SuperTabContextDefaultCompletionType='context'
+let g:SuperTabDefaultCompletionType = "context"
 "let g:SuperTabMappingForward = '<C-l>'
 "let g:SuperTabMappingBackward = '<S-C-l>'
 let g:SuperTabLongestEnhanced=1
@@ -363,7 +363,7 @@ let c_space_errors = 1
 
 "Python
 let python_highlight_all = 1
-let g:ipy_perform_mappings = 0
+"let g:ipy_perform_mappings = 0
 
 "Ruby
 let ruby_operators = 1
