@@ -15,7 +15,7 @@ export HISTCONTROL=ignoredups
 export HISTCONTROL=ignoreboth
 export EDITOR="vim"
 export VISUAL=$EDITOR
-export PATH=$PATH:/usr/share/eclipse/:/opt/maven/bin/:/opt/android-sdk/platform-tools/:$HOME/bin/:$HOME/.cabal/bin/:$HOME/bin/node/bin/:$HOME/.gem/ruby/1.9.1/bin/:$HOME/.rvm/bin:$HOME/node_modules/.bin/
+export PATH=$HOME/bin:/usr/share/eclipse/:/opt/maven/bin/:/opt/android-sdk/platform-tools/:$HOME/.cabal/bin/:$HOME/bin/node/bin/:$HOME/.gem/ruby/1.9.1/bin/:$HOME/.rvm/bin:$HOME/node_modules/.bin/:$PATH
 export CLASSPATH=.:src/:bin/
 export PYTHONDOCS=/usr/share/doc/python2/html/
 export CTAGS="--langmap=lisp:+.clj" # Make clj compile as LISP for ctags
