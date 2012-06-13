@@ -92,8 +92,9 @@ Bundle 'git://github.com/wavded/vim-stylus.git'
 
 "Ruby
 Bundle 'git://github.com/vim-ruby/vim-ruby.git'
-"Bundle 'git://github.com/tpope/vim-rails.git'
-"Bundle 'git://github.com/astashov/vim-ruby-debugger.git'
+Bundle 'git://github.com/tpope/vim-rails.git'
+Bundle 'git://github.com/tpope/vim-rake.git'
+Bundle 'git://github.com/astashov/vim-ruby-debugger.git'
 
 "Removed
 "Bundle 'git://github.com/vim-scripts/AutoComplPop.git'
