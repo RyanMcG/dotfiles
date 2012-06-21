@@ -349,6 +349,9 @@ let g:gist_detect_filetype = 1
 "let g:easytags_on_cursorhold = 0 "Turns auto everything off
 "let g:easytags_dynamic_files = 1
 
+" Netrw
+nnoremap <silent> <F9> :Explore<CR>
+
 "Configure language specifc options
 "PHP
 let php_htmlInStrings = 1
