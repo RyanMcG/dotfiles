@@ -24,6 +24,7 @@
 	d = diff
 	dc = diff --cached
 	ds = diff --stat
+	f = fetch
 	s = status
 	sn = show --name-only --decorate
 	l = log --decorate --graph
