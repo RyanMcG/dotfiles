@@ -6,7 +6,7 @@ set nocompatible
 " Make sure filetype is off for vundle
 filetype off
 
-set runtimepath+=~/.vim/bundle/vundle/
+set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
 let g:vundle_default_git_proto = 'git'
 
@@ -106,9 +106,12 @@ Bundle 'git://github.com/astashov/vim-ruby-debugger.git'
 "Bundle 'git://github.com/vim-scripts/Source-Explorer-srcexpl.vim.git'
 
 "Make sure my after is really at the end.
+set runtimepath-=~/.vim
+set runtimepath-=~/.vim/bundle/eclim
 set runtimepath-=~/.vim/after/
-set runtimepath+=~/.vim/bundle/eclim/
-set runtimepath+=~/.vim/after/
+set runtimepath^=~/.vim
+set runtimepath+=~/.vim/bundle/eclim
+set runtimepath+=~/.vim/after
 
 "Source matchit.vim (included in vim 7)
 runtime macros/matchit.vim
