@@ -69,6 +69,8 @@ Bundle 'git://github.com/tpope/vim-markdown.git'
 "Bundle 'git://github.com/plasticboy/vim-markdown.git'
 Bundle 'git://github.com/hallison/vim-markdown.git'
 
+" Dot
+Bundle 'git://github.com/wannesm/wmgraphviz.vim.git'
 " Jade
 
 "Python
