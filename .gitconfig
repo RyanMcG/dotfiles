@@ -30,6 +30,8 @@
 	l = log --decorate --graph
 	ls = log --decorate --graph --stat
 	l1 = log --decorate --graph --oneline
+	l11 = log --decorate --graph --oneline -1
+	l10 = log --decorate --graph --oneline -10
 	hs = log --decorate --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	wc = whatchanged --decorate --graph
 	rl = reflog --decorate
