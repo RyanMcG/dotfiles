@@ -60,7 +60,8 @@ Bundle 'git://github.com/derekwyatt/vim-sbt.git'
 "Clojure
 "Bundle 'git://github.com/vim-scripts/paredit.vim.git'
 "Bundle 'VimClojure'
-Bundle 'slimv.vim'
+"Bundle 'slimv.vim'
+Bundle 'git://github.com/RyanMcG/slimVimClojure.git'
 Bundle 'git://github.com/jpalardy/vim-slime.git'
 
 "Markdown
@@ -302,8 +303,8 @@ let g:session_autoload='no'
 "let vimclojure#WantNailgun = 1
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#HighlightBuiltins = 1
-let g:vimclojure#DynamicHighlighting = 0
-"let vimclojure#FuzzyIndent = 1
+let g:vimclojure#DynamicHighlighting = 1
+let g:vimclojure#FuzzyIndent = 1
 " Set *.cljs files to the clojure filetype
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
