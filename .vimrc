@@ -59,9 +59,9 @@ Bundle 'git://github.com/derekwyatt/vim-sbt.git'
 
 "Clojure
 "Bundle 'git://github.com/vim-scripts/paredit.vim.git'
-"Bundle 'VimClojure'
+Bundle 'VimClojure'
 "Bundle 'slimv.vim'
-Bundle 'git://github.com/RyanMcG/slimVimClojure.git'
+"Bundle 'git://github.com/RyanMcG/slimVimClojure.git'
 Bundle 'git://github.com/jpalardy/vim-slime.git'
 
 "Markdown
@@ -300,7 +300,7 @@ let g:session_autoload='no'
 "let g:loaded_session=1 "Uncomment to not load session plugin
 
 "VimClojure
-"let vimclojure#WantNailgun = 1
+let vimclojure#WantNailgun = 1
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#DynamicHighlighting = 1
