@@ -1,1 +1,2 @@
 P_COLOR=$FGRN
+export BROWSER=chromium
