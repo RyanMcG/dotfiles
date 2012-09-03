@@ -58,7 +58,7 @@ Bundle 'git://github.com/derekwyatt/vim-sbt.git'
 "Bundle 'git://github.com/vim-scripts/LaTeX-Suite-aka-Vim-LaTeX.git'
 
 "Clojure
-"Bundle 'git://github.com/vim-scripts/paredit.vim.git'
+Bundle 'paredit.vim'
 Bundle 'VimClojure'
 "Bundle 'slimv.vim'
 "Bundle 'git://github.com/RyanMcG/slimVimClojure.git'
@@ -66,8 +66,8 @@ Bundle 'git://github.com/jpalardy/vim-slime.git'
 
 "Markdown
 Bundle 'git://github.com/tpope/vim-markdown.git'
-"Bundle 'git://github.com/plasticboy/vim-markdown.git'
-Bundle 'git://github.com/hallison/vim-markdown.git'
+"Bundle 'git://github.com/hallison/vim-markdown.git'
+Bundle 'git://github.com/tangledhelix/vim-octopress.git'
 
 " Dot
 Bundle 'git://github.com/wannesm/wmgraphviz.vim.git'
