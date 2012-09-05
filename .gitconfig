@@ -60,6 +60,5 @@
 [push]
 	default = tracking
 [mergetool "diffconflicts"]
-	cmd = diffconflicts gvim $BASE $LOCAL $REMOTE $MERGE
-	trustExitCode = true
+	cmd = diffconflicts $BASE $LOCAL $REMOTE $MERGED
 	keepBackup = false
