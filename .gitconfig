@@ -5,7 +5,7 @@
 	status = auto
 	diff = auto
 [merge]
-	tool = gvimdiff
+	tool = diffconflicts
 
 [color]
 	diff = auto
@@ -59,3 +59,7 @@
 	browser = chromium
 [push]
 	default = tracking
+[mergetool "diffconflicts"]
+	cmd = diffconflicts gvim $BASE $LOCAL $REMOTE $MERGE
+	trustExitCode = true
+	keepBackup = false
