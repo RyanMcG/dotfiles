@@ -62,4 +62,4 @@
 	cmd = diffconflicts $BASE $LOCAL $REMOTE $MERGED
 	keepBackup = false
 [pretty]
-	epic = %C(yellow)%h%Creset %C(cyan)%an%Creset%C(bold cyan) -%Creset%C(bold green)%d%Creset %s%Cred %cr
+	epic = %C(yellow)%h%Creset%C(bold green)%d%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%Cred %cr
