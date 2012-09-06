@@ -419,8 +419,8 @@
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
+      <!-- Handled Elsewhere -->
       <action name="Execute">
-        <command>amixer -D pulse set Master toggle</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
