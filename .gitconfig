@@ -28,11 +28,10 @@
 	s = status
 	sn = show --name-only --decorate
 	l = log --decorate --graph
-	ls = log --decorate --graph --stat
-	l1 = log --decorate --graph --oneline
-	l11 = log --decorate --graph --oneline -1
-	l10 = log --decorate --graph --oneline -10
-	hs = log --decorate --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	l1 = log --graph --pretty=epic --abbrev-commit --date=relative
+	ls = log --graph --pretty=epic --abbrev-commit --date=relative --stat
+	l11 = log --graph --pretty=epic --abbrev-commit --date=relative -1
+	l10 = log --graph --pretty=epic --abbrev-commit --date=relative -10
 	wc = whatchanged --decorate --graph
 	rl = reflog --decorate
 	rs = remote show
@@ -62,3 +61,5 @@
 [mergetool "diffconflicts"]
 	cmd = diffconflicts $BASE $LOCAL $REMOTE $MERGED
 	keepBackup = false
+[pretty]
+	epic = %C(yellow)%h%Creset %C(blue)[%C(bold white)%an%Creset%C(blue)]%Creset%C(bold green)%d%Creset %s %Cred(%cr)%Creset
