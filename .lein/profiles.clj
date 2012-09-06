@@ -1,5 +1,5 @@
 {:user {:dependencies [[clj-stacktrace "0.2.4"]]
-        :plugins [[lein-tarsier "0.9.1"]
+        :plugins [[lein-tarsier "0.9.4-SNAPSHOT"]
                   [lein-swank "1.4.4"]
                   [lein-difftest "1.3.7"]
                   [lein-clojars "0.9.0"]
