@@ -28,10 +28,11 @@
 	s = status
 	sn = show --name-only --decorate
 	l = log --decorate --graph
-	l1 = log --graph --pretty=epic --abbrev-commit --date=relative
-	ls = log --graph --pretty=epic --abbrev-commit --date=relative --stat
-	l11 = log --graph --pretty=epic --abbrev-commit --date=relative -1
-	l10 = log --graph --pretty=epic --abbrev-commit --date=relative -10
+	lf = log --graph --pretty=epic-friend --abbrev-commit --date=relative
+	le = log --graph --pretty=epic-exact --abbrev-commit --date=relative
+	ls = log --graph --pretty=epic-exact --abbrev-commit --date=relative --stat
+	l11 = log --graph --pretty=epic-exact --abbrev-commit --date=relative -1
+	l10 = log --graph --pretty=epic-friend --abbrev-commit --date=relative -10
 	wc = whatchanged --decorate --graph
 	rl = reflog --decorate
 	rs = remote show
@@ -62,4 +63,5 @@
 	cmd = diffconflicts $BASE $LOCAL $REMOTE $MERGED
 	keepBackup = false
 [pretty]
-	epic = %C(yellow)%h%Creset%C(bold green)%d%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%Cred %cr
+	epic-exact = %C(yellow)%h%Cred %ci%Creset%Creset%C(bold red) ~%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%C(bold green)%d%Creset
+	epic-friend = %C(yellow)%h%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%Cred %cr%C(bold green)%d%Creset
