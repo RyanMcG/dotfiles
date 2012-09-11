@@ -34,6 +34,7 @@ Bundle 'git://github.com/sjl/threesome.vim.git'
 Bundle 'git://github.com/Lokaltog/vim-powerline.git'
 Bundle 'git://github.com/chrismetcalf/vim-yankring.git'
 Bundle 'git://github.com/Lokaltog/vim-easymotion.git'
+Bundle 'git://github.com/bronson/vim-trailing-whitespace.git'
 "Bundle 'git://github.com/shemerey/vim-project.git'
 "Bundle 'git://github.com/msanders/snipmate.vim'
 "Bundle 'git://github.com/scrooloose/snipmate-snippets.git'
@@ -425,29 +426,6 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
-
-"Show and Trim Spaced Function
-function! ShowSpaces(...)
-  let @/='\v(\s+$)|( +\ze\t)'
-  let oldhlsearch=&hlsearch
-  if !a:0
-    let &hlsearch=!&hlsearch
-  else
-    let &hlsearch=a:1
-  end
-  return oldhlsearch
-endfunction
-
-function! TrimSpaces() range
-  let oldhlsearch=ShowSpaces(1)
-  execute a:firstline.",".a:lastline."substitute ///gec"
-  let &hlsearch=oldhlsearch
-endfunction
-command! -bar -nargs=? ShowSpaces call ShowSpaces(<args>)
-command! -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
-nnoremap <silent> <leader>ss    :ShowSpaces 1<CR>
-nnoremap <silent> <leader>ts  m`:TrimSpaces<CR>``
-vnoremap <silent> <leader>ts    :TrimSpaces<CR>
 
 function! AutoindentToggle(...)
   if &formatoptions =~ 'a'
