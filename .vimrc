@@ -87,6 +87,7 @@ Bundle 'git://github.com/groenewege/vim-less.git'
 
 "Javascript
 Bundle 'git://github.com/pangloss/vim-javascript.git'
+Bundle 'git://github.com/jelera/vim-javascript-syntax.git'
 Bundle 'git://github.com/kchmck/vim-coffee-script.git'
 Bundle 'git://github.com/digitaltoad/vim-jade.git'
 Bundle 'git://github.com/felixge/vim-nodejs-errorformat.git'
