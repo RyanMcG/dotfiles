@@ -78,6 +78,7 @@ Bundle 'git://github.com/wannesm/wmgraphviz.vim.git'
 Bundle 'git://github.com/cburroughs/pep8.py.git'
 Bundle 'git://github.com/ivanov/vim-ipython.git'
 Bundle 'git://github.com/vim-scripts/python.vim--Vasiliev.git'
+Bundle 'git://github.com/klen/python-mode.git'
 
 "HTML/CSS
 Bundle 'git://github.com/mattn/zencoding-vim.git'
