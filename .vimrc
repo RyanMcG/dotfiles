@@ -75,7 +75,6 @@ Bundle 'git://github.com/wannesm/wmgraphviz.vim.git'
 " Jade
 
 "Python
-Bundle 'git://github.com/cburroughs/pep8.py.git'
 Bundle 'git://github.com/ivanov/vim-ipython.git'
 Bundle 'git://github.com/vim-scripts/python.vim--Vasiliev.git'
 Bundle 'git://github.com/klen/python-mode.git'
@@ -287,6 +286,8 @@ let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_stl_format = '[%E{E: %fe #%e}%B{, }%W{W: %fw #%w}]'
+let g:syntastic_mode_map = { 'mode': 'active',
+			\ 'passive_filetypes': ['python'] }
 "let g:syntastic_quiet_warnings=1 "Breaks everything!
 nnoremap <silent> <leader>se :Errors<CR>
 
