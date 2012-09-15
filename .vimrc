@@ -378,6 +378,7 @@ let c_space_errors = 1
 "Python
 let python_highlight_all = 1
 "let g:ipy_perform_mappings = 0
+let g:pymode_lint_checker = "pep8"
 
 "Ruby
 let ruby_operators = 1
