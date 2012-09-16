@@ -6,12 +6,10 @@
 	diff = auto
 [merge]
 	tool = diffconflicts
-
 [color]
 	diff = auto
 	branch = auto
 	status = auto
-
 [alias]
 	a = add
 	ap = add -p
@@ -41,7 +39,6 @@
 	r = reset
 	rh = reset HEAD
 	rp = reset -p
-
 [branch]
 	autosetupmerge = always
 
