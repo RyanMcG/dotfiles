@@ -23,10 +23,15 @@ export CTAGS="--langmap=lisp:+.clj" # Make clj compile as LISP for ctags
 #Custom Var to enable composite manager
 export ENABLE_COMPMGR="no"
 
-#Autossh fun
+# Autossh fun
 export MY_AUTOSSH_PORT=29011
 export MY_AUTOSSH_PORT=$(expr $MY_AUTOSSH_PORT + $(pgrep -u $USER -x autossh | wc -l))
+
+# Use rednose by default
 export NOSE_REDNOSE=1
+
+# Make virtualenv use distribute by default instead of setuptools
+export VIRTUALENV_DISTRIBUTE=1
 
 unset HISTSIZE HISTFILESIZE
 export HISTSIZE=20001
