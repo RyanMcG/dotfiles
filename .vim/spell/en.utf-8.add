@@ -45,3 +45,6 @@ nosql
 API
 metadata
 polytree
+leiningen
+Memcached
+Redis
