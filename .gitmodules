@@ -1,3 +1,6 @@
 [submodule ".themes/Sassamon"]
 	path = .themes/Sassamon
 	url = ssh://mcgowanr@stdlogin.cse.ohio-state.edu:repo/Sassamon.git
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = git@github.com:RyanMcG/oh-my-zsh.git
