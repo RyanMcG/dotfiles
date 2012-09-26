@@ -45,6 +45,8 @@ nosql
 API
 metadata
 polytree
+builtins
+iterable
 leiningen
 Memcached
 Redis
