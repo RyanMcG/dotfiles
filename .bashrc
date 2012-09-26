@@ -2,47 +2,16 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+if [ -f ~/.general_rc ]; then
+    source ~/.general_rc
+fi
+
 if [ -f ~/.bash_top ]; then
 	. ~/.bash_top
 fi
 
-# If not running interactively, don't do anything
-[ -z "$PS1" ] && return
-
-# don't put duplicate lines in the history. See bash(1) for more options
-export HISTCONTROL=ignoredups
-# ... and ignore same sucessive entries.
-export HISTCONTROL=ignoreboth
-export EDITOR="vim"
-export VISUAL=$EDITOR
-export PATH=$HOME/bin:/usr/share/eclipse/:/opt/maven/bin/:/opt/android-sdk/platform-tools/:$HOME/.cabal/bin/:$HOME/bin/node/bin/:$HOME/.gem/ruby/1.9.1/bin/:$HOME/.rvm/bin:$HOME/node_modules/.bin/:$PATH
-export CLASSPATH=.:src/:bin/
-export PYTHONDOCS=/usr/share/doc/python2/html/
-export CTAGS="--langmap=lisp:+.clj" # Make clj compile as LISP for ctags
-
-#Custom Var to enable composite manager
-export ENABLE_COMPMGR="no"
-
-# Autossh fun
-export MY_AUTOSSH_PORT=29011
-export MY_AUTOSSH_PORT=$(expr $MY_AUTOSSH_PORT + $(pgrep -u $USER -x autossh | wc -l))
-
-# Use rednose by default
-export NOSE_REDNOSE=1
-
-# Make virtualenv use distribute by default instead of setuptools
-export VIRTUALENV_DISTRIBUTE=1
-
-unset HISTSIZE HISTFILESIZE
-export HISTSIZE=20001
 shopt -s histappend
 shopt -s checkwinsize
-
-#Set editing type to vi
-set -o vi
-
-# make less more friendly for non-text input files, see lesspipe(1)
-[ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
@@ -93,64 +62,9 @@ $P_COLOR$HC\$$RS "
 
 unset color_prompt force_color_prompt
 
-# If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-	PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
-    ;;
-*)
-    ;;
-esac
-
-if [ $TERM == "rxvt-unicode" ]; then
-	export TERM="rxvt-unicode-256color"
-fi
-
-if [ $TERM == "xterm" ]; then
-	export TERM="xterm-256color"
-fi
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
-fi
-
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
-if [ -f ~/.bash_secret ]; then
-    . ~/.bash_secret
-fi
-
-# enable color support of ls and also add handy aliases
-eval "`dircolors -b`"
-alias ls='ls -h --color=auto'
-#alias dir='ls --color=auto --format=vertical'
-#alias vdir='ls --color=auto --format=long'
-
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-
-# some more ls aliases
-alias ll='ls -a -l'
-alias la='ls -A'
-#alias l='ls -CF'
-
-# add an alert alias for long running commands
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
-# NVM
-if [ -f ~/nvm/nvm.sh ]; then
-	source ~/nvm/nvm.sh
-	# ... bash_completion
-	[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 fi
