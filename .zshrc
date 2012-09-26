@@ -33,4 +33,8 @@ plugins=(git lein heroku rvm rails rail3 vi-mode vundle python pip github gem ca
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
+# Load in general_rc
+
+if [ -f ~/.general_rc ]; then
+	source ~/.general_rc
+fi
