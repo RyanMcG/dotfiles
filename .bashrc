@@ -87,7 +87,7 @@ parse_git_branch() {
 		fi
 	fi
 }
-	
+
 PS1="$P_COLOR$HC$RS$P_COLOR${debian_chroot:+($debian_chroot)}\u@\h:$RS$HC\w$RS $FGRN$HC\$(parse_git_branch)$RS
 $P_COLOR$HC\$$RS "
 
@@ -131,14 +131,14 @@ if [ -f ~/.bash_secret ]; then
 fi
 
 # enable color support of ls and also add handy aliases
-    eval "`dircolors -b`"
-    alias ls='ls -h --color=auto'
-    #alias dir='ls --color=auto --format=vertical'
-    #alias vdir='ls --color=auto --format=long'
+eval "`dircolors -b`"
+alias ls='ls -h --color=auto'
+#alias dir='ls --color=auto --format=vertical'
+#alias vdir='ls --color=auto --format=long'
 
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
 # some more ls aliases
 alias ll='ls -a -l'
