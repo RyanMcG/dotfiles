@@ -14,6 +14,12 @@ export CLASSPATH=.:src/:bin/
 export PYTHONDOCS=/usr/share/doc/python2/html/
 export CTAGS="--langmap=lisp:+.clj" # Make clj compile as LISP for ctags
 
+if [ -f /usr/bin/python2 ]; then
+	VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
+else
+	VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+fi
+
 #Custom Var to enable composite manager
 export ENABLE_COMPMGR="no"
 
