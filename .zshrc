@@ -1,3 +1,8 @@
+# Load in general_rc
+if [ -f ~/.general_rc ]; then
+	source ~/.general_rc
+fi
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -33,9 +38,3 @@ plugins=(git nyan lein heroku rvm rails rail3 vi-mode vundle python pip github
 gem cap battery autojump archlinux rake node npm)
 
 source $ZSH/oh-my-zsh.sh
-
-# Load in general_rc
-
-if [ -f ~/.general_rc ]; then
-	source ~/.general_rc
-fi
