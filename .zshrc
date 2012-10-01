@@ -61,3 +61,6 @@ virtualenvwrapper
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# Turn off ZSH autocorrection
+unsetopt correct_all
