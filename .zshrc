@@ -38,17 +38,18 @@ plugins=(
 git
 archlinux
 #nyan
-lein
+#lein
 heroku
-#rvm
-#bundler
-#ruby
+rvm
+bundler
+ruby
 #rails
 #rail3
 vi-mode
 #vundle
-python
-pip
+#python
+#pip
+#virtualenvwrapper
 #github
 gem
 #cap
@@ -57,7 +58,6 @@ autojump
 rake
 #node
 #npm
-virtualenvwrapper
 )
 
 source $ZSH/oh-my-zsh.sh
