@@ -50,3 +50,5 @@ iterable
 leiningen
 Memcached
 Redis
+CLI
+dict
