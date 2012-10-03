@@ -2,7 +2,7 @@
         :plugins [[lein-tarsier "0.9.4-SNAPSHOT"]
                   [lein-swank "1.4.4"]
                   [lein-difftest "1.3.7"]
-                  [lein-clojars "0.9.0"]
+                  [lein-clojars "0.9.1"]
                   ;[jark/jark-server "0.4.0"]
                   [lein-pprint "1.1.1"]
                   [slamhound "1.2.0"]
