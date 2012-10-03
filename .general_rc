@@ -22,6 +22,14 @@ fi
 
 #Custom Var to enable composite manager
 export ENABLE_COMPMGR="no"
+export NODENAME=$(uname -n)
+
+if [[ $NODENAME == "arcbase" ]]; then
+	export ENABLE_COMPMGR="yes"
+	export PROMPT_COLOR=blue
+elif [[ $NODENAME == "eeebase" ]]; then
+	export PROMPT_COLOR=green
+fi
 
 # Autossh fun
 export MY_AUTOSSH_PORT=29011
@@ -65,11 +73,11 @@ fi
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
 if [ -f ~/.general_aliases ]; then
-    . ~/.general_aliases
+    source ~/.general_aliases
 fi
 
-if [ -f ~/.bash_secret ]; then
-    . ~/.bash_secret
+if [ -f ~/.general_rc_secret ]; then
+    source ~/.general_rc_secret
 fi
 
 # enable color support of ls and also add handy aliases
