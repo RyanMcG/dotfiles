@@ -52,3 +52,8 @@ Memcached
 Redis
 CLI
 dict
+mongo
+namespace
+clojure
+username
+db
