@@ -29,8 +29,8 @@
 	lf = log --graph --pretty=epic-friend --abbrev-commit --date=relative
 	le = log --graph --pretty=epic-exact --abbrev-commit --date=relative
 	ls = log --graph --pretty=epic-exact --abbrev-commit --date=relative --stat
-	l1 = log --graph --pretty=epic-exact --abbrev-commit --date=relative -1
-	lt = log --graph --pretty=epic-friend --abbrev-commit --date=relative -10
+	l1 = --no-pager log --graph --pretty=epic-exact --abbrev-commit --date=relative -1
+	lt = --no-pager log --graph --pretty=epic-friend --abbrev-commit --date=relative -10
 	wc = whatchanged --decorate --graph
 	rl = reflog --decorate
 	rs = remote show
