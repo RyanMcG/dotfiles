@@ -279,6 +279,7 @@ nmap <leader>y :YRShow<cr>
 
 "Slime
 let g:slime_target = "tmux"
+let g:slime_paste_file = tempname()
 
 "Conque Term
 let g:ConqueTerm_TERM = 'xterm'
