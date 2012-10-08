@@ -26,11 +26,11 @@
 	s = status
 	sn = show --name-only --decorate
 	l = log --decorate --graph
-	lf = log --graph --pretty=epic-friend --abbrev-commit --date=relative
-	le = log --graph --pretty=epic-exact --abbrev-commit --date=relative
-	ls = log --graph --pretty=epic-exact --abbrev-commit --date=relative --stat
-	l1 = !git --no-pager log --graph --pretty=epic-exact --abbrev-commit --date=relative -1
-	lt = !git --no-pager log --graph --pretty=epic-friend --abbrev-commit --date=relative -10
+	lf = log --graph --pretty=epic-friend
+	le = log --graph --pretty=epic-exact
+	ls = log --graph --pretty=epic-exact
+	l1 = !git --no-pager log --graph --pretty=epic-exact -1
+	lt = !git --no-pager log --graph --pretty=epic-friend -10
 	wc = whatchanged --decorate --graph
 	rl = reflog --decorate
 	rs = remote show
