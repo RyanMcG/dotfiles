@@ -36,7 +36,7 @@ alias sudo="sudo "
 # Systemctl aliases
 alias poweroff="sudo systemctl poweroff"
 alias reboot="sudo systemctl reboot"
-alias list="sudo systemctl list"
+alias list="sudo systemctl list-units"
 alias status="sudo systemctl status"
 alias start="sudo systemctl start"
 alias stop="sudo systemctl stop"
