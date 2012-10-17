@@ -19,7 +19,6 @@ Bundle 'git://github.com/vim-scripts/The-NERD-Commenter'
 Bundle 'git://github.com/majutsushi/tagbar'
 Bundle 'git://github.com/ciaranm/detectindent.git'
 Bundle 'git://github.com/tpope/vim-fugitive'
-"Bundle 'git://github.com/wincent/Command-T'
 Bundle 'git://github.com/xolox/vim-session.git'
 Bundle 'git://github.com/fholgado/minibufexpl.vim'
 Bundle 'git://github.com/ervandew/supertab.git'
@@ -39,6 +38,7 @@ Bundle 'benmills/vimux'
 "Bundle 'git://github.com/shemerey/vim-project.git'
 "Bundle 'git://github.com/msanders/snipmate.vim'
 "Bundle 'git://github.com/scrooloose/snipmate-snippets.git'
+"Bundle 'git://github.com/wincent/Command-T'
 
 " Colorschemes
 Bundle 'git://github.com/noahfrederick/Hemisu.git'
@@ -307,6 +307,7 @@ let g:session_autoload='no'
 "let g:loaded_session=1 "Uncomment to not load session plugin
 
 "VimClojure
+let vimclojure#SplitPos = "left"
 let vimclojure#WantNailgun = 1
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#HighlightBuiltins = 1
@@ -333,12 +334,10 @@ let g:slime_target = "tmux"
 "Snipmate
 "Supertab
 set completeopt+=longest
-set completeopt-=preview
+set completeopt+=preview
 let g:SuperTabDefaultCompletionType = "context"
-"let g:SuperTabMappingForward = '<C-l>'
-"let g:SuperTabMappingBackward = '<S-C-l>'
-let g:SuperTabLongestEnhanced=1
-let g:SuperTabLongestHighlight=1
+let g:SuperTabContextDefaultCompletionType = "<c-x><c-n>"
+"let g:SuperTabLongestHighlight=1
 
 "NERDTree
 nnoremap <silent> <F7> :NERDTreeToggle<CR>
