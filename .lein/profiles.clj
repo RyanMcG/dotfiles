@@ -1,4 +1,5 @@
-{:user {:dependencies [[clj-stacktrace "0.2.4"]]
+{:user {:dependencies [[clj-stacktrace "0.2.4"]
+                       [spyscope "0.1.0"]]
         :plugins [[lein-tarsier "0.9.4-SNAPSHOT"]
                   [lein-swank "1.4.4"]
                   [lein-difftest "1.3.7"]
