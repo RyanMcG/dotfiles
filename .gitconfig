@@ -24,7 +24,7 @@
 	ds = diff --stat
 	f = fetch
 	s = status
-	sn = show --name-only --decorate
+	sn = show --stat --decorate
 	l = log --decorate --graph
 	lf = log --graph --pretty=epic-friend
 	le = log --graph --pretty=epic-exact
