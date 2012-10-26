@@ -11,106 +11,104 @@ call vundle#rc()
 let g:vundle_default_git_proto = 'git'
 
 "Make vundle manage vundle
-Bundle 'git://github.com/gmarik/vundle'
+Bundle 'gmarik/vundle'
 
 "My bundles
-Bundle 'git://github.com/vim-scripts/The-NERD-tree'
-Bundle 'git://github.com/vim-scripts/The-NERD-Commenter'
-Bundle 'git://github.com/majutsushi/tagbar'
-Bundle 'git://github.com/ciaranm/detectindent.git'
-Bundle 'git://github.com/tpope/vim-fugitive'
-Bundle 'git://github.com/xolox/vim-session.git'
-Bundle 'git://github.com/fholgado/minibufexpl.vim'
-Bundle 'git://github.com/ervandew/supertab.git'
-Bundle 'git://github.com/scrooloose/syntastic.git'
-Bundle 'git://github.com/mattn/gist-vim.git'
-Bundle 'git://github.com/sjl/gundo.vim.git'
-Bundle 'git://github.com/rson/vim-conque.git'
-Bundle 'git://github.com/tpope/vim-surround.git'
+Bundle 'vim-scripts/The-NERD-tree'
+Bundle 'vim-scripts/The-NERD-Commenter'
+Bundle 'majutsushi/tagbar'
+Bundle 'ciaranm/detectindent'
+Bundle 'tpope/vim-fugitive'
+Bundle 'xolox/vim-session'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'ervandew/supertab'
+Bundle 'scrooloose/syntastic'
+Bundle 'mattn/gist-vim'
+Bundle 'sjl/gundo.vim'
+Bundle 'rson/vim-conque'
+Bundle 'tpope/vim-surround'
 "Testing
-Bundle 'git://github.com/kien/ctrlp.vim.git'
-Bundle 'git://github.com/sjl/threesome.vim.git'
-Bundle 'git://github.com/Lokaltog/vim-powerline.git'
-Bundle 'git://github.com/chrismetcalf/vim-yankring.git'
-Bundle 'git://github.com/Lokaltog/vim-easymotion.git'
-Bundle 'git://github.com/bronson/vim-trailing-whitespace.git'
+Bundle 'kien/ctrlp.vim'
+Bundle 'sjl/threesome.vim'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'chrismetcalf/vim-yankring'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'mileszs/ack.vim'
 Bundle 'benmills/vimux'
-"Bundle 'git://github.com/shemerey/vim-project.git'
-"Bundle 'git://github.com/msanders/snipmate.vim'
-"Bundle 'git://github.com/scrooloose/snipmate-snippets.git'
-"Bundle 'git://github.com/wincent/Command-T'
+Bundle 'garbas/vim-snipmate'
+Bundle 'scrooloose/snipmate-snippets'
 
 " Colorschemes
-Bundle 'git://github.com/noahfrederick/Hemisu.git'
-Bundle 'git://github.com/altercation/vim-colors-solarized.git'
-Bundle 'git://github.com/jeffreyiacono/vim-colors-wombat.git'
-Bundle 'git://github.com/vim-scripts/xoria256.vim.git'
+Bundle 'noahfrederick/Hemisu'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'jeffreyiacono/vim-colors-wombat'
+Bundle 'vim-scripts/xoria256.vim'
 
 "Languge specific
 
 "Java
-"Bundle 'git://github.com/VictorDenisov/javacomplete'
-"Bundle 'git://github.com/vim-scripts/JavaImp.vim--Lee'
+"Bundle 'VictorDenisov/javacomplete'
+"Bundle 'vim-scripts/JavaImp.vim--Lee'
 
 " Scala
-Bundle 'git://github.com/derekwyatt/vim-scala.git'
-Bundle 'git://github.com/derekwyatt/vim-sbt.git'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'derekwyatt/vim-sbt'
 
 "Latex
-"Bundle 'git://github.com/vim-scripts/LaTeX-Suite-aka-Vim-LaTeX.git'
+"Bundle 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
 
 "Clojure
 Bundle 'paredit.vim'
 Bundle 'VimClojure'
 "Bundle 'slimv.vim'
-"Bundle 'git://github.com/RyanMcG/slimVimClojure.git'
-Bundle 'git://github.com/jpalardy/vim-slime.git'
+"Bundle 'RyanMcG/slimVimClojure'
+Bundle 'jpalardy/vim-slime'
 
 "Markdown
-Bundle 'git://github.com/tpope/vim-markdown.git'
-"Bundle 'git://github.com/hallison/vim-markdown.git'
-Bundle 'git://github.com/tangledhelix/vim-octopress.git'
+Bundle 'tpope/vim-markdown'
+"Bundle 'hallison/vim-markdown'
+Bundle 'tangledhelix/vim-octopress'
 
 " Dot
-Bundle 'git://github.com/wannesm/wmgraphviz.vim.git'
+Bundle 'wannesm/wmgraphviz.vim'
 " Jade
 
 "Python
-"Bundle 'git://github.com/cburroughs/pep8.py.git'
-Bundle 'git://github.com/ivanov/vim-ipython.git'
-Bundle 'git://github.com/vim-scripts/python.vim--Vasiliev.git'
+"Bundle 'cburroughs/pep8'
+Bundle 'ivanov/vim-ipython'
+Bundle 'vim-scripts/python.vim--Vasiliev.git'
 Bundle 'klen/python-mode'
 
 "HTML/CSS
-Bundle 'git://github.com/mattn/zencoding-vim.git'
+Bundle 'mattn/zencoding-vim'
 
 " Less
-Bundle 'git://github.com/groenewege/vim-less.git'
+Bundle 'groenewege/vim-less'
 
 "Javascript
-Bundle 'git://github.com/pangloss/vim-javascript.git'
-Bundle 'git://github.com/jelera/vim-javascript-syntax.git'
-Bundle 'git://github.com/kchmck/vim-coffee-script.git'
-Bundle 'git://github.com/digitaltoad/vim-jade.git'
-Bundle 'git://github.com/felixge/vim-nodejs-errorformat.git'
-Bundle 'git://github.com/godlygeek/tabular.git'
-Bundle 'git://github.com/wavded/vim-stylus.git'
+Bundle 'pangloss/vim-javascript'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'felixge/vim-nodejs-errorformat'
+Bundle 'godlygeek/tabular'
+Bundle 'wavded/vim-stylus'
 
 "Ruby
-Bundle 'git://github.com/vim-ruby/vim-ruby.git'
-Bundle 'git://github.com/tpope/vim-rails.git'
-Bundle 'git://github.com/tpope/vim-rake.git'
-Bundle 'git://github.com/astashov/vim-ruby-debugger.git'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-rake'
+Bundle 'astashov/vim-ruby-debugger'
 
 "Removed
-"Bundle 'git://github.com/vim-scripts/AutoComplPop.git'
-"Bundle 'git://github.com/joestelmach/javaScriptLint.vim.git'
-"Bundle 'git://github.com/vim-scripts/YankRing.vim'
-"Bundle 'git://github.com/slack/vim-bufexplorer'
-"Bundle 'git://github.com/jonyamo/dbext.vim.git'
-"Bundle 'git://github.com/xolox/vim-easytags.git' "Removed because it's slow
-"Bundle 'git://github.com/vim-scripts/Source-Explorer-srcexpl.vim.git'
+"Bundle 'vim-scripts/AutoComplPop'
+"Bundle 'joestelmach/javaScriptLint.vim'
+"Bundle 'vim-scripts/YankRing.vim'
+"Bundle 'slack/vim-bufexplorer'
+"Bundle 'jonyamo/dbext.vim'
+"Bundle 'xolox/vim-easytags's slow
+"Bundle 'vim-scripts/Source-Explorer-srcexpl.vim'
 
 "Make sure my after is really at the end.
 set runtimepath-=~/.vim
@@ -333,6 +331,8 @@ let g:paredit_shortmaps = 1
 let g:slime_target = "tmux"
 
 "Snipmate
+let g:snips_trigger_key='<c-space>'
+
 "Supertab
 set completeopt+=longest
 set completeopt+=preview
