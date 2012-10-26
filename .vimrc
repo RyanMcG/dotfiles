@@ -38,6 +38,10 @@ Bundle 'mileszs/ack.vim'
 Bundle 'benmills/vimux'
 Bundle 'garbas/vim-snipmate'
 Bundle 'scrooloose/snipmate-snippets'
+Bundle 'vim-scripts/ZoomWin'
+Bundle 'tsaleh/vim-align'
+Bundle 'Raimondi/delimitMate'
+Bundle 'austintaylor/vim-indentobject'
 
 " Colorschemes
 Bundle 'noahfrederick/Hemisu'
@@ -75,7 +79,6 @@ Bundle 'wannesm/wmgraphviz.vim'
 " Jade
 
 "Python
-"Bundle 'cburroughs/pep8'
 Bundle 'ivanov/vim-ipython'
 Bundle 'vim-scripts/python.vim--Vasiliev.git'
 Bundle 'klen/python-mode'
@@ -100,15 +103,11 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rake'
 Bundle 'astashov/vim-ruby-debugger'
+Bundle 'tpope/vim-endwise'
 
 "Removed
 "Bundle 'vim-scripts/AutoComplPop'
-"Bundle 'joestelmach/javaScriptLint.vim'
-"Bundle 'vim-scripts/YankRing.vim'
-"Bundle 'slack/vim-bufexplorer'
 "Bundle 'jonyamo/dbext.vim'
-"Bundle 'xolox/vim-easytags's slow
-"Bundle 'vim-scripts/Source-Explorer-srcexpl.vim'
 
 "Make sure my after is really at the end.
 set runtimepath-=~/.vim
