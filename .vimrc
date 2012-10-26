@@ -225,7 +225,7 @@ set number
 set hidden
 set history=1000
 set undolevels=1000
-set scrolloff=6
+set scrolloff=6 sidescrolloff=12
 "Ignore case unless there's a capital
 set ignorecase
 set smartcase
@@ -234,12 +234,12 @@ set smartcase
 "set splitright
 set title
 "let loaded_matchparen = 0 "Uncomment to turn off
-"set showmatch
+set showmatch
 
 "Completeion in command mode
 set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,.DS_Store,*.aux,*.out,*.toc
 set wildmenu
-set wildmode=list:longest
+set wildmode=list:longest,full
 
 "Foldiness
 set foldenable
@@ -332,6 +332,33 @@ let g:slime_target = "tmux"
 "Snipmate
 let g:snips_trigger_key='<c-space>'
 
+"Ack
+nmap <leader>a/ :Ack!<space>
+nmap <leader>a* :Ack! -w <C-R><C-W><space>
+nmap <leader>aa :AckAdd!<space>
+nmap <leader>an :cnext<CR>
+nmap <leader>ap :cprev<CR>
+nmap <leader>aq :ccl<CR>
+nmap <leader>al :cwindow<CR>
+
+"Tabularize
+if exists('g:tabular_loaded')
+  AddTabularPattern! symbols         / :/l0
+  AddTabularPattern! hash            /^[^>]*\zs=>/
+  AddTabularPattern! chunks          / \S\+/l0
+  AddTabularPattern! assignment      / = /l0
+  AddTabularPattern! comma           /^[^,]*,/l1
+  AddTabularPattern! colon           /:\zs /l0
+  AddTabularPattern! options_hashes  /:\w\+ =>/
+endif
+map <Leader>a :Tabularize<space>
+
+"Gundo
+map <Leader>u :GundoToggle<CR>
+
+"ZoomWin
+map <Leader>z :ZoomWin<CR>
+
 "Supertab
 set completeopt+=longest
 set completeopt+=preview
@@ -422,6 +449,8 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 cmap w!! w !sudo tee % >/dev/null
 set pastetoggle=<F12>
 
+" Retag with ctags
+map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 "
 " Some Custom functions
 "
