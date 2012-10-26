@@ -29,6 +29,8 @@ if [[ $NODENAME == "arcbase" ]]; then
 	export PROMPT_COLOR=blue
 elif [[ $NODENAME == "eeebase" ]]; then
 	export PROMPT_COLOR=green
+elif [[ $NODENAME == "ryanmcgowan" ]]; then
+	export PROMPT_COLOR=red
 fi
 
 # Autossh fun
