@@ -451,7 +451,7 @@ cmap w!! w !sudo tee % >/dev/null
 set pastetoggle=<F12>
 
 " Retag with ctags
-map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+map <Leader>ct :!ctags --extra=+f -R *<CR><CR>
 "
 " Some Custom functions
 "
