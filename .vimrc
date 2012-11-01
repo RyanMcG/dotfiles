@@ -41,7 +41,7 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'scrooloose/snipmate-snippets'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'tsaleh/vim-align'
-Bundle 'Raimondi/delimitMate'
+"Bundle 'Raimondi/delimitMate'
 Bundle 'austintaylor/vim-indentobject'
 
 " Colorschemes
@@ -103,7 +103,7 @@ Bundle 'wavded/vim-stylus'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rake'
-Bundle 'astashov/vim-ruby-debugger'
+"Bundle 'astashov/vim-ruby-debugger'
 Bundle 'tpope/vim-endwise'
 
 "Removed
