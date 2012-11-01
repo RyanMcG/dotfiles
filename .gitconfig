@@ -64,4 +64,4 @@
 	trustExitCode = true
 [pretty]
 	epic-exact = %C(yellow)%h%Cred %ci%Creset%Creset%C(bold red) ~%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%C(bold green)%d%Creset
-	epic-friend = %C(yellow)%h%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%Cred %cr%C(bold green)%d%Creset
+	epic-friend = %C(yellow)%h%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%Cred %ar%C(bold green)%d%Creset
