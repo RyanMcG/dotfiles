@@ -360,6 +360,14 @@ map <Leader>u :GundoToggle<CR>
 "ZoomWin
 map <Leader>z :ZoomWin<CR>
 
+" Fugitive
+nmap <leader>gl :Glog<CR>
+nmap <leader>gs :Gstatus<CR>
+nmap <leader>gcm :Gcommit<CR>
+nmap <leader>gcd :Gcommit<CR>
+nmap <leader>fw :Gwrite<CR>
+nmap <leader>gd :Gdiff<CR>
+
 "Supertab
 set completeopt+=longest
 set completeopt+=preview
