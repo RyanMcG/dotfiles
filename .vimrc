@@ -306,7 +306,7 @@ let g:session_autoload='no'
 "let g:loaded_session=1 "Uncomment to not load session plugin
 
 "VimClojure
-let vimclojure#SplitPos = "left"
+"let vimclojure#SplitPos = "left"
 let vimclojure#WantNailgun = 1
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#HighlightBuiltins = 1
@@ -370,7 +370,7 @@ nmap <leader>gd :Gdiff<CR>
 
 "Supertab
 set completeopt+=longest
-set completeopt+=preview
+set completeopt-=preview
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-x><c-n>"
 "let g:SuperTabLongestHighlight=1
