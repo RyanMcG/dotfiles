@@ -49,7 +49,7 @@ vi-mode
 #vundle
 #python
 pip
-virtualenvwrapper
+#virtualenvwrapper
 #github
 gem
 #cap
