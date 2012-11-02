@@ -368,6 +368,9 @@ nmap <leader>gcd :Gcommit<CR>
 nmap <leader>fw :Gwrite<CR>
 nmap <leader>gd :Gdiff<CR>
 
+"CtrlP
+nnoremap <leader>. :CtrlPTag<cr>
+
 "Supertab
 set completeopt+=longest
 set completeopt-=preview
@@ -460,6 +463,7 @@ set pastetoggle=<F12>
 
 " Retag with ctags
 map <Leader>ct :!ctags --extra=+f -R *<CR><CR>
+
 "
 " Some Custom functions
 "
