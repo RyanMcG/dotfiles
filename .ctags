@@ -1,9 +1,7 @@
-# Basic options
 --recurse=yes
 --tag-relative=yes
 --exclude=.git
 
-# Regex for Clojure
 --langdef=Clojure
 --langmap=Clojure:.clj
 --regex-clojure=/\([ \t]*create-ns[ \t]+([-[:alnum:]*+!_:\/.?]+)/\1/n,namespace/
@@ -18,5 +16,6 @@
 --regex-clojure=/\([ \t]*intern[ \t]+([-[:alnum:]*+!_:\/.?]+)/\1/v,intern/
 --regex-clojure=/\([ \t]*ns[ \t]+([-[:alnum:]*+!_:\/.?]+)/\1/n,namespace/
 
-# PHP
 --langmap=php:.engine.inc.module.theme.install.php --PHP-kinds=+cf-v
+
+--langmap=c++:+.cu
