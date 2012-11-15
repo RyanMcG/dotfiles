@@ -33,18 +33,6 @@ alias mpc="mpc -f \"[[[%artist% - ]%album% - ]%title%]\""
 alias relbash="source ~/.profile"
 alias sudo="sudo "
 
-# Systemctl aliases
-alias poweroff="sudo systemctl poweroff"
-alias reboot="sudo systemctl reboot"
-alias list="sudo systemctl list-units"
-alias status="sudo systemctl status"
-alias start="sudo systemctl start"
-alias stop="sudo systemctl stop"
-alias restart="sudo systemctl restart"
-alias reload="sudo systemctl reload"
-alias enable="sudo systemctl enable"
-alias disable="sudo systemctl disable"
-
 # DVCS shortcuts
 alias g="git"
 alias h="hg"
