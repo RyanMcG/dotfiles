@@ -155,7 +155,7 @@ if has("gui_running")
   colorscheme solarized
   set cc=80
   let g:Powerline_symbols = 'fancy'
-  let g:Powerline_colorscheme = 'skwp'
+  let g:Powerline_colorscheme = 'solarized256'
   "colorscheme wombat
   "highlight Cursor guibg=bg gui=reverse
   "highlight Cursor guibg=white
