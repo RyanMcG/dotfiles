@@ -22,7 +22,6 @@ URxvt*iconFile: /usr/share/icons/Faenza/apps/scalable/Terminal.svg
 
 URxvt*scrollBar: false
 
-Xft.dpi: 96
 Xft.antialias: true
 Xft.rgba: rgb
 Xft.hinting: true
@@ -30,8 +29,8 @@ Xft.hintstyle: hintslight
 
 urxvt-bg.transparent: true
 urxvt-bg.tintColor: black
-urxvt-bg.shading: 10 
- 
+urxvt-bg.shading: 10
+
 *color0: #000000
 *color1: #a6404c
 *color2: #aece92
