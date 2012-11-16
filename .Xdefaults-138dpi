@@ -1,13 +1,14 @@
 Xcursor.theme: Vanilla-DMZ
 !urxvt.font: xft:Dina:pixelsize=16:antialias=false
 !urxvt.font: xft:Inconsolata:prgba=vbgr:pixelsize=14.5
-urxvt.font: xft:Inconsolata:size=14
+urxvt.font: xft:Inconsolata:size=11
 !urxvt.font: xft:Anonymous Pro:prgba=vbgr:pixelsize=14.5
 !urxvt.font: xft:DejaVu Sans Mono:prgba=vbgr:pixelsize=13
 !urxvt.font: -*-dina-*-r-*-*-*-120-*-*-*-*-*-*
 
 urxvt*geometry: 90x25
 
+Xft.dpi: 138
 urxvt-bg.font: xft:FreeSerif:rgba=vbgr:pixelsize=12
 URxvt*termName: rxvt-unicode
 *background: #101010
@@ -22,7 +23,6 @@ URxvt*iconFile: /usr/share/icons/Faenza/apps/scalable/Terminal.svg
 
 URxvt*scrollBar: false
 
-Xft.dpi: 96
 Xft.antialias: true
 Xft.rgba: rgb
 Xft.hinting: true
