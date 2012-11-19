@@ -20,17 +20,17 @@ Bundle 'majutsushi/tagbar'
 Bundle 'ciaranm/detectindent'
 Bundle 'tpope/vim-fugitive'
 Bundle 'xolox/vim-session'
-Bundle 'fholgado/minibufexpl.vim'
 Bundle 'ervandew/supertab'
 Bundle 'scrooloose/syntastic'
 Bundle 'mattn/gist-vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'rson/vim-conque'
 Bundle 'tpope/vim-surround'
-"Testing
 Bundle 'kien/ctrlp.vim'
-Bundle 'sjl/threesome.vim'
 Bundle 'Lokaltog/vim-powerline'
+
+"Testing
+Bundle 'sjl/threesome.vim'
 Bundle 'chrismetcalf/vim-yankring'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'bronson/vim-trailing-whitespace'
@@ -41,7 +41,6 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'scrooloose/snipmate-snippets'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'tsaleh/vim-align'
-"Bundle 'Raimondi/delimitMate'
 Bundle 'austintaylor/vim-indentobject'
 
 " Colorschemes
@@ -107,6 +106,8 @@ Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-endwise'
 
 "Removed
+"Bundle 'Raimondi/delimitMate'
+"Bundle 'fholgado/minibufexpl.vim'
 "Bundle 'vim-scripts/AutoComplPop'
 "Bundle 'jonyamo/dbext.vim'
 
