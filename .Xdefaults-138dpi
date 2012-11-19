@@ -1,7 +1,7 @@
 Xcursor.theme: Vanilla-DMZ
 !urxvt.font: xft:Dina:pixelsize=16:antialias=false
 !urxvt.font: xft:Inconsolata:prgba=vbgr:pixelsize=14.5
-urxvt.font: xft:Inconsolata:size=11
+urxvt.font: xft:Inconsolata:size=10
 !urxvt.font: xft:Anonymous Pro:prgba=vbgr:pixelsize=14.5
 !urxvt.font: xft:DejaVu Sans Mono:prgba=vbgr:pixelsize=13
 !urxvt.font: -*-dina-*-r-*-*-*-120-*-*-*-*-*-*
@@ -30,8 +30,8 @@ Xft.hintstyle: hintslight
 
 urxvt-bg.transparent: true
 urxvt-bg.tintColor: black
-urxvt-bg.shading: 10 
- 
+urxvt-bg.shading: 10
+
 *color0: #000000
 *color1: #a6404c
 *color2: #aece92
