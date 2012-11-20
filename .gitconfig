@@ -5,7 +5,7 @@
 	status = auto
 	diff = auto
 [merge]
-	tool = threesome
+	tool = splice
 [color]
 	diff = auto
 	branch = auto
@@ -56,11 +56,8 @@
 	browser = chromium
 [push]
 	default = tracking
-[mergetool "diffconflicts"]
-	cmd = diffconflicts $BASE $LOCAL $REMOTE $MERGED
-	keepBackup = false
-[mergetool "threesome"]
-	cmd = "gvim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
+[mergetool "splice"]
+	cmd = "gvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
 	trustExitCode = true
 [pretty]
 	epic-exact = %C(yellow)%h%Cred %ci%Creset%Creset%C(bold red) ~%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%C(bold green)%d%Creset

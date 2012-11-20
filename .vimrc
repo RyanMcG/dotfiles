@@ -30,7 +30,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
 
 "Testing
-Bundle 'sjl/threesome.vim'
+Bundle 'sjl/splice.vim'
 Bundle 'chrismetcalf/vim-yankring'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'bronson/vim-trailing-whitespace'
