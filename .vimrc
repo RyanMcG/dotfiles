@@ -366,13 +366,12 @@ nmap <leader>gl :Glog<CR>
 nmap <leader>gs :Gstatus<CR>
 nmap <leader>gcm :Gcommit<CR>
 nmap <leader>gcd :Gcommit<CR>
-nmap <leader>fw :Gwrite<CR>
 nmap <leader>gd :Gdiff<CR>
 
 "CtrlP
 nnoremap <leader>. :CtrlPTag<cr>
 nnoremap <leader>, :CtrlPMRU<cr>
-nnoremap <leader>b :CtrlPBuffer<cr>
+nnoremap <leader>f :CtrlPBuffer<cr>
 nnoremap <leader>x :CtrlPMixed<cr>
 
 "Supertab
