@@ -8,7 +8,6 @@ urxvt.font: xft:Inconsolata:size=10
 
 urxvt*geometry: 90x25
 
-Xft.dpi: 138
 urxvt-bg.font: xft:FreeSerif:rgba=vbgr:pixelsize=12
 URxvt*termName: rxvt-unicode
 *background: #101010
