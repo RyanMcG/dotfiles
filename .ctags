@@ -1,6 +1,10 @@
 --recurse=yes
 --tag-relative=yes
 --exclude=.git
+--exclude=env
+--exclude=build
+--exclude=ropeproject
+--exclude=*.pyc
 
 --langdef=Clojure
 --langmap=Clojure:.clj
