@@ -365,8 +365,8 @@ map <Leader>z :ZoomWin<CR>
 nmap <leader>gl :Glog<CR>
 nmap <leader>gs :Gstatus<CR>
 nmap <leader>gcm :Gcommit<CR>
-nmap <leader>gcd :Gcommit<CR>
 nmap <leader>gd :Gdiff<CR>
+nmap <leader>gch :Git dc<CR>
 
 "CtrlP
 nnoremap <leader>. :CtrlPTag<cr>
