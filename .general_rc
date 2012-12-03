@@ -32,7 +32,7 @@ elif [[ $NODENAME == "eeebase" ]]; then
 elif [[ $NODENAME == "ryanmcgowan" ]]; then
 	export PROMPT_COLOR=red
 elif [[ $NODENAME == "ryan-UX31E" ]]; then
-	export PROMPT_COLOR=cyan
+	export PROMPT_COLOR=green
 fi
 
 # Autossh fun
