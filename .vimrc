@@ -374,6 +374,9 @@ nnoremap <leader>, :CtrlPMRU<cr>
 nnoremap <leader>f :CtrlPBuffer<cr>
 nnoremap <leader>x :CtrlPMixed<cr>
 
+" FixWhitespace
+nnoremap <leader>wh :FixWhitespace<cr>
+
 "Supertab
 set completeopt+=longest
 set completeopt-=preview
