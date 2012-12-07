@@ -69,3 +69,5 @@ cron
 authorate
 init
 MPI
+ints
+stdin
