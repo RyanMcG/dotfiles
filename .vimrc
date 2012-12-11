@@ -65,6 +65,7 @@ Bundle 'derekwyatt/vim-sbt'
 "Clojure
 Bundle 'paredit.vim'
 Bundle 'VimClojure'
+Bundle 'tpope/vim-foreplay'
 "Bundle 'slimv.vim'
 "Bundle 'RyanMcG/slimVimClojure'
 Bundle 'jpalardy/vim-slime'
@@ -308,7 +309,7 @@ let g:session_autoload='no'
 
 "VimClojure
 "let vimclojure#SplitPos = "left"
-let vimclojure#WantNailgun = 1
+"let vimclojure#WantNailgun = 1
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#DynamicHighlighting = 1
