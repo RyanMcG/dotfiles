@@ -31,7 +31,8 @@ elif [[ $NODENAME == "eeebase" ]]; then
 	export PROMPT_COLOR=green
 elif [[ $NODENAME == "ryanmcgowan" ]]; then
 	export PROMPT_COLOR=red
-elif [[ $NODENAME == "ryan-UX31E" ]]; then
+elif [[ $NODENAME == "zenbook" ]]; then
+	export ENABLE_COMPMGR="yes"
 	export PROMPT_COLOR=green
 fi
 
