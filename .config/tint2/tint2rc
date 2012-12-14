@@ -35,8 +35,8 @@ border_color = #666666 40
 #---------------------------------------------
 panel_monitor = all
 panel_position = bottom center
-panel_size = 100% 26
-panel_margin = 0 
+panel_size = 100% 32
+panel_margin = 0
 panel_padding = 2 2 2
 font_shadow = 0
 panel_background_id = 0
@@ -47,8 +47,8 @@ panel_layer = bottom
 #---------------------------------------------
 # TASKBAR
 #---------------------------------------------
-#taskbar_mode = multi_desktop
-taskbar_mode = single_desktop
+taskbar_mode = multi_desktop
+#taskbar_mode = single_desktop
 taskbar_padding = 0 0 1
 taskbar_background_id = 1
 taskbar_active_background_id = 5
@@ -61,7 +61,7 @@ task_text = 1
 task_maximum_size = 2000 28
 task_centered = 0
 task_padding = 3 2
-task_font = DejaVu Sans 7
+task_font = DejaVu Sans 8
 task_font_color = #ffffff 85
 task_background_id = 2
 task_icon_asb = 85 -20 -20
@@ -113,8 +113,8 @@ battery = 1
 battery_hide = 98
 battery_low_status = 10
 battery_low_cmd = notify-send "battery low"
-bat1_font = sans 8
-bat2_font = sans 6
+bat1_ftont = sans 9
+bat2_font = sans 7
 battery_font_color = #ffffff 76
 battery_padding = 1 0
 battery_background_id = 0
@@ -128,7 +128,7 @@ tooltip_show_timeout = 0.7
 tooltip_hide_timeout = 0.3
 tooltip_background_id = 3
 tooltip_font_color = #OOOOOO 80
-tooltip_font = sans 10
+tooltip_font = sans 11
 
 #---------------------------------------------
 # MOUSE ACTION ON TASK
