@@ -50,6 +50,7 @@ alias intersection="grep -Fx -f"
 alias in2not1="grep -Fxv -f"
 alias jrs="jruby -S"
 alias jgem="jruby -S gem"
+alias be="bundle exec"
 # Custom Functions
 wiki() {
     dig +short txt $1.wp.dg.cx
