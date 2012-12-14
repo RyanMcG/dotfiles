@@ -144,8 +144,8 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>17</top>
-    <bottom>26</bottom>
+    <top>24</top>
+    <bottom>32</bottom>
     <left>0</left>
     <right>0</right>
   </margins>
@@ -330,7 +330,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>960</width>
+        <width>800</width>
       </action>
       <action name="MoveToEdgeWest"/>
     </keybind>
@@ -338,7 +338,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>960</width>
+        <width>800</width>
       </action>
       <action name="MoveToEdgeEast"/>
     </keybind>
@@ -346,7 +346,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>800</width>
+        <width>600</width>
       </action>
       <action name="MoveToEdgeWest"/>
     </keybind>
@@ -354,7 +354,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>1120</width>
+        <width>1000</width>
       </action>
       <action name="MoveToEdgeEast"/>
     </keybind>
@@ -364,7 +364,7 @@
           <enabled>true</enabled>
           <name>dmenu</name>
         </startupnotify>
-        <command>dmenu_run -fn '-*-dina-medium-r-*-*-15-*-*-*-*-*-*-*' -nb '#090909' -nf '#fafafa' -sb '#2670cc' -sf '#f0f0f0' -p '$'</command>
+        <command>dmenu_run -fn '-*-dina-medium-r-*-*-24-*-*-*-*-*-*-*' -nb '#090909' -nf '#fafafa' -sb '#2670cc' -sf '#f0f0f0' -p '$'</command>
       </action>
     </keybind>
     <keybind key="W-z">
