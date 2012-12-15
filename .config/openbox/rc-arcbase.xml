@@ -431,17 +431,17 @@
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>amixer -D pulse set Master toggle</command>
+        <command>pamixer --toggle-mute</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>amixer -D pulse set Master 2%+ unmute</command>
+        <command>pamixer --increase 3</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>amixer -D pulse set Master 2%- unmute</command>
+        <command>pamixer --decrease 3</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMedia">
