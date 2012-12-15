@@ -12,6 +12,15 @@ fi
 conky &
 tint2 &
 
+export NODENAME=$(uname -n)
+export ENABLE_COMPMGR="no"
+
+if [[ $NODENAME == "arcbase" ]]; then
+	export ENABLE_COMPMGR="yes"
+elif [[ $NODENAME == "zenbook" ]]; then
+	export ENABLE_COMPMGR="yes"
+fi
+
 #Now our host specific autostart
 if [[ $ENABLE_COMPMGR == "yes" ]]; then
 	compton -cC &
