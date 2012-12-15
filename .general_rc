@@ -21,18 +21,15 @@ else
 fi
 
 #Custom Var to enable composite manager
-export ENABLE_COMPMGR="no"
 export NODENAME=$(uname -n)
 
 if [[ $NODENAME == "arcbase" ]]; then
-	export ENABLE_COMPMGR="yes"
 	export PROMPT_COLOR=blue
 elif [[ $NODENAME == "eeebase" ]]; then
 	export PROMPT_COLOR=green
 elif [[ $NODENAME == "ryanmcgowan" ]]; then
 	export PROMPT_COLOR=red
 elif [[ $NODENAME == "zenbook" ]]; then
-	export ENABLE_COMPMGR="yes"
 	export PROMPT_COLOR=green
 fi
 
