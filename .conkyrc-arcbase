@@ -38,4 +38,4 @@ mpd_host localhost
 mpd_port 6600
 
 TEXT
-${color0}${font OpenLogos:size=12}a${font} ${voffset -5}$kernel ${time %m/%d/%Y %H:%M:%S} | CPU 1:${cpugraph cpu1 14,20} 2:${cpugraph cpu2 14,20} 3:${cpugraph cpu3 14,20} 4:${cpugraph cpu4 14,20} RAM:${memgraph 14,30} | / ${fs_bar 8,40 /} /home ${fs_bar 8,40 /home} | DN:${downspeedgraph eth1 10,40} UP:${upspeedgraph eth1 10,40} | ${mpd_smart}
+${color0}${font OpenLogos:size=12}a${font} ${voffset -5}$kernel ${time %m/%d/%Y %H:%M:%S} | CPU 1:${cpugraph cpu1 14,20} 2:${cpugraph cpu2 14,20} 3:${cpugraph cpu3 14,20} 4:${cpugraph cpu4 14,20} RAM:${memgraph 14,30} | / ${fs_bar 8,40 /} /home ${fs_bar 8,40 /home} | DN:${downspeedgraph wlan0 10,40} UP:${upspeedgraph wlan0 10,40} | ${mpd_smart}
