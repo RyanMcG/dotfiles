@@ -384,7 +384,7 @@
     </keybind>
     <keybind key="C-A-Delete">
       <action name="Execute">
-        <command>shutdown-dialog.py</command>
+        <command>exitx</command>
       </action>
     </keybind>
     <keybind key="C-A-End">
@@ -395,6 +395,17 @@
     <keybind key="C-A-Home">
       <action name="Execute">
         <command>slock</command>
+      </action>
+    </keybind>
+    <!-- Brightness Keybindings -->
+    <keybind key="C-F5">
+      <action name="Execute">
+        <command>xbacklight -dec 10</command>
+      </action>
+    </keybind>
+    <keybind key="C-F6">
+      <action name="Execute">
+        <command>xbacklight -inc 10</command>
       </action>
     </keybind>
     <!-- Keybindings for running audio stuff -->
@@ -440,7 +451,7 @@
     </keybind>
     <keybind key="XF86Mail">
       <action name="Execute">
-        <command>nchrm</command>
+        <command>google-chrome</command>
       </action>
     </keybind>
   </keyboard>
@@ -819,7 +830,7 @@
   # order that they appear in this list
 
 
-    # each rule element can be left out or set to 'default' to specify to not 
+    # each rule element can be left out or set to 'default' to specify to not
     # change that attribute of the window
 
     <decor>yes</decor>
@@ -875,6 +886,6 @@
   # end of the example
 -->
     <application name="urxvt-bg"><decor>no</decor><focus>yes</focus><position><x>center</x><y>16</y></position><skip_pager>yes</skip_pager><maximized>true</maximized> #Only if you want a full size terminal.
-	</application>
+    </application>
   </applications>
 </openbox_config>
