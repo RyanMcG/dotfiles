@@ -398,14 +398,14 @@
       </action>
     </keybind>
     <!-- Brightness Keybindings -->
-    <keybind key="C-F5">
+    <keybind key="W-F5">
       <action name="Execute">
-        <command>xbacklight -dec 10</command>
+        <command>asus-screen-brightness down</command>
       </action>
     </keybind>
-    <keybind key="C-F6">
+    <keybind key="W-F6">
       <action name="Execute">
-        <command>xbacklight -inc 10</command>
+        <command>asus-screen-brightness up</command>
       </action>
     </keybind>
     <!-- Keybindings for running audio stuff -->
