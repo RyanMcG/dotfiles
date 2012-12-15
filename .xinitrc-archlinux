@@ -3,7 +3,8 @@
 # ~/.xinitrc
 #
 # Executed by startx (run your window manager from here)
-#/home/roin/.config/autostart.sh &
+systemd --user &
+$HOME/.config/enable_compmgr.sh
 # exec gnome-session
 # exec startkde
 # exec startxfce4
