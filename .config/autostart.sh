@@ -13,4 +13,5 @@ xmodmap ~/.Xmodmap &
 xset m 5 10 &
 xset b off &
 skippy-xd &
+xflux -z 43201 &
 nitrogen --restore   #Restores wallpaper
