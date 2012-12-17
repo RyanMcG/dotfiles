@@ -55,4 +55,4 @@ background = #161616
 opacity = 0
 text = #eeeeee
 textShadow = none
-font = CMU Concrete:pixelsize=16.5
+font = FreeSans:size=10
