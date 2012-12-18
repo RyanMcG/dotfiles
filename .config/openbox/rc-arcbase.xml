@@ -411,7 +411,7 @@
     <!-- Keybindings for running audio stuff -->
     <keybind key="A-F2">
       <action name="Execute">
-        <command>urxvtcd -g +0+16 -e ncmpcpp</command>
+        <command>urxvtcd -e ncmpcpp</command>
       </action>
     </keybind>
     <keybind key="XF86AudioNext">
