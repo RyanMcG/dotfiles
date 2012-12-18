@@ -392,7 +392,7 @@
         <command>xset dpms force suspend</command>
       </action>
     </keybind>
-    <keybind key="C-A-Home">
+    <keybind key="C-A-L">
       <action name="Execute">
         <command>slock</command>
       </action>
