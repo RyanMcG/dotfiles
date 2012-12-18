@@ -374,12 +374,12 @@
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>scrot -q 100</command>
+        <command>scrot -q 100 -e 'mv $f ~/Pictures/Screenshots'</command>
       </action>
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <command>scrot -q 100 -s</command>
+        <command>scrot -q 100 -s -e 'mv $f ~/Pictures/Screenshots'</command>
       </action>
     </keybind>
     <keybind key="C-A-Delete">
