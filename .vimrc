@@ -42,6 +42,7 @@ Bundle 'scrooloose/snipmate-snippets'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'tsaleh/vim-align'
 Bundle 'austintaylor/vim-indentobject'
+Bundle 'tpope/vim-rsi'
 
 " Colorschemes
 Bundle 'noahfrederick/Hemisu'
