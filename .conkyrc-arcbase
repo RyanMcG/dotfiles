@@ -20,17 +20,17 @@ gap_y 1
 alignment top_left
 
 #behaviour
-update_interval 1
+update_interval 2
 
 #colour
-default_color  ffffff
-default_shade_color 000000
-own_window_colour 000000
+default_color  fafafa
+default_shade_color 101010
+own_window_colour 101010
 
 #font
 use_xft yes
 #xftfont Dina:pixelsize=16:antialias=false
-xftfont Inconsolata:rgba=vbgr:size=10
+xftfont Inconsolata:size=10
 use_spacer left
 
 #mpd
