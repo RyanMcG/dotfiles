@@ -23,5 +23,5 @@ fi
 
 #Now our host specific autostart
 if [[ $ENABLE_COMPMGR == "yes" ]]; then
-	compton -cC &
+	compton -cGCb
 fi
