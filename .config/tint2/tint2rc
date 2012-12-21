@@ -33,7 +33,7 @@ border_color = #666666 40
 #---------------------------------------------
 # PANEL
 #---------------------------------------------
-panel_monitor = all
+panel_monitor = 1
 panel_position = bottom center
 panel_size = 100% 30
 panel_margin = 0
@@ -62,19 +62,19 @@ task_maximum_size = 2000 28
 task_centered = 0
 task_padding = 3 2
 task_font = FreeSans 9
-task_font_color = #ffffff 85
+task_font_color = #fafafa 85
 task_background_id = 2
 task_icon_asb = 85 -20 -20
 # replace STATUS by 'urgent', 'active' or 'iconfied'
 #task_STATUS_background_id = 2
-#task_STATUS_font_color = #ffffff 85
+#task_STATUS_font_color = #fafafa 85
 #task_STATUS_icon_asb = 100 0 0
 # example:
 task_urgent_background_id = 4
-task_urgent_font_color = #ffffff 85
+task_urgent_font_color = #fafafa 85
 task_urgent_icon_asb = 100 0 0
 task_active_background_id = 3
-task_active_font_color = #ffffff 100
+task_active_font_color = #fafafa 100
 task_active_icon_asb = 85 0 0
 urgent_nb_of_blink = 100
 
@@ -91,31 +91,31 @@ systray_icon_asb = 100 0 0
 #---------------------------------------------
 # CLOCK
 #---------------------------------------------
-#clock = 0
-#time1_format = %H:%M
-#time1_font = sans 8
+clock = 1
+time1_format = %H:%M
+time1_font = FreeSans bold 12
 #time2_format = %A %d %B
 #time2_font = sans 6
-#clock_font_color = #ffffff 76
-#clock_padding = 1 0
-#clock_background_id = 0
+clock_font_color = #fafafa 95
+clock_padding = 1 0
+clock_background_id = 0
 #clock_lclick_command = xclock
 #clock_rclick_command = orage
-#clock_tooltip = %A %d %B
-#time1_timezone = :US/Hawaii
+clock_tooltip = %A %d %B
+time1_timezone = :America/New_York
 #time2_timezone = :Europe/Berlin
-#clock_tooltip_timezone = :/usr/share/zoneinfo/Europe/Paris
+clock_tooltip_timezone = :/usr/share/zoneinfo/America/New_York
 
 #---------------------------------------------
 # BATTERY
 #---------------------------------------------
-battery = 1
+battery = 0
 battery_hide = 98
 battery_low_status = 10
 battery_low_cmd = notify-send "battery low"
 bat1_font = FreeSans 10
 bat2_font = FreeSans 9
-battery_font_color = #ffffff 76
+battery_font_color = #fafafa 85
 battery_padding = 1 0
 battery_background_id = 0
 
@@ -127,8 +127,8 @@ tooltip_padding = 2 2
 tooltip_show_timeout = 0.7
 tooltip_hide_timeout = 0.3
 tooltip_background_id = 3
-tooltip_font_color = #OOOOOO 80
-tooltip_font = sans 11
+tooltip_font_color = #101010 90
+tooltip_font = FreeSans 11
 
 #---------------------------------------------
 # MOUSE ACTION ON TASK
