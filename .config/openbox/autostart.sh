@@ -9,7 +9,6 @@ if [ -f ~/.config/autostart.sh ]; then
 	. ~/.config/autostart.sh
 fi
 
-conky &
 tint2 &
 
 export NODENAME=$(uname -n)
