@@ -3,7 +3,6 @@
 
 start-pulseaudio-x11 &
 unclutter -idle 2 &
-urxvtd &                #Runs rxvt-unicode deamon
 dropbox start &
 pnmixer &
 xfce4-power-manager &
