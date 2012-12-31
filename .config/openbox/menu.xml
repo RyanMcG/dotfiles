@@ -1,440 +1,343 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openbox_menu>
-	<menu id="root-menu" label="OpenBox 3">
-		<menu id="1" label="Development">
-			<item label="Android SDK"> <action name="Execute">
-				<execute>android</execute>
-			</action> </item>
-			<item label="Eclipse"> <action name="Execute">
-				<execute>eclipse</execute>
-			</action> </item>
-			<item label="Fluid"> <action name="Execute">
-				<execute>fluid</execute>
-			</action> </item>
-			<item label="IDLE"> <action name="Execute">
-				<execute>idle</execute>
-			</action> </item>
-			<item label="Java Monitoring and Management Console"> <action name="Execute">
-				<execute>jconsole</execute>
-			</action> </item>
-			<item label="Java VisualVM"> <action name="Execute">
-				<execute>jvisualvm</execute>
-			</action> </item>
-			<item label="MySQL Workbench"> <action name="Execute">
-				<execute>mysql-workbench</execute>
-			</action> </item>
-			<item label="Python"> <action name="Execute">
-				<execute>urxvtcd -e python</execute>
-			</action> </item>
-			<item label="Qt Assistant"> <action name="Execute">
-				<execute>assistant</execute>
-			</action> </item>
-			<item label="Qt Designer"> <action name="Execute">
-				<execute>designer</execute>
-			</action> </item>
-			<item label="Qt Linguist"> <action name="Execute">
-				<execute>linguist</execute>
-			</action> </item>
-		</menu>
-		<menu id="2" label="Editors">
-			<item label="AA Fire"> <action name="Execute">
-				<execute>urxvtcd -e aafire -driver slang</execute>
-			</action> </item>
-			<item label="GVim"> <action name="Execute">
-				<execute>gvim</execute>
-			</action> </item>
-			<item label="Mousepad"> <action name="Execute">
-				<execute>mousepad</execute>
-			</action> </item>
-			<item label="Nano"> <action name="Execute">
-				<execute>urxvtcd -e nano</execute>
-			</action> </item>
-			<item label="PDF Editor"> <action name="Execute">
-				<execute>pdfedit</execute>
-			</action> </item>
-			<item label="Vi"> <action name="Execute">
-				<execute>urxvtcd -e vi</execute>
-			</action> </item>
-			<item label="Vim"> <action name="Execute">
-				<execute>urxvtcd -e vim</execute>
-			</action> </item>
-		</menu>
-		<menu id="18" label="Games">
-			<menu id="9" label="Adventure">
-				<item label="Sclient"> <action name="Execute">
-					<execute>sclient</execute>
-				</action> </item>
-			</menu>
-			<menu id="10" label="Arcade">
-				<item label="PacMan"> <action name="Execute">
-					<execute>pacman</execute>
-				</action> </item>
-			</menu>
-			<menu id="11" label="Board">
-				<item label="Checkers"> <action name="Execute">
-					<execute>checkers</execute>
-				</action> </item>
-			</menu>
-			<menu id="13" label="Puzzle">
-				<item label="Block Attack!"> <action name="Execute">
-					<execute>blocks</execute>
-				</action> </item>
-				<item label="Sudoku"> <action name="Execute">
-					<execute>sudoku</execute>
-				</action> </item>
-			</menu>
-			<item label="PlayOnLinux"> <action name="Execute">
-				<execute>playonlinux</execute>
-			</action> </item>
-		</menu>
-		<menu id="6" label="Graphics">
-			<item label="Geeqie"> <action name="Execute">
-				<execute>geeqie</execute>
-			</action> </item>
-			<item label="GNU Image Manipulation Program"> <action name="Execute">
-				<execute>gimp-2.6</execute>
-			</action> </item>
-			<item label="Inkscape"> <action name="Execute">
-				<execute>inkscape</execute>
-			</action> </item>
-			<item label="Mirage"> <action name="Execute">
-				<execute>mirage</execute>
-			</action> </item>
-			<item label="MuPDF"> <action name="Execute">
-				<execute>mupdf</execute>
-			</action> </item>
-			<item label="The GIMP"> <action name="Execute">
-				<execute>gimp</execute>
-			</action> </item>
-			<item label="XGlyph"> <action name="Execute">
-				<execute>xglyph</execute>
-			</action> </item>
-		</menu>
-		<menu id="7" label="Multimedia">
-			<item label="ALSA mixer"> <action name="Execute">
-				<execute>urxvtcd -e alsamixer</execute>
-			</action> </item>
-			<item label="Cheese"> <action name="Execute">
-				<execute>cheese</execute>
-			</action> </item>
-			<item label="Gtv"> <action name="Execute">
-				<execute>gtv</execute>
-			</action> </item>
-			<item label="MusicBrainz Picard"> <action name="Execute">
-				<execute>picard</execute>
-			</action> </item>
-			<item label="PulseAudio Device Chooser"> <action name="Execute">
-				<execute>padevchooser</execute>
-			</action> </item>
-			<item label="PulseAudio Manager"> <action name="Execute">
-				<execute>paman</execute>
-			</action> </item>
-			<item label="PulseAudio Volume Control"> <action name="Execute">
-				<execute>pavucontrol</execute>
-			</action> </item>
-			<item label="PulseAudio Volume Meter (Capture)"> <action name="Execute">
-				<execute>pavumeter --record</execute>
-			</action> </item>
-			<item label="PulseAudio Volume Meter (Playback)"> <action name="Execute">
-				<execute>pavumeter</execute>
-			</action> </item>
-			<item label="VLC media player"> <action name="Execute">
-				<execute>vlc</execute>
-			</action> </item>
-			<item label="VolWheel"> <action name="Execute">
-				<execute>volwheel</execute>
-			</action> </item>
-		</menu>
-		<menu id="5" label="Network">
-			<item label="Avahi SSH Server Browser"> <action name="Execute">
-				<execute>bssh</execute>
-			</action> </item>
-			<item label="Avahi VNC Server Browser"> <action name="Execute">
-				<execute>bvnc</execute>
-			</action> </item>
-			<item label="Chromium"> <action name="Execute">
-				<execute>chromium</execute>
-			</action> </item>
-			<item label="Deluge"> <action name="Execute">
-				<execute>deluge-gtk</execute>
-			</action> </item>
-			<item label="dwb"> <action name="Execute">
-				<execute>dwb</execute>
-			</action> </item>
-			<item label="ELinks"> <action name="Execute">
-				<execute>urxvtcd -e /usr/bin/elinks</execute>
-			</action> </item>
-			<item label="Epiphany"> <action name="Execute">
-				<execute>epiphany</execute>
-			</action> </item>
-			<item label="Epiphany Web Bookmarks"> <action name="Execute">
-				<execute>epiphany --bookmarks-editor</execute>
-			</action> </item>
-			<item label="FireFox"> <action name="Execute">
-				<execute>firefox</execute>
-			</action> </item>
-			<item label="FTP"> <action name="Execute">
-				<execute>urxvtcd -e ftp</execute>
-			</action> </item>
-			<item label="GUI for Cisco VPN Client"> <action name="Execute">
-				<execute>gksu cvpncg</execute>
-			</action> </item>
-			<item label="Irssi"> <action name="Execute">
-				<execute>urxvtcd -e irssi</execute>
-			</action> </item>
-			<item label="LFTP"> <action name="Execute">
-				<execute>urxvtcd -e lftp</execute>
-			</action> </item>
-			<item label="Luakit"> <action name="Execute">
-				<execute>luakit</execute>
-			</action> </item>
-			<item label="Lynx"> <action name="Execute">
-				<execute>urxvtcd -e lynx</execute>
-			</action> </item>
-			<item label="Mail"> <action name="Execute">
-				<execute>urxvtcd -e mail</execute>
-			</action> </item>
-			<item label="Midori"> <action name="Execute">
-				<execute>midori</execute>
-			</action> </item>
-			<item label="Mutt"> <action name="Execute">
-				<execute>urxvtcd -e mutt</execute>
-			</action> </item>
-			<item label="Pidgin Internet Messenger"> <action name="Execute">
-				<execute>pidgin</execute>
-			</action> </item>
-			<item label="Skype"> <action name="Execute">
-				<execute>skype</execute>
-			</action> </item>
-			<item label="Talk"> <action name="Execute">
-				<execute>urxvtcd -e talk</execute>
-			</action> </item>
-			<item label="Telnet"> <action name="Execute">
-				<execute>urxvtcd -e telnet</execute>
-			</action> </item>
-			<item label="TkVNC"> <action name="Execute">
-				<execute>urxvtcd -e tkvnc</execute>
-			</action> </item>
-			<item label="Zenmap"> <action name="Execute">
-				<execute>zenmap</execute>
-			</action> </item>
-			<item label="Zenmap (as root)"> <action name="Execute">
-				<execute>/usr/share/zenmap/su-to-zenmap.sh</execute>
-			</action> </item>
-		</menu>
-		<menu id="3" label="Office">
-			<item label="AbiWord"> <action name="Execute">
-				<execute>abiword</execute>
-			</action> </item>
-			<item label="ePDFViewer"> <action name="Execute">
-				<execute>epdfview</execute>
-			</action> </item>
-			<item label="Evince"> <action name="Execute">
-				<execute>evince</execute>
-			</action> </item>
-			<item label="Gnumeric"> <action name="Execute">
-				<execute>gnumeric</execute>
-			</action> </item>
-			<item label="HTMLDOC"> <action name="Execute">
-				<execute>htmldoc</execute>
-			</action> </item>
-			<item label="LibreOffice Impress"> <action name="Execute">
-				<execute>libreoffice</execute>
-			</action> </item>
-			<item label="PostgreSQL Database"> <action name="Execute">
-				<execute>urxvtcd -e psql template1</execute>
-			</action> </item>
-		</menu>
-		<menu id="39" label="Other">
-			<item label="Dropbox"> <action name="Execute">
-				<execute>dropboxd</execute>
-			</action> </item>
-			<item label="Frozen Bubble"> <action name="Execute">
-				<execute>frozen-bubble</execute>
-			</action> </item>
-			<item label="JavaWS"> <action name="Execute">
-				<execute>javaws-launcher</execute>
-			</action> </item>
-			<item label="PulseAudio Preferences"> <action name="Execute">
-				<execute>paprefs</execute>
-			</action> </item>
-			<item label="QT V4L2 test Utility"> <action name="Execute">
-				<execute>qv4l2</execute>
-			</action> </item>
-			<item label="Xpdf"> <action name="Execute">
-				<execute>xpdf</execute>
-			</action> </item>
-		</menu>
-		<menu id="4" label="Science">
-			<item label="Calc"> <action name="Execute">
-				<execute>urxvtcd -e calc</execute>
-			</action> </item>
-			<item label="Genius Math Tool"> <action name="Execute">
-				<execute>gnome-genius</execute>
-			</action> </item>
-		</menu>
-		<menu id="19" label="Shells">
-			<item label="Dash"> <action name="Execute">
-				<execute>urxvtcd -e dash -i</execute>
-			</action> </item>
-			<item label="File Manager"> <action name="Execute">
-				<execute>pcmanfm</execute>
-			</action> </item>
-			<item label="Oracle VM VirtualBox"> <action name="Execute">
-				<execute>VirtualBox</execute>
-			</action> </item>
-			<item label="Root Terminal"> <action name="Execute">
-				<execute>gksu -l gnome-terminal</execute>
-			</action> </item>
-			<item label="ROX"> <action name="Execute">
-				<execute>rox</execute>
-			</action> </item>
-			<item label="rxvt-unicode"> <action name="Execute">
-				<execute>urxvtcd</execute>
-			</action> </item>
-			<item label="WineGame"> <action name="Execute">
-				<execute>winegame</execute>
-			</action> </item>
-			<item label="Xterm"> <action name="Execute">
-				<execute>xterm</execute>
-			</action> </item>
-			<item label="XTerm (Unicode)"> <action name="Execute">
-				<execute>uxterm</execute>
-			</action> </item>
-		</menu>
-		<menu id="37" label="System">
-			<menu id="36" label="Settings">
-				<menu id="21" label="GNOME">
-					<item label="Adobe Flash Player"> <action name="Execute">
-						<execute>flash-player-properties</execute>
-					</action> </item>
-					<item label="Bluetooth Manager"> <action name="Execute">
-						<execute>blueman-manager</execute>
-					</action> </item>
-					<item label="gTweakUI - Galeon"> <action name="Execute">
-						<execute>gtweakui-galeon</execute>
-					</action> </item>
-					<item label="gTweakUI - Menus"> <action name="Execute">
-						<execute>gtweakui-menus</execute>
-					</action> </item>
-					<item label="gTweakUI - Nautilus"> <action name="Execute">
-						<execute>gtweakui-nautilus</execute>
-					</action> </item>
-					<item label="gTweakUI - Session"> <action name="Execute">
-						<execute>gtweakui-session</execute>
-					</action> </item>
-					<item label="Network Connections"> <action name="Execute">
-						<execute>nm-connection-editor</execute>
-					</action> </item>
-					<item label="Privilege granting"> <action name="Execute">
-						<execute>gksu-properties</execute>
-					</action> </item>
-				</menu>
-				<menu id="35" label="Xfce">
-					<item label="Notifications"> <action name="Execute">
-						<execute>xfce4-notifyd-config</execute>
-					</action> </item>
-				</menu>
-				<item label="Customize Look and Feel"> <action name="Execute">
-					<execute>lxappearance</execute>
-				</action> </item>
-				<item label="Disk Utility"> <action name="Execute">
-					<execute>palimpsest</execute>
-				</action> </item>
-				<item label="Java"> <action name="Execute">
-					<execute>jcontrol</execute>
-				</action> </item>
-				<item label="Java Policy Settings"> <action name="Execute">
-					<execute>policytool</execute>
-				</action> </item>
-				<item label="Manage Printing"> <action name="Execute">
-					<execute>xdg-open http://localhost:631/</execute>
-				</action> </item>
-				<item label="Monitor Settings"> <action name="Execute">
-					<execute>lxrandr</execute>
-				</action> </item>
-				<item label="Openbox Configuration Manager"> <action name="Execute">
-					<execute>obconf</execute>
-				</action> </item>
-				<item label="Panel tint2"> <action name="Execute">
-					<execute>tint2conf</execute>
-				</action> </item>
-				<item label="Preferred Applications"> <action name="Execute">
-					<execute>libfm-pref-apps</execute>
-				</action> </item>
-				<item label="Printing"> <action name="Execute">
-					<execute>system-config-printer</execute>
-				</action> </item>
-			</menu>
-			<item label="Avahi Zeroconf Browser"> <action name="Execute">
-				<execute>avahi-discover</execute>
-			</action> </item>
-			<item label="Configuration Editor"> <action name="Execute">
-				<execute>gconf-editor</execute>
-			</action> </item>
-			<item label="FSlint"> <action name="Execute">
-				<execute>fslint-gui</execute>
-			</action> </item>
-			<item label="GDM Setup"> <action name="Execute">
-				<execute>gksu gdmsetup</execute>
-			</action> </item>
-			<item label="Htop"> <action name="Execute">
-				<execute>urxvtcd -e htop</execute>
-			</action> </item>
-			<item label="Passwords and Encryption Keys"> <action name="Execute">
-				<execute>seahorse</execute>
-			</action> </item>
-			<item label="pstree"> <action name="Execute">
-				<execute>urxvtcd -e pstree.x11</execute>
-			</action> </item>
-			<item label="pstree"> <action name="Execute">
-				<execute>urxvtcd -e /usr/bin/pstree.x11</execute>
-			</action> </item>
-			<item label="pstree"> <action name="Execute">
-				<execute>urxvtcd -e pstree</execute>
-			</action> </item>
-			<item label="Top"> <action name="Execute">
-				<execute>urxvtcd -e top</execute>
-			</action> </item>
-		</menu>
-		<menu id="38" label="Utilities">
-			<item label="7-Zip FM"> <action name="Execute">
-				<execute>7zFM</execute>
-			</action> </item>
-			<item label="Editres"> <action name="Execute">
-				<execute>editres</execute>
-			</action> </item>
-			<item label="HP Device Manager"> <action name="Execute">
-				<execute>hp-toolbox</execute>
-			</action> </item>
-			<item label="Info"> <action name="Execute">
-				<execute>urxvtcd -e info</execute>
-			</action> </item>
-			<item label="unclutter - start"> <action name="Execute">
-				<execute>unclutter</execute>
-			</action> </item>
-			<item label="Viewres"> <action name="Execute">
-				<execute>viewres</execute>
-			</action> </item>
-			<item label="Xarchiver"> <action name="Execute">
-				<execute>xarchiver</execute>
-			</action> </item>
-			<item label="Xev"> <action name="Execute">
-				<execute>urxvtcd -e xev</execute>
-			</action> </item>
-			<item label="Xrefresh"> <action name="Execute">
-				<execute>xrefresh</execute>
-			</action> </item>
-			<item label="Xsetroot"> <action name="Execute">
-				<execute>xsetroot</execute>
-			</action> </item>
-		</menu>
-		<separator/>
-		<menu id="40" label="OpenBox">
-			<menu id="client-list-menu"/>
-			<item label="Reconfigure"> <action name="Reconfigure"/> </item>
-			<separator/>
-			<item label="Exit"> <action name="Exit"/> </item>
-		</menu>
-	</menu>
+  <menu id="root-menu" label="OpenBox 3">
+    <menu id="1" label="Development">
+      <item label="Fluid"> <action name="Execute">
+          <execute>fluid</execute>
+      </action> </item>
+      <item label="IDLE"> <action name="Execute">
+          <execute>idle</execute>
+      </action> </item>
+      <item label="OpenJDK Monitoring &amp; Management Console"> <action name="Execute">
+          <execute>jconsole</execute>
+      </action> </item>
+      <item label="OpenJDK Policy Tool"> <action name="Execute">
+          <execute>policytool</execute>
+      </action> </item>
+      <item label="Python"> <action name="Execute">
+          <execute>urxvt -e python</execute>
+      </action> </item>
+      <item label="Qt Assistant"> <action name="Execute">
+          <execute>assistant</execute>
+      </action> </item>
+      <item label="Qt Designer"> <action name="Execute">
+          <execute>designer</execute>
+      </action> </item>
+      <item label="Qt Linguist"> <action name="Execute">
+          <execute>linguist</execute>
+      </action> </item>
+    </menu>
+    <menu id="2" label="Editors">
+      <item label="AA Fire"> <action name="Execute">
+          <execute>urxvt -e aafire -driver slang</execute>
+      </action> </item>
+      <item label="GVim"> <action name="Execute">
+          <execute>gvim</execute>
+      </action> </item>
+      <item label="Nano"> <action name="Execute">
+          <execute>urxvt -e nano</execute>
+      </action> </item>
+      <item label="Vi"> <action name="Execute">
+          <execute>urxvt -e vi</execute>
+      </action> </item>
+      <item label="Vim"> <action name="Execute">
+          <execute>urxvt -e vim</execute>
+      </action> </item>
+    </menu>
+    <menu id="18" label="Games">
+      <menu id="9" label="Adventure">
+        <item label="Sclient"> <action name="Execute">
+            <execute>sclient</execute>
+        </action> </item>
+      </menu>
+      <menu id="10" label="Arcade">
+        <item label="PacMan"> <action name="Execute">
+            <execute>pacman</execute>
+        </action> </item>
+      </menu>
+    </menu>
+    <menu id="6" label="Graphics">
+      <item label="E-book Viewer"> <action name="Execute">
+          <execute>ebook-viewer</execute>
+      </action> </item>
+      <item label="Font Manager"> <action name="Execute">
+          <execute>font-manager</execute>
+      </action> </item>
+      <item label="Geeqie"> <action name="Execute">
+          <execute>geeqie</execute>
+      </action> </item>
+      <item label="GNU Image Manipulation Program"> <action name="Execute">
+          <execute>gimp-2.8</execute>
+      </action> </item>
+      <item label="LRF Viewer"> <action name="Execute">
+          <execute>lrfviewer</execute>
+      </action> </item>
+      <item label="Mirage"> <action name="Execute">
+          <execute>mirage</execute>
+      </action> </item>
+      <item label="The GIMP"> <action name="Execute">
+          <execute>gimp</execute>
+      </action> </item>
+      <item label="Trimage image compressor"> <action name="Execute">
+          <execute>trimage</execute>
+      </action> </item>
+      <item label="XGlyph"> <action name="Execute">
+          <execute>xglyph</execute>
+      </action> </item>
+    </menu>
+    <menu id="7" label="Multimedia">
+      <item label="GNOME MPlayer"> <action name="Execute">
+          <execute>gnome-mplayer</execute>
+      </action> </item>
+      <item label="PNMixer"> <action name="Execute">
+          <execute>pnmixer</execute>
+      </action> </item>
+      <item label="PulseAudio System Tray"> <action name="Execute">
+          <execute>pasystray</execute>
+      </action> </item>
+      <item label="PulseAudio Volume Control"> <action name="Execute">
+          <execute>pavucontrol</execute>
+      </action> </item>
+      <item label="Sonata"> <action name="Execute">
+          <execute>sonata</execute>
+      </action> </item>
+    </menu>
+    <menu id="5" label="Network">
+      <item label="Avahi SSH Server Browser"> <action name="Execute">
+          <execute>bssh</execute>
+      </action> </item>
+      <item label="Avahi VNC Server Browser"> <action name="Execute">
+          <execute>bvnc</execute>
+      </action> </item>
+      <item label="Deluge"> <action name="Execute">
+          <execute>deluge-gtk</execute>
+      </action> </item>
+      <item label="FTP"> <action name="Execute">
+          <execute>urxvt -e ftp</execute>
+      </action> </item>
+      <item label="Google Chrome"> <action name="Execute">
+          <execute>google-chrome</execute>
+      </action> </item>
+      <item label="Mail"> <action name="Execute">
+          <execute>urxvt -e mail</execute>
+      </action> </item>
+      <item label="Mail Reader"> <action name="Execute">
+          <execute>exo-open --launch MailReader</execute>
+      </action> </item>
+      <item label="Pidgin Internet Messenger"> <action name="Execute">
+          <execute>pidgin</execute>
+      </action> </item>
+      <item label="Skype"> <action name="Execute">
+          <execute>skype</execute>
+      </action> </item>
+      <item label="Talk"> <action name="Execute">
+          <execute>urxvt -e talk</execute>
+      </action> </item>
+      <item label="Telnet"> <action name="Execute">
+          <execute>urxvt -e telnet</execute>
+      </action> </item>
+      <item label="Transmission"> <action name="Execute">
+          <execute>transmission-gtk</execute>
+      </action> </item>
+      <item label="Web Browser"> <action name="Execute">
+          <execute>exo-open --launch WebBrowser</execute>
+      </action> </item>
+    </menu>
+    <menu id="3" label="Office">
+      <item label="Evince"> <action name="Execute">
+          <execute>evince</execute>
+      </action> </item>
+    </menu>
+    <menu id="39" label="Other">
+      <item label="AUR"> <action name="Execute">
+          <execute>xdg-open https://aur.archlinux.org</execute>
+      </action> </item>
+      <item label="Bugs"> <action name="Execute">
+          <execute>xdg-open https://bugs.archlinux.org</execute>
+      </action> </item>
+      <item label="Calibre"> <action name="Execute">
+          <execute>calibre</execute>
+      </action> </item>
+      <item label="Developers"> <action name="Execute">
+          <execute>xdg-open http://www.archlinux.org/developers/</execute>
+      </action> </item>
+      <item label="Documentation"> <action name="Execute">
+          <execute>xdg-open https://wiki.archlinux.org/index.php/Official_Arch_Linux_Install_Guide</execute>
+      </action> </item>
+      <item label="Donate"> <action name="Execute">
+          <execute>xdg-open http://www.archlinux.org/donate/</execute>
+      </action> </item>
+      <item label="Dropbox"> <action name="Execute">
+          <execute>dropbox start</execute>
+      </action> </item>
+      <item label="Forum"> <action name="Execute">
+          <execute>xdg-open https://bbs.archlinux.org</execute>
+      </action> </item>
+      <item label="GPG-Crypter"> <action name="Execute">
+          <execute>gpg-crypter</execute>
+      </action> </item>
+      <item label="Homepage"> <action name="Execute">
+          <execute>xdg-open http://www.archlinux.org</execute>
+      </action> </item>
+      <item label="QT V4L2 test Utility"> <action name="Execute">
+          <execute>qv4l2</execute>
+      </action> </item>
+      <item label="Schwag"> <action name="Execute">
+          <execute>xdg-open http://www.zazzle.com/archlinux/</execute>
+      </action> </item>
+      <item label="SVN"> <action name="Execute">
+          <execute>xdg-open http://projects.archlinux.org/svntogit/</execute>
+      </action> </item>
+      <item label="Wicd"> <action name="Execute">
+          <execute>wicd-client</execute>
+      </action> </item>
+      <item label="Wiki"> <action name="Execute">
+          <execute>xdg-open https://wiki.archlinux.org</execute>
+      </action> </item>
+    </menu>
+    <menu id="4" label="Science">
+      <item label="Calc"> <action name="Execute">
+          <execute>urxvt -e calc</execute>
+      </action> </item>
+    </menu>
+    <menu id="19" label="Shells">
+      <item label="Root Terminal"> <action name="Execute">
+          <execute>gksu -l urxvt</execute>
+      </action> </item>
+      <item label="urxvt"> <action name="Execute">
+          <execute>urxvt</execute>
+      </action> </item>
+      <item label="Thunar File Manager"> <action name="Execute">
+          <execute>thunar</execute>
+      </action> </item>
+    </menu>
+    <menu id="37" label="System">
+      <menu id="36" label="Settings">
+        <menu id="21" label="GNOME">
+          <item label="Bluetooth Manager"> <action name="Execute">
+              <execute>blueman-manager</execute>
+          </action> </item>
+          <item label="Privilege granting"> <action name="Execute">
+              <execute>gksu-properties</execute>
+          </action> </item>
+        </menu>
+        <menu id="35" label="Xfce">
+          <item label="Notifications"> <action name="Execute">
+              <execute>xfce4-notifyd-config</execute>
+          </action> </item>
+        </menu>
+        <item label="ARandR"> <action name="Execute">
+            <execute>arandr</execute>
+        </action> </item>
+        <item label="Customize Look and Feel"> <action name="Execute">
+            <execute>lxappearance</execute>
+        </action> </item>
+        <item label="File Manager"> <action name="Execute">
+            <execute>thunar-settings</execute>
+        </action> </item>
+        <item label="Monitor Settings"> <action name="Execute">
+            <execute>lxrandr</execute>
+        </action> </item>
+        <item label="Openbox Configuration Manager"> <action name="Execute">
+            <execute>obconf</execute>
+        </action> </item>
+        <item label="Panel"> <action name="Execute">
+            <execute>xfce4-panel --preferences</execute>
+        </action> </item>
+        <item label="Panel tint2"> <action name="Execute">
+            <execute>tint2conf</execute>
+        </action> </item>
+        <item label="Power Manager"> <action name="Execute">
+            <execute>xfce4-power-manager-settings</execute>
+        </action> </item>
+        <item label="Preferred Applications"> <action name="Execute">
+            <execute>exo-preferred-applications</execute>
+        </action> </item>
+        <item label="Removable Drives and Media"> <action name="Execute">
+            <execute>thunar-volman-settings</execute>
+        </action> </item>
+      </menu>
+      <item label="Avahi Zeroconf Browser"> <action name="Execute">
+          <execute>avahi-discover</execute>
+      </action> </item>
+      <item label="Bulk Rename"> <action name="Execute">
+          <execute>/usr/lib/Thunar/ThunarBulkRename</execute>
+      </action> </item>
+      <item label="dconf Editor"> <action name="Execute">
+          <execute>dconf-editor</execute>
+      </action> </item>
+      <item label="GDM Setup"> <action name="Execute">
+          <execute>gksu gdmsetup</execute>
+      </action> </item>
+      <item label="GParted"> <action name="Execute">
+          <execute>gparted-pkexec</execute>
+      </action> </item>
+      <item label="Htop"> <action name="Execute">
+          <execute>urxvt -e htop</execute>
+      </action> </item>
+      <item label="pstree"> <action name="Execute">
+          <execute>urxvt -e pstree</execute>
+      </action> </item>
+      <item label="pstree"> <action name="Execute">
+          <execute>urxvt -e pstree.x11</execute>
+      </action> </item>
+      <item label="Top"> <action name="Execute">
+          <execute>urxvt -e top</execute>
+      </action> </item>
+    </menu>
+    <menu id="38" label="Utilities">
+      <item label="7-Zip FM"> <action name="Execute">
+          <execute>7zFM</execute>
+      </action> </item>
+      <item label="About Xfce"> <action name="Execute">
+          <execute>xfce4-about</execute>
+      </action> </item>
+      <item label="Archive Manager"> <action name="Execute">
+          <execute>file-roller</execute>
+      </action> </item>
+      <item label="File Manager"> <action name="Execute">
+          <execute>exo-open --launch FileManager</execute>
+      </action> </item>
+      <item label="GShutdown"> <action name="Execute">
+          <execute>gshutdown</execute>
+      </action> </item>
+      <item label="Info"> <action name="Execute">
+          <execute>urxvt -e info</execute>
+      </action> </item>
+      <item label="Terminal Emulator"> <action name="Execute">
+          <execute>exo-open --launch TerminalEmulator</execute>
+      </action> </item>
+      <item label="unclutter - start"> <action name="Execute">
+          <execute>unclutter</execute>
+      </action> </item>
+      <item label="Xclock (analog)"> <action name="Execute">
+          <execute>xclock -analog</execute>
+      </action> </item>
+      <item label="Xclock (digital)"> <action name="Execute">
+          <execute>xclock -digital</execute>
+      </action> </item>
+      <item label="Xclock (digital)"> <action name="Execute">
+          <execute>xclock -digital -update 1</execute>
+      </action> </item>
+      <item label="Xev"> <action name="Execute">
+          <execute>urxvt -e xev</execute>
+      </action> </item>
+      <item label="XFontSel"> <action name="Execute">
+          <execute>xfontsel</execute>
+      </action> </item>
+      <item label="Xkill"> <action name="Execute">
+          <execute>xkill</execute>
+      </action> </item>
+      <item label="Xrefresh"> <action name="Execute">
+          <execute>xrefresh</execute>
+      </action> </item>
+    </menu>
+    <separator/>
+    <menu id="40" label="OpenBox">
+      <menu id="client-list-menu"/>
+      <item label="Reconfigure"> <action name="Reconfigure"/> </item>
+      <separator/>
+      <item label="Exit"> <action name="Exit"/> </item>
+    </menu>
+  </menu>
 </openbox_menu>
