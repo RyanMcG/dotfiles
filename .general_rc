@@ -31,6 +31,8 @@ elif [[ $NODENAME == "ryanmcgowan" ]]; then
 	export PROMPT_COLOR=red
 elif [[ $NODENAME == "zenbook" ]]; then
 	export PROMPT_COLOR=green
+elif [[ $NODENAME == "facio-eng-air-1.local" ]]; then
+	export PROMPT_COLOR=cyan
 fi
 
 # Autossh fun
@@ -83,7 +85,9 @@ if [ -f ~/.general_rc_secret ]; then
 fi
 
 # enable color support of ls and also add handy aliases
-eval "`dircolors -b`"
+if [[ $(uname) != "Darwin" ]]; then
+	eval "`dircolors -b`"
+fi
 alias ls='ls -h --color=auto'
 #alias dir='ls --color=auto --format=vertical'
 #alias vdir='ls --color=auto --format=long'
