@@ -51,6 +51,8 @@ alias in2not1="grep -Fxv -f"
 alias jrs="jruby -S"
 alias jgem="jruby -S gem"
 alias be="bundle exec"
+alias hpi="hub pull-request -i"
+alias rlf="cd; cd -"
 # Custom Functions
 wiki() {
     dig +short txt $1.wp.dg.cx
