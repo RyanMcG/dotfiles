@@ -40,11 +40,11 @@ archlinux
 #nyan
 lein
 heroku
-#rvm
+rvm
 #bundler
 #ruby
 #rails
-#rail3
+rails3
 vi-mode
 #vundle
 #python
