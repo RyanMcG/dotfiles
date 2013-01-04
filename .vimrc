@@ -337,8 +337,8 @@ let g:slime_target = "tmux"
 let g:snips_trigger_key='<c-space>'
 
 "Ack
-nmap <leader>a/ :Ack<space>
-nmap <leader>a* :Ack -w <C-R><C-W><space>
+nmap <leader>a/ :Ack!<space>
+nmap <leader>a* :Ack! -w <C-R><C-W><space>
 nmap <leader>aa :AckAdd<space>
 nmap <leader>an :cnext<CR>
 nmap <leader>ap :cprev<CR>
