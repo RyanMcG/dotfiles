@@ -9,8 +9,6 @@ systemd --user &
 # exec startxfce4
 # ...or the Window Manager of your choice
 export DE="xfce"
+#exec dbus-launch i3
+#exec dbus-launch startxfce4
 exec dbus-launch openbox-session
-#exec ck-launch-session dwm
-#exec ck-launch-session wmii
-#exec ck-launch-session xmonad
-#exec ck-launch-session awesome
