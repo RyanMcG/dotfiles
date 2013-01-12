@@ -372,14 +372,24 @@
         <menu>root-menu</menu>
       </action>
     </keybind>
+    <keybind key="C-A-Print">
+      <action name="Execute">
+        <command>cloudunapp ~/Pictures/Screenshots/CloudApp</command>
+      </action>
+    </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>scrot -q 100 -e 'mv $f ~/Pictures/Screenshots'</command>
+        <command>scrot -q 100 -e 'mv $f ~/Pictures/Screenshots/'</command>
       </action>
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <command>scrot -q 100 -s -e 'mv $f ~/Pictures/Screenshots'</command>
+        <command>scrot -q 100 -se 'mv $f ~/Pictures/Screenshots/'</command>
+      </action>
+    </keybind>
+    <keybind key="A-Print">
+      <action name="Execute">
+        <command>scrot -q 100 -se 'mv $f ~/Pictures/Screenshots/'</command>
       </action>
     </keybind>
     <keybind key="C-A-Delete">
