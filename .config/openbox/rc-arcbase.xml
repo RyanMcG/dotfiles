@@ -317,13 +317,9 @@
         <command>gvim</command>
       </action>
     </keybind>
-    <keybind key="XF86HomePage">
+    <keybind key="XF86Display">
       <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>htop</name>
-        </startupnotify>
-        <command>urxvt -e htop</command>
+        <command>~/.screenlayout/home-alt.sh</command>
       </action>
     </keybind>
     <keybind key="W-Left">
