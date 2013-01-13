@@ -4,12 +4,10 @@
 [color]
 	status = auto
 	diff = auto
+	grep = auto
+	branch = auto
 [merge]
 	tool = splice
-[color]
-	diff = auto
-	branch = auto
-	status = auto
 [alias]
 	a = add
 	ap = add -p
@@ -23,23 +21,25 @@
 	dc = diff --cached
 	ds = diff --stat
 	f = fetch
-	s = status
-	sn = show --stat --decorate
+	g = grep -n
 	l = log --decorate --graph
 	lf = log --graph --pretty=epic-friend
 	le = log --graph --pretty=epic-exact
 	ls = log --graph --pretty=epic-exact
 	l1 = !git --no-pager log --graph --pretty=epic-exact -1
 	lt = !git --no-pager log --graph --pretty=epic-friend -10
-	wc = whatchanged --decorate --graph
-	sl = stash list --pretty=epic-exact -1
-	rl = reflog --decorate
-	rs = remote show
 	p = pull
 	pr = pull --rebase
+	s = status
+	sl = stash list --pretty=epic-exact -1
+	sn = show --stat --decorate
+	rl = reflog --decorate
+	rs = remote show
 	r = reset
 	rh = reset HEAD
 	rp = reset -p
+	wc = whatchanged --decorate --graph
+
 [branch]
 	autosetupmerge = always
 
