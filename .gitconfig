@@ -25,7 +25,6 @@
 	l = log --decorate --graph
 	lf = log --graph --pretty=epic-friend
 	le = log --graph --pretty=epic-exact
-	ls = log --graph --pretty=epic-exact
 	l1 = !git --no-pager log --graph --pretty=epic-exact -1
 	lt = !git --no-pager log --graph --pretty=epic-friend -10
 	p = pull
