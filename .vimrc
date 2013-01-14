@@ -107,6 +107,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rake'
 "Bundle 'astashov/vim-ruby-debugger'
 Bundle 'tpope/vim-endwise'
+Bundle 'danchoi/ri.vim'
 
 "Removed
 "Bundle 'Raimondi/delimitMate'
