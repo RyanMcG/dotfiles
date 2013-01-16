@@ -10,8 +10,6 @@ urxvt*geometry: 90x25
 
 urxvt-bg.font: xft:FreeSerif:rgba=vbgr:pixelsize=12
 URxvt*termName: rxvt-unicode
-*background: #101010
-*foreground: #f0f0f0
 URxvt*perl-lib: /usr/lib/urxvt/perl/
 URxvt*perl-ext-common: default,matcher
 URxvt*matcher.button: 1
@@ -31,6 +29,8 @@ urxvt-bg.transparent: true
 urxvt-bg.tintColor: black
 urxvt-bg.shading: 10
 
+*background: #101010
+*foreground: #f0f0f0
 *color0: #000000
 *color1: #a6404c
 *color2: #aece92
@@ -47,6 +47,26 @@ urxvt-bg.shading: 10
 *color13: #cf9ebe
 *color14: #71bebe
 *color15: #ffffff
+
+! Zenburn Colors
+!*background: #101010
+!*foreground: #f0f0f0
+!*color0: #3f3f3f
+!*color1: #705050
+!*color2: #60b48a
+!*color3: #dfaf8f
+!*color4: #506070
+!*color5: #dc8cc3
+!*color6: #8cd0d3
+!*color7: #dcdccc
+!*color8: #709080
+!*color9: #cc9393
+!*color10: #7f9f7f
+!*color11: #f0dfaf
+!*color12: #94bff3
+!*color13: #ec93d3
+!*color14: #93e0e3
+!*color15: #ffffff
 
 xterm*color0: #000000
 xterm*color1: #a6404c
