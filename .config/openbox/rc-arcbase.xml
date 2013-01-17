@@ -319,7 +319,7 @@
     </keybind>
     <keybind key="XF86Display">
       <action name="Execute">
-        <command>~/.screenlayout/home-alt.sh</command>
+        <command>~/.screenlayout/vga-top-margin.sh</command>
       </action>
     </keybind>
     <keybind key="W-Left">
