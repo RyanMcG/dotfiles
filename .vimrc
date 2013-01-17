@@ -136,7 +136,7 @@ set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 set backupdir=~/.vim/backups
 
-set printfont=Inconsolata\ 12.5
+set printfont=Inconsolata\ 12
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
@@ -155,13 +155,10 @@ set noballooneval
 
 "Set our colorscheme
 if has("gui_running")
-  "let g:solarized_contrast="low"
-  "colorscheme xoria256
   colorscheme solarized
   set cc=80
   let g:Powerline_symbols = 'fancy'
   let g:Powerline_colorscheme = 'solarized256'
-  "colorscheme wombat
   "highlight Cursor guibg=bg gui=reverse
   "highlight Cursor guibg=white
 elseif &t_Co >= 256
