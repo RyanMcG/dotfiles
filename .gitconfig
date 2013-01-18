@@ -7,7 +7,7 @@
 	grep = auto
 	branch = auto
 [merge]
-	tool = splice
+	tool = gdiff
 [alias]
 	a = add
 	ap = add -p
@@ -38,10 +38,6 @@
 	rh = reset HEAD
 	rp = reset -p
 	wc = whatchanged --decorate --graph
-
-[branch]
-	autosetupmerge = always
-
 [core]
 	excludesfile = ~/.gitignore.global
 [github]
@@ -55,9 +51,12 @@
 [web]
 	browser = chromium
 [push]
-	default = tracking
+	default = upstream
 [mergetool "splice"]
 	cmd = "gvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
+	trustExitCode = true
+[mergetool "gdiff"]
+	cmd = "gvim -f $MERGED -c 'Gdiff'"
 	trustExitCode = true
 [pretty]
 	epic-exact = %C(yellow)%h%Cred %ci%Creset%Creset%C(bold red) ~%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%C(bold green)%d%Creset
