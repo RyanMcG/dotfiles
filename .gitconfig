@@ -39,6 +39,7 @@
 	rp = reset -p
 	wc = whatchanged --decorate --graph
 [core]
+	editor = gvim --nofork
 	excludesfile = ~/.gitignore.global
 [github]
 	user = RyanMcG
