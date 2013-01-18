@@ -36,6 +36,7 @@ alias sudo="sudo -E"
 # DVCS shortcuts
 alias g="git"
 alias h="hg"
+alias git-delete-merged-branches="git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d"
 
 alias lp="lp -o cpi=17 -o lpi=8"
 alias scn="screen -DR"
