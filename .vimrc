@@ -381,7 +381,7 @@ nnoremap <leader>wh :FixWhitespace<cr>
 "Supertab
 set completeopt+=longest
 set completeopt-=preview
-let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
 "let g:SuperTabLongestHighlight=1
 
