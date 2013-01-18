@@ -1,3 +1,2 @@
 #!/bin/sh
 export PATH=$HOME/bin:$PATH
-eval $(gpg-agent --daemon --enable-ssh-support)
