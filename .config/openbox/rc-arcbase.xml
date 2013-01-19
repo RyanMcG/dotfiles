@@ -251,6 +251,9 @@
     <keybind key="A-v">
       <action name="ToggleMaximizeVert"/>
     </keybind>
+    <keybind key="W-F11">
+      <action name="ToggleFullscreen" />
+    </keybind>
     <keybind key="C-Escape">
       <action name="Lower"/>
       <action name="FocusToBottom"/>
