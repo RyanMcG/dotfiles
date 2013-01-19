@@ -317,6 +317,9 @@ let g:vimclojure#FuzzyIndent = 1
 " Set *.cljs files to the clojure filetype
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
+" Foreplay (Clojure)
+set viminfo+=! "Not actually a foreplay option, but presists cached cp
+
 "Slimv
 let g:slimv_keybindings = 1
 let g:slimv_simple_compl = 1
