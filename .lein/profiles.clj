@@ -1,19 +1,18 @@
 {:user {:dependencies [[clj-stacktrace "0.2.5"]
-                       [spyscope "0.1.0"]]
-        :plugins [
-                  ;[lein-tarsier "0.9.4-SNAPSHOT"]
-                  ;[lein-swank "1.4.4"]
-                  [lein-difftest "1.3.7"]
+                       [spyscope "0.1.0"]
+                       [nrepl-transcript "0.1.0"]
+                       [limit-break "0.1.0-SNAPSHOT"]]
+        :plugins [[lein-difftest "1.3.7"]
                   [lein-clojars "0.9.1"]
-                  ;[jark/jark-server "0.4.0"]
                   [lein-pprint "1.1.1"]
-                  [lein-ring "0.7.5"]
-                  [slamhound "1.3.0"]
+                  [lein-ring "0.8.0"]
+                  [slamhound "1.3.1"]
                   [lein-cljsbuild "0.1.9"]
                   [lein-deps-tree "0.1.2"]
-                  ;[lein-autodoc "0.9.0"]
                   [lein-marginalia "0.7.1"]]
-        :repl-options {:timeout 120000}
+        :repl-options {:timeout 120000
+                       :nrepl-middleware
+                       [nrepl-transcript.file/wrap-file-transcript]}
         :injections [(let [orig (ns-resolve (doto 'clojure.stacktrace require)
                                             'print-cause-trace)
                            new (ns-resolve (doto 'clj-stacktrace.repl require)
