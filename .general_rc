@@ -97,9 +97,8 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # some more ls aliases
-alias ll='ls -a -l'
-alias la='ls -A'
-#alias l='ls -CF'
+alias ll='ls -a -l -h'
+alias la='ls -a'
 
 # NVM
 if [ -f ~/nvm/nvm.sh ]; then
