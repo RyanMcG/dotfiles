@@ -11,5 +11,5 @@ udev-notify &
 xset m 5 10 &
 xset b off &
 skippy-xd &
-redshift -l 40:-83 -t 6000:4800 &
+myredhsift &
 nitrogen --restore   #Restores wallpaper
