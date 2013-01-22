@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Simsim</name>
+    <name>Artwiz-boxed</name>
     <titleLayout>NLDIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -100,6 +100,18 @@
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
+    </font>
+    <font place="ActiveOnScreenDisplay">
+      <name>Sans</name>
+      <size>8</size>
+      <weight></weight>
+      <slant></slant>
+    </font>
+    <font place="InactiveOnScreenDisplay">
+      <name>Sans</name>
+      <size>8</size>
+      <weight></weight>
+      <slant></slant>
     </font>
   </theme>
   <desktops>
@@ -252,7 +264,7 @@
       <action name="ToggleMaximizeVert"/>
     </keybind>
     <keybind key="W-F11">
-      <action name="ToggleFullscreen" />
+      <action name="ToggleFullscreen"/>
     </keybind>
     <keybind key="C-Escape">
       <action name="Lower"/>
