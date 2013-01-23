@@ -18,6 +18,7 @@ if [[ $NODENAME == "arcbase" ]]; then
 	export ENABLE_COMPMGR="yes"
 elif [[ $NODENAME == "zenbook" ]]; then
 	export ENABLE_COMPMGR="no"
+	xcalib ~/repo/dotfiles/misc/UX31.icc
 fi
 
 #Now our host specific autostart
