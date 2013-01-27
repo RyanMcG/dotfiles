@@ -442,14 +442,24 @@
       </action>
     </keybind>
     <!-- Brightness Keybindings -->
+    <keybind key="Scroll_Lock">
+      <action name="Execute">
+        <command>asus-screen-brightness down</command>
+      </action>
+    </keybind>
     <keybind key="W-F5">
       <action name="Execute">
-        <command>sudo asus-screen-brightness down</command>
+        <command>asus-screen-brightness down</command>
+      </action>
+    </keybind>
+    <keybind key="Pause">
+      <action name="Execute">
+        <command>asus-screen-brightness up</command>
       </action>
     </keybind>
     <keybind key="W-F6">
       <action name="Execute">
-        <command>sudo asus-screen-brightness up</command>
+        <command>asus-screen-brightness up</command>
       </action>
     </keybind>
     <!-- Keybindings for running audio stuff -->
