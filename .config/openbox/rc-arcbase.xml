@@ -253,6 +253,19 @@
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
+    <keybind key="W-b">
+      <action name="Execute">
+        <command>mybtconnect-keyboard</command>
+      </action>
+    </keybind>
+    <keybind key="W-r">
+      <action name="Reconfigure"/>
+    </keybind>
+    <keybind key="C-A-W-BackSpace">
+      <action name="Exit">
+        <prompt>no</prompt>
+      </action>
+    </keybind>
     <!-- Keybindings for windows -->
     <keybind key="A-Escape">
       <action name="Close"/>
@@ -285,14 +298,12 @@
     </keybind>
     <keybind key="W-Tab">
       <action name="NextWindow">
-        <panels>yes</panels>
-        <desktop>yes</desktop>
+        <allDesktop>yes</allDesktop>
       </action>
     </keybind>
     <keybind key="W-S-Tab">
       <action name="PreviousWindow">
-        <panels>yes</panels>
-        <desktop>yes</desktop>
+        <allDesktop>yes</allDesktop>
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
@@ -335,6 +346,18 @@
     <keybind key="XF86Display">
       <action name="Execute">
         <command>~/.screenlayout/vga-top-margin.sh</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-Left">
+      <action name="MaximizeFull"/>
+      <action name="MoveResizeTo">
+        <monitor>prev</monitor>
+      </action>
+    </keybind>
+    <keybind key="C-A-Right">
+      <action name="MaximizeFull"/>
+      <action name="MoveResizeTo">
+        <monitor>next</monitor>
       </action>
     </keybind>
     <keybind key="W-Left">
