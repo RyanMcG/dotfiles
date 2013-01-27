@@ -58,6 +58,7 @@ autojump
 rake
 #node
 #npm
+gpg-agent
 )
 
 source $ZSH/oh-my-zsh.sh
