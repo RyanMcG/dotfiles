@@ -1,0 +1,4 @@
+#!/bin/sh
+bluez-test-input connect $1
+bluez-test-device trusted $1 yes
+xmodmap ~/.Xmodmap
