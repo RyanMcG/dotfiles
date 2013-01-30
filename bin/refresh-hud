@@ -1,0 +1,10 @@
+#!/bin/sh
+nitrogen --restore &
+pkill redshift &
+pkill wicd-client &
+pkill pnmixer
+pkill tint2
+myredshift &
+tint2 &
+pnmixer &
+wicd-gtk -t &
