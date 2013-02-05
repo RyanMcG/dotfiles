@@ -8,3 +8,4 @@ myredshift &
 tint2 &
 pnmixer &
 wicd-gtk -t &
+xmodmap ~/.Xmodmap &
