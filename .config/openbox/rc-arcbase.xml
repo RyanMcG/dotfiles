@@ -498,6 +498,16 @@
         <command>pamixer --decrease 3</command>
       </action>
     </keybind>
+    <keybind key="W-XF86AudioRaiseVolume">
+      <action name="Execute">
+        <command>mpc next</command>
+      </action>
+    </keybind>
+    <keybind key="W-XF86AudioLowerVolume">
+      <action name="Execute">
+        <command>mpc prev</command>
+      </action>
+    </keybind>
     <keybind key="XF86AudioMedia">
       <action name="Execute">
         <command>pavucontrol</command>
