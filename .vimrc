@@ -46,9 +46,9 @@ Bundle 'tpope/vim-rsi'
 Bundle 'RyanMcG/vim-guifontzoom'
 
 " Colorschemes
-Bundle 'noahfrederick/Hemisu'
+"Bundle 'noahfrederick/Hemisu'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'jeffreyiacono/vim-colors-wombat'
+"Bundle 'jeffreyiacono/vim-colors-wombat'
 Bundle 'vim-scripts/xoria256.vim'
 
 "Languge specific
@@ -84,6 +84,7 @@ Bundle 'wannesm/wmgraphviz.vim'
 "Python
 Bundle 'ivanov/vim-ipython'
 Bundle 'vim-scripts/python.vim--Vasiliev.git'
+Bundle 'davidhalter/jedi-vim'
 Bundle 'klen/python-mode'
 
 "HTML/CSS
@@ -428,6 +429,10 @@ let c_space_errors = 1
 
 "Python
 let python_highlight_all = 1
+" turn off pymode's lint and rope
+let g:pymode_lint = 0 " Use syntastic
+let g:pymode_rope = 0 " Use jedi
+let g:pymode_doc = 0 " Use jedi
 let g:pymode_lint_checker = "pep8"
 "let g:ipy_perform_mappings = 0
 let g:ipy_completefunc = 'local'
