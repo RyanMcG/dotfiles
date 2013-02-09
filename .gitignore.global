@@ -29,3 +29,5 @@ javadoc*
 /dist
 .lein-deps-sum
 *.iml
+/transcript.txt
+.lein-repl-*
