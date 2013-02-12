@@ -58,8 +58,12 @@ autojump
 rake
 #node
 #npm
-gpg-agent
 )
+
+
+if [[ $(uname) != "Darwin" ]]; then
+	plugins[200]=gpg-agent
+fi
 
 source $ZSH/oh-my-zsh.sh
 
