@@ -5,6 +5,6 @@ set guioptions=acgitp
 set guicursor=a:blinkon0
 set guifont=Inconsolata-dz\ for\ Powerline:h14
 
-set lines=60 columns=300
+set lines=30 columns=100
 " Slighlty increase line spacing
 set linespace=2
