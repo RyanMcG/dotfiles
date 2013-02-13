@@ -66,10 +66,10 @@ Bundle 'derekwyatt/vim-sbt'
 
 "Clojure
 Bundle 'paredit.vim'
-Bundle 'VimClojure'
+Bundle 'guns/vim-clojure-static'
+Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-foreplay'
 "Bundle 'slimv.vim'
-"Bundle 'RyanMcG/slimVimClojure'
 Bundle 'jpalardy/vim-slime'
 
 "Markdown
@@ -308,14 +308,10 @@ let g:session_autoload='no'
 "let g:session_default_to_last=1
 "let g:loaded_session=1 "Uncomment to not load session plugin
 
-"VimClojure
-"let vimclojure#SplitPos = "left"
-"let vimclojure#WantNailgun = 1
-let g:vimclojure#ParenRainbow = 1
-let g:vimclojure#HighlightBuiltins = 1
-let g:vimclojure#DynamicHighlighting = 1
-let g:vimclojure#FuzzyIndent = 1
+"Vim clojure static
+let g:clojure_align_multiline_strings = 1
 " Set *.cljs files to the clojure filetype
+
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
 " Foreplay (Clojure)
