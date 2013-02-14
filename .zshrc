@@ -48,6 +48,7 @@ rails3
 vi-mode
 #vundle
 #python
+pythonbrew
 #pip
 #virtualenvwrapper
 #github
@@ -64,6 +65,8 @@ rake
 if [[ $(uname) != "Darwin" ]]; then
 	plugins[200]=gpg-agent
 fi
+
+bindkey "^R" history-incremental-search-backward
 
 source $ZSH/oh-my-zsh.sh
 
