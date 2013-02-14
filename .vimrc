@@ -87,6 +87,9 @@ Bundle 'vim-scripts/python.vim--Vasiliev.git'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'klen/python-mode'
 
+" YAML
+Bundle 'avakhov/vim-yaml'
+
 "HTML/CSS
 Bundle 'mattn/zencoding-vim'
 
