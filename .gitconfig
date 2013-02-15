@@ -28,8 +28,8 @@
 	lng = log --decorate
 	lfng = log --pretty=epic-friend
 	leng = log --pretty=epic-exact
-	l1 = !git --no-pager log --graph --pretty=epic-exact -1
-	lt = !git --no-pager log --graph --pretty=epic-friend -10
+	l1 = log --graph --pretty=epic-exact -1
+	lt = log --graph --pretty=epic-friend -10
 	p = pull
 	pr = pull --rebase
 	s = status
@@ -42,6 +42,7 @@
 	rp = reset -p
 	wc = whatchanged --decorate --graph
 [core]
+	pager = less -FXR
 	editor = gvim --nofork
 	excludesfile = ~/.gitignore.global
 [github]
