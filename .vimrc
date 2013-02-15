@@ -433,6 +433,7 @@ let g:pymode_lint = 0 " Use syntastic
 let g:pymode_rope = 0 " Use jedi
 let g:pymode_doc = 0 " Use jedi
 let g:pymode_lint_checker = "pep8"
+let g:pymode_breakpoint_cmd = "import ipdb; ipdb.set_trace()  # XXX BREAKPOINT"
 "let g:ipy_perform_mappings = 0
 let g:ipy_completefunc = 'local'
 
