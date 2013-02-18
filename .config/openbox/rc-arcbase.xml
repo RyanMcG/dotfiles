@@ -325,6 +325,15 @@
         <command>dropbox stop</command>
       </action>
     </keybind>
+    <keybind key="W-1">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Terminal</name>
+        </startupnotify>
+        <command>urxvt</command>
+      </action>
+    </keybind>
     <keybind key="A-F1">
       <action name="Execute">
         <startupnotify>
