@@ -527,6 +527,11 @@
         <command>google-chrome</command>
       </action>
     </keybind>
+    <keybind key="W-p">
+      <action name="Execute">
+        <command>sh -c "notify-send ACPI \"$(acpi)\""</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>5</dragThreshold>
