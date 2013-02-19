@@ -59,6 +59,8 @@ autojump
 rake
 #node
 #npm
+aws
+android
 )
 
 
