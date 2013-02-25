@@ -258,7 +258,7 @@
         <command>mybtconnect-keyboard</command>
       </action>
     </keybind>
-    <keybind key="A-W-x">
+    <keybind key="W-x">
       <action name="Execute">
         <command>xmodmap ~/.Xmodmap</command>
       </action>
@@ -480,6 +480,16 @@
     <keybind key="A-F2">
       <action name="Execute">
         <command>urxvt -e ncmpcpp</command>
+      </action>
+    </keybind>
+    <keybind key="W-2">
+      <action name="Execute">
+        <command>urxvt -e ncmpcpp</command>
+      </action>
+    </keybind>
+    <keybind key="C-W-2">
+      <action name="Execute">
+        <command>urxvt -name urxvt-bg -e ncmpcpp</command>
       </action>
     </keybind>
     <keybind key="XF86AudioNext">
@@ -968,7 +978,12 @@
 
   # end of the example
 -->
-    <application name="urxvt-bg"><decor>no</decor><focus>yes</focus><position><x>center</x><y>16</y></position><skip_pager>yes</skip_pager><maximized>true</maximized> #Only if you want a full size terminal.
+    <application name="urxvt-bg">
+      <decor>no</decor>
+      <focus>yes</focus>
+      <desktop>1</desktop>
+      <layer>normal</layer>
+      <maximized>true</maximized> #Only if you want a full size terminal.ø
     </application>
   </applications>
 </openbox_config>
