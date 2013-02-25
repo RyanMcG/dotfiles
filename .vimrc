@@ -53,6 +53,9 @@ Bundle 'vim-scripts/xoria256.vim'
 
 "Languge specific
 
+" TCL
+Bundle 'tcl.vim'
+
 "Java
 "Bundle 'VictorDenisov/javacomplete'
 "Bundle 'vim-scripts/JavaImp.vim--Lee'
@@ -426,6 +429,9 @@ let php_parent_error_open = 1
 "let g:syntastic_c_compiler_options = ' -std=gnu99'
 let c_space_errors = 1
 "let c_syntax_for_h = 1
+
+" TCL
+let tcl_extended_syntax=1
 
 "Python
 let python_highlight_all = 1
