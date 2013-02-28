@@ -44,6 +44,9 @@ Bundle 'tsaleh/vim-align'
 Bundle 'austintaylor/vim-indentobject'
 Bundle 'tpope/vim-rsi'
 Bundle 'RyanMcG/vim-guifontzoom'
+Bundle 'tpope/vim-abolish'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-commentary'
 
 " Colorschemes
 "Bundle 'noahfrederick/Hemisu'
@@ -113,6 +116,7 @@ Bundle 'wavded/vim-stylus'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rake'
+Bundle 'tpope/vim-bundler'
 "Bundle 'astashov/vim-ruby-debugger'
 Bundle 'tpope/vim-endwise'
 Bundle 'danchoi/ri.vim'
@@ -348,10 +352,12 @@ nmap <leader>a* :Ack! -w <C-R><C-W><space>
 nmap <leader>aa :AckAdd<space>
 nmap <leader>an :cnext<CR>
 nmap <leader>ap :cprev<CR>
-nmap <leader>aq :ccl<CR>
-nmap <leader>al :cwindow<CR>
+nmap <leader>q :ccl<CR>
+nmap <leader>l :cwindow<CR>
 
 "Tabularize
+
+
 if exists('g:tabular_loaded')
   AddTabularPattern! symbols         / :/l0
   AddTabularPattern! hash            /^[^>]*\zs=>/
@@ -361,7 +367,7 @@ if exists('g:tabular_loaded')
   AddTabularPattern! colon           /:\zs /l0
   AddTabularPattern! options_hashes  /:\w\+ =>/
 endif
-map <Leader>a :Tabularize<space>
+map <Leader>b :Tabularize<space>
 
 "Gundo
 map <Leader>u :GundoToggle<CR>
