@@ -320,7 +320,7 @@ let g:session_autoload='no'
 "let g:loaded_session=1 "Uncomment to not load session plugin
 
 "Vim clojure static
-let g:clojure_align_multiline_strings = 1
+let g:clojure_align_multiline_strings = 0
 " Set *.cljs files to the clojure filetype
 
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
