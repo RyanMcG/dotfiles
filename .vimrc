@@ -5,7 +5,6 @@
 set nocompatible
 " Make sure filetype is off for vundle
 filetype off
-
 set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
 let g:vundle_default_git_proto = 'git'
@@ -47,6 +46,7 @@ Bundle 'RyanMcG/vim-guifontzoom'
 Bundle 'tpope/vim-abolish'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-commentary'
+Bundle 'tomtom/quickfixsigns_vim'
 
 " Colorschemes
 "Bundle 'noahfrederick/Hemisu'
@@ -171,6 +171,7 @@ if has("gui_running")
   set cc=80
   let g:Powerline_symbols = 'fancy'
   let g:Powerline_colorscheme = 'solarized256'
+  highlight clear SignColumn
   "highlight Cursor guibg=bg gui=reverse
   "highlight Cursor guibg=white
 elseif &t_Co >= 256
@@ -369,6 +370,11 @@ if exists('g:tabular_loaded')
 endif
 map <Leader>b :Tabularize<space>
 
+" QFS
+
+sign define QFS_VCS_CHANGE text=δ  texthl=gitcommitUnmergedFile
+sign define QFS_VCS_ADD text=+  texthl=gitcommitSelectedFile
+sign define QFS_VCS_DEL text=-  texthl=gitcommitDiscardedFile
 "Gundo
 map <Leader>u :GundoToggle<CR>
 
