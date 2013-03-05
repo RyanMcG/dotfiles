@@ -530,5 +530,4 @@ endfunction
 command! -bar -nargs=0 AutoindentToggle call AutoindentToggle()
 nnoremap <silent> <leader>ai	:AutoindentToggle<CR>
 
-command! CDC cd %:p:h
-nnoremap <silent> <leader>cd 	:CDC<CR>:pwd<CR>
+nnoremap <silent> <leader>cd 	:lcd %:p:h<CR>:pwd<CR>
