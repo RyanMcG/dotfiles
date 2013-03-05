@@ -351,14 +351,22 @@ let g:snips_trigger_key='<c-space>'
 nmap <leader>a/ :Ack!<space>
 nmap <leader>a* :Ack! -w <C-R><C-W><space>
 nmap <leader>aa :AckAdd<space>
-nmap <leader>an :cnext<CR>
-nmap <leader>ap :cprev<CR>
 nmap <leader>q :ccl<CR>
 nmap <leader>l :cwindow<CR>
 
+" Next in ccl
+nmap ]e :cnext<CR>
+nmap [e :cprev<CR>
+
+" Next Tab
+nmap ]t :tabnext<CR>
+nmap [t :tabprev<CR>
+
+" Next Tab
+nmap ]b :bnext<CR>
+nmap [b :bprevious<CR>
+
 "Tabularize
-
-
 if exists('g:tabular_loaded')
   AddTabularPattern! symbols         / :/l0
   AddTabularPattern! hash            /^[^>]*\zs=>/
