@@ -308,7 +308,7 @@ let g:ConqueTerm_TERM = 'xterm'
 "Syntastic
 let g:syntastic_enable_signs=1
 "let g:syntastic_auto_jump=1
-let g:syntastic_auto_loc_list=1
+"let g:syntastic_auto_loc_list=1 " Default is 2
 let g:syntastic_stl_format = '[%E{E: %fe #%e}%B{, }%W{W: %fw #%w}]'
 "let g:syntastic_mode_map = { 'mode': 'active',
 			"\ 'passive_filetypes': ['haml', 'sass'] }
