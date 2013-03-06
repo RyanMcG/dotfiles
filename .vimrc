@@ -29,16 +29,13 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
 
 "Testing
-Bundle 'sjl/splice.vim'
 Bundle 'chrismetcalf/vim-yankring'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'mileszs/ack.vim'
-Bundle 'benmills/vimux'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'garbas/vim-snipmate'
 Bundle 'scrooloose/snipmate-snippets'
-Bundle 'vim-scripts/ZoomWin'
 Bundle 'tsaleh/vim-align'
 Bundle 'austintaylor/vim-indentobject'
 Bundle 'tpope/vim-rsi'
@@ -47,8 +44,12 @@ Bundle 'tpope/vim-abolish'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-commentary'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'nathanaelkane/vim-indent-guides'
+"Bundle 'sjl/splice.vim'
+"Bundle 'benmills/vimux'
 "Bundle 'tomtom/quickfixsigns_vim'
 "Bundle 'Valloric/YouCompleteMe'
+"Bundle 'vim-scripts/ZoomWin'
 
 " Colorschemes
 "Bundle 'noahfrederick/Hemisu'
@@ -433,6 +434,9 @@ let g:tagbar_width = 30
 
 "DetectIndent
 nmap <silent> <leader>di :DetectIndent<CR>
+
+" Indent guides
+let g:indent_guides_color_change_percent = 5
 
 "Gist
 let g:gist_clip_command = 'xclip -selection clipboard'
