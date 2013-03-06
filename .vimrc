@@ -46,7 +46,9 @@ Bundle 'RyanMcG/vim-guifontzoom'
 Bundle 'tpope/vim-abolish'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-commentary'
-Bundle 'tomtom/quickfixsigns_vim'
+Bundle 'airblade/vim-gitgutter'
+"Bundle 'tomtom/quickfixsigns_vim'
+"Bundle 'Valloric/YouCompleteMe'
 
 " Colorschemes
 "Bundle 'noahfrederick/Hemisu'
@@ -366,6 +368,10 @@ nmap [t :tabprev<CR>
 nmap ]b :bnext<CR>
 nmap [b :bprevious<CR>
 
+" Hunk navigation
+nmap ]h :GitGutterNextHunk<CR>
+nmap [h :GitGutterPrevHunk<CR>
+
 "Tabularize
 if exists('g:tabular_loaded')
   AddTabularPattern! symbols         / :/l0
@@ -378,11 +384,16 @@ if exists('g:tabular_loaded')
 endif
 map <Leader>b :Tabularize<space>
 
-" QFS
+" QFS or GitGutter
+nnoremap <leader>gg :ToggleGitGutter<CR>
+let g:gitgutter_highlights = 0
+highlight link lineAdded gitcommitSelectedFile
+highlight link lineModified gitcommitUnmergedFile
+highlight link lineRemoved gitcommitDiscardedFile
+sign define QFS_VCS_CHANGE text=δ texthl=gitcommitUnmergedFile
+sign define QFS_VCS_ADD text=+ texthl=gitcommitSelectedFile
+sign define QFS_VCS_DEL text=- texthl=gitcommitDiscardedFile
 
-sign define QFS_VCS_CHANGE text=δ  texthl=gitcommitUnmergedFile
-sign define QFS_VCS_ADD text=+  texthl=gitcommitSelectedFile
-sign define QFS_VCS_DEL text=-  texthl=gitcommitDiscardedFile
 "Gundo
 map <Leader>u :GundoToggle<CR>
 
