@@ -7,7 +7,9 @@ set nocompatible
 filetype off
 set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
+
 let g:vundle_default_git_proto = 'git'
+
 
 "Make vundle manage vundle
 Bundle 'gmarik/vundle'
@@ -45,6 +47,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-commentary'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'kana/vim-textobj-user'
 Bundle 'kana/vim-textobj-function'
 "Bundle 'sjl/splice.vim'
 "Bundle 'benmills/vimux'
@@ -371,8 +374,8 @@ nmap ]b :bnext<CR>
 nmap [b :bprevious<CR>
 
 " Hunk navigation
-nmap ]h :GitGutterNextHunk<CR>
-nmap [h :GitGutterPrevHunk<CR>
+nmap ]g :GitGutterNextHunk<CR>
+nmap [g :GitGutterPrevHunk<CR>
 
 "Tabularize
 if exists('g:tabular_loaded')
