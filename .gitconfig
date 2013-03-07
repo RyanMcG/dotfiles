@@ -15,6 +15,7 @@
 	b = branch
 	cm = commit -m
 	ca = commit -a
+	car = commit --amend --reuse-message=HEAD
 	cam = commit -am
 	co = checkout
 	d = diff

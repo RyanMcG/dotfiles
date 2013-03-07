@@ -315,11 +315,6 @@ let g:syntastic_stl_format = '[%E{E: %fe #%e}%B{, }%W{W: %fw #%w}]'
 "let g:syntastic_quiet_warnings=1 "Breaks everything!
 nnoremap <silent> <leader>se :Errors<CR>
 
-"AutoComplPop"
-let g:acp_enableAtStartup = 0
-let g:acp_mappingDriven = 0
-let g:acp_ignorecaseOption = 0
-
 "Session
 "set sessionoptions-=curdir,help,options
 let g:session_autoload='no'
@@ -335,18 +330,6 @@ autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
 " Foreplay (Clojure)
 set viminfo+=! "Not actually a foreplay option, but presists cached cp
-
-"Slimv
-let g:slimv_keybindings = 1
-let g:slimv_simple_compl = 1
-let g:slimv_repl_split = 0
-"let g:slimv_lisp = '"java -cp clojure.jar;clojure-contrib.jar clojure.main"'
-let g:slimv_lisp = '"lein repl"'
-let g:slimv_leader = '\'
-"let g:lisp_rainbow = 1
-let g:slimv_repl_syntax = 1
-"let g:paredit_mode = 0 "Un comment to disable paredit
-let g:paredit_shortmaps = 1
 
 "Slime
 let g:slime_target = "tmux"
@@ -510,6 +493,7 @@ set statusline+=\ %P
 "Easily edit and source vim
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
 "Easier window movement
 nmap <silent> <C-k> <C-w>k
 nmap <silent> <C-j> <C-w>j
