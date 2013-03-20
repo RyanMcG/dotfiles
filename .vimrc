@@ -76,12 +76,11 @@ Bundle 'derekwyatt/vim-sbt'
 
 "Latex
 "Bundle 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
-
 "Clojure
 Bundle 'paredit.vim'
 Bundle 'guns/vim-clojure-static'
 Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'tpope/vim-foreplay'
+Bundle 'tpope/vim-fireplace'
 "Bundle 'slimv.vim'
 Bundle 'jpalardy/vim-slime'
 
@@ -328,8 +327,11 @@ let g:clojure_align_multiline_strings = 0
 
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
-" Foreplay (Clojure)
-set viminfo+=! "Not actually a foreplay option, but presists cached cp
+" Paredit
+let g:paredit_shortmaps = 1
+
+" Fireplace (Clojure)
+set viminfo+=! "Not actually a fireplace option, but presists cached cp
 
 "Slime
 let g:slime_target = "tmux"
