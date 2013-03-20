@@ -423,7 +423,7 @@ let g:tagbar_width = 30
 nmap <silent> <leader>di :DetectIndent<CR>
 
 " Indent guides
-let g:indent_guides_color_change_percent = 5
+let g:indent_guides_color_change_percent = 3
 
 "Gist
 let g:gist_clip_command = 'xclip -selection clipboard'
