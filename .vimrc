@@ -494,6 +494,9 @@ set statusline+=\ %P
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+" Expand %% to the directory of the current buffer in command mode
+cnoremap %% <C-R>=expand('%:h').'/'<CR>
+
 "Easier window movement
 nmap <silent> <C-k> <C-w>k
 nmap <silent> <C-j> <C-w>j
