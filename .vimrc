@@ -376,11 +376,13 @@ map <Leader>b :Tabularize<space>
 
 " QFS or GitGutter
 nnoremap <leader>gg :ToggleGitGutter<CR>
-let g:gitgutter_highlights = 0
-highlight link lineAdded gitcommitSelectedFile
-highlight link lineModified gitcommitUnmergedFile
-highlight link lineRemoved gitcommitDiscardedFile
-sign define QFS_VCS_CHANGE text=δ texthl=gitcommitUnmergedFile
+let g:gitgutter_sign_modified = 'Δ'
+let g:gitgutter_sign_modified_removed = 'Δ_'
+"let g:gitgutter_diff_args = '-w'
+highlight link GitGutterAdd GitGutterAddLine
+highlight link GitGutterChange GitGutterChangeLine
+highlight link GitGutterRemove GitGutterRemoveLine
+sign define QFS_VCS_CHANGE text=Δ texthl=gitcommitUnmergedFile
 sign define QFS_VCS_ADD text=+ texthl=gitcommitSelectedFile
 sign define QFS_VCS_DEL text=- texthl=gitcommitDiscardedFile
 
