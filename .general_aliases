@@ -54,6 +54,7 @@ alias jgem="jruby -S gem"
 alias be="bundle exec"
 alias hpi="hub pull-request -i"
 alias rlf="cd; cd -"
+alias xkcdpwd="shuf -n4 /usr/share/dict/words"
 # Custom Functions
 wiki() {
     dig +short txt $1.wp.dg.cx
