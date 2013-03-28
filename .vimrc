@@ -257,6 +257,9 @@ set smartcase
 set title
 "let loaded_matchparen = 0 "Uncomment to turn off
 set showmatch
+set winheight=5
+set winminheight=5
+set winheight=999
 
 "Completeion in command mode
 set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,.DS_Store,*.aux,*.out,*.toc
