@@ -384,7 +384,8 @@ let g:gitgutter_sign_modified_removed = 'Δ_'
 "let g:gitgutter_diff_args = '-w'
 highlight link GitGutterAdd GitGutterAddLine
 highlight link GitGutterChange GitGutterChangeLine
-highlight link GitGutterRemove GitGutterRemoveLine
+highlight link GitGutterChangeDelete GitGutterChangeLine
+highlight link GitGutterDelete GitGutterDeleteLine
 sign define QFS_VCS_CHANGE text=Δ texthl=gitcommitUnmergedFile
 sign define QFS_VCS_ADD text=+ texthl=gitcommitSelectedFile
 sign define QFS_VCS_DEL text=- texthl=gitcommitDiscardedFile
