@@ -45,15 +45,11 @@ Bundle 'RyanMcG/vim-guifontzoom'
 Bundle 'tpope/vim-abolish'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-characterize'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'kana/vim-textobj-user'
 Bundle 'kana/vim-textobj-function'
-"Bundle 'sjl/splice.vim'
-"Bundle 'benmills/vimux'
-"Bundle 'tomtom/quickfixsigns_vim'
-"Bundle 'Valloric/YouCompleteMe'
-"Bundle 'vim-scripts/ZoomWin'
 
 " Colorschemes
 "Bundle 'noahfrederick/Hemisu'
@@ -76,6 +72,7 @@ Bundle 'derekwyatt/vim-sbt'
 
 "Latex
 "Bundle 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
+
 "Clojure
 Bundle 'paredit.vim'
 Bundle 'guns/vim-clojure-static'
@@ -91,7 +88,6 @@ Bundle 'tangledhelix/vim-octopress'
 
 " Dot
 Bundle 'wannesm/wmgraphviz.vim'
-" Jade
 
 "Python
 Bundle 'ivanov/vim-ipython'
@@ -132,6 +128,11 @@ Bundle 'danchoi/ri.vim'
 "Bundle 'fholgado/minibufexpl.vim'
 "Bundle 'vim-scripts/AutoComplPop'
 "Bundle 'jonyamo/dbext.vim'
+"Bundle 'sjl/splice.vim'
+"Bundle 'benmills/vimux'
+"Bundle 'tomtom/quickfixsigns_vim'
+"Bundle 'Valloric/YouCompleteMe'
+"Bundle 'vim-scripts/ZoomWin'
 
 "Make sure my after is really at the end.
 set runtimepath-=~/.vim
