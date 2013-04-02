@@ -357,6 +357,11 @@
         <command>gvim</command>
       </action>
     </keybind>
+    <keybind key="S-XF86Display">
+      <action name="Execute">
+        <command>~/.screenlayout/eDP1-only.sh</command>
+      </action>
+    </keybind>
     <keybind key="XF86Display">
       <action name="Execute">
         <command>~/.screenlayout/vga-top-margin.sh</command>
