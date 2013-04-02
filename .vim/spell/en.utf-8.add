@@ -75,3 +75,5 @@ README
 dmenu
 unspecify
 namespacing
+serializeable
+ObjectId
