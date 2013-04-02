@@ -50,6 +50,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'kana/vim-textobj-user'
 Bundle 'kana/vim-textobj-function'
+Bundle 'tpope/vim-dispatch'
 
 " Colorschemes
 "Bundle 'noahfrederick/Hemisu'
