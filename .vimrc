@@ -81,6 +81,7 @@ Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-fireplace'
 "Bundle 'slimv.vim'
 Bundle 'jpalardy/vim-slime'
+Bundle 'dgrnbrg/vim-redl'
 
 "Markdown
 Bundle 'tpope/vim-markdown'
