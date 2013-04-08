@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Kill all currently running instances of screenkey
+pkill screenkey
+
+# Start up a new one
+screenkey
