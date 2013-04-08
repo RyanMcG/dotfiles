@@ -425,6 +425,16 @@
         <menu>root-menu</menu>
       </action>
     </keybind>
+    <keybind key="W-s">
+      <action name="Execute">
+        <command>restart-screenkey</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-s">
+      <action name="Execute">
+        <command>pkill screenkey</command>
+      </action>
+    </keybind>
     <keybind key="C-A-Print">
       <action name="Execute">
         <command>cloudunapp ~/Pictures/Screenshots/CloudApp</command>
