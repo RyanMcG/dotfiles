@@ -278,7 +278,7 @@ set foldenable
 set foldmethod=syntax
 
 " Set omnifunc to syntax completion
-"set omnifunc=syntaxcomplete@Complete
+set omnifunc=syntaxcomplete@Complete
 
 set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
 
@@ -421,7 +421,7 @@ nnoremap <leader>wh :FixWhitespace<cr>
 "Supertab
 set completeopt+=longest
 set completeopt-=preview
-let g:SuperTabDefaultCompletionType = "<c-n>"
+let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
 "let g:SuperTabLongestHighlight=1
 
