@@ -3,7 +3,7 @@ ruby=.builder,.rake
 --type-add
 html=.haml,.jade
 --type-add
-css=.sass,.scss
+css=.sass,.scss,.less
 --type-set
 markdown=.markdown,.md,.mdown
 --type-set
