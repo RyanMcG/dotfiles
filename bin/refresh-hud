@@ -1,8 +1,12 @@
 #!/bin/sh
 nitrogen --restore &
-pkill redshift &
+pkill redshift
 pkill pnmixer
 pkill tint2
+pkill skippy-xd
+pkill nm-applet
 myredshift &
 tint2 &
 pnmixer &
+skippy-xd &
+nm-applet &
