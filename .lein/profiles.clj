@@ -1,6 +1,6 @@
 {:user {:dependencies [[clj-stacktrace "0.2.5"]
                        [redl "0.1.0"]
-                       [spyscope "0.1.2"]
+                       [spyscope "0.1.3"]
                        [slamhound "1.3.3"]]
         :plugins [[lein-difftest "1.3.7"]
                   [lein-drip "0.1.1-SNAPSHOT"]
