@@ -467,7 +467,7 @@
     </keybind>
     <keybind key="C-A-L">
       <action name="Execute">
-        <command>slock</command>
+        <command>xflock4</command>
       </action>
     </keybind>
     <!-- Brightness Keybindings -->
