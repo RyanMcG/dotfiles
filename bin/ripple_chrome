@@ -1,0 +1,9 @@
+#!/bin/sh
+IC_TEMP_DIR=/tmp/icdir
+rm -rf $IC_TEMP_DIR
+mkdir -p $IC_TEMP_DIR
+cp -R ~/Library/Application\ Support/Google/Chrome/Default $IC_TEMP_DIR/Default
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
+	--disable-web-security \
+	--user-data-dir="$IC_TEMP_DIR" \
+	--app="http://localhost:8000/?enableripple=cordova"
