@@ -465,9 +465,9 @@
         <command>xset dpms force suspend</command>
       </action>
     </keybind>
-    <keybind key="C-A-L">
+    <keybind key="C-A-l">
       <action name="Execute">
-        <command>xflock4</command>
+        <command>myslock</command>
       </action>
     </keybind>
     <!-- Brightness Keybindings -->
