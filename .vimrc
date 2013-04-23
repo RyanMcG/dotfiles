@@ -178,8 +178,6 @@ if &t_Co > 2 || has("gui_running")
   set background=dark
 endif
 
-set noballooneval
-
 "Set our colorscheme
 if has("gui_running")
   colorscheme solarized
@@ -187,6 +185,7 @@ if has("gui_running")
   let g:Powerline_symbols = 'fancy'
   let g:Powerline_colorscheme = 'solarized256'
   highlight clear SignColumn
+  set noballooneval
   "highlight Cursor guibg=bg gui=reverse
   "highlight Cursor guibg=white
 elseif &t_Co >= 256
