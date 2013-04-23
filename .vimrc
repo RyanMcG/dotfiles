@@ -351,8 +351,12 @@ let g:snips_trigger_key='<c-space>'
 nmap <leader>a/ :Ack!<space>
 nmap <leader>a* :Ack! -w <C-R><C-W><space>
 nmap <leader>aa :AckAdd<space>
-nmap <leader>q :ccl<CR>
-nmap <leader>l :cwindow<CR>
+
+" Open and close the location and quickfix list
+nmap <leader>qc :cclose<CR>
+nmap <leader>qo :copen<CR>
+nmap <leader>lc :lclose<CR>
+nmap <leader>lo :lopen<CR>
 
 " Next in ccl
 nmap ]e :cnext<CR>
@@ -365,10 +369,6 @@ nmap [t :tabprev<CR>
 " Next Tab
 nmap ]b :bnext<CR>
 nmap [b :bprevious<CR>
-
-" Hunk navigation
-nmap ]g :GitGutterNextHunk<CR>
-nmap [g :GitGutterPrevHunk<CR>
 
 "Tabularize
 if exists('g:tabular_loaded')
@@ -417,12 +417,10 @@ nnoremap <leader>x :CtrlPMixed<cr>
 " FixWhitespace
 nnoremap <leader>wh :FixWhitespace<cr>
 
-"Supertab
-set completeopt+=longest
+" Supertab
 set completeopt-=preview
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
-"let g:SuperTabLongestHighlight=1
 
 "NERDTree
 nnoremap <silent> <F7> :NERDTreeToggle<CR>
