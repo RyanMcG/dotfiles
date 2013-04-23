@@ -10,6 +10,7 @@
 	tool = gdiff
 [alias]
 	a = add
+	ai = add -i
 	ap = add -p
 	ae = add -e
 	b = branch
