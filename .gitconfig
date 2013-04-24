@@ -2,10 +2,7 @@
 	name = Ryan McGowan
 	email = ryan@ryanmcg.com
 [color]
-	status = auto
-	diff = auto
-	grep = auto
-	branch = auto
+	ui = auto
 [merge]
 	tool = gdiff
 [alias]
