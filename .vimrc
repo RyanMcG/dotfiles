@@ -345,7 +345,8 @@ set viminfo+=! "Not actually a fireplace option, but presists cached cp
 let g:slime_target = "tmux"
 
 "Snipmate
-let g:snips_trigger_key='<c-space>'
+inoremap <C-space> <Plug>snipMateNextOrTrigger
+snoremap <C-space> <Plug>snipMateNextOrTrigger
 
 "Ack
 nmap <leader>a/ :Ack!<space>
