@@ -335,6 +335,7 @@ let g:clojure_align_multiline_strings = 0
 
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
+let mapleader = '\'
 " Paredit
 let g:paredit_shortmaps = 1
 
