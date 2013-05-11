@@ -460,9 +460,9 @@
         <command>exitx</command>
       </action>
     </keybind>
-    <keybind key="C-A-End">
+    <keybind key="C-A-BackSpace">
       <action name="Execute">
-        <command>xset dpms force suspend</command>
+        <command>xset dpms force off</command>
       </action>
     </keybind>
     <keybind key="C-A-l">
