@@ -325,6 +325,7 @@ nnoremap <silent> <leader>se :Errors<CR>
 "Session
 "set sessionoptions-=curdir,help,options
 let g:session_autoload='no'
+let g:session_autosave='no'
 "let g:session_autosave='prompt'
 "let g:session_default_to_last=1
 "let g:loaded_session=1 "Uncomment to not load session plugin
