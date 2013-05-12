@@ -59,3 +59,8 @@ alias xkcdpwd="shuf -n4 /usr/share/dict/words"
 wiki() {
     dig +short txt $1.wp.dg.cx
 }
+
+# Some extra aliases
+if [ -f ~/.general_aliases_extra ]; then
+	. ~/.general_aliases_extra
+fi
