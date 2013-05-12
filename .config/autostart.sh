@@ -3,6 +3,7 @@
 
 unclutter -idle 2 &
 pnmixer &
+netmon &
 xfce4-power-manager &
 xmodmap ~/.Xmodmap &
 udev-notify &
