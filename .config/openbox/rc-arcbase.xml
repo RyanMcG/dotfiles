@@ -357,7 +357,7 @@
         <command>gvim</command>
       </action>
     </keybind>
-    <keybind key="S-XF86Display">
+    <keybind key="C-W-d">
       <action name="Execute">
         <command>~/.screenlayout/eDP1-only.sh</command>
       </action>
