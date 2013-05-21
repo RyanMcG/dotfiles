@@ -24,7 +24,6 @@ Bundle 'xolox/vim-session'
 Bundle 'scrooloose/syntastic'
 Bundle 'mattn/gist-vim'
 Bundle 'sjl/gundo.vim'
-Bundle 'rson/vim-conque'
 Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
@@ -308,9 +307,6 @@ nmap <leader>y :YRShow<cr>
 "Slime
 let g:slime_target = "tmux"
 let g:slime_paste_file = tempname()
-
-"Conque Term
-let g:ConqueTerm_TERM = 'xterm'
 
 "Syntastic
 let g:syntastic_enable_signs=1
