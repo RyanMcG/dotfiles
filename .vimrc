@@ -20,7 +20,6 @@ Bundle 'vim-scripts/The-NERD-Commenter'
 Bundle 'majutsushi/tagbar'
 Bundle 'ciaranm/detectindent'
 Bundle 'tpope/vim-fugitive'
-Bundle 'xolox/vim-session'
 Bundle 'scrooloose/syntastic'
 Bundle 'mattn/gist-vim'
 Bundle 'sjl/gundo.vim'
@@ -317,14 +316,6 @@ let g:syntastic_stl_format = '[%E{E: %fe #%e}%B{, }%W{W: %fw #%w}]'
 			"\ 'passive_filetypes': ['haml', 'sass'] }
 "let g:syntastic_quiet_warnings=1 "Breaks everything!
 nnoremap <silent> <leader>se :Errors<CR>
-
-"Session
-"set sessionoptions-=curdir,help,options
-let g:session_autoload='no'
-let g:session_autosave='no'
-"let g:session_autosave='prompt'
-"let g:session_default_to_last=1
-"let g:loaded_session=1 "Uncomment to not load session plugin
 
 "Vim clojure static
 let g:clojure_align_multiline_strings = 0
