@@ -271,7 +271,7 @@ set wildmode=list:longest,full
 
 "Foldiness
 set foldenable
-"set foldlevel=20
+set foldlevel=99 " Basically don't fold stuff
 set foldmethod=syntax
 
 " Set omnifunc to syntax completion
@@ -387,9 +387,6 @@ sign define QFS_VCS_DEL text=- texthl=gitcommitDiscardedFile
 
 "Gundo
 map <Leader>u :GundoToggle<CR>
-
-"ZoomWin
-map <Leader>z :ZoomWin<CR>
 
 " Fugitive
 nmap <leader>gl :Glog<CR>
