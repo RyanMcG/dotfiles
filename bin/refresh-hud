@@ -4,7 +4,7 @@ pkill redshift
 pkill pnmixer
 pkill tint2
 pkill skippy-xd
-pkill netmon
+pkill -f netmon
 netmon &
 myredshift &
 tint2 &
