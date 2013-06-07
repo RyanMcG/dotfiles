@@ -184,8 +184,7 @@ if has("gui_running")
   let g:Powerline_colorscheme = 'solarized256'
   highlight clear SignColumn
   set noballooneval
-  "highlight Cursor guibg=bg gui=reverse
-  "highlight Cursor guibg=white
+  highlight Visual gui=NONE guifg=NONE guibg=#084250
 elseif &t_Co >= 256
   colorscheme xoria256
 else
