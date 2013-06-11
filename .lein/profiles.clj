@@ -1,4 +1,5 @@
 {:user {:dependencies [[clj-stacktrace "0.2.5"]
+                       [org.clojure/tools.trace "0.7.5"]
                        [redl "0.1.0"]
                        [spyscope "0.1.3"]
                        [slamhound "1.3.3"]]
