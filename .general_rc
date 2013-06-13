@@ -21,7 +21,7 @@ else
 fi
 
 #Custom Var to enable composite manager
-export NODENAME=$(uname -n)
+export NODENAME=$(hostname -s)
 
 if [[ $NODENAME == "arcbase" ]]; then
 	export PROMPT_COLOR=blue
@@ -31,7 +31,7 @@ elif [[ $NODENAME == "ryanmcgowan" ]]; then
 	export PROMPT_COLOR=red
 elif [[ $NODENAME == "zenbook" ]]; then
 	export PROMPT_COLOR=green
-elif [[ $NODENAME == "facio-eng-air-1.local" ]]; then
+elif [[ $NODENAME == "facio-eng-air-1" ]]; then
 	export PROMPT_COLOR=cyan
 fi
 
