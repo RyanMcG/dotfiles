@@ -1,5 +1,6 @@
 {:user {:dependencies [[clj-stacktrace "0.2.5"]
                        [org.clojure/tools.trace "0.7.5"]
+                       [org.clojure/tools.namespace "0.2.3"]
                        [redl "0.1.0"]
                        [spyscope "0.1.3"]
                        [slamhound "1.3.3"]]
@@ -14,6 +15,7 @@
         :repl-options {:timeout 120000}
         :injections [(require '[redl core complete])
                      (require 'spyscope.core)
+                     (require 'clojure.tools.namespace)
                      (let [orig (ns-resolve (doto 'clojure.stacktrace require)
                                             'print-cause-trace)
                            new (ns-resolve (doto 'clj-stacktrace.repl require)
