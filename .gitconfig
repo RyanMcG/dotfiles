@@ -38,7 +38,6 @@
 	rl = reflog --decorate
 	rs = remote show
 	r = reset
-	rh = reset HEAD
 	rp = reset -p
 	wc = whatchanged --decorate --graph
 [core]
