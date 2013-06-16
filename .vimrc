@@ -108,6 +108,7 @@ Bundle 'avakhov/vim-yaml'
 "HTML/CSS
 Bundle 'mattn/zencoding-vim'
 Bundle 'othree/html5.vim'
+Bundle 'tpope/vim-haml'
 
 " Less
 Bundle 'groenewege/vim-less'
