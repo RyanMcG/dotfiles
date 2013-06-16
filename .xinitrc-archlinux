@@ -3,12 +3,12 @@
 # ~/.xinitrc
 #
 # Executed by startx (run your window manager from here)
-systemd --user &
+/usr/lib/systemd/systemd --user &
 # exec gnome-session
 # exec startkde
 # exec startxfce4
 # ...or the Window Manager of your choice
 export DE="xfce"
-#exec dbus-launch i3
-#exec dbus-launch startxfce4
-exec dbus-launch openbox-session
+#exec i3
+#exec startxfce4
+exec openbox-session
