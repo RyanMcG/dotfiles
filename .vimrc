@@ -323,7 +323,7 @@ let g:syntastic_stl_format = '[%E{E: %fe #%e}%B{, }%W{W: %fw #%w}]'
 nnoremap <silent> <leader>se :Errors<CR>
 
 "Vim clojure static
-let g:clojure_align_multiline_strings = 0
+let g:clojure_align_multiline_strings = 1
 " Set *.cljs files to the clojure filetype
 
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
