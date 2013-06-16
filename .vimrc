@@ -122,6 +122,9 @@ Bundle 'felixge/vim-nodejs-errorformat'
 Bundle 'godlygeek/tabular'
 Bundle 'wavded/vim-stylus'
 
+" J
+Bundle 'RyanMcG/vim-j'
+
 "Ruby
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
