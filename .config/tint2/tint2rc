@@ -92,7 +92,7 @@ systray_icon_asb = 100 0 0
 # CLOCK
 #---------------------------------------------
 clock = 1
-time1_format = %H:%M
+time1_format = %l:%M %p
 time1_font = FreeSans bold 12
 #time2_format = %A %d %B
 #time2_font = sans 6
@@ -102,9 +102,9 @@ clock_background_id = 0
 #clock_lclick_command = xclock
 #clock_rclick_command = orage
 clock_tooltip = %A %d %B
-time1_timezone = :America/New_York
+#time1_timezone = :America/New_York
 #time2_timezone = :Europe/Berlin
-clock_tooltip_timezone = :/usr/share/zoneinfo/America/New_York
+#clock_tooltip_timezone = :/usr/share/zoneinfo/America/New_York
 
 #---------------------------------------------
 # BATTERY
