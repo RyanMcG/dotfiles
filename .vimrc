@@ -26,6 +26,8 @@ Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
+" Bundle 'bling/vim-airline'
+Bundle 'bling/vim-bufferline'
 
 "Testing
 Bundle 'chrismetcalf/vim-yankring'
@@ -188,6 +190,8 @@ if has("gui_running")
   set cc=80
   let g:Powerline_symbols = 'fancy'
   let g:Powerline_colorscheme = 'solarized256'
+  let g:airline_powerline_fonts = 1
+  let g:airline_theme='default'
   highlight clear SignColumn
   set noballooneval
   highlight Visual gui=NONE guifg=NONE guibg=#084250
