@@ -27,7 +27,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
 " Bundle 'bling/vim-airline'
-Bundle 'bling/vim-bufferline'
+" Bundle 'bling/vim-bufferline'
 
 "Testing
 Bundle 'chrismetcalf/vim-yankring'
