@@ -6,6 +6,7 @@
                        [slamhound "1.3.3"]]
         :plugins [[lein-difftest "1.3.7"]
                   [lein-drip "0.1.1-SNAPSHOT"]
+                  [lein-exec "0.3.0"]
                   [lein-clojars "0.9.1"]
                   [lein-pprint "1.1.1"]
                   [lein-ring "0.8.0"]
