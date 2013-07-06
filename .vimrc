@@ -57,6 +57,7 @@ Bundle 'kana/vim-textobj-line'
 Bundle 'kana/vim-textobj-lastpat'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'bps/vim-textobj-python'
+Bundle "RyanMcG/numbers.vim"
 
 " Colorschemes
 "Bundle 'noahfrederick/Hemisu'
@@ -195,6 +196,10 @@ if has("gui_running")
   highlight clear SignColumn
   set noballooneval
   highlight Visual gui=NONE guifg=NONE guibg=#084250
+  highlight! link CursorLineNr LineNr
+  highlight CursorColumn guibg=#062F39
+  " highlight CursorLine guibg=#06323D
+  highlight CursorLine guibg=#073440
 elseif &t_Co >= 256
   colorscheme xoria256
 else
@@ -259,6 +264,7 @@ set linebreak
 
 "Some fun stuff which makes life easier
 set number
+set cursorline
 set hidden
 set history=1000
 set undolevels=1000
