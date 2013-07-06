@@ -198,8 +198,7 @@ if has("gui_running")
   highlight Visual gui=NONE guifg=NONE guibg=#084250
   highlight! link CursorLineNr LineNr
   highlight CursorColumn guibg=#062F39
-  " highlight CursorLine guibg=#06323D
-  highlight CursorLine guibg=#073440
+  highlight CursorLine guibg=#06323D
 elseif &t_Co >= 256
   colorscheme xoria256
 else
@@ -265,6 +264,7 @@ set linebreak
 "Some fun stuff which makes life easier
 set number
 set cursorline
+set cursorcolumn
 set hidden
 set history=1000
 set undolevels=1000
