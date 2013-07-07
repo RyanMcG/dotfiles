@@ -332,6 +332,9 @@ let g:syntastic_stl_format = '[%E{E: %fe #%e}%B{, }%W{W: %fw #%w}]'
 "let g:syntastic_quiet_warnings=1 "Breaks everything!
 nnoremap <silent> <leader>se :Errors<CR>
 
+" Numbers
+nnoremap <silent> <leader>nt :NumbersToggle<CR>
+
 "Vim clojure static
 let g:clojure_align_multiline_strings = 1
 " Set *.cljs files to the clojure filetype
