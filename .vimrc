@@ -347,6 +347,7 @@ let g:paredit_shortmaps = 1
 
 " Fireplace (Clojure)
 set viminfo+=! "Not actually a fireplace option, but presists cached cp
+nnoremap <silent><buffer> cpR :Require!<CR>
 
 "Slime
 let g:slime_target = "tmux"
