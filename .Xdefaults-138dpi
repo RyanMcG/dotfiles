@@ -39,7 +39,7 @@ urxvt-bg.shading: 60
 *color5: #963c59
 *color6: #418179
 *color7: #bebebe
-*color8: #333333
+*color8: #848484
 *color9: #cf6171
 *color10: #c5f779
 *color11: #fff796
@@ -76,7 +76,7 @@ xterm*color4: #2670cc
 xterm*color5: #963c59
 xterm*color6: #418179
 xterm*color7: #bebebe
-xterm*color8: #333333
+xterm*color8: #848484
 xterm*color9: #cf6171
 xterm*color10: #c5f779
 xterm*color11: #fff796
