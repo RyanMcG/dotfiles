@@ -57,7 +57,7 @@ Bundle 'kana/vim-textobj-line'
 Bundle 'kana/vim-textobj-lastpat'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'bps/vim-textobj-python'
-Bundle "RyanMcG/numbers.vim"
+Bundle "myusuf3/numbers.vim"
 
 " Colorschemes
 "Bundle 'noahfrederick/Hemisu'
