@@ -57,7 +57,7 @@ Bundle 'kana/vim-textobj-line'
 Bundle 'kana/vim-textobj-lastpat'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'bps/vim-textobj-python'
-Bundle "myusuf3/numbers.vim"
+Bundle "RyanMcG/numbers.vim"
 Bundle "amiorin/vim-fenced-code-blocks"
 
 " Colorschemes
@@ -335,6 +335,7 @@ nnoremap <silent> <leader>se :Errors<CR>
 
 " Numbers
 nnoremap <silent> <leader>nt :NumbersToggle<CR>
+nnoremap <silent> <leader>no :NumbersOnOff<CR>
 
 "Vim clojure static
 let g:clojure_align_multiline_strings = 1
