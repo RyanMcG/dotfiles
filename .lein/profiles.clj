@@ -2,6 +2,7 @@
                        [org.clojure/tools.trace "0.7.5"]
                        [org.clojure/tools.namespace "0.2.3"]
                        [redl "0.1.0"]
+                       [speclj-tmux "1.0.0"]
                        [spyscope "0.1.3"]
                        [slamhound "1.3.3"]]
         :plugins [[lein-difftest "1.3.7"]
