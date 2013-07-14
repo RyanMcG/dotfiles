@@ -58,6 +58,7 @@ Bundle 'kana/vim-textobj-lastpat'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'bps/vim-textobj-python'
 Bundle "myusuf3/numbers.vim"
+Bundle "amiorin/vim-fenced-code-blocks"
 
 " Colorschemes
 "Bundle 'noahfrederick/Hemisu'
