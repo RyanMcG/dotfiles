@@ -33,6 +33,8 @@ elif [[ $NODENAME == "zenbook" ]]; then
 	export PROMPT_COLOR=green
 elif [[ $NODENAME == "facio-eng-air-1" ]]; then
 	export PROMPT_COLOR=cyan
+elif [[ $NODENAME == "ua41f726d71fb51c1f61d" ]]; then
+	export PROMPT_COLOR=magenta
 fi
 
 # Autossh fun
