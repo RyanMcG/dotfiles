@@ -364,7 +364,7 @@
     </keybind>
     <keybind key="XF86Display">
       <action name="Execute">
-        <command>~/.screenlayout/vga-top-margin.sh</command>
+        <command>~/.screenlayout/vga-top-margin-right.sh</command>
       </action>
     </keybind>
     <keybind key="C-A-Left">
