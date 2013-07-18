@@ -1,10 +1,16 @@
 " Ryan McGowan's .vimrc
 
+let s:amazon_rtp = '/apollo/env/envImprovement/var/vimruntimehook'
+if filereadable(s:amazon_rtp)
+	exec ':source' . s:amazon_rtp
+endif
+
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 " Make sure filetype is off for vundle
 filetype off
+
 set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
 
@@ -421,7 +427,6 @@ nmap <leader>gch :Git dc<CR>
 nnoremap <leader>. :CtrlPTag<cr>
 nnoremap <leader>, :CtrlPMRU<cr>
 nnoremap <leader>f :CtrlPBuffer<cr>
-nnoremap <leader>x :CtrlPMixed<cr>
 
 " FixWhitespace
 nnoremap <leader>wh :FixWhitespace<cr>
