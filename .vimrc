@@ -197,7 +197,8 @@ if has("gui_running")
   highlight clear SignColumn
   set noballooneval
   highlight Visual gui=NONE guifg=NONE guibg=#084250
-  highlight! link CursorLineNr LineNr
+  set cursorline
+  set cursorcolumn
   highlight CursorColumn guibg=#062F39
   highlight CursorLine guibg=#06323D
 elseif &t_Co >= 256
@@ -205,6 +206,8 @@ elseif &t_Co >= 256
 else
   colorscheme elflord
 endif
+
+highlight! link CursorLineNr LineNr
 
 "Change the way numbers look
 "nmap <silent> <leader>hl :highlight LineNr term=NONE ctermfg=grey ctermbg=black<CR>
@@ -264,8 +267,6 @@ set linebreak
 
 "Some fun stuff which makes life easier
 set number
-set cursorline
-set cursorcolumn
 set hidden
 set history=1000
 set undolevels=1000
