@@ -1,1 +1,2 @@
 alias aws-quick-instances="aws ec2 describe-instances | jq '.Reservations[].Instances[] | {InstanceId, PublicDnsName}'"
+alias br="/apollo/env/SDETools/bin/brazil-runtime-exec"
