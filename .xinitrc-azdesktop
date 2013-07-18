@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+export DE="xfce"
+#exec i3
+#exec startxfce4
+gnome-power-manager &        # for laptops and stuff
+gnome-volume-manager &       # for mounting CDs, USB sticks, and such
+eval `gnome-keyring-daemon`  # SSH/GPG agent
+exec dbus-launch openbox-session
