@@ -25,7 +25,7 @@ Xft.rgba: rgb
 Xft.hinting: true
 Xft.hintstyle: hintslight
 
-urxvt-bg.font: xft:Inconsolata:size=12
+urxvt-bg.font: xft:Inconsolata:size=13
 urxvt-bg.transparent: true
 urxvt-bg.shading: 60
 
