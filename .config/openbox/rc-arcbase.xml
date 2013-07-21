@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Artwiz-boxed</name>
+    <name>Orion</name>
     <titleLayout>NLDIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -58,7 +58,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>FreeSans</name>
-      <size>9</size>
+      <size>7</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -67,7 +67,7 @@
     </font>
     <font place="InactiveWindow">
       <name>FreeSans</name>
-      <size>9</size>
+      <size>7</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -76,7 +76,7 @@
     </font>
     <font place="MenuHeader">
       <name>FreeSans</name>
-      <size>9</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -104,14 +104,14 @@
     <font place="ActiveOnScreenDisplay">
       <name>Sans</name>
       <size>8</size>
-      <weight></weight>
-      <slant></slant>
+      <weight/>
+      <slant/>
     </font>
     <font place="InactiveOnScreenDisplay">
       <name>Sans</name>
       <size>8</size>
-      <weight></weight>
-      <slant></slant>
+      <weight/>
+      <slant/>
     </font>
   </theme>
   <desktops>
@@ -993,12 +993,7 @@
 
   # end of the example
 -->
-    <application name="urxvt-bg">
-      <decor>no</decor>
-      <focus>yes</focus>
-      <desktop>1</desktop>
-      <layer>normal</layer>
-      <maximized>true</maximized> #Only if you want a full size terminal.ø
+    <application name="urxvt-bg"><decor>no</decor><focus>yes</focus><desktop>1</desktop><layer>normal</layer><maximized>true</maximized> #Only if you want a full size terminal.ø
     </application>
   </applications>
 </openbox_config>
