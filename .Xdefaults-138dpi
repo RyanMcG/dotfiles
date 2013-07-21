@@ -10,7 +10,6 @@ urxvt*geometry: 90x25
 
 !urxvt-bg.font: xft:FreeSerif:rgba=vbgr:pixelsize=12
 URxvt*termName: rxvt-unicode
-URxvt.perl-lib: ~/repo/dotfiles/urxvt-perls/
 URxvt*perl-ext-common: default,matcher,clipboard
 URxvt.keysym.M-c:   perl:clipboard:copy
 URxvt.keysym.M-v:   perl:clipboard:paste
