@@ -275,10 +275,10 @@
     <keybind key="A-Escape">
       <action name="Close"/>
     </keybind>
-    <keybind key="A-m">
+    <keybind key="W-m">
       <action name="ToggleMaximizeFull"/>
     </keybind>
-    <keybind key="A-v">
+    <keybind key="W-v">
       <action name="ToggleMaximizeVert"/>
     </keybind>
     <keybind key="W-F11">
