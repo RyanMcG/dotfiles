@@ -9,10 +9,11 @@ export HISTCONTROL=ignoredups
 export HISTCONTROL=ignoreboth
 export EDITOR="vim"
 export VISUAL=$EDITOR
-export PATH=$HOME/bin:/usr/share/eclipse:/opt/maven/bin:/opt/android-sdk/platform-tools:$HOME/.cabal/bin:$HOME/bin/node/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/.rvm/bin:$HOME/node_modules/.bin:$PATH
+export PATH=$HOME/bin:$HOME/repo/clojurescript/bin:/usr/share/eclipse:/opt/maven/bin:/opt/android-sdk/platform-tools:$HOME/.cabal/bin:$HOME/bin/node/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/.rvm/bin:$HOME/node_modules/.bin:$PATH
 export CLASSPATH=.:src/:bin/
 export PYTHONDOCS=/usr/share/doc/python2/html/
 export ACKRC=".ackrc" # Allow directory level .ackrc.
+export CLOJURESCRIPT_HOME=$HOME/repo/clojurescript
 
 if [ -f /usr/bin/python2 ]; then
 	VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
