@@ -108,4 +108,5 @@ if [ -f ~/nvm/nvm.sh ]; then
 	#[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 fi
 
+[[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" # Load nvm into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
