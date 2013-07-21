@@ -1,0 +1,2 @@
+#!/bin/sh
+compton -cC -r 16 -o 0.33 -l -24 -t -10
