@@ -4,7 +4,7 @@
 [color]
 	ui = auto
 [merge]
-	tool = gdiff
+	tool = vdiff
 [alias]
 	a = add
 	ai = add -i
@@ -42,7 +42,7 @@
 	wc = whatchanged --decorate --graph
 [core]
 	pager = less -FXR
-	editor = gvim --nofork
+	editor = vim
 	excludesfile = ~/.gitignore.global
 [github]
 	user = RyanMcG
@@ -57,10 +57,10 @@
 [push]
 	default = upstream
 [mergetool "splice"]
-	cmd = "gvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
+	cmd = "vim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
 	trustExitCode = true
-[mergetool "gdiff"]
-	cmd = "gvim -f $MERGED -c 'Gdiff'"
+[mergetool "vdiff"]
+	cmd = "vim -f $MERGED -c 'Gdiff'"
 	trustExitCode = true
 [pretty]
 	epic-exact = %C(yellow)%h%Cred %ci%Creset%Creset%C(bold red) ~%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%C(bold green)%d%Creset
