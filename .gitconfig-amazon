@@ -1,0 +1,69 @@
+[user]
+	name = Ryan McGowan
+	email = mcgowanr@amazon.com
+[color]
+	ui = auto
+[merge]
+	tool = gdiff
+[alias]
+	a = add
+	ai = add -i
+	ap = add -p
+	ae = add -e
+	b = branch
+	cm = commit -m
+	ca = commit -a
+	caar = commit -a --amend --reuse-message=HEAD
+	car = commit --amend --reuse-message=HEAD
+	cam = commit -am
+	co = checkout
+	d = diff
+	dc = diff --cached
+	ds = diff --stat
+	f = fetch
+	g = grep -n
+	l = log --decorate --graph
+	lf = log --graph --pretty=epic-friend
+	le = log --graph --pretty=epic-exact
+	lng = log --decorate
+	lfng = log --pretty=epic-friend
+	leng = log --pretty=epic-exact
+	l1 = log --graph --pretty=epic-exact -1
+	lt = log --graph --pretty=epic-friend -10
+	p = pull
+	pr = pull --rebase
+	s = status
+	sl = stash list --pretty=epic-exact -1
+	sn = show --stat --decorate
+	rl = reflog --decorate
+	rs = remote show
+	r = reset
+	rp = reset -p
+	wc = whatchanged --decorate --graph
+[core]
+	pager = less -FXR
+	editor = gvim --nofork
+	excludesfile = ~/.gitignore.global
+[github]
+	user = RyanMcG
+[giggle]
+	main-window-maximized = false
+	main-window-geometry = 995x563+208+225
+	file-view-vpane-position = 494
+	history-view-vpane-position = 258
+	main-window-view = FileView
+[web]
+	browser = chromium
+[push]
+	default = upstream
+[mergetool "splice"]
+	cmd = "gvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
+	trustExitCode = true
+[mergetool "gdiff"]
+	cmd = "gvim -f $MERGED -c 'Gdiff'"
+	trustExitCode = true
+[pretty]
+	epic-exact = %C(yellow)%h%Cred %ci%Creset%Creset%C(bold red) ~%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%C(bold green)%d%Creset
+	epic-friend = %C(yellow)%h%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%Cred %ar%C(bold green)%d%Creset
+[mergetool]
+	keepBackup = false
