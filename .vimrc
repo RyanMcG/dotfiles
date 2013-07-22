@@ -67,14 +67,13 @@ Bundle "RyanMcG/numbers.vim"
 Bundle "amiorin/vim-fenced-code-blocks"
 
 " Colorschemes
-"Bundle 'noahfrederick/Hemisu'
 Bundle 'altercation/vim-colors-solarized'
-"Bundle 'jeffreyiacono/vim-colors-wombat'
 Bundle 'vim-scripts/xoria256.vim'
 
 "Languge specific
 
 " TCL
+
 Bundle 'tcl.vim'
 
 "Java
@@ -200,7 +199,6 @@ if has("gui_running")
   let g:Powerline_colorscheme = 'solarized256'
   let g:airline_powerline_fonts = 1
   let g:airline_theme='default'
-  highlight clear SignColumn
   set noballooneval
   highlight Visual gui=NONE guifg=NONE guibg=#084250
   set cursorline
@@ -209,6 +207,17 @@ if has("gui_running")
   highlight CursorLine guibg=#06323D
 elseif &t_Co >= 256
   colorscheme xoria256
+
+  " Turn on cursorline
+  set cursorline
+  " Improve highlighting for visual mode and cursor line.
+  highlight CursorLine ctermbg=235
+  highlight Visual cterm=NONE ctermfg=NONE ctermbg=8
+
+  " Make highlighting better for git gutter
+  highlight DiffAdd ctermfg=151 ctermbg=233
+  highlight DiffChange ctermfg=172 ctermbg=233
+  highlight DiffDelete ctermfg=160 ctermbg=233
 else
   colorscheme elflord
 endif
@@ -405,6 +414,7 @@ nnoremap <leader>gg :GitGutterToggle<CR>
 let g:gitgutter_sign_modified = 'Δ'
 let g:gitgutter_sign_modified_removed = 'Δ_'
 "let g:gitgutter_diff_args = '-w'
+highlight clear SignColumn
 highlight link GitGutterAdd GitGutterAddLine
 highlight link GitGutterChange GitGutterChangeLine
 highlight link GitGutterChangeDelete GitGutterChangeLine
