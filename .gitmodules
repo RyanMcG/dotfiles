@@ -3,4 +3,4 @@
 	url = git@github.com:RyanMcG/oh-my-zsh.git
 [submodule "urxvt-perls"]
 	path = urxvt-perls
-	url = ./urxvt-perls
+	url = https://github.com/muennich/urxvt-perls.git
