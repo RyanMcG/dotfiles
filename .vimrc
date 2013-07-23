@@ -1,8 +1,8 @@
 " Ryan McGowan's .vimrc
 
-let s:amazon_rtp = '/apollo/env/envImprovement/var/vimruntimehook'
-if filereadable(s:amazon_rtp)
-	exec ':source' . s:amazon_rtp
+let s:vimrc_head = '$HOME/.vimrc_head'
+if filereadable(s:vimrc_head)
+	exec ':source' . s:vimrc_head
 endif
 
 " Use Vim settings, rather than Vi settings (much better!).
