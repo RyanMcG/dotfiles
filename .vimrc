@@ -351,7 +351,7 @@ let g:syntastic_stl_format = '[%E{E: %fe #%e}%B{, }%W{W: %fw #%w}]'
 "let g:syntastic_quiet_warnings=1 "Breaks everything!
 nnoremap <silent> <leader>se :Errors<CR>
 
-" Numbers
+" Autornu
 nnoremap <silent> <F3> :AutornuToggle<CR>
 nnoremap <silent> <F4> :AutornuOnOff<CR>
 
