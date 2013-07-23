@@ -191,10 +191,10 @@ if &t_Co > 2 || has("gui_running")
   set background=dark
 endif
 
+set colorcolumn=80
 "Set our colorscheme
 if has("gui_running")
   colorscheme solarized
-  set cc=80
   let g:Powerline_symbols = 'fancy'
   let g:Powerline_colorscheme = 'solarized256'
   let g:airline_powerline_fonts = 1
@@ -213,6 +213,8 @@ elseif &t_Co >= 256
   " Improve highlighting for visual mode and cursor line.
   highlight CursorLine ctermbg=235
   highlight Visual cterm=NONE ctermfg=NONE ctermbg=8
+  " Make colorcolumn less severe
+  highlight ColorColumn ctermbg=8
 
   " Make highlighting better for git gutter
   highlight DiffAdd ctermfg=151 ctermbg=233
