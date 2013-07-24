@@ -7,13 +7,13 @@
                        [slamhound "1.3.3"]]
         :plugins [[lein-difftest "1.3.7"]
                   [lein-exec "0.3.0"]
+                  [org.bodil/lein-noderepl "0.1.10"]
                   [lein-clojars "0.9.1"]
                   [lein-pprint "1.1.1"]
                   [lein-ring "0.8.0"]
                   [lein-cljsbuild "0.3.2"]
                   [lein-deps-tree "0.1.2"]
                   [lein-marginalia "0.7.1"]]
-        :hooks [leiningen.cljsbuild]
         :repl-options {:timeout 120000}
         :injections [(require '[redl core complete])
                      (require 'spyscope.core)
