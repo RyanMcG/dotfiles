@@ -11,4 +11,5 @@ xset m 5 10 &
 xset b off &
 skippy-xd &
 myredhsift &
+mycompton &
 nitrogen --restore   #Restores wallpaper
