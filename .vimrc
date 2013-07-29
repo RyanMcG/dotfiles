@@ -63,7 +63,7 @@ Bundle 'kana/vim-textobj-line'
 Bundle 'kana/vim-textobj-lastpat'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'bps/vim-textobj-python'
-Bundle "RyanMcG/numbers.vim"
+Bundle "RyanMcG/vim-autornu"
 Bundle "amiorin/vim-fenced-code-blocks"
 
 " Colorschemes
@@ -350,8 +350,8 @@ let g:syntastic_stl_format = '[%E{E: %fe #%e}%B{, }%W{W: %fw #%w}]'
 nnoremap <silent> <leader>se :Errors<CR>
 
 " Numbers
-nnoremap <silent> <leader>nt :NumbersToggle<CR>
-nnoremap <silent> <leader>no :NumbersOnOff<CR>
+nnoremap <silent> <F3> :AutornuToggle<CR>
+nnoremap <silent> <F4> :AutornuOnOff<CR>
 
 "Vim clojure static
 let g:clojure_align_multiline_strings = 1
