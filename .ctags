@@ -5,6 +5,7 @@
 --exclude=build
 --exclude=ropeproject
 --exclude=*.pyc
+--exclude=*.min.js
 
 --langdef=Clojure
 --langmap=Clojure:.clj
