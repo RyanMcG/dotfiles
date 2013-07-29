@@ -67,3 +67,5 @@
 	epic-friend = %C(yellow)%h%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%Cred %ar%C(bold green)%d%Creset
 [mergetool]
 	keepBackup = false
+[amazon]
+	append-cr-url = true
