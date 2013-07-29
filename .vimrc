@@ -1,6 +1,6 @@
 " Ryan McGowan's .vimrc
 
-let s:vimrc_head = '$HOME/.vimrc_head'
+let s:vimrc_head = expand('$HOME/.vimrc_head')
 if filereadable(s:vimrc_head)
 	exec ':source' . s:vimrc_head
 endif
