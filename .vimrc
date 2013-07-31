@@ -67,10 +67,9 @@ Bundle "RyanMcG/vim-autornu"
 Bundle "amiorin/vim-fenced-code-blocks"
 Bundle "sjl/vitality.vim"
 
-
 " Colorschemes
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'vim-scripts/xoria256.vim'
+" Bundle 'vim-scripts/xoria256.vim'
 Bundle 'twe4ked/vim-wombat256i'
 
 "Languge specific
@@ -209,20 +208,22 @@ if has("gui_running")
   highlight CursorColumn guibg=#062F39
   highlight CursorLine guibg=#06323D
 elseif &t_Co >= 256
-  colorscheme xoria256
+  colorscheme wombat256i
 
   " Turn on cursorline
   set cursorline
+  set cursorcolumn
   " Improve highlighting for visual mode and cursor line.
-  highlight CursorLine ctermbg=235
-  highlight Visual cterm=NONE ctermfg=NONE ctermbg=8
+  highlight CursorLine ctermbg=234
+  highlight CursorColumn ctermbg=233
+  highlight Visual cterm=NONE ctermfg=NONE ctermbg=235
   " Make colorcolumn less severe
-  highlight ColorColumn ctermbg=8
+  highlight ColorColumn ctermbg=0
 
   " Make highlighting better for git gutter
-  highlight DiffAdd ctermfg=151 ctermbg=233
-  highlight DiffChange ctermfg=172 ctermbg=233
-  highlight DiffDelete ctermfg=160 ctermbg=233
+  highlight DiffAdd ctermfg=151 ctermbg=234
+  highlight DiffChange ctermfg=172 ctermbg=234
+  highlight DiffDelete ctermfg=160 ctermbg=234
 else
   colorscheme elflord
 endif
