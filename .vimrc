@@ -65,6 +65,8 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'bps/vim-textobj-python'
 Bundle "RyanMcG/vim-autornu"
 Bundle "amiorin/vim-fenced-code-blocks"
+Bundle "sjl/vitality.vim"
+
 
 " Colorschemes
 Bundle 'altercation/vim-colors-solarized'
