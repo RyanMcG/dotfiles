@@ -387,9 +387,13 @@ nmap <leader>qo :copen<CR>
 nmap <leader>lc :lclose<CR>
 nmap <leader>lo :lopen<CR>
 
-" Next in ccl
+" Next in quickfix list
 nmap ]e :cnext<CR>
 nmap [e :cprev<CR>
+
+" Next in location list
+nmap ]l :lnext<CR>
+nmap [l :lprev<CR>
 
 " Next Tab
 nmap ]t :tabnext<CR>
