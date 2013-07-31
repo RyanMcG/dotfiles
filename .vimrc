@@ -69,6 +69,7 @@ Bundle "amiorin/vim-fenced-code-blocks"
 " Colorschemes
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/xoria256.vim'
+Bundle 'twe4ked/vim-wombat256i'
 
 "Languge specific
 
