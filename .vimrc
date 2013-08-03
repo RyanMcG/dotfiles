@@ -72,6 +72,7 @@ Bundle "sjl/vitality.vim"
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/xoria256.vim'
 Bundle 'twe4ked/vim-wombat256i'
+Bundle 'junegunn/seoul256.vim'
 
 "Languge specific
 
@@ -207,32 +208,26 @@ if has("gui_running")
   set cursorline
   set cursorcolumn
   highlight CursorColumn guibg=#062F39
+
   highlight CursorLine guibg=#06323D
 elseif &t_Co >= 256
-  colorscheme xoria256
+  let g:seoul256_background = 234
+  colorscheme seoul256
 
-  " Turn on cursorline
   set cursorline
-  " Improve highlighting for visual mode and cursor line.
-  highlight CursorLine ctermbg=235
-  highlight Visual cterm=NONE ctermfg=NONE ctermbg=8
-  " Make colorcolumn less severe
-  highlight ColorColumn ctermbg=8
+  set cursorcolumn
+
+  highlight ColorColumn ctermbg=232
 
   " Make highlighting better for git gutter
-  highlight DiffAdd ctermfg=151 ctermbg=233
-  highlight DiffChange ctermfg=172 ctermbg=233
-  highlight DiffDelete ctermfg=160 ctermbg=233
+  highlight DiffAdd ctermfg=151 ctermbg=235
+  highlight DiffChange ctermfg=172 ctermbg=235
+  highlight DiffDelete ctermfg=160 ctermbg=235
 else
   colorscheme elflord
 endif
 
 highlight! link CursorLineNr LineNr
-
-"Change the way numbers look
-"nmap <silent> <leader>hl :highlight LineNr term=NONE ctermfg=grey ctermbg=black<CR>
-"highlight LineNr term=NONE ctermfg=grey ctermbg=black
-highlight WarningMsg term=bold cterm=bold ctermbg=239 ctermfg=yellow guifg=yellow guifg=#4e4e4e
 
 " Enable file type detection.
 " Use the default filetype settings, so that mail gets 'tw' set to 72,
@@ -423,11 +418,10 @@ nnoremap <leader>gg :GitGutterToggle<CR>
 let g:gitgutter_sign_modified = 'Δ'
 let g:gitgutter_sign_modified_removed = 'Δ_'
 "let g:gitgutter_diff_args = '-w'
-highlight clear SignColumn
-highlight link GitGutterAdd GitGutterAddLine
-highlight link GitGutterChange GitGutterChangeLine
-highlight link GitGutterChangeDelete GitGutterChangeLine
-highlight link GitGutterDelete GitGutterDeleteLine
+highlight! link GitGutterAdd GitGutterAddLine
+highlight! link GitGutterChange GitGutterChangeLine
+highlight! link GitGutterChangeDelete GitGutterChangeLine
+highlight! link GitGutterDelete GitGutterDeleteLine
 sign define QFS_VCS_CHANGE text=Δ texthl=gitcommitUnmergedFile
 sign define QFS_VCS_ADD text=+ texthl=gitcommitSelectedFile
 sign define QFS_VCS_DEL text=- texthl=gitcommitDiscardedFile
