@@ -220,9 +220,11 @@ elseif &t_Co >= 256
   highlight ColorColumn ctermbg=232
 
   " Make highlighting better for git gutter
-  highlight DiffAdd ctermfg=151 ctermbg=235
-  highlight DiffChange ctermfg=172 ctermbg=235
-  highlight DiffDelete ctermfg=160 ctermbg=235
+  highlight DiffAdd ctermfg=151 ctermbg=234
+  highlight DiffChange ctermfg=172 ctermbg=234
+  highlight DiffDelete ctermfg=160 ctermbg=234
+  highlight Comment cterm=italic
+  highlight String cterm=italic
 else
   colorscheme elflord
 endif
