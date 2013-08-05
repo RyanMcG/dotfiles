@@ -1,0 +1,52 @@
+#Set default terminal to 256 colors
+set -g default-terminal "screen-256color-s"
+
+setw -g window-status-current-attr underscore
+set -g status-keys vi
+setw -g mode-keys vi
+
+# Add some nice copy and paste shortcuts.
+bind -t vi-copy v begin-selection
+bind -t vi-copy y copy-selection
+bind -t vi-copy V rectangle-toggle
+
+bind-key a send-prefix
+set-option -g prefix C-a
+bind-key C-a last-window
+set -g base-index 1
+set -s escape-time 0
+setw -g aggressive-resize on
+
+# Movement
+bind h select-pane -L
+bind j select-pane -U
+bind k select-pane -D
+bind l select-pane -R
+
+set -g status-left '#[fg=magenta]#S#[default]'
+set -g status-right '#(rainbarf --bright --no-battery)'
+
+set -g history-limit 20000
+set-option -g set-titles on
+set-option -g set-titles-string '#T TMUX:#S.#I.#P #W' # window number,program name,active (or not)
+set-option -g status-left-length 40
+set-option -g status-interval 3
+
+# COLORS
+set-option -g pane-active-border-fg cyan
+set-option -g pane-active-border-bg black
+set-option -g pane-border-fg magenta
+set-option -g pane-border-bg black
+
+set-option -g message-fg black
+set-option -g message-bg green
+
+set -g status-bg black
+set -g status-fg white
+setw -g window-status-current-bg black
+setw -g window-status-current-fg green
+#setw -g window-status-alert-attr default
+#setw -g window-status-alert-fg yellow
+
+# `+r reloads the configuration, handy
+bind r source-file ~/.tmux.conf
