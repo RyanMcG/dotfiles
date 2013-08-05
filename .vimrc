@@ -223,8 +223,11 @@ elseif &t_Co >= 256
   highlight DiffAdd ctermfg=151 ctermbg=234
   highlight DiffChange ctermfg=172 ctermbg=234
   highlight DiffDelete ctermfg=160 ctermbg=234
-  highlight Comment cterm=italic
-  highlight String cterm=italic
+
+  if &term == 'rxvt-unicode-256color'
+    highlight Comment cterm=italic
+    highlight String cterm=italic
+  end
 else
   colorscheme elflord
 endif
