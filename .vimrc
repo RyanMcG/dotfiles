@@ -215,9 +215,7 @@ elseif &t_Co >= 256
   colorscheme seoul256
 
   set cursorline
-  set cursorcolumn
-
-  highlight ColorColumn ctermbg=232
+  highlight ColorColumn ctermbg=235
 
   " Make highlighting better for git gutter
   highlight DiffAdd ctermfg=151 ctermbg=234
