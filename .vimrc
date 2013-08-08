@@ -208,8 +208,8 @@ if has("gui_running")
   set cursorline
   set cursorcolumn
   highlight CursorColumn guibg=#062F39
-
   highlight CursorLine guibg=#06323D
+  highlight SignColumn guibg=#073642
 elseif &t_Co >= 256
   let g:seoul256_background = 234
   colorscheme seoul256
