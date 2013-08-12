@@ -11,155 +11,153 @@ set nocompatible
 " Make sure filetype is off for vundle
 filetype off
 
-if has('vim_starting')
-   set runtimepath+=~/.vim/bundle/neobundle.vim/
- endif
+set runtimepath+=~/.vim/bundle/vundle
+call vundle#rc()
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+let g:vundle_default_git_proto = 'git'
 
-" Let NeoBundle manage NeoBundle
-NeoBundleFetch 'Shougo/neobundle.vim'
+
+"Make vundle manage vundle
+Bundle 'gmarik/vundle'
 
 "My bundles
-NeoBundle 'vim-scripts/The-NERD-tree'
-NeoBundle 'vim-scripts/The-NERD-Commenter'
-NeoBundle 'majutsushi/tagbar'
-NeoBundle 'ciaranm/detectindent'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'mattn/gist-vim'
-NeoBundle 'sjl/gundo.vim'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'Lokaltog/vim-powerline'
-" NeoBundle 'bling/vim-airline'
-" NeoBundle 'bling/vim-bufferline'
+Bundle 'vim-scripts/The-NERD-tree'
+Bundle 'vim-scripts/The-NERD-Commenter'
+Bundle 'majutsushi/tagbar'
+Bundle 'ciaranm/detectindent'
+Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/syntastic'
+Bundle 'mattn/gist-vim'
+Bundle 'sjl/gundo.vim'
+Bundle 'tpope/vim-surround'
+Bundle 'kien/ctrlp.vim'
+Bundle 'Lokaltog/vim-powerline'
+" Bundle 'bling/vim-airline'
+" Bundle 'bling/vim-bufferline'
 
 "Testing
-NeoBundle 'chrismetcalf/vim-yankring'
-NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'bronson/vim-trailing-whitespace'
-NeoBundle 'mileszs/ack.vim'
-NeoBundle 'MarcWeber/vim-addon-mw-utils'
-NeoBundle 'garbas/vim-snipmate'
-NeoBundle 'scrooloose/snipmate-snippets'
-NeoBundle 'tsaleh/vim-align'
-NeoBundle 'tpope/vim-rsi'
-NeoBundle 'RyanMcG/vim-guifontzoom'
-NeoBundle 'tpope/vim-abolish'
-NeoBundle 'tpope/vim-repeat'
-NeoBundle 'tpope/vim-commentary'
-NeoBundle 'tpope/vim-characterize'
-NeoBundle 'tpope/vim-dispatch'
-NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'kana/vim-textobj-user'
-NeoBundle 'kana/vim-textobj-function'
-NeoBundle 'kana/vim-textobj-indent'
-NeoBundle 'kana/vim-textobj-underscore'
-NeoBundle 'kana/vim-textobj-syntax'
-NeoBundle 'RyanMcG/vim-textobj-dash'
-NeoBundle 'kana/vim-textobj-line'
-NeoBundle 'kana/vim-textobj-lastpat'
-NeoBundle 'nelstrom/vim-textobj-rubyblock'
-NeoBundle 'bps/vim-textobj-python'
-NeoBundle "RyanMcG/vim-autornu"
-NeoBundle "amiorin/vim-fenced-code-blocks"
-NeoBundle "sjl/vitality.vim"
+Bundle 'chrismetcalf/vim-yankring'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'bronson/vim-trailing-whitespace'
+Bundle 'mileszs/ack.vim'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'garbas/vim-snipmate'
+Bundle 'scrooloose/snipmate-snippets'
+Bundle 'tsaleh/vim-align'
+Bundle 'tpope/vim-rsi'
+Bundle 'RyanMcG/vim-guifontzoom'
+Bundle 'tpope/vim-abolish'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-characterize'
+Bundle 'tpope/vim-dispatch'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'kana/vim-textobj-user'
+Bundle 'kana/vim-textobj-function'
+Bundle 'kana/vim-textobj-indent'
+Bundle 'kana/vim-textobj-underscore'
+Bundle 'kana/vim-textobj-syntax'
+Bundle 'RyanMcG/vim-textobj-dash'
+Bundle 'kana/vim-textobj-line'
+Bundle 'kana/vim-textobj-lastpat'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'bps/vim-textobj-python'
+Bundle "RyanMcG/vim-autornu"
+Bundle "amiorin/vim-fenced-code-blocks"
+Bundle "sjl/vitality.vim"
 
 
 " Colorschemes
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'vim-scripts/xoria256.vim'
-NeoBundle 'twe4ked/vim-wombat256i'
-NeoBundle 'junegunn/seoul256.vim'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'vim-scripts/xoria256.vim'
+Bundle 'twe4ked/vim-wombat256i'
+Bundle 'junegunn/seoul256.vim'
 
 "Languge specific
 
 " TCL
 
-NeoBundle 'tcl.vim'
+Bundle 'tcl.vim'
 
 "Java
-"NeoBundle 'VictorDenisov/javacomplete'
-"NeoBundle 'vim-scripts/JavaImp.vim--Lee'
+"Bundle 'VictorDenisov/javacomplete'
+"Bundle 'vim-scripts/JavaImp.vim--Lee'
 
 " Scala
-NeoBundle 'derekwyatt/vim-scala'
-NeoBundle 'derekwyatt/vim-sbt'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'derekwyatt/vim-sbt'
 
 "Latex
-"NeoBundle 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
+"Bundle 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
 
 "Clojure
-NeoBundle 'paredit.vim'
-NeoBundle 'guns/vim-clojure-static'
-NeoBundle 'kien/rainbow_parentheses.vim'
-NeoBundle 'tpope/vim-classpath'
-NeoBundle 'tpope/vim-fireplace'
-"NeoBundle 'slimv.vim'
-NeoBundle 'jpalardy/vim-slime'
-NeoBundle 'dgrnbrg/vim-redl'
+Bundle 'paredit.vim'
+Bundle 'guns/vim-clojure-static'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'tpope/vim-classpath'
+Bundle 'tpope/vim-fireplace'
+"Bundle 'slimv.vim'
+Bundle 'jpalardy/vim-slime'
+Bundle 'dgrnbrg/vim-redl'
 
 "Markdown
-NeoBundle 'tpope/vim-markdown'
-"NeoBundle 'hallison/vim-markdown'
-NeoBundle 'tangledhelix/vim-octopress'
+Bundle 'tpope/vim-markdown'
+"Bundle 'hallison/vim-markdown'
+Bundle 'tangledhelix/vim-octopress'
 
 " Dot
-NeoBundle 'wannesm/wmgraphviz.vim'
+Bundle 'wannesm/wmgraphviz.vim'
 
 "Python
-NeoBundle 'ivanov/vim-ipython'
-NeoBundle 'vim-scripts/python.vim--Vasiliev.git'
-NeoBundle 'davidhalter/jedi-vim'
-NeoBundle 'klen/python-mode'
+Bundle 'ivanov/vim-ipython'
+Bundle 'vim-scripts/python.vim--Vasiliev.git'
+Bundle 'davidhalter/jedi-vim'
+Bundle 'klen/python-mode'
 
 " YAML
-NeoBundle 'avakhov/vim-yaml'
+Bundle 'avakhov/vim-yaml'
 
 "HTML/CSS
-NeoBundle 'mattn/zencoding-vim'
-NeoBundle 'othree/html5.vim'
-NeoBundle 'tpope/vim-haml'
+Bundle 'mattn/zencoding-vim'
+Bundle 'othree/html5.vim'
+Bundle 'tpope/vim-haml'
 
 " Less
-NeoBundle 'groenewege/vim-less'
+Bundle 'groenewege/vim-less'
 
 "Javascript
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'jelera/vim-javascript-syntax'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'digitaltoad/vim-jade'
-NeoBundle 'felixge/vim-nodejs-errorformat'
-NeoBundle 'godlygeek/tabular'
-NeoBundle 'wavded/vim-stylus'
+Bundle 'pangloss/vim-javascript'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'felixge/vim-nodejs-errorformat'
+Bundle 'godlygeek/tabular'
+Bundle 'wavded/vim-stylus'
 
 " J
-NeoBundle 'RyanMcG/vim-j'
+Bundle 'RyanMcG/vim-j'
 
 "Ruby
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'tpope/vim-rake'
-NeoBundle 'tpope/vim-bundler'
-"NeoBundle 'astashov/vim-ruby-debugger'
-NeoBundle 'tpope/vim-endwise'
-NeoBundle 'danchoi/ri.vim'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-rake'
+Bundle 'tpope/vim-bundler'
+"Bundle 'astashov/vim-ruby-debugger'
+Bundle 'tpope/vim-endwise'
+Bundle 'danchoi/ri.vim'
 
 "Removed
-"NeoBundle 'ervandew/supertab'
-"NeoBundle 'Raimondi/delimitMate'
-"NeoBundle 'fholgado/minibufexpl.vim'
-"NeoBundle 'vim-scripts/AutoComplPop'
-"NeoBundle 'jonyamo/dbext.vim'
-"NeoBundle 'sjl/splice.vim'
-"NeoBundle 'benmills/vimux'
-"NeoBundle 'tomtom/quickfixsigns_vim'
-"NeoBundle 'Valloric/YouCompleteMe'
-"NeoBundle 'vim-scripts/ZoomWin'
-
-NeoBundleCheck
+"Bundle 'ervandew/supertab'
+"Bundle 'Raimondi/delimitMate'
+"Bundle 'fholgado/minibufexpl.vim'
+"Bundle 'vim-scripts/AutoComplPop'
+"Bundle 'jonyamo/dbext.vim'
+"Bundle 'sjl/splice.vim'
+"Bundle 'benmills/vimux'
+"Bundle 'tomtom/quickfixsigns_vim'
+"Bundle 'Valloric/YouCompleteMe'
+"Bundle 'vim-scripts/ZoomWin'
 
 "Make sure my after is really at the end.
 set runtimepath-=~/.vim
