@@ -69,3 +69,5 @@
 	keepBackup = false
 [amazon]
 	append-cr-url = true
+[receive]
+	denyCurrentBranch = warn
