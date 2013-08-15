@@ -440,6 +440,7 @@ nmap <leader>gd :Gdiff<CR>
 nmap <leader>gch :Git dc<CR>
 
 "CtrlP
+let g:ctrlp_working_path_mode = 0
 nnoremap <leader>. :CtrlPTag<cr>
 nnoremap <leader>, :CtrlPMRU<cr>
 nnoremap <leader>f :CtrlPBuffer<cr>
