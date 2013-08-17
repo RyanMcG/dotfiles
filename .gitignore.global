@@ -32,3 +32,4 @@ javadoc*
 /transcript.txt
 .lein-repl-*
 /build
+git-fyncy.log
