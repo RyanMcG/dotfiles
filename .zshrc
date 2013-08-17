@@ -40,7 +40,7 @@ archlinux
 #nyan
 lein
 heroku
-rvm
+rbenv
 #bundler
 #ruby
 #rails
