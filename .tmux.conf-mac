@@ -1,6 +1,7 @@
 #Set default terminal to 256 colors
 set -g default-terminal "screen-256color"
 # So copy and paste work from tmux launched programs
+set -g default-command "reattach-to-user-namespace -l zsh"
 
 setw -g window-status-current-attr underscore
 set -g status-keys vi
