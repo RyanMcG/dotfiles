@@ -447,6 +447,7 @@ nnoremap <leader>f :CtrlPBuffer<cr>
 
 " FixWhitespace
 nnoremap <leader>wh :FixWhitespace<cr>
+vnoremap <leader>wh :FixWhitespace<cr>
 
 " Supertab
 set completeopt-=preview
