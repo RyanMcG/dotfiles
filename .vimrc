@@ -159,12 +159,19 @@ Bundle 'danchoi/ri.vim'
 "Bundle 'Valloric/YouCompleteMe'
 "Bundle 'vim-scripts/ZoomWin'
 
-"Make sure my after is really at the end.
+" vim7[34] files should be first
+set runtimepath-=/usr/share/vim/vim74
+set runtimepath^=/usr/share/vim/vim74
+set runtimepath-=/usr/share/vim/vim73
+set runtimepath^=/usr/share/vim/vim73
+
 set runtimepath-=~/.vim
-set runtimepath-=~/.vim/bundle/eclim
-set runtimepath-=~/.vim/after/
 set runtimepath^=~/.vim
+set runtimepath-=~/.vim/bundle/eclim
 set runtimepath+=~/.vim/bundle/eclim
+
+" Make sure my after is really at the end.
+set runtimepath-=~/.vim/after/
 set runtimepath+=~/.vim/after
 
 "Source matchit.vim (included in vim 7)
