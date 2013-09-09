@@ -57,10 +57,10 @@
 [push]
 	default = upstream
 [mergetool "splice"]
-	cmd = "vim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
+	cmd = "gvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
 	trustExitCode = true
 [mergetool "vdiff"]
-	cmd = "vim -f $MERGED -c 'Gdiff'"
+	cmd = "gvim -f $MERGED -c 'Gdiff'"
 	trustExitCode = true
 [pretty]
 	epic-exact = %C(yellow)%h%Cred %ci%Creset%Creset%C(bold red) ~%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%C(bold green)%d%Creset
