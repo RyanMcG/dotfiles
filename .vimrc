@@ -364,7 +364,7 @@ nnoremap <silent> <F3> :AutornuToggle<CR>
 nnoremap <silent> <F4> :AutornuOnOff<CR>
 
 "Vim clojure static
-let g:clojure_align_multiline_strings = 1
+let g:clojure_align_multiline_strings = 0
 " Set *.cljs files to the clojure filetype
 
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
