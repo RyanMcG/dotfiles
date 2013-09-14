@@ -1,6 +1,6 @@
 {:user {:dependencies [[clj-stacktrace "0.2.5"]
-                       [org.clojure/tools.trace "0.7.5"]
-                       [org.clojure/tools.namespace "0.2.3"]
+                       [org.clojure/tools.trace "0.7.6"]
+                       [org.clojure/tools.namespace "0.2.4"]
                        [redl "0.1.0"]
                        [speclj-tmux "1.0.0"]
                        [spyscope "0.1.3"]
