@@ -8,6 +8,7 @@
         :plugins [[lein-difftest "1.3.7"]
                   [lein-exec "0.3.0"]
                   [org.bodil/lein-noderepl "0.1.10"]
+                  [quickie "0.2.1"]
                   [lein-clojars "0.9.1"]
                   [lein-pprint "1.1.1"]
                   [lein-ring "0.8.0"]
