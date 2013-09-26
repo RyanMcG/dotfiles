@@ -10,6 +10,6 @@ udev-notify &
 xset m 5 10 &
 xset b off &
 skippy-xd &
-myredhsift &
+myredshift &
 mycompton &
 nitrogen --restore   #Restores wallpaper
