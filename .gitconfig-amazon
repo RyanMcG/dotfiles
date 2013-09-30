@@ -24,6 +24,7 @@
 	g = grep -n
 	l = log --decorate --graph
 	lf = log --graph --pretty=epic-friend
+	lcr = log --pretty=cr
 	le = log --graph --pretty=epic-exact
 	lng = log --decorate
 	lfng = log --pretty=epic-friend
@@ -63,6 +64,7 @@
 	cmd = "gvim -f $MERGED -c 'Gdiff'"
 	trustExitCode = true
 [pretty]
+	cr = "commit: %H\n\n%B\n"
 	epic-exact = %C(yellow)%h%Cred %ci%Creset%Creset%C(bold red) ~%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%C(bold green)%d%Creset
 	epic-friend = %C(yellow)%h%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%Cred %ar%C(bold green)%d%Creset
 [mergetool]
