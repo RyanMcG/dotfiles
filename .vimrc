@@ -37,7 +37,6 @@ Bundle 'Lokaltog/vim-powerline'
 
 "Testing
 Bundle 'chrismetcalf/vim-yankring'
-Bundle 'Lokaltog/vim-easymotion'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'mileszs/ack.vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
@@ -67,6 +66,7 @@ Bundle "RyanMcG/vim-autornu"
 Bundle "amiorin/vim-fenced-code-blocks"
 Bundle "sjl/vitality.vim"
 Bundle 'tpope/vim-unimpaired'
+Bundle 'justinmk/vim-sneak'
 
 
 " Colorschemes
