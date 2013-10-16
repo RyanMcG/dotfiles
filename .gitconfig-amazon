@@ -30,7 +30,7 @@
 	lfng = log --pretty=epic-friend
 	leng = log --pretty=epic-exact
 	l1 = log --graph --pretty=epic-exact -1
-	lt = log --graph --pretty=epic-friend -10
+	lt = log --graph --pretty=epic-friend -10 --first-parent
 	p = pull
 	pr = pull --rebase
 	s = status
