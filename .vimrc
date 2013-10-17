@@ -291,18 +291,13 @@ set smartcase
 "set splitbelow "Makes MiniBufExplorer appear at the bottom
 "set splitright
 set title
-"let loaded_matchparen = 0 "Uncomment to turn off
+" let loaded_matchparen = 0 "Uncomment to turn off
 set showmatch
 
 "Completeion in command mode
 set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,.DS_Store,*.aux,*.out,*.toc
 set wildmenu
 set wildmode=list:longest,full
-
-"Foldiness
-set foldenable
-set foldlevel=99 " Basically don't fold stuff
-set foldmethod=syntax
 
 " Set omnifunc to syntax completion
 set omnifunc=syntaxcomplete@Complete
