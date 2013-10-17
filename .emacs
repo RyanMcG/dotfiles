@@ -1,3 +1,8 @@
+;; Always start an emacs server by default
+(require 'server)
+(unless (server-running-p)
+  (server-start))
+
 ;; Setup marmalade and melpa
 (require 'package)
 (add-to-list 'package-archives
