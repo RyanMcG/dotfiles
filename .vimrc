@@ -144,21 +144,8 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-bundler'
-"Bundle 'astashov/vim-ruby-debugger'
 Bundle 'tpope/vim-endwise'
 Bundle 'danchoi/ri.vim'
-
-"Removed
-"Bundle 'ervandew/supertab'
-"Bundle 'Raimondi/delimitMate'
-"Bundle 'fholgado/minibufexpl.vim'
-"Bundle 'vim-scripts/AutoComplPop'
-"Bundle 'jonyamo/dbext.vim'
-"Bundle 'sjl/splice.vim'
-"Bundle 'benmills/vimux'
-"Bundle 'tomtom/quickfixsigns_vim'
-"Bundle 'Valloric/YouCompleteMe'
-"Bundle 'vim-scripts/ZoomWin'
 
 " vim7[34] files should be first
 set runtimepath-=/usr/share/vim/vim74
