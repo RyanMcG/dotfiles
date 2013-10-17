@@ -383,22 +383,6 @@ nmap <leader>qo :copen<CR>
 nmap <leader>lc :lclose<CR>
 nmap <leader>lo :lopen<CR>
 
-" Next in quickfix list
-nmap ]e :cnext<CR>
-nmap [e :cprev<CR>
-
-" Next in location list
-nmap ]l :lnext<CR>
-nmap [l :lprev<CR>
-
-" Next Tab
-nmap ]t :tabnext<CR>
-nmap [t :tabprev<CR>
-
-" Next Tab
-nmap ]b :bnext<CR>
-nmap [b :bprevious<CR>
-
 "Tabularize
 if exists('g:tabular_loaded')
   AddTabularPattern! symbols         / :/l0
