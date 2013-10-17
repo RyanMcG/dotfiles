@@ -495,8 +495,7 @@ let g:ipy_completefunc = 'local'
 "Ruby
 let ruby_operators = 1
 let ruby_space_errors = 1
-let ruby_fold = 1
-let ruby_no_comment_fold = 1
+let ruby_no_expensive = 1
 
 "Configure Eclim
 let g:EclimSignLevel = 0
