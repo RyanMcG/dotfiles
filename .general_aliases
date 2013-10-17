@@ -58,6 +58,7 @@ alias rlf="cd; cd -"
 alias xkcdpwd="shuf -n4 /usr/share/dict/words"
 alias xclipb="xclip -selection clipboard"
 alias kmosh="mosh --ssh=\"ssh -o GSSAPITrustDns=no\""
+alias emc="emacsclient"
 # Custom Functions
 wiki() {
     dig +short txt $1.wp.dg.cx
