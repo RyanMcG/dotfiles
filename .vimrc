@@ -318,6 +318,12 @@ vnoremap > >gv
 " Plugin Config
 "
 
+" sneak
+nmap <C-S> <Plug>SneakForward
+nmap <M-S> <Plug>SneakBackward
+xmap <C-S> <Plug>VSneakForward
+xmap <M-S> <Plug>VSneakBackward
+
 " minibufexpl
 "let g:miniBufExplVSplit = 25
 "let g:miniBufExplorerMoreThanOne = 0
