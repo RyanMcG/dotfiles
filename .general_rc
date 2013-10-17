@@ -38,6 +38,10 @@ elif [[ $NODENAME == "ua41f726d71fb51c1f61d" ]]; then
 	export PROMPT_COLOR=magenta
 fi
 
+if [[ $(uname) == "Darwin" ]]; then
+	export PATH=/Applications/Emacs.app/Contents/MacOS/bin:$PATH
+fi
+
 # Autossh fun
 export MY_AUTOSSH_PORT=29011
 export MY_AUTOSSH_PORT=$(expr $MY_AUTOSSH_PORT + $(pgrep -u $USER -x autossh | wc -l))
