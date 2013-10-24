@@ -22,6 +22,7 @@
         rainbow-delimiters
         color-theme-solarized
         nlinum
+        git-gutter-fringe
         smartparens
         evil))
 
@@ -55,6 +56,10 @@
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'nrepl-mode-hook 'ac-nrepl-setup)
 (add-hook 'nrepl-interaction-mode-hook 'ac-nrepl-setup)
+
+(require 'git-gutter-fringe)
+(setq git-gutter-fr:side 'right-fringe)
+(git-gutter-mode 1)
 
 (require 'smartparens-config)
 (add-hook 'nrepl-repl-mode-hook 'smartparens-strict-mode)
