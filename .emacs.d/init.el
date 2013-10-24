@@ -44,7 +44,8 @@
 ;; Avoid annoying toolbar and menubar
 (when window-system
   (tool-bar-mode -1)
-  (menu-bar-mode -1))
+  (menu-bar-mode -1)
+  (scroll-bar-mode -1))
 
 ;; Do not show special buffers
 (setq nrepl-hide-special-buffers t)
