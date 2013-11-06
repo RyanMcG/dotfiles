@@ -33,6 +33,7 @@
 	lt = log --graph --pretty=epic-friend -10 --first-parent
 	p = pull
 	pr = pull --rebase
+	rp = rebase -p
 	s = status
 	sl = stash list --pretty=epic-exact -1
 	sn = show --stat --decorate
