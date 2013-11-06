@@ -9,6 +9,11 @@ export HISTCONTROL=ignoredups
 export HISTCONTROL=ignoreboth
 export EDITOR="vim"
 export VISUAL=$EDITOR
+
+if [[ $(uname) == "Darwin" ]]; then
+	export PATH=/Applications/Emacs.app/Contents/MacOS/bin:$PATH
+fi
+
 export PATH=$HOME/bin:$HOME/repo/clojurescript/bin:/usr/share/eclipse:/opt/maven/bin:/opt/android-sdk/platform-tools:$HOME/.cabal/bin:$HOME/bin/node/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/.rvm/bin:$HOME/node_modules/.bin:$PATH
 export CLASSPATH=.:src/:bin/
 export PYTHONDOCS=/usr/share/doc/python2/html/
@@ -36,10 +41,6 @@ elif [[ $NODENAME == "facio-eng-air-1" ]]; then
 	export PROMPT_COLOR=cyan
 elif [[ $NODENAME == "ua41f726d71fb51c1f61d" ]]; then
 	export PROMPT_COLOR=magenta
-fi
-
-if [[ $(uname) == "Darwin" ]]; then
-	export PATH=/Applications/Emacs.app/Contents/MacOS/bin:$PATH
 fi
 
 # Autossh fun
