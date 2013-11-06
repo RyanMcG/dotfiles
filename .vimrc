@@ -66,7 +66,7 @@ Bundle "RyanMcG/vim-autornu"
 Bundle "amiorin/vim-fenced-code-blocks"
 Bundle "sjl/vitality.vim"
 Bundle 'tpope/vim-unimpaired'
-" Bundle 'justinmk/vim-sneak'
+Bundle 'justinmk/vim-sneak'
 
 
 " Colorschemes
