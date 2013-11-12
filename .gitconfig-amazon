@@ -35,7 +35,7 @@
 	pr = pull --rebase
 	rp = rebase -p
 	s = status
-	sl = stash list --pretty=epic-exact -1
+	sl = stash list --pretty=epic-exact
 	sn = show --stat --decorate
 	rl = reflog --decorate
 	rs = remote show
