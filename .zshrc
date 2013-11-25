@@ -72,6 +72,8 @@ bindkey "^R" history-incremental-search-backward
 
 source $ZSH/oh-my-zsh.sh
 
+bindkey -M vicmd v edit-command-line
+
 # Turn off ZSH autocorrection
 unsetopt correct_all
 
