@@ -8,3 +8,6 @@ nunmap <p
 nunmap <P
 nunmap >p
 nunmap >P
+
+" Mapping for slamhound
+nnoremap <LocalLeader>sh :Slamhound<CR>
