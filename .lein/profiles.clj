@@ -4,7 +4,7 @@
                        [redl "0.1.0"]
                        [speclj-tmux "1.0.0"]
                        [spyscope "0.1.3"]
-                       [slamhound "1.3.3"]]
+                       [slamhound "1.5.0"]]
         :plugins [[lein-difftest "1.3.7"]
                   [lein-exec "0.3.0"]
                   [org.bodil/lein-noderepl "0.1.10"]
