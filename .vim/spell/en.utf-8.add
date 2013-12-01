@@ -100,3 +100,6 @@ edn
 clj
 v8
 BTC
+plugable
+parsable
+nREPL
