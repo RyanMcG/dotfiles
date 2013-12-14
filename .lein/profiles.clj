@@ -7,6 +7,7 @@
                        [slamhound "1.5.0"]]
         :plugins [[lein-difftest "1.3.7"]
                   [lein-exec "0.3.0"]
+                  [lein-incise "0.1.0-SNAPSHOT"]
                   [org.bodil/lein-noderepl "0.1.10"]
                   [quickie "0.2.1"]
                   [lein-kibit "0.0.8"]
