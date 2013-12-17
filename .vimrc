@@ -376,9 +376,9 @@ inoremap <C-space> <Plug>snipMateNextOrTrigger
 snoremap <C-space> <Plug>snipMateNextOrTrigger
 
 "Ack
-nmap <leader>a/ :Ack!<space>
-nmap <leader>a* :Ack! -w <C-R><C-W><space>
-nmap <leader>aa :AckAdd<space>
+nnoremap <leader>a/ :Ack!<space>
+nnoremap <leader>a* :Ack! -w <C-R><C-W><space>
+nnoremap <leader>aa :AckAdd<space>
 
 " Open and close the location and quickfix list
 nmap <leader>qc :cclose<CR>
@@ -519,8 +519,8 @@ set statusline+=\ %P
 
 "Some mappin'
 "Easily edit and source vim
-nmap <silent> <leader>ev :e $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
+nnoremap <silent> <leader>ev :e $MYVIMRC<CR>
+nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
 
 " Expand %% to the directory of the current buffer in command mode
 cnoremap %% <C-R>=expand('%:h').'/'<CR>
@@ -538,7 +538,7 @@ cmap w!! w !sudo tee % >/dev/null
 set pastetoggle=<F12>
 
 " Retag with ctags
-map <Leader>ct :!ctags *<CR><CR>
+noremap <Leader>ct :!ctags *<CR><CR>
 
 "
 " Some Custom functions
