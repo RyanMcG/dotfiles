@@ -68,7 +68,6 @@ Bundle "sjl/vitality.vim"
 Bundle 'tpope/vim-unimpaired'
 Bundle 'justinmk/vim-sneak'
 Bundle 'tommcdo/vim-lion'
-Bundle 'RyanMcG/vim-swapnumbers'
 
 " Colorschemes
 Bundle 'altercation/vim-colors-solarized'
