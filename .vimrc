@@ -32,8 +32,6 @@ Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
-" Bundle 'bling/vim-airline'
-" Bundle 'bling/vim-bufferline'
 
 "Testing
 Bundle 'chrismetcalf/vim-yankring'
@@ -68,6 +66,7 @@ Bundle "sjl/vitality.vim"
 Bundle 'tpope/vim-unimpaired'
 Bundle 'justinmk/vim-sneak'
 Bundle 'tommcdo/vim-lion'
+Bundle 'tpope/vim-vinegar'
 
 " Colorschemes
 Bundle 'altercation/vim-colors-solarized'
