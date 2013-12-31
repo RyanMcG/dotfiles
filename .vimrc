@@ -94,7 +94,8 @@ Bundle 'derekwyatt/vim-sbt'
 "Bundle 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
 
 "Clojure
-Bundle 'RyanMcG/paredit.vim'
+Bundle 'guns/vim-sexp'
+Bundle 'tpope/vim-sexp-mappings-for-regular-people'
 Bundle 'guns/vim-clojure-static'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-classpath'
