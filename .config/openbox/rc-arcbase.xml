@@ -330,7 +330,7 @@
         <command>dropbox stop</command>
       </action>
     </keybind>
-    <keybind key="W-1">
+    <keybind key="W-!">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -497,14 +497,9 @@
         <command>urxvt -e ncmpcpp</command>
       </action>
     </keybind>
-    <keybind key="W-2">
+    <keybind key="W-@">
       <action name="Execute">
-        <command>urxvt -e ncmpcpp</command>
-      </action>
-    </keybind>
-    <keybind key="C-W-2">
-      <action name="Execute">
-        <command>urxvt -name urxvt-bg -e ncmpcpp</command>
+        <command>urxvt -name urxvt-bg</command>
       </action>
     </keybind>
     <keybind key="XF86AudioNext">
