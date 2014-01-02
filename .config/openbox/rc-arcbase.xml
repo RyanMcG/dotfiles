@@ -330,7 +330,7 @@
         <command>dropbox stop</command>
       </action>
     </keybind>
-    <keybind key="W-!">
+    <keybind key="W-1">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -497,7 +497,7 @@
         <command>urxvt -e ncmpcpp</command>
       </action>
     </keybind>
-    <keybind key="W-@">
+    <keybind key="W-2">
       <action name="Execute">
         <command>urxvt -name urxvt-bg</command>
       </action>
