@@ -3,7 +3,7 @@
                        [org.clojure/tools.namespace "0.2.4"]
                        [redl "0.1.0"]
                        [speclj-tmux "1.0.0"]
-                       [spyscope "0.1.3"]
+                       [spyscope "0.1.4"]
                        [slamhound "1.5.0"]]
         :plugins [[lein-difftest "1.3.7"]
                   [lein-exec "0.3.0"]
