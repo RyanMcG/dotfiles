@@ -437,6 +437,7 @@ let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
 "NERDTree
 nnoremap <silent> <F7> :NERDTreeToggle<CR>
+let NERDTreeHijackNetrw = 0
 
 "Tagbar
 nnoremap <silent> <F8> :TagbarToggle<CR>
