@@ -39,28 +39,28 @@ git
 archlinux
 #nyan
 lein
-heroku
+# heroku
 #rbenv
 #bundler
 #ruby
 #rails
-rails3
+# rails3
 vi-mode
 #vundle
 #python
-pythonbrew
+# pythonbrew
 #pip
 #virtualenvwrapper
 #github
 #gem
 #cap
-battery
+# battery
 autojump
-rake
+# rake
 #node
 #npm
-aws
-android
+# aws
+# android
 )
 
 
