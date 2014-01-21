@@ -156,8 +156,7 @@ set runtimepath^=/usr/share/vim/vim73
 
 set runtimepath-=~/.vim
 set runtimepath^=~/.vim
-set runtimepath-=~/.vim/bundle/eclim
-set runtimepath+=~/.vim/bundle/eclim
+set runtimepath+=~/.vim/bundle/vim-eclim
 
 " Make sure my after is really at the end.
 set runtimepath-=~/.vim/after/
