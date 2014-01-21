@@ -37,3 +37,4 @@ git-fyncy.log
 pom.xml.asc
 .nrepl-port
 hs_err_*.log
+eclipse-bin/
