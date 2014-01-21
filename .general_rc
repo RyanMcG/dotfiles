@@ -27,7 +27,7 @@ else
 fi
 
 #Custom Var to enable composite manager
-export NODENAME=$(hostname -s)
+export NODENAME=$(hostname)
 
 if [[ $NODENAME == "arcbase" ]]; then
 	export PROMPT_COLOR=blue
