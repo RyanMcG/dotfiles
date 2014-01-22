@@ -38,3 +38,4 @@ pom.xml.asc
 .nrepl-port
 hs_err_*.log
 eclipse-bin/
+.repl/
