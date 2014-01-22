@@ -13,6 +13,7 @@
                   [lein-kibit "0.0.8"]
                   [lein-clojars "0.9.1"]
                   [lein-pprint "1.1.1"]
+                  [com.cemerick/austin "0.1.3"]
                   [lein-ring "0.8.0"]
                   [lein-cljsbuild "0.3.2"]
                   [lein-deps-tree "0.1.2"]
