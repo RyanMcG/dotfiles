@@ -16,3 +16,5 @@ coffee=.coffee
 coverage
 --ignore-dir
 doc
+--ignore-dir
+out
