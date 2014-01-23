@@ -253,11 +253,6 @@
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
-    <keybind key="W-b">
-      <action name="Execute">
-        <command>mybtconnect-keyboard</command>
-      </action>
-    </keybind>
     <keybind key="W-x">
       <action name="Execute">
         <command>xmodmap ~/.Xmodmap</command>
@@ -337,24 +332,6 @@
           <name>Terminal</name>
         </startupnotify>
         <command>urxvt</command>
-      </action>
-    </keybind>
-    <keybind key="A-F1">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Terminal</name>
-        </startupnotify>
-        <command>urxvt</command>
-      </action>
-    </keybind>
-    <keybind key="A-F3">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>GVIM</name>
-        </startupnotify>
-        <command>gvim</command>
       </action>
     </keybind>
     <keybind key="C-W-d">
@@ -443,11 +420,6 @@
     <keybind key="Print">
       <action name="Execute">
         <command>scrot -q 100 -e 'mv $f ~/Pictures/Screenshots/'</command>
-      </action>
-    </keybind>
-    <keybind key="A-Print">
-      <action name="Execute">
-        <command>scrot -q 100 -se 'mv $f ~/Pictures/Screenshots/'</command>
       </action>
     </keybind>
     <keybind key="A-Print">
