@@ -45,7 +45,7 @@ lein
 #ruby
 #rails
 # rails3
-vi-mode
+# vi-mode
 #vundle
 #python
 # pythonbrew
@@ -71,6 +71,9 @@ fi
 bindkey "^R" history-incremental-search-backward
 
 source $ZSH/oh-my-zsh.sh
+
+# Vim mode
+bindkey -v
 
 bindkey -M vicmd v edit-command-line
 
