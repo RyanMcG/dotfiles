@@ -18,3 +18,5 @@ coverage
 doc
 --ignore-dir
 out
+--ignore-file
+is:tags
