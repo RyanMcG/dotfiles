@@ -32,6 +32,7 @@ javadoc*
 *.iml
 /transcript.txt
 .lein-repl-*
+.lein-failures
 /build
 git-fyncy.log
 pom.xml.asc
