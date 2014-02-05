@@ -311,8 +311,8 @@ set showbreak=↪
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
 " Reselect visual block after indent/outdent
-vnoremap < <gv
-vnoremap > >gv
+" vnoremap < <gv
+" vnoremap > >gv
 
 "
 " Plugin Config
@@ -399,6 +399,12 @@ map <Leader>b :Tabularize<space>
 " QFS or GitGutter
 nnoremap <leader>gg :GitGutterToggle<CR>
 let g:gitgutter_sign_modified = 'Δ'
+
+nmap [h <Plug>GitGutterPrevHunk
+nmap ]h <Plug>GitGutterNextHunk
+nmap <Leader>hs <Plug>GitGutterStageHunk
+nmap <Leader>hr <Plug>GitGutterRevertHunk
+
 let g:gitgutter_sign_modified_removed = 'Δ_'
 "let g:gitgutter_diff_args = '-w'
 highlight! link GitGutterAdd GitGutterAddLine
