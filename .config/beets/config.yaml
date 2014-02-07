@@ -4,12 +4,11 @@ import:
   write: yes
 log: ~/.config/beets/import.log
 paths:
-  default: $albumartist/$album%aunique{}/%if{$disc,$disc -}$track. $artist $title
+  default: $albumartist/$album%aunique{}/%if{$disc,$disc-}$track. $artist $title
   singleton: Non-Album/$artist/$artist - $title
   comp: Compilations/$album%aunique{}/$track. $artist - $title
 
-plugins:
-  - mpdupdate
+plugins: mpdupdate duplicates
 
 mpd:
   host: localhost
