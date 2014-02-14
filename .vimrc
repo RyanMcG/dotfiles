@@ -67,6 +67,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'justinmk/vim-sneak'
 Bundle 'tommcdo/vim-lion'
 Bundle 'tpope/vim-vinegar'
+Bundle 'tpope/vim-jdaddy'
 
 " Colorschemes
 Bundle 'altercation/vim-colors-solarized'
