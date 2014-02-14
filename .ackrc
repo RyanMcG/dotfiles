@@ -20,3 +20,5 @@ doc
 out
 --ignore-file
 is:tags
+--ignore-dir
+target
