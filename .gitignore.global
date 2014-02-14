@@ -40,3 +40,4 @@ pom.xml.asc
 hs_err_*.log
 eclipse-bin/
 .repl/
+/node_modules/
