@@ -29,16 +29,19 @@
 	lfng = log --pretty=epic-friend
 	leng = log --pretty=epic-exact
 	l1 = log --graph --pretty=epic-exact -1
-	lt = log --graph --pretty=epic-friend -10
+	lt = log --graph --pretty=epic-friend -10 --first-parent
 	p = pull
 	pr = pull --rebase
+	rp = rebase -p
 	s = status
-	sl = stash list --pretty=epic-exact -1
+	sl = stash list --pretty=epic-exact
 	sn = show --stat --decorate
 	rl = reflog --decorate
 	rs = remote show
 	r = reset
 	rp = reset -p
+	ri = rebase -i
+	rilt = rebase -i HEAD~10
 	wc = whatchanged --decorate --graph
 [core]
 	pager = less -FXR
@@ -67,3 +70,5 @@
 	epic-friend = %C(yellow)%h%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%Cred %ar%C(bold green)%d%Creset
 [mergetool]
 	keepBackup = false
+[receive]
+	denyCurrentBranch = warn

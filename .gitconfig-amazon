@@ -4,7 +4,7 @@
 [color]
 	ui = auto
 [merge]
-	tool = vdiff
+	tool = gdiff
 [alias]
 	a = add
 	ai = add -i
@@ -63,7 +63,7 @@
 [mergetool "splice"]
 	cmd = "gvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
 	trustExitCode = true
-[mergetool "vdiff"]
+[mergetool "gdiff"]
 	cmd = "gvim -f $MERGED -c 'Gdiff'"
 	trustExitCode = true
 [pretty]
