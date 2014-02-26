@@ -9,6 +9,6 @@
 # exec startxfce4
 # ...or the Window Manager of your choice
 export DE="xfce"
-#exec i3
-#exec startxfce4
-exec openbox-session
+exec i3
+# exec startxfce4
+# exec openbox-session
