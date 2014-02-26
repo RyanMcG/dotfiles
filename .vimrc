@@ -210,7 +210,6 @@ elseif &t_Co >= 256
   let g:seoul256_background = 234
   colorscheme seoul256
 
-  set cursorline
   highlight ColorColumn ctermbg=235
 
   " Make highlighting better for git gutter
