@@ -60,6 +60,7 @@ alias xkcdpwd="shuf -n4 /usr/share/dict/words"
 alias xclipb="xclip -selection clipboard"
 alias kmosh="mosh --ssh=\"ssh -o GSSAPITrustDns=no\""
 alias emc="emacsclient"
+alias sxev="xev | grep -A2 --line-buffered '^KeyRelease' | sed -n '/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p'"
 # Custom Functions
 wiki() {
     dig +short txt $1.wp.dg.cx
