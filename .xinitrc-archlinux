@@ -9,6 +9,8 @@
 # exec startxfce4
 # ...or the Window Manager of your choice
 export DE="xfce"
+export PATH=$HOME/bin:$PATH
+export MPD_HOST=instrument
 exec i3
 # exec startxfce4
 # exec openbox-session
