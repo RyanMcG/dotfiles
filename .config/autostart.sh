@@ -3,13 +3,10 @@
 
 unclutter -idle 2 &
 pnmixer &
-netmon &
-batti &
 xmodmap ~/.Xmodmap &
 udev-notify &
 xset m 5 10 &
 xset b off &
-skippy-xd &
 myredshift &
-mycompton &
+xss-lock slock &
 nitrogen --restore   #Restores wallpaper
