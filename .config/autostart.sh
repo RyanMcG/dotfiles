@@ -9,4 +9,5 @@ xset m 5 10 &
 xset b off &
 myredshift &
 xss-lock slock &
+dropbox start &
 nitrogen --restore   #Restores wallpaper
