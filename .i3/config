@@ -143,7 +143,7 @@ bar {
 }
 
 ## Startup
-exec ~/.config/autostart.sh
+exec --no-startup-id ~/.config/autostart.sh
 
 ## Custom mappings
 
@@ -155,31 +155,31 @@ bindsym $mod+space exec --no-startup-id center_dmenu
 
 # Printing
 bindsym           Print exec --no-startup-id "scrot -q 100 -e 'mv $f ~/Pictures/Screenshots/'"
-bindsym      $alt+Print exec "scrot -q 100 -se 'mv $f ~/Pictures/Screenshots/'"
+bindsym      $alt+Print exec --no-startup-id "scrot -q 100 -se 'mv $f ~/Pictures/Screenshots/'"
 # Does not work:
 # bindsym $mod+$alt+Print exec "cloudunapp ~/Pictures/Screenshots/CloudApp"
 
 # Media
-bindsym      XF86AudioNext        exec mpc next
-bindsym $mod+XF86AudioRaiseVolume exec mpc next
-bindsym      XF86AudioPrev        exec mpc prev
-bindsym $mod+XF86AudioLowerVolume exec mpc prev
-bindsym      XF86AudioPlay        exec mpc toggle
+bindsym      XF86AudioNext        exec --no-startup-id mpc next
+bindsym $mod+XF86AudioRaiseVolume exec --no-startup-id mpc next
+bindsym      XF86AudioPrev        exec --no-startup-id mpc prev
+bindsym $mod+XF86AudioLowerVolume exec --no-startup-id mpc prev
+bindsym      XF86AudioPlay        exec --no-startup-id mpc toggle
 
-bindsym      XF86AudioMute        exec pamixer --toggle-mute
-bindsym      XF86AudioLowerVolume exec pamixer --decrease 3
-bindsym      XF86AudioRaiseVolume exec pamixer --increase 3
-bindsym      XF86AudioMedia       exec pavucontrol
+bindsym      XF86AudioMute        exec --no-startup-id pamixer --toggle-mute
+bindsym      XF86AudioLowerVolume exec --no-startup-id pamixer --decrease 3
+bindsym      XF86AudioRaiseVolume exec --no-startup-id pamixer --increase 3
+bindsym      XF86AudioMedia       exec --no-startup-id pavucontrol
 
 # Screens
-bindsym $mod+XF86Display exec ~/.screenlayout/vga-top-margin-right.sh
-bindsym $mod+XF86Display exec ~/.screenlayout/eDP1-only.sh
+bindsym       $mod+XF86Display exec --no-startup-id ~/.screenlayout/vga-top-margin-right.sh
+bindsym $mod+Shift+XF86Display exec --no-startup-id ~/.screenlayout/eDP1-only.sh
 
 # Brightness
 # bindsym Scroll_Lock exec asus-screen-brightness down
 # bindsym Pause       exec asus-screen-brightness up
-bindsym $mod+F5     exec asus-screen-brightness down
-bindsym $mod+F6     exec asus-screen-brightness up
+bindsym $mod+F5     exec --no-startup-id asus-screen-brightness down
+bindsym $mod+F6     exec --no-startup-id asus-screen-brightness up
 
 # Misc
-bindsym $mod+Shift+x exec "xmodmap ~/.Xmodmap"
+bindsym $mod+Shift+x exec --no-startup-id "xmodmap ~/.Xmodmap"
