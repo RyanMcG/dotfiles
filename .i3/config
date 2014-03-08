@@ -142,6 +142,12 @@ bar {
         status_command i3status
 }
 
+## Displays
+
+workspace 1 VGA1
+workspace 1 HDMI1
+workspace 2 eDP1
+
 ## Startup
 exec --no-startup-id ~/.config/autostart.sh
 
@@ -171,7 +177,7 @@ bindsym      XF86AudioLowerVolume exec --no-startup-id pamixer --decrease 3
 bindsym      XF86AudioRaiseVolume exec --no-startup-id pamixer --increase 3
 bindsym      XF86AudioMedia       exec --no-startup-id pavucontrol
 
-# Screens
+# Screen switching
 bindsym       $mod+XF86Display exec --no-startup-id ~/.screenlayout/vga-top-margin-right.sh
 bindsym $mod+Shift+XF86Display exec --no-startup-id ~/.screenlayout/eDP1-only.sh
 
