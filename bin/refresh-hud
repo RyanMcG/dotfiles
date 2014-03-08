@@ -1,12 +1,5 @@
-#!/bin/sh
+#!/bin/bash
 nitrogen --restore &
-pkill redshift
-pkill pnmixer
-pkill tint2
-pkill skippy-xd
-pkill -f netmon
-netmon &
-myredshift &
-tint2 &
-pnmixer &
-skippy-xd &
+xmodmap ~/.Xmodmap
+# pkill redshift
+# myredshift &
