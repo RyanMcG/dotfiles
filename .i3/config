@@ -142,12 +142,6 @@ bar {
         status_command i3status
 }
 
-## Displays
-
-workspace 1 VGA1
-workspace 1 HDMI1
-workspace 2 eDP1
-
 ## Startup
 exec --no-startup-id ~/.config/autostart.sh
 
