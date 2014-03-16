@@ -41,7 +41,7 @@ BMAG="\[\033[45m\]" # background magenta
 BCYN="\[\033[46m\]" # background cyan
 BWHT="\[\033[47m\]" # background white
 
-P_COLOR=$FBLK$BWHT
+P_COLOR=$FCYN
 
 if [ -f ~/.bash_prompt_color ]; then
 	. ~/.bash_prompt_color
@@ -57,8 +57,7 @@ parse_git_branch() {
 	fi
 }
 
-PS1="$P_COLOR$HC$RS$P_COLOR${debian_chroot:+($debian_chroot)}\u@\h:$RS$HC\w$RS $FGRN$HC\$(parse_git_branch)$RS
-$P_COLOR$HC\$$RS "
+PS1="$HC\w$RS $FGRN\$(parse_git_branch)$RS$P_COLOR\$$RS "
 
 unset color_prompt force_color_prompt
 
