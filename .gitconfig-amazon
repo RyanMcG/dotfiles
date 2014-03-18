@@ -41,8 +41,8 @@
 	rs = remote show
 	r = reset
 	rp = reset -p
-	ri = rebase -i
-	rilt = rebase -i HEAD~10
+	ri = rebase -i -p
+	rilt = rebase -i -p HEAD~10
 	wc = whatchanged --decorate --graph
 [core]
 	pager = less -FXR
