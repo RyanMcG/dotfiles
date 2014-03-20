@@ -47,6 +47,7 @@
 	pager = less -FXR
 	editor = gvim --nofork
 	excludesfile = ~/.gitignore.global
+	preloadindex = true
 [github]
 	user = RyanMcG
 [giggle]
