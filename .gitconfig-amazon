@@ -20,6 +20,7 @@
 	d = diff
 	dc = diff --cached
 	ds = diff --stat
+	dcw = diff --color-words
 	f = fetch
 	g = grep -n
 	l = log --decorate --graph
