@@ -66,6 +66,7 @@ Bundle "sjl/vitality.vim"
 Bundle 'tpope/vim-unimpaired'
 Bundle 'justinmk/vim-sneak'
 Bundle 'tommcdo/vim-lion'
+Bundle 'tpope/vim-projectionist'
 Bundle 'tpope/vim-vinegar'
 Bundle 'tpope/vim-jdaddy'
 
@@ -103,6 +104,7 @@ Bundle 'guns/vim-slamhound'
 "Bundle 'slimv.vim'
 Bundle 'jpalardy/vim-slime'
 Bundle 'dgrnbrg/vim-redl'
+Bundle 'tpope/vim-leiningen'
 
 "Markdown
 Bundle 'tpope/vim-markdown'
@@ -122,7 +124,7 @@ Bundle 'klen/python-mode'
 Bundle 'avakhov/vim-yaml'
 
 "HTML/CSS
-Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/emmet-vim'
 Bundle 'othree/html5.vim'
 Bundle 'tpope/vim-haml'
 
