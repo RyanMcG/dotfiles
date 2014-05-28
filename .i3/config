@@ -176,8 +176,8 @@ bindsym       $mod+XF86Display exec --no-startup-id ~/.screenlayout/vga-top-marg
 bindsym $mod+Shift+XF86Display exec --no-startup-id ~/.screenlayout/eDP1-only.sh
 
 # Brightness
-# bindsym Scroll_Lock exec asus-screen-brightness down
-# bindsym Pause       exec asus-screen-brightness up
+bindsym Scroll_Lock exec --no-startup-id asus-screen-brightness down
+bindsym Pause       exec --no-startup-id asus-screen-brightness up
 bindsym $mod+F5     exec --no-startup-id asus-screen-brightness down
 bindsym $mod+F6     exec --no-startup-id asus-screen-brightness up
 
