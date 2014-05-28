@@ -102,9 +102,9 @@ Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-fireplace'
 Bundle 'guns/vim-slamhound'
 "Bundle 'slimv.vim'
-Bundle 'jpalardy/vim-slime'
-Bundle 'dgrnbrg/vim-redl'
-Bundle 'tpope/vim-leiningen'
+" Bundle 'jpalardy/vim-slime'
+" Bundle 'dgrnbrg/vim-redl'
+" Bundle 'tpope/vim-leiningen'
 
 "Markdown
 Bundle 'tpope/vim-markdown'
@@ -367,9 +367,6 @@ let g:paredit_shortmaps = 1
 " Fireplace (Clojure)
 set viminfo+=! "Not actually a fireplace option, but presists cached cp
 nnoremap <silent><buffer> cpR :Require!<CR>
-
-"Slime
-let g:slime_target = "tmux"
 
 "Snipmate
 inoremap <C-space> <Plug>snipMateNextOrTrigger
