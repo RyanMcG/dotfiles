@@ -101,10 +101,10 @@ Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-fireplace'
 Bundle 'guns/vim-slamhound'
-"Bundle 'slimv.vim'
+" Bundle 'slimv.vim'
 " Bundle 'jpalardy/vim-slime'
 " Bundle 'dgrnbrg/vim-redl'
-" Bundle 'tpope/vim-leiningen'
+Bundle 'tpope/vim-leiningen'
 
 "Markdown
 Bundle 'tpope/vim-markdown'
