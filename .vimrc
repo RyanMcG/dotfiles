@@ -21,8 +21,6 @@ let g:vundle_default_git_proto = 'git'
 Bundle 'gmarik/vundle'
 
 "My bundles
-Bundle 'vim-scripts/The-NERD-tree'
-Bundle 'vim-scripts/The-NERD-Commenter'
 Bundle 'majutsushi/tagbar'
 Bundle 'ciaranm/detectindent'
 Bundle 'tpope/vim-fugitive'
@@ -367,6 +365,7 @@ let g:paredit_shortmaps = 1
 " Fireplace (Clojure)
 set viminfo+=! "Not actually a fireplace option, but presists cached cp
 nnoremap <silent><buffer> cpR :Require!<CR>
+let g:leiningen_no_auto_repl = 1
 
 "Snipmate
 inoremap <C-space> <Plug>snipMateNextOrTrigger
@@ -378,8 +377,8 @@ nnoremap <leader>a* :Ack! -w <C-R><C-W><space>
 nnoremap <leader>aa :AckAdd<space>
 
 " Open and close the location and quickfix list
-nmap <leader>qc :cclose<CR>
-nmap <leader>qo :copen<CR>
+nmap <leader>cc :cclose<CR>
+nmap <leader>co :copen<CR>
 nmap <leader>lc :lclose<CR>
 nmap <leader>lo :lopen<CR>
 
