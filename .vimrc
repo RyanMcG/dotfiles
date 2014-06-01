@@ -555,6 +555,8 @@ nnoremap <silent> <leader>ai	:AutoindentToggle<CR>
 
 nnoremap <silent> <leader>cd 	:lcd %:p:h<CR>:pwd<CR>
 
+command! -nargs=0 Mkdir echon '"'.expand("%:h").'/" made directory' | silent !mkdir -p %:h
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " INLINE VARIABLE (SKETCHY)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
