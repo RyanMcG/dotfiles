@@ -38,7 +38,6 @@ Bundle 'mileszs/ack.vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'garbas/vim-snipmate'
 Bundle 'scrooloose/snipmate-snippets'
-Bundle 'tsaleh/vim-align'
 Bundle 'tpope/vim-rsi'
 Bundle 'RyanMcG/vim-guifontzoom'
 Bundle 'tpope/vim-abolish'
@@ -135,7 +134,6 @@ Bundle 'jelera/vim-javascript-syntax'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'felixge/vim-nodejs-errorformat'
-Bundle 'godlygeek/tabular'
 Bundle 'wavded/vim-stylus'
 
 " J
@@ -381,18 +379,6 @@ nmap <leader>cc :cclose<CR>
 nmap <leader>co :copen<CR>
 nmap <leader>lc :lclose<CR>
 nmap <leader>lo :lopen<CR>
-
-"Tabularize
-if exists('g:tabular_loaded')
-  AddTabularPattern! symbols         / :/l0
-  AddTabularPattern! hash            /^[^>]*\zs=>/
-  AddTabularPattern! chunks          / \S\+/l0
-  AddTabularPattern! assignment      / = /l0
-  AddTabularPattern! comma           /^[^,]*,/l1
-  AddTabularPattern! colon           /:\zs /l0
-  AddTabularPattern! options_hashes  /:\w\+ =>/
-endif
-map <Leader>b :Tabularize<space>
 
 " QFS or GitGutter
 nnoremap <leader>gg :GitGutterToggle<CR>
