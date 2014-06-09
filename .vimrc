@@ -2,7 +2,7 @@
 
 let s:vimrc_head = expand('$HOME/.vimrc_head')
 if filereadable(s:vimrc_head)
-	exec ':source' . s:vimrc_head
+  exec ':source' . s:vimrc_head
 endif
 
 " Use Vim settings, rather than Vi settings (much better!).
@@ -165,13 +165,13 @@ set runtimepath+=~/.vim/after
 runtime macros/matchit.vim
 
 if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
+  set nobackup                " do not keep a backup file, use versions instead
 else
-  set backup		" keep a backup file
+  set backup                " keep a backup file
 endif
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set incsearch		" do incremental searching
+set ruler                " show the cursor position all the time
+set showcmd                " display incomplete commands
+set incsearch                " do incremental searching
 set backupdir=~/.vim/backups
 
 set printfont=Inconsolata\ 12
@@ -238,32 +238,38 @@ if has("autocmd")
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
-  au!
-  " Don't screw up folds when inserting text that might affect them, until
-  " leaving insert mode. Foldmethod is local to the window. Protect against
-  " screwing up folding when switching between windows.
-  autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
-  autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
+    au!
+    " Don't screw up folds when inserting text that might affect them, until
+    " leaving insert mode. Foldmethod is local to the window. Protect against
+    " screwing up folding when switching between windows.
+    autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
+    autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
 
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it when the position is invalid or when inside an event handler
-  " (happens when dropping a file on gvim).
-  " Also don't do it when the mark is in the first line, that is the default
-  " position when opening a file.
-  autocmd BufReadPost *
-    \ if line("'\"") > 1 && line("'\"") <= line("$") |
-    \   exe "normal! g`\"" |
-    \ endif
+    " When editing a file, always jump to the last known cursor position.
+    " Don't do it when the position is invalid or when inside an event handler
+    " (happens when dropping a file on gvim).
+    " Also don't do it when the mark is in the first line, that is the default
+    " position when opening a file.
+    autocmd BufReadPost *
+      \ if line("'\"") > 1 && line("'\"") <= line("$") |
+      \   exe "normal! g`\"" |
+      \ endif
 
   augroup END
 
   " Highlight trailing whitespace when not in insert-mode
   augroup trailing
-	  au!
-	  au InsertEnter * :set listchars-=trail:⌴
-	  au InsertLeave * :set listchars+=trail:⌴
+    au!
+    au InsertEnter * :set listchars-=trail:⌴
+    au InsertLeave * :set listchars+=trail:⌴
   augroup END
 
+  if exists("+omnifunc")
+    autocmd Filetype *
+      \ if &omnifunc == "" |
+      \         setlocal omnifunc=syntaxcomplete#Complete |
+      \ endif
+  endif
 endif " has("autocmd")
 
 " allow backspacing over everything in insert mode
@@ -296,9 +302,6 @@ set showmatch
 set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,.DS_Store,*.aux,*.out,*.toc
 set wildmenu
 set wildmode=list:longest,full
-
-" Set omnifunc to syntax completion
-set omnifunc=syntaxcomplete@Complete
 
 set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
 
@@ -342,7 +345,7 @@ let g:syntastic_enable_signs=1
 "let g:syntastic_auto_loc_list=1 " Default is 2
 let g:syntastic_stl_format = '[%E{E: %fe #%e}%B{, }%W{W: %fw #%w}]'
 "let g:syntastic_mode_map = { 'mode': 'active',
-			"\ 'passive_filetypes': ['haml', 'sass'] }
+"\ 'passive_filetypes': ['haml', 'sass'] }
 "let g:syntastic_quiet_warnings=1 "Breaks everything!
 nnoremap <silent> <leader>se :Errors<CR>
 
@@ -538,7 +541,7 @@ noremap <Leader>ct :!ctags *<CR><CR>
 " Only define it when not defined already.
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+        \ | wincmd p | diffthis
 endif
 
 function! AutoindentToggle(...)
@@ -551,9 +554,9 @@ function! AutoindentToggle(...)
   endif
 endfunction
 command! -bar -nargs=0 AutoindentToggle call AutoindentToggle()
-nnoremap <silent> <leader>ai	:AutoindentToggle<CR>
+nnoremap <silent> <leader>ai        :AutoindentToggle<CR>
 
-nnoremap <silent> <leader>cd 	:lcd %:p:h<CR>:pwd<CR>
+nnoremap <silent> <leader>cd         :lcd %:p:h<CR>:pwd<CR>
 
 command! -nargs=0 Mkdir echon '"'.expand("%:h").'/" made directory' | silent !mkdir -p %:h
 

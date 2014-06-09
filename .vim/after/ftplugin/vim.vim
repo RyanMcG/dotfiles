@@ -1,2 +1,2 @@
 " Vim script defaults
-set expandtab shiftwidth=4 softtabstop=4
+set expandtab tabstop=8 shiftwidth=2 softtabstop=2
