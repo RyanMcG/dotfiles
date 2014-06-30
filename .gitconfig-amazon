@@ -6,45 +6,50 @@
 [merge]
 	tool = gdiff
 [alias]
-	a = add
-	ai = add -i
-	ap = add -p
-	ae = add -e
-	b = branch
-	cm = commit -m
-	ca = commit -a
+	a    = add
+	ae   = add -e
+	ai   = add -i
+	ap   = add -p
+	b    = branch
+	ca   = commit -a
 	caar = commit -a --amend --reuse-message=HEAD
-	car = commit --amend --reuse-message=HEAD
-	cam = commit -am
-	co = checkout
-	d = diff
-	dc = diff --cached
-	ds = diff --stat
-	dcw = diff --color-words
-	f = fetch
-	g = grep -n
-	l = log --decorate --graph
-	lf = log --graph --pretty=epic-friend
-	lcr = log --pretty=cr
-	le = log --graph --pretty=epic-exact
-	lng = log --decorate
-	lfng = log --pretty=epic-friend
+	caf  = commit -a --fixup
+	cam  = commit -am
+	car  = commit --amend --reuse-message=HEAD
+	cf   = commit --fixup
+	cm   = commit -m
+	co   = checkout
+	d    = diff
+	dc   = diff --cached
+	dcw  = diff --color-words
+	ds   = diff --stat
+	f    = fetch
+	g    = grep -n
+	l    = log --decorate --graph
+	l1   = log --graph --pretty=epic-exact -1
+	lcr  = log --pretty=cr
+	lcri = log --pretty=cri
+	le   = log --graph --pretty=epic-exact
 	leng = log --pretty=epic-exact
-	l1 = log --graph --pretty=epic-exact -1
-	lt = log --graph --pretty=epic-friend -10 --first-parent
-	p = pull
-	pr = pull --rebase
-	rp = rebase -p
-	s = status
-	sl = stash list --pretty=epic-exact
-	sn = show --stat --decorate
-	rl = reflog --decorate
-	rs = remote show
-	r = reset
-	rp = reset -p
-	ri = rebase -i -p
-	rilt = rebase -i -p HEAD~10
-	wc = whatchanged --decorate --graph
+	lf   = log --graph --pretty=epic-friend
+	lfng = log --pretty=epic-friend
+	lng  = log --decorate
+	lt   = log --graph --pretty=epic-friend -10 --first-parent
+	m    = merge
+	mnf  = merge --no-ff
+	p    = pull
+	pr   = pull --rebase
+	r    = reset
+	ri   = rebase -i -p --autosquash
+	rilt = rebase -i -p --autosquash HEAD~10
+	rl   = reflog --decorate
+	rp   = rebase -p
+	rp   = reset -p
+	rs   = remote show
+	s    = status
+	sl   = stash list --pretty=epic-exact
+	sn   = show --stat --decorate
+	wc   = whatchanged --decorate --graph
 [core]
 	pager = less -FXR
 	editor = vim
@@ -70,6 +75,7 @@
 	trustExitCode = true
 [pretty]
 	cr = "commit: %H\n\n%B\n"
+	cri = "%h %ci ~ %s"
 	epic-exact = %C(yellow)%h%Cred %ci%Creset%Creset%C(bold red) ~%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%C(bold green)%d%Creset
 	epic-friend = %C(yellow)%h%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%Cred %ar%C(bold green)%d%Creset
 [mergetool]
