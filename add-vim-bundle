@@ -1,0 +1,7 @@
+#!/bin/bash
+
+REPO=$1
+PROJECT=`basename $REPO .git`
+
+cd `dirname $0`
+git submodule add $REPO .vim/bundle/$PROJECT
