@@ -59,6 +59,14 @@ set colorcolumn=80
 "Set our colorscheme
 if has("gui_running")
   colorscheme solarized
+  let g:powerline_config_overrides = {
+        \   'ext': {
+        \     'vim': {
+        \       'colorscheme': 'solarized'
+        \     }
+        \   }
+        \ }
+
   set noballooneval
   highlight Visual gui=NONE guifg=NONE guibg=#084250
   set cursorline
