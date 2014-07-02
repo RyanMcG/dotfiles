@@ -31,7 +31,7 @@ bind j select-pane -U
 bind k select-pane -D
 bind l select-pane -R
 
-set -g status-right '#(rainbarf --bg black --bright --no-bolt --no-battery)'
+set -g status-right '#(rainbarf --bright --no-battery)'
 
 set-option -g status-utf8 on
 
