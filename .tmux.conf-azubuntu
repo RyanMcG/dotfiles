@@ -1,0 +1,39 @@
+#Set default terminal to 256 colors
+set -g default-terminal "screen-256color"
+
+source "$HOME/repo/dotfiles/powerline/powerline/bindings/tmux/powerline.conf"
+
+set -g status-keys vi
+setw -g mode-keys vi
+
+# Add some nice copy and paste shortcuts.
+bind -t vi-copy v begin-selection
+bind -t vi-copy y copy-selection
+bind -t vi-copy V rectangle-toggle
+
+bind-key a send-prefix
+set-option -g prefix C-a
+bind-key C-a last-window
+set -g base-index 1
+set -s escape-time 0
+setw -g aggressive-resize on
+
+# Movement
+bind h select-pane -L
+bind j select-pane -U
+bind k select-pane -D
+bind l select-pane -R
+
+set -g status-right '#(rainbarf --bright --no-battery)'
+
+set-option -g status-utf8 on
+
+set -g history-limit 20000
+set-option -g set-titles on
+set-option -g set-titles-string '#T TMUX:#S.#I.#P #W' # window number,program name,active (or not)
+set-option -g status-interval 3
+
+set -g status-bg colour234
+
+# `+r reloads the configuration, handy
+bind r source-file ~/.tmux.conf
