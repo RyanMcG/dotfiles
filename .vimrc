@@ -8,144 +8,10 @@ endif
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
-" Make sure filetype is off for vundle
+" Make sure filetype is off for pathogen
 filetype off
-
-set runtimepath+=~/.vim/bundle/vundle
-call vundle#rc()
-
-let g:vundle_default_git_proto = 'git'
-
-
-"Make vundle manage vundle
-Bundle 'gmarik/vundle'
-
-"My bundles
-Bundle 'majutsushi/tagbar'
-Bundle 'ciaranm/detectindent'
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/syntastic'
-Bundle 'mattn/gist-vim'
-Bundle 'sjl/gundo.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'kien/ctrlp.vim'
-Bundle 'Lokaltog/vim-powerline'
-
-"Testing
-Bundle 'chrismetcalf/vim-yankring'
-Bundle 'bronson/vim-trailing-whitespace'
-Bundle 'mileszs/ack.vim'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'garbas/vim-snipmate'
-Bundle 'scrooloose/snipmate-snippets'
-Bundle 'tpope/vim-rsi'
-Bundle 'RyanMcG/vim-guifontzoom'
-Bundle 'tpope/vim-abolish'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-characterize'
-Bundle 'tpope/vim-dispatch'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'kana/vim-textobj-user'
-Bundle 'kana/vim-textobj-function'
-Bundle 'kana/vim-textobj-indent'
-Bundle 'kana/vim-textobj-underscore'
-Bundle 'kana/vim-textobj-syntax'
-Bundle 'RyanMcG/vim-textobj-dash'
-Bundle 'kana/vim-textobj-line'
-Bundle 'kana/vim-textobj-lastpat'
-Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'bps/vim-textobj-python'
-Bundle "RyanMcG/vim-autornu"
-Bundle "amiorin/vim-fenced-code-blocks"
-Bundle "sjl/vitality.vim"
-Bundle 'tpope/vim-unimpaired'
-Bundle 'justinmk/vim-sneak'
-Bundle 'tommcdo/vim-lion'
-Bundle 'tpope/vim-projectionist'
-Bundle 'tpope/vim-vinegar'
-Bundle 'tpope/vim-jdaddy'
-
-" Colorschemes
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'vim-scripts/xoria256.vim'
-Bundle 'twe4ked/vim-wombat256i'
-Bundle 'junegunn/seoul256.vim'
-
-"Languge specific
-
-" TCL
-
-Bundle 'tcl.vim'
-
-"Java
-"Bundle 'VictorDenisov/javacomplete'
-"Bundle 'vim-scripts/JavaImp.vim--Lee'
-
-" Scala
-Bundle 'derekwyatt/vim-scala'
-Bundle 'derekwyatt/vim-sbt'
-
-"Latex
-"Bundle 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
-
-"Clojure
-Bundle 'guns/vim-sexp'
-Bundle 'tpope/vim-sexp-mappings-for-regular-people'
-Bundle 'guns/vim-clojure-static'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'tpope/vim-classpath'
-Bundle 'tpope/vim-fireplace'
-Bundle 'guns/vim-slamhound'
-" Bundle 'slimv.vim'
-" Bundle 'jpalardy/vim-slime'
-" Bundle 'dgrnbrg/vim-redl'
-Bundle 'tpope/vim-leiningen'
-
-"Markdown
-Bundle 'tpope/vim-markdown'
-"Bundle 'hallison/vim-markdown'
-Bundle 'tangledhelix/vim-octopress'
-
-" Dot
-Bundle 'wannesm/wmgraphviz.vim'
-
-"Python
-Bundle 'ivanov/vim-ipython'
-Bundle 'vim-scripts/python.vim--Vasiliev.git'
-Bundle 'davidhalter/jedi-vim'
-Bundle 'klen/python-mode'
-
-" YAML
-Bundle 'avakhov/vim-yaml'
-
-"HTML/CSS
-Bundle 'mattn/emmet-vim'
-Bundle 'othree/html5.vim'
-Bundle 'tpope/vim-haml'
-
-" Less
-Bundle 'groenewege/vim-less'
-
-"Javascript
-Bundle 'pangloss/vim-javascript'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'felixge/vim-nodejs-errorformat'
-Bundle 'wavded/vim-stylus'
-
-" J
-Bundle 'RyanMcG/vim-j'
-
-"Ruby
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-rake'
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-endwise'
-Bundle 'danchoi/ri.vim'
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
 
 " vim7[34] files should be first
 set runtimepath-=/usr/share/vim/vim74
@@ -193,10 +59,6 @@ set colorcolumn=80
 "Set our colorscheme
 if has("gui_running")
   colorscheme solarized
-  let g:Powerline_symbols = 'fancy'
-  let g:Powerline_colorscheme = 'solarized256'
-  let g:airline_powerline_fonts = 1
-  let g:airline_theme='default'
   set noballooneval
   highlight Visual gui=NONE guifg=NONE guibg=#084250
   set cursorline
