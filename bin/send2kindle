@@ -1,0 +1,7 @@
+#!/bin/bash
+base=$(basename $1)
+filename="${base%.*}"
+
+echo "Subject: $filename
+To: $KINDLE_EMAIL" \
+	| sendmail -a $1 $KINDLE_EMAIL
