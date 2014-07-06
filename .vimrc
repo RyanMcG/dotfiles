@@ -78,12 +78,16 @@ elseif &t_Co >= 256
   let g:seoul256_background = 234
   colorscheme seoul256
 
+  let s:left_color = 16
+  highlight Visual ctermbg=23
   highlight ColorColumn ctermbg=235
+  highlight SignColumn ctermbg=235
+  highlight LineNr ctermbg=235
 
   " Make highlighting better for git gutter
-  highlight DiffAdd ctermfg=151 ctermbg=234
-  highlight DiffChange ctermfg=172 ctermbg=234
-  highlight DiffDelete ctermfg=160 ctermbg=234
+  highlight DiffAdd ctermfg=151 ctermbg=235
+  highlight DiffChange ctermfg=172 ctermbg=235
+  highlight DiffDelete ctermfg=160 ctermbg=235
 
   if &term == 'rxvt-unicode-256color'
     highlight Comment cterm=italic
