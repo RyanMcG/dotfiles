@@ -161,6 +161,10 @@ set number
 set hidden
 set history=1000
 set undolevels=1000
+set undoreload=10000
+set undofile
+set undodir=~/.vim/undo
+
 set scrolloff=6 sidescrolloff=12
 "Ignore case unless there's a capital
 set ignorecase
