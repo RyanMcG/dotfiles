@@ -1,7 +1,7 @@
 Xcursor.theme: Vanilla-DMZ
 !urxvt.font: xft:Dina:pixelsize=16:antialias=false
-urxvt.font: xft:Inconsolata for Powerline:size=10
-emacs.font: Inconsolata for Powerline-10
+urxvt.font: xft:Inconsolata for Powerline:size=9
+emacs.font: Inconsolata for Powerline-9
 !urxvt.font: xft:Dina:size=12:antialias=false
 !urxvt.font: xft:Anonymous Pro:prgba=vbgr:pixelsize=14.5
 !urxvt.font: xft:DejaVu Sans Mono:prgba=vbgr:pixelsize=13
