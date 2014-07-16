@@ -22,6 +22,9 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # chose a FreeType font, such as:
 # font pango:DejaVu Sans Mono 10
 
+new_window pixel 2
+hide_edge_borders vertical
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $alt
 
