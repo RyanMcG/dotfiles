@@ -10,4 +10,4 @@ set linespace=4
 
 nnoremap \sf <Esc>:set guifont=*<CR>
 
-set guifont=Inconsolata\ for\ Powerline\ 10
+set guifont=Inconsolata\ for\ Powerline\ 9
