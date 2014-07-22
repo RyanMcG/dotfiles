@@ -1,13 +1,19 @@
-#!/bin/sh
+#!/bin/bash
 set -e
-
-# Update vim plugins
-vim +BundleInstall! +qa
 
 # Change directories to the current one containg this script.
 cd `dirname $0`
+cd .vim/bundle
+
+# Loop through vim plugins and attempt to update
+for i in `ls`; do
+	cd "$i"
+	echo $i
+	git pull --recurse-submodules
+	cd ..
+done
 
 # Attempt an incremental commit
 git reset HEAD
-git add .vim/bundle/
+git add .
 git commit -m "Incremental commit."
