@@ -24,6 +24,7 @@
 	dcw  = diff --color-words
 	ds   = diff --stat
 	f    = fetch
+	fo   = fetch origin
 	g    = grep -n
 	l    = log --decorate --graph
 	l1   = log --graph --pretty=epic-exact -1
@@ -44,7 +45,6 @@
 	rilt = rebase -i -p --autosquash HEAD~10
 	rl   = reflog --decorate
 	rp   = rebase -p
-	rp   = reset -p
 	rs   = remote show
 	s    = status
 	sl   = stash list --pretty=epic-exact
