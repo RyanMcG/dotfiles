@@ -271,3 +271,6 @@
 [submodule ".vim/bundle/vimerl"]
 	path = .vim/bundle/vimerl
 	url = git@github.com:jimenezrick/vimerl.git
+[submodule "scripts/dpi.py"]
+	path = scripts/dpi.py
+	url = git@github.com:RyanMcG/dpi.py.git
