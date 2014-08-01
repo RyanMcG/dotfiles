@@ -19,7 +19,10 @@
                   [lein-ring "0.8.0"]
                   [lein-cljsbuild "0.3.2"]
                   [lein-deps-tree "0.1.2"]
+                  [mvxcvi/whidbey "0.3.2"]
                   [lein-marginalia "0.7.1"]]
+        ; printing options are customizable:
+        :puget-options {}
         :repl-options {:timeout 120000}
         :injections [(require '[redl core complete])
                      (require 'spyscope.core)
