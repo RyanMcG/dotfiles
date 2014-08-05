@@ -6,43 +6,50 @@
 [merge]
 	tool = gdiff
 [alias]
-	a = add
-	ai = add -i
-	ap = add -p
-	ae = add -e
-	b = branch
-	cm = commit -m
-	ca = commit -a
+	a    = add
+	ae   = add -e
+	ai   = add -i
+	ap   = add -p
+	b    = branch
+	ca   = commit -a
 	caar = commit -a --amend --reuse-message=HEAD
-	car = commit --amend --reuse-message=HEAD
-	cam = commit -am
-	co = checkout
-	d = diff
-	dc = diff --cached
-	ds = diff --stat
-	f = fetch
-	g = grep -n
-	l = log --decorate --graph
-	lf = log --graph --pretty=epic-friend
-	le = log --graph --pretty=epic-exact
-	lng = log --decorate
-	lfng = log --pretty=epic-friend
+	caf  = commit -a --fixup
+	cam  = commit -am
+	car  = commit --amend --reuse-message=HEAD
+	cf   = commit --fixup
+	cm   = commit -m
+	co   = checkout
+	d    = diff
+	dc   = diff --cached
+	dcw  = diff --color-words
+	ds   = diff --stat
+	f    = fetch
+	fo   = fetch origin
+	g    = grep -n
+	l    = log --decorate --graph
+	l1   = log --graph --pretty=epic-exact -1
+	lcr  = log --pretty=cr
+	lcri = log --pretty=cri
+	le   = log --graph --pretty=epic-exact
 	leng = log --pretty=epic-exact
-	l1 = log --graph --pretty=epic-exact -1
-	lt = log --graph --pretty=epic-friend -10 --first-parent
-	p = pull
-	pr = pull --rebase
-	rp = rebase -p
-	s = status
-	sl = stash list --pretty=epic-exact
-	sn = show --stat --decorate
-	rl = reflog --decorate
-	rs = remote show
-	r = reset
-	rp = reset -p
-	ri = rebase -i
-	rilt = rebase -i HEAD~10
-	wc = whatchanged --decorate --graph
+	lf   = log --graph --pretty=epic-friend
+	lfng = log --pretty=epic-friend
+	lng  = log --decorate
+	lt   = log --graph --pretty=epic-friend -10 --first-parent
+	m    = merge
+	mnf  = merge --no-ff
+	p    = pull
+	pr   = pull --rebase
+	r    = reset
+	ri   = rebase -p -i --autosquash
+	rilt = rebase -p -i --autosquash HEAD~10
+	rp   = rebase -p
+	rl   = reflog --decorate
+	rs   = remote show
+	s    = status
+	sl   = stash list --pretty=epic-exact
+	sn   = show --stat --decorate
+	wc   = whatchanged --decorate --graph
 [core]
 	pager = less -FXR
 	editor = gvim --nofork

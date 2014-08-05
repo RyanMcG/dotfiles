@@ -41,10 +41,10 @@
 	p    = pull
 	pr   = pull --rebase
 	r    = reset
-	ri   = rebase -i -p --autosquash
-	rilt = rebase -i -p --autosquash HEAD~10
-	rl   = reflog --decorate
+	ri   = rebase -p -i --autosquash
+	rilt = rebase -p -i --autosquash HEAD~10
 	rp   = rebase -p
+	rl   = reflog --decorate
 	rs   = remote show
 	s    = status
 	sl   = stash list --pretty=epic-exact
