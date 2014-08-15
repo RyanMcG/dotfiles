@@ -12,9 +12,9 @@ urxvt*geometry: 90x25
 !urxvt-bg.font: xft:FreeSerif:rgba=vbgr:pixelsize=12
 URxvt*termName: rxvt-unicode
 URxvt*perl-ext-common: default,matcher,clipboard
-URxvt.keysym.M-c:   perl:clipboard:copy
-URxvt.keysym.M-v:   perl:clipboard:paste
-URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.C-c:   perl:clipboard:copy
+URxvt.keysym.C-v:   perl:clipboard:paste
+URxvt.keysym.C-M-v: perl:clipboard:paste_escaped
 URxvt*matcher.button: 1
 URxvt*urlLauncher: /usr/bin/google-chrome
 URxvt*iconFile: /usr/share/icons/Faenza/apps/scalable/Terminal.svg
