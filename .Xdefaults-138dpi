@@ -12,7 +12,7 @@ urxvt*geometry: 90x25
 !urxvt-bg.font: xft:FreeSerif:rgba=vbgr:pixelsize=12
 URxvt*termName: rxvt-unicode
 URxvt*perl-ext-common: default,matcher,clipboard
-URxvt.keysym.C-c:   perl:clipboard:copy
+URxvt.keysym.C-y:   perl:clipboard:copy
 URxvt.keysym.C-v:   perl:clipboard:paste
 URxvt.keysym.C-M-v: perl:clipboard:paste_escaped
 URxvt*matcher.button: 1
