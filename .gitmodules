@@ -274,3 +274,6 @@
 [submodule "scripts/dpi.py"]
 	path = scripts/dpi.py
 	url = git@github.com:RyanMcG/dpi.py.git
+[submodule "center_dmenu"]
+	path = center_dmenu
+	url = git@github.com:RyanMcG/center_dmenu.git
