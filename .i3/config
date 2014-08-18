@@ -151,7 +151,8 @@ exec --no-startup-id ~/.config/autostart.sh
 ## Custom mappings
 
 # Main
-bindsym       $mod+Return exec urxvt
+bindsym $mod+Escape exec lock
+bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+Return exec urxvt -name urxvt-bg
 
 bindsym $mod+space exec --no-startup-id center_dmenu
