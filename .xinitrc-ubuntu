@@ -2,7 +2,4 @@
 #
 # ~/.xinitrc
 #
-export DE="xfce"
-export PATH=$HOME/bin:$PATH
-export MPD_HOST=azdesktop
 exec i3
