@@ -1,0 +1,9 @@
+#!/bin/sh
+#---- Autostart regardless of WM ----#
+
+unclutter -idle 2 &
+xset m 5 10 &
+xset b off &
+myredshift &
+dropbox start &
+nitrogen --restore   #Restores wallpaper
