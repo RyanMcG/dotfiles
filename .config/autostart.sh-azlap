@@ -6,4 +6,5 @@ xset m 5 10 &
 xset b off &
 myredshift &
 dropbox start &
+nm-applet &
 nitrogen --restore   #Restores wallpaper
