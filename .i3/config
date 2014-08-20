@@ -153,7 +153,8 @@ exec --no-startup-id ~/.config/autostart.sh
 # Main
 bindsym $mod+Escape exec lock
 bindsym $mod+Return exec urxvt
-bindsym $mod+Shift+Return exec urxvt -name urxvt-bg
+bindsym $mod+Shift+Return exec urxvt -name urxvt-larger
+bindsym $mod+$ctrl+Return exec urxvt -name urxvt-bg
 
 bindsym $mod+space exec --no-startup-id center_dmenu
 

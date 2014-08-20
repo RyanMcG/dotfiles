@@ -28,7 +28,8 @@ Xft.rgba: rgb
 Xft.hinting: true
 Xft.hintstyle: hintslight
 
-urxvt-bg.font: xft:Inconsolata:size=13
+urxvt-larger.font: xft:Inconsolata for Powerline:size=12
+urxvt-bg.font: xft:Inconsolata for Powerline:size=13
 urxvt-bg.transparent: true
 urxvt-bg.shading: 60
 
