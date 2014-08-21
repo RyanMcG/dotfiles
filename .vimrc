@@ -291,7 +291,7 @@ nmap <leader>gd :Gdiff<CR>
 nmap <leader>gch :Git dc<CR>
 
 "CtrlP
-let g:ctrlp_map = '<leader>]'
+let g:ctrlp_map = '<leader><space>'
 let g:ctrlp_working_path_mode = 0
 nnoremap <leader>. :CtrlPTag<cr>
 nnoremap <leader>, :CtrlPMRU<cr>
