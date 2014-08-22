@@ -62,10 +62,10 @@ alias kmosh="mosh --ssh=\"ssh -o GSSAPITrustDns=no\""
 alias emc="emacsclient"
 alias sxev="xev | grep -A2 --line-buffered '^KeyRelease' | sed -n '/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p'"
 alias truec="truecrypt -t"
+
 # Custom Functions
-wiki() {
-    dig +short txt $1.wp.dg.cx
-}
+function wiki() { dig +short txt $1.wp.dg.cx ; }
+function gi() { curl http://www.gitignore.io/api/$@ ; }
 
 # Some extra aliases
 if [ -f ~/.general_aliases_extra ]; then
