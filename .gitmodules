@@ -268,3 +268,6 @@
 [submodule "center_dmenu"]
 	path = center_dmenu
 	url = git@github.com:RyanMcG/center_dmenu.git
+[submodule ".vim/bundle/terminalkeys.vim"]
+	path = .vim/bundle/terminalkeys.vim
+	url = git@github.com:nacitar/terminalkeys.vim.git
