@@ -11,6 +11,7 @@
 
 set $mod Mod1
 set $alt Mod1
+set $super Mod4
 set $ctl Control
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -190,8 +191,8 @@ bindsym Scroll_Lock exec --no-startup-id asus-screen-brightness down
 bindsym Pause       exec --no-startup-id asus-screen-brightness up
 bindsym $mod+F5     exec --no-startup-id asus-screen-brightness down
 bindsym $mod+F6     exec --no-startup-id asus-screen-brightness up
-bindsym XF86MonBrightnessDown exec --no-startup-id sudo fucking_autobots +100
-bindsym XF86MonBrightnessUp exec --no-startup-id sudo fucking_autobots -100
+bindsym $super+Down exec --no-startup-id sudo fucking_autobots -100
+bindsym $super+Up   exec --no-startup-id sudo fucking_autobots +100
 
 # Misc
 bindsym $mod+Shift+x exec --no-startup-id "xmodmap ~/.Xmodmap"
