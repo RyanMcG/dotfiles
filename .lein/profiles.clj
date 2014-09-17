@@ -9,7 +9,7 @@
         :plugins [[lein-difftest "1.3.7"]
                   [lein-exec "0.3.0"]
                   [com.aphyr/prism "0.1.1"]
-                  [org.bodil/lein-noderepl "0.1.10"]
+                  [org.bodil/lein-noderepl "0.1.11"]
                   [quickie "0.2.1"]
                   [lein-kibit "0.0.8"]
                   [lein-clojars "0.9.1"]
