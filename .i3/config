@@ -157,7 +157,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+Return exec urxvt -name urxvt-larger
 bindsym $mod+$ctrl+Return exec urxvt -name urxvt-bg
 
-bindsym $mod+space exec --no-startup-id center_dmenu
+bindsym $mod+space exec --no-startup-id mydmenu
 
 # Printing
 bindsym           Print exec --no-startup-id "scrot -q 100 -e 'mv $f ~/Pictures/Screenshots/'"
@@ -191,8 +191,8 @@ bindsym Scroll_Lock exec --no-startup-id asus-screen-brightness down
 bindsym Pause       exec --no-startup-id asus-screen-brightness up
 bindsym $mod+F5     exec --no-startup-id asus-screen-brightness down
 bindsym $mod+F6     exec --no-startup-id asus-screen-brightness up
-bindsym $super+Down exec --no-startup-id sudo fucking_autobots -100
-bindsym $super+Up   exec --no-startup-id sudo fucking_autobots +100
+bindsym $super+Down exec --no-startup-id sudo fucking_autobots -25
+bindsym $super+Up   exec --no-startup-id sudo fucking_autobots +25
 
 # Misc
 bindsym $mod+Shift+x exec --no-startup-id "xmodmap ~/.Xmodmap"

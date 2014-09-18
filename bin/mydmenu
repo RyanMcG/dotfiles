@@ -1,0 +1,2 @@
+#!/bin/bash
+dmenu_run -c -lr 2.2 -d 0.05 -fn 'Inconsolata:size=12'
