@@ -271,3 +271,6 @@
 [submodule ".vim/bundle/terminalkeys.vim"]
 	path = .vim/bundle/terminalkeys.vim
 	url = git@github.com:nacitar/terminalkeys.vim.git
+[submodule ".vim/bundle/vim-typedclojure"]
+	path = .vim/bundle/vim-typedclojure
+	url = git@github.com:typedclojure/vim-typedclojure.git
