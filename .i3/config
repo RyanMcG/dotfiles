@@ -187,10 +187,10 @@ bindsym       $mod+F8          exec --no-startup-id ~/.screenlayout/docked.sh
 bindsym $mod+Shift+F8          exec --no-startup-id ~/.screenlayout/only.sh
 
 # Brightness
-bindsym Scroll_Lock exec --no-startup-id asus-screen-brightness down
-bindsym Pause       exec --no-startup-id asus-screen-brightness up
-bindsym $mod+F5     exec --no-startup-id asus-screen-brightness down
-bindsym $mod+F6     exec --no-startup-id asus-screen-brightness up
+bindsym Scroll_Lock exec --no-startup-id fucking_autobots -10
+bindsym Pause       exec --no-startup-id fucking_autobots +10
+bindsym $mod+F5     exec --no-startup-id fucking_autobots -10
+bindsym $mod+F6     exec --no-startup-id fucking_autobots +10
 bindsym $super+Down exec --no-startup-id sudo fucking_autobots -25
 bindsym $super+Up   exec --no-startup-id sudo fucking_autobots +25
 
