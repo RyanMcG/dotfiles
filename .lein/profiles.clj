@@ -1,4 +1,4 @@
-{:user {:dependencies [[clj-stacktrace "0.2.5"]
+{:user {:dependencies [[clj-stacktrace "0.2.7"]
                        [org.clojure/tools.trace "0.7.6"]
                        [org.clojure/tools.namespace "0.2.4"]
                        [redl "0.2.2"]
@@ -16,11 +16,11 @@
                   [lein-clojars "0.9.1"]
                   [lein-pprint "1.1.1"]
                   [lein-expectations "0.0.7"]
-                  [com.cemerick/austin "0.1.3"]
                   [lein-ring "0.8.0"]
-                  [lein-cljsbuild "0.3.2"]
+                  [lein-cljsbuild "1.0.3"]
                   [lein-deps-tree "0.1.2"]
                   [mvxcvi/whidbey "0.3.2"]
+                  [lein-typed "0.3.5"]
                   [lein-marginalia "0.7.1"]]
         ; printing options are customizable:
         :puget-options {}
