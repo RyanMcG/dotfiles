@@ -12,6 +12,7 @@
                   [org.bodil/lein-noderepl "0.1.11"]
                   [quickie "0.2.1"]
                   [lein-kibit "0.0.8"]
+                  [jonase/eastwood "0.1.4"]
                   [lein-clojars "0.9.1"]
                   [lein-pprint "1.1.1"]
                   [lein-expectations "0.0.7"]
