@@ -235,6 +235,7 @@ let g:syntastic_stl_format = '[%E{E: %fe #%e}%B{, }%W{W: %fw #%w}]'
 nnoremap <silent> <leader>se :Errors<CR>
 
 " Autornu
+let g:autornu_enable = 0
 nnoremap <silent> <F3> :AutornuToggle<CR>
 nnoremap <silent> <F4> :AutornuOnOff<CR>
 
