@@ -64,10 +64,6 @@ autojump
 )
 
 
-if [[ $NODENAME != "uecf4bb44a7f953ee8483" ]]; then
-	plugins[200]=gpg-agent
-fi
-
 bindkey "^R" history-incremental-search-backward
 
 source $ZSH/oh-my-zsh.sh
