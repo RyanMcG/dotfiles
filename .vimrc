@@ -298,6 +298,13 @@ nmap <leader>gcm :Gcommit<CR>
 nmap <leader>gd :Gdiff<CR>
 nmap <leader>gch :Git dc<CR>
 
+" Neomake
+if has("nvim")
+  autocmd! BufWritePost,BufReadPost * Neomake
+  let g:neomake_error_sign = {'texthl': 'DiffDelete'}
+  let g:neomake_warning_sign = {'texthl': 'DiffChange'}
+endif
+
 "CtrlP
 let g:ctrlp_map = '<leader><space>'
 let g:ctrlp_working_path_mode = 0
