@@ -26,7 +26,7 @@
 	path = .vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
 [submodule ".vim/bundle/syntastic"]
-	path = .vim/bundle/syntastic
+	path = .vim/v-bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
 [submodule ".vim/bundle/gist-vim"]
 	path = .vim/bundle/gist-vim
@@ -80,7 +80,7 @@
 	path = .vim/bundle/vim-characterize
 	url = git://github.com/tpope/vim-characterize.git
 [submodule ".vim/bundle/vim-dispatch"]
-	path = .vim/bundle/vim-dispatch
+	path = .vim/v-bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
 [submodule ".vim/bundle/vim-gitgutter"]
 	path = .vim/bundle/vim-gitgutter
@@ -277,3 +277,9 @@
 [submodule ".vim/bundle/switch.vim"]
 	path = .vim/bundle/switch.vim
 	url = git@github.com:AndrewRadev/switch.vim.git
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = git@github.com:bling/vim-airline.git
+[submodule ".vim/bundle/neomake"]
+	path = .vim/n-bundle/neomake
+	url = git@github.com:benekastah/neomake.git

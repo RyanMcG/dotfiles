@@ -11,8 +11,11 @@ set nocompatible
 " Make sure filetype is off for pathogen
 filetype off
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-
+if has("nvim")
+  execute pathogen#infect('bundle/{}', 'n-bundle/{}')
+else
+  execute pathogen#infect('bundle/{}', 'v-bundle/{}')
+endif
 " vim7[34] files should be first
 set runtimepath-=/usr/share/vim/vim74
 set runtimepath^=/usr/share/vim/vim74
@@ -204,11 +207,8 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 " Plugin Config
 "
 
-" sneak
-nmap <C-S> <Plug>SneakForward
-nmap <M-S> <Plug>SneakBackward
-xmap <C-S> <Plug>VSneakForward
-xmap <M-S> <Plug>VSneakBackward
+" Airline
+let g:airline_powerline_fonts = 1
 
 " minibufexpl
 "let g:miniBufExplVSplit = 25
@@ -388,13 +388,6 @@ let g:EclimJavascriptValidate = 0
 
 " Modify Status line
 set laststatus=2
-set statusline=%<%f\ %h%m%r
-set statusline+=%{fugitive#statusline()}
-set statusline+=%=%-14.(%l,%c%V%)
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-set statusline+=\ %P
 
 "Some mappin'
 "Easily edit and source vim
