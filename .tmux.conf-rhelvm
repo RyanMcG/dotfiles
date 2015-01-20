@@ -1,7 +1,11 @@
 #Set default terminal to 256 colors
-set -g default-terminal "screen-256color-s"
+# set -g default-terminal "screen-256color-s"
+set -g default-terminal "screen"
 
-source "$HOME/repo/dotfiles/powerline/powerline/bindings/tmux/powerline.conf"
+# Powerline
+# run-shell "powerline-daemon -q"
+# source "$HOME/repo/dotfiles/powerline/powerline/bindings/tmux/powerline.conf"
+# set -g status-bg colour234
 
 set -g status-keys vi
 setw -g mode-keys vi
@@ -37,8 +41,6 @@ set -g history-limit 20000
 set-option -g set-titles on
 set-option -g set-titles-string '#T TMUX:#S.#I.#P #W' # window number,program name,active (or not)
 set-option -g status-interval 3
-
-set -g status-bg colour234
 
 # `+r reloads the configuration, handy
 bind r source-file ~/.tmux.conf
