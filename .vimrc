@@ -126,15 +126,15 @@ if has("autocmd")
     " Don't screw up folds when inserting text that might affect them, until
     " leaving insert mode. Foldmethod is local to the window. Protect against
     " screwing up folding when switching between windows.
-    autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
-    autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
+    au InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
+    au InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
 
     " When editing a file, always jump to the last known cursor position.
     " Don't do it when the position is invalid or when inside an event handler
     " (happens when dropping a file on gvim).
     " Also don't do it when the mark is in the first line, that is the default
     " position when opening a file.
-    autocmd BufReadPost *
+    au BufReadPost *
       \ if line("'\"") > 1 && line("'\"") <= line("$") |
       \   exe "normal! g`\"" |
       \ endif
@@ -149,10 +149,22 @@ if has("autocmd")
   augroup END
 
   if exists("+omnifunc")
-    autocmd Filetype *
+    au Filetype *
       \ if &omnifunc == "" |
       \         setlocal omnifunc=syntaxcomplete#Complete |
       \ endif
+  endif
+
+  augroup cljs
+    au!
+    au BufReadPost,BufNewFile *.cljs setlocal filetype=clojure
+  augroup END
+
+  if has("nvim")
+    augroup custom_neomake
+      au!
+      au BufWritePost *.rb,*.rake Neomake
+    augroup END
   endif
 endif " has("autocmd")
 
@@ -243,8 +255,6 @@ nnoremap <silent> <F4> :AutornuOnOff<CR>
 let g:clojure_align_multiline_strings = 0
 " Set *.cljs files to the clojure filetype
 
-autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
-
 let mapleader = '\'
 " Paredit
 let g:paredit_shortmaps = 1
@@ -300,7 +310,6 @@ nmap <leader>gch :Git dc<CR>
 
 " Neomake
 if has("nvim")
-  autocmd! BufWritePost,BufReadPost * Neomake
   let g:neomake_error_sign = {'texthl': 'DiffDelete'}
   let g:neomake_warning_sign = {'texthl': 'DiffChange'}
 endif
