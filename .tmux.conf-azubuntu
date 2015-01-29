@@ -34,6 +34,7 @@ set-option -g set-titles-string '#T TMUX:#S.#I.#P #W' # window number,program na
 set-option -g status-interval 3
 
 set -g status-bg colour234
+set -g status-fg colour8
 
 # `+r reloads the configuration, handy
 bind r source-file ~/.tmux.conf
