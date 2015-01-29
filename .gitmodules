@@ -283,3 +283,6 @@
 [submodule ".vim/bundle/neomake"]
 	path = .vim/n-bundle/neomake
 	url = git@github.com:benekastah/neomake.git
+[submodule ".vim/bundle/vim-instant-markdown"]
+	path = .vim/bundle/vim-instant-markdown
+	url = git@github.com:suan/vim-instant-markdown.git
