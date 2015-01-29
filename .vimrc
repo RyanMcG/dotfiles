@@ -163,7 +163,7 @@ if has("autocmd")
   if has("nvim")
     augroup custom_neomake
       au!
-      au BufWritePost *.rb,*.rake Neomake
+      au BufWritePost *.js,*.coffee,*.rb,*.rake Neomake
     augroup END
   endif
 endif " has("autocmd")
