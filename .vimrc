@@ -219,6 +219,10 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 " Plugin Config
 "
 
+" Instant Markdown
+" Do not enable by default
+let g:instant_markdown_autostart = 0
+
 " Airline
 let g:airline_powerline_fonts = 1
 
