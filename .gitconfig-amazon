@@ -4,7 +4,7 @@
 [color]
 	ui = auto
 [merge]
-	tool = gdiff
+	tool = ndiff
 [alias]
 	a    = add
 	ae   = add -e
@@ -68,10 +68,13 @@
 [push]
 	default = upstream
 [mergetool "splice"]
-	cmd = "gvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
+	cmd = "nvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
 	trustExitCode = true
 [mergetool "gdiff"]
 	cmd = "gvim -f $MERGED -c 'Gdiff'"
+	trustExitCode = true
+[mergetool "ndiff"]
+	cmd = "nvim -f $MERGED -c 'Gdiff'"
 	trustExitCode = true
 [pretty]
 	cr = "commit: %H\n\n%B\n"
