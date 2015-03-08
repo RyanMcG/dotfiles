@@ -214,9 +214,6 @@
 [submodule ".vim/bundle/vim-yaml"]
 	path = .vim/bundle/vim-yaml
 	url = git://github.com/avakhov/vim-yaml.git
-[submodule ".vim/bundle/emmet-vim"]
-	path = .vim/bundle/emmet-vim
-	url = git://github.com/mattn/emmet-vim.git
 [submodule ".vim/bundle/html5.vim"]
 	path = .vim/bundle/html5.vim
 	url = git://github.com/othree/html5.vim.git
@@ -286,3 +283,18 @@
 [submodule ".vim/bundle/vim-instant-markdown"]
 	path = .vim/bundle/vim-instant-markdown
 	url = git@github.com:suan/vim-instant-markdown.git
+[submodule ".vim/bundle/vim-pencil"]
+	path = .vim/bundle/vim-pencil
+	url = git@github.com:reedes/vim-pencil.git
+[submodule ".vim/bundle/goyo.vim"]
+	path = .vim/bundle/goyo.vim
+	url = git@github.com:junegunn/goyo.vim.git
+[submodule ".vim/bundle/limelight.vim"]
+	path = .vim/bundle/limelight.vim
+	url = git@github.com:junegunn/limelight.vim.git
+[submodule ".vim/bundle/vim-litecorrect"]
+	path = .vim/bundle/vim-litecorrect
+	url = git@github.com:reedes/vim-litecorrect.git
+[submodule ".vim/bundle/vim-wordy"]
+	path = .vim/bundle/vim-wordy
+	url = git@github.com:reedes/vim-wordy.git

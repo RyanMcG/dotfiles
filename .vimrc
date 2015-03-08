@@ -166,6 +166,12 @@ if has("autocmd")
       au BufWritePost *.js,*.coffee,*.rb,*.rake Neomake
     augroup END
   endif
+
+  augroup writing
+    autocmd!
+    autocmd FileType text,markdown,rst call pencil#init()
+          \ | call litecorrect#init()
+  augroup END
 endif " has("autocmd")
 
 " allow backspacing over everything in insert mode
@@ -222,6 +228,10 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 " Instant Markdown
 " Do not enable by default
 let g:instant_markdown_autostart = 0
+
+" Limelight
+autocmd User GoyoEnter Limelight
+autocmd User GoyoLeave Limelight!
 
 " Airline
 let g:airline_powerline_fonts = 1

@@ -9,8 +9,8 @@ by Ryan McGowan
 Basic Information
 =================
 This package contains my dotfiles including my .vim and vim plugins (managed
-with vundle). To use the files just symlink the ones you want to your home
-directory.  Some files have a hostname or distro appened to them of the form::
+with pathogen). To use the files just symlink the ones you want to your home
+directory.  Some files have a hostname or distro appended to them of the form::
 
     .<dotfile>-<hostnameORdistro>
 
