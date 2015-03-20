@@ -1,6 +1,5 @@
 ## Connection
 
-mpd_host = "ua41f726d71fb51c1f61d.ant.amazon.com"
 mpd_port = "6600"
 mpd_music_dir = "~/Music"
 #mpd_connection_timeout = "5"

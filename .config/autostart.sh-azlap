@@ -1,10 +1,12 @@
 #!/bin/sh
 #---- Autostart regardless of WM ----#
 
+mpd &
+mpdscribble &
 unclutter -idle 2 &
 xset m 5 10 &
 xset b off &
 myredshift &
 dropbox start &
-wicd-gtk &
+gnome-sound-applet &
 nitrogen --restore   #Restores wallpaper
