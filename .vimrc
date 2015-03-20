@@ -326,6 +326,10 @@ nmap <leader>gch :Git dc<CR>
 if has("nvim")
   let g:neomake_error_sign = {'texthl': 'DiffDelete'}
   let g:neomake_warning_sign = {'texthl': 'DiffChange'}
+
+  " Disable various filetypes
+  let g:neomake_sh_enabled_makers = []
+  let g:neomake_zsh_enabled_makers = []
 endif
 
 "CtrlP
