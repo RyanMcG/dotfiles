@@ -4,7 +4,7 @@
 [color]
 	ui = auto
 [merge]
-	tool = ndiff
+	tool = fugitive
 [alias]
 	a    = add
 	ae   = add -e
@@ -67,13 +67,7 @@
 	browser = chromium
 [push]
 	default = upstream
-[mergetool "splice"]
-	cmd = "nvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
-	trustExitCode = true
-[mergetool "gdiff"]
-	cmd = "gvim -f $MERGED -c 'Gdiff'"
-	trustExitCode = true
-[mergetool "ndiff"]
+[mergetool "fugitive"]
 	cmd = "nvim -f $MERGED -c 'Gdiff'"
 	trustExitCode = true
 [pretty]
