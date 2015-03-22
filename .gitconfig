@@ -41,8 +41,8 @@
 	p    = pull
 	pr   = pull --rebase
 	r    = reset
-	ri   = rebase -p -i --autosquash
-	rilt = rebase -p -i --autosquash HEAD~10
+	ri   = rebase -i --autosquash
+	rilt = rebase -i --autosquash HEAD~10
 	rp   = rebase -p
 	rl   = reflog --decorate
 	rs   = remote show
