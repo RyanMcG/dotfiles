@@ -12,41 +12,19 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
-  },
-
-  {
-    address = "irc.oftc.net";
-    chatnet = "oftc";
-    port = "6667";
-    use_ssl = "no";
-    ssl_verify = "no";
-    autoconnect = "no";
-  },
-
-  { 
-    address = "localhost";
-    chatnet = "bittlebee";
-    autoconnect = "yes";
   }
 );
 
 chatnets = {
   Freenode = {
     type = "IRC";
-    nick = "brisbin";
+    nick = "ryanmcg";
     autosendcmd = "/^msg nickserv identify ; wait 2000";
-  };
-  oftc = { type = "IRC"; };
-  bittlebee = {
-    type = "IRC";
-    autosendcmd = "/^msg -bitlbee &bitlbee identify ; wait -bitlbee 2000";
   };
 };
 
 channels = (
-  { name = "#archlinux"; chatnet = "Freenode"; autojoin = "Yes"; },
-  { name = "#xmonad"; chatnet = "Freenode"; autojoin = "Yes"; },
-  { name = "#haskell"; chatnet = "Freenode"; autojoin = "Yes"; }
+  { name = "#mcglurks"; chatnet = "Freenode"; autojoin = "Yes"; },
 );
 
 aliases = {
@@ -192,9 +170,9 @@ statusbar = {
 
 settings = {
   core = {
-    real_name = "Patrick Brisbin";
-    user_name = "patrick";
-    nick = "brisbin";
+    real_name = "Ryan McGowan";
+    user_name = "ryanmcg";
+    nick = "ryanmcg";
     awaylog_file = "/dev/null";
     recode_autodetect_utf8 = "yes";
     recode_fallback = "CP1252";
@@ -231,7 +209,7 @@ ignores = (
 );
 
 hilights = (
-  { text = "brisbin"; nick = "no"; word = "yes"; fullword = "yes"; },
+  { text = "ryanmcg"; nick = "no"; word = "yes"; fullword = "yes"; },
   { text = ".com"; nick = "no"; word = "yes"; fullword = "no"; }
 );
 
@@ -248,47 +226,7 @@ windows = {
       }
     );
   };
-  3 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#archlinux";
-        tag = "Freenode";
-      }
-    );
-  };
-  4 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#xmonad";
-        tag = "Freenode";
-      }
-    );
-  };
-  5 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#haskell";
-        tag = "Freenode";
-      }
-    );
-  };
-  6 = { name = "hilight"; sticky = "yes"; };
-  7 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "&bitlbee";
-        tag = "bittlebee";
-      }
-    );
-  };
+  9 = { name = "hilight"; sticky = "yes"; };
 };
 mainwindows = {
   1 = { first_line = "12"; lines = "72"; };
