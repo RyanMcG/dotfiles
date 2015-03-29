@@ -298,3 +298,6 @@
 [submodule ".vim/bundle/vim-wordy"]
 	path = .vim/bundle/vim-wordy
 	url = git@github.com:reedes/vim-wordy.git
+[submodule ".vim/bundle/gtags.vim"]
+	path = .vim/bundle/gtags.vim
+	url = git@github.com:vim-scripts/gtags.vim.git

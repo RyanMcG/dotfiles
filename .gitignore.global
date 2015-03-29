@@ -41,3 +41,7 @@ hs_err_*.log
 eclipse-bin/
 .repl/
 /node_modules/
+/.git-fyncy-pid
+GTAGS
+GRTAGS
+GPATH
