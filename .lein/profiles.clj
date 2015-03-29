@@ -1,5 +1,6 @@
 {:user {:dependencies [[clj-stacktrace "0.2.8"]
                        [spyscope "0.1.5"]
+                       [debugger "0.1.4"]
                        [com.aphyr/prism "0.1.2"]
                        [slamhound "1.5.5"]]
         :plugins [[lein-difftest "2.0.0"]
