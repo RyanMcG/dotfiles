@@ -4,7 +4,7 @@
 [color]
 	ui = auto
 [merge]
-	tool = gdiff
+	tool = fugitive
 [alias]
 	a    = add
 	ae   = add -e
@@ -52,7 +52,7 @@
 	wc   = whatchanged --decorate --graph
 [core]
 	pager = less -FXR
-	editor = gvim --nofork
+	editor = nvim --nofork
 	excludesfile = ~/.gitignore.global
 	preloadindex = true
 [github]
@@ -67,11 +67,8 @@
 	browser = chromium
 [push]
 	default = upstream
-[mergetool "splice"]
-	cmd = "gvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
-	trustExitCode = true
-[mergetool "gdiff"]
-	cmd = "gvim -f $MERGED -c 'Gdiff'"
+[mergetool "fugitive"]
+	cmd = "$EDITOR -f $MERGED -c 'Gdiff'"
 	trustExitCode = true
 [pretty]
 	epic-exact = %C(yellow)%h%Cred %ci%Creset%Creset%C(bold red) ~%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%C(bold green)%d%Creset
