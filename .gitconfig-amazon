@@ -42,6 +42,7 @@
 	pr   = pull --rebase
 	r    = reset
 	ri   = rebase -i --autosquash
+	rom  = rebase origin/mainline
 	rilt = rebase -i --autosquash HEAD~10
 	rp   = rebase -p
 	rl   = reflog --decorate
