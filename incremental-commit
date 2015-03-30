@@ -3,16 +3,24 @@ set -e
 
 # Change directories to the current one containg this script.
 cd `dirname $0`
-cd .vim/bundle
 
 # Loop through vim plugins and attempt to update
-for i in `ls`; do
-	cd "$i"
-	echo $i
-	git checkout master
-	git pull --recurse-submodules
-	cd ..
-done
+function update_bundles {
+	for i in `ls`; do
+		cd "$i"
+		echo $i
+		git checkout master
+		git pull --recurse-submodules
+		cd ..
+	done
+}
+
+cd .vim/bundle
+update_bundles
+cd ../n-bundle
+update_bundles
+cd ../v-bundle
+update_bundles
 
 # Attempt an incremental commit
 git reset HEAD
