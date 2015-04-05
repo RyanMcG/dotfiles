@@ -304,3 +304,6 @@
 [submodule ".vim/bundle/vim-lfe"]
 	path = .vim/bundle/vim-lfe
 	url = git@github.com:lfex/vim-lfe.git
+[submodule ".vim/bundle/vim-gutentags"]
+	path = .vim/bundle/vim-gutentags
+	url = git@github.com:RyanMcG/vim-gutentags.git
