@@ -301,3 +301,6 @@
 [submodule ".vim/bundle/gtags.vim"]
 	path = .vim/bundle/gtags.vim
 	url = git@github.com:vim-scripts/gtags.vim.git
+[submodule ".vim/bundle/vim-lfe"]
+	path = .vim/bundle/vim-lfe
+	url = git@github.com:lfex/vim-lfe.git
