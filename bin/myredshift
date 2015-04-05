@@ -1,2 +1,2 @@
 #!/bin/sh
-redshift -m randr -l 47:-122 -t 6000:4650
+redshift -m randr -g 0.9:0.95:0.8 -l 47:-122 -t 5200:4550
