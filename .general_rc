@@ -116,7 +116,6 @@ alias la='ls -a'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-command -v rbenv >/dev/null 2>&1 && eval "$(rbenv init -)"
 
 # Start gpg agent if not already running
 gpg-connect-agent /bye > /dev/null 2>&1
@@ -125,5 +124,3 @@ unset SSH_AGENT_PID
 if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
 	export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
 fi
-
-
