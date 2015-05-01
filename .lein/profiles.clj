@@ -5,6 +5,7 @@
                        [slamhound "1.5.5"]]
         :plugins [[lein-difftest "2.0.0"]
                   [lein-exec "0.3.4"]
+                  [lein-instant-cheatsheet "2.1.3"]
                   [lein-ancient "0.5.5"]
                   [com.aphyr/prism "0.1.2"]
                   [org.bodil/lein-noderepl "0.1.11"]
