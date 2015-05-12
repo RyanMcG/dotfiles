@@ -81,4 +81,5 @@
 [receive]
 	denyCurrentBranch = warn
 [amazon]
+	pull-request-by-default = true
 	append-cr-url = false
