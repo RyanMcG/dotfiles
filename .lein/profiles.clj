@@ -16,7 +16,7 @@
                   [lein-clojars "0.9.1"]
                   [lein-pprint "1.1.2"]
                   [lein-ring "0.8.13"]
-                  [lein-cljsbuild "1.0.3"]
+                  [lein-cljsbuild "1.0.6"]
                   [lein-deps-tree "0.1.2"]
                   [mvxcvi/whidbey "0.4.1"]
                   [lein-typed "0.3.5"]
