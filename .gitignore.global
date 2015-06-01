@@ -37,6 +37,7 @@ javadoc*
 git-fyncy.log
 pom.xml.asc
 .nrepl-port
+.cljs_node_repl/
 hs_err_*.log
 eclipse-bin/
 .repl/
