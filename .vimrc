@@ -221,6 +221,11 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 " vnoremap < <gv
 " vnoremap > >gv
 
+" Terminal Config
+if has("nvim")
+  tnoremap <Esc> <C-\><C-n>
+endif
+
 "
 " Plugin Config
 "
@@ -436,6 +441,7 @@ nmap <silent> <C-k> <C-w>k
 nmap <silent> <C-j> <C-w>j
 nmap <silent> <C-l> <C-w>l
 nmap <silent> <C-h> <C-w>h
+let g:terminalkeys_loaded = 1
 
 "Get rid of highlighting after search with space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
