@@ -1,6 +1,0 @@
-P_COLOR=$FCYN
-export PATH=/apollo/env/SDETools/bin:/apollo/env/envImprovement/bin:$PATH
-export P4CONFIG=.p4config
-export EDITOR=vim
-export P4EDITOR=$EDITOR
-export BRAZIL_WORKSPACE_DEFAULT_LAYOUT=short
