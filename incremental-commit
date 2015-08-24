@@ -12,6 +12,7 @@ function update_bundles {
 		cd "$i"
 		echo $i
 		git checkout master
+		git merge
 		cd ..
 	done
 }
