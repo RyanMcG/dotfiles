@@ -52,7 +52,7 @@
 	wc   = whatchanged --decorate --graph
 [core]
 	pager = less -FXR
-	editor = nvim --nofork
+	editor = nvim
 	excludesfile = ~/.gitignore.global
 	preloadindex = true
 [github]
