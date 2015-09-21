@@ -11,7 +11,9 @@ keysym 9 = parenleft   9
 keysym 0 = parenright  0
 
 ! Swap caps lock and escape
+keycode 66 = Caps_Lock
+keycode 9 = Escape
 remove Lock = Caps_Lock
-keysym Escape = Caps_Lock
-keysym Caps_Lock = Escape
-add Lock = Caps_Lock
+add Lock = Escape
+keycode 9 = Caps_Lock
+keycode 66 = Escape
