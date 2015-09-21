@@ -1,2 +1,2 @@
 #!/bin/bash
-dmenu_run -c -lr 2 -d 0.1 -fn 'Inconsolata-10'
+dmenu_run -c -lr 2 -d 0.1 -fn 'Inconsolata for Powerline-10'
