@@ -1,0 +1,8 @@
+alias addpkg="nix-env -i"
+alias rmpkg="nix-env -e"
+alias udpkg="nix-channel --update nixos"
+alias ugpkg="nix-env -i"
+alias udgpkg="nix-channel --update nixos && nix-env -i"
+alias spkg="nix-env -qa"
+alias qpkg="nix-env -q"
+alias cleanpkg="nix-collect-garbage"
