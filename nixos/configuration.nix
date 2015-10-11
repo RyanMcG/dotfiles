@@ -3,11 +3,11 @@
 {
   imports = [
     # Include the results of the hardware scan.
-    ./hardware-configuration.nix
+    /etc/nixos/hardware-configuration.nix
   ];
 
   boot.initrd.luks.devices = [{
-    name = "lvm";
+    name   = "lvm";
     device = "/dev/sda2";
     preLVM = true;
   }];
@@ -22,12 +22,12 @@
   time.timeZone = "America/Los_Angeles";
 
   networking.hostName = "zenbook";
-  networking.hostId = "9d5c554a";
   networking.networkmanager.enable = true;
 
   powerManagement.enable = true;
 
   programs.bash.enableCompletion = true;
+  programs.zsh.enable = true;
 
   # Select internationalisation properties.
   # i18n = {
@@ -35,10 +35,6 @@
   #   consoleKeyMap = "us";
   #   defaultLocale = "en_US.UTF-8";
   # };
-
-  # List packages installed in system profile. To search by name, run:
-  environment.systemPackages = with pkgs; [
-  ];
 
   # Sound
   hardware.pulseaudio.enable = true;
@@ -48,28 +44,49 @@
   # services.printing.enable = true;
 
   services.acpid.enable = true;
-  services.avahi.enable = true;
-  services.locate.enable = true;
-  services.upower.enable = true;
-  environment.variables = {
-    GTK_DATA_PREFIX = "${config.system.path}";
+  services.avahi = {
+    enable  = true;
+    nssmdns = true;
   };
+  services.locate.enable  = true;
+  services.upower.enable  = true;
+  services.gnome3.gvfs.enable  = true;
+  services.udisks2.enable = true;
+
+  environment = {
+    variables = {
+      GTK_DATA_PREFIX = "${config.system.path}";
+    };
+
+    pathsToLink = [
+      "/share/xfce4"
+      "/share/themes"
+      "/share/mime"
+      "/share/icons"
+      "/share/desktop-directories"
+    ];
+
+    systemPackages = with pkgs; [
+      (ruby.override { cursesSupport = true; })
+    ];
+  };
+
 
   services.redshift = {
     enable = true;
 
-    longitude = "47";
-    latitude = "-122";
+    latitude  = "48";
+    longitude = "-122";
 
     temperature = {
       night = 4551;
-      day = 5200;
+      day   = 5200;
     };
   };
 
   # X and more!
   services.xserver = {
-    enable = true;
+    enable  = true;
     autorun = true;
     config = ''
       Section "Monitor"
@@ -78,6 +95,7 @@
       EndSection
     '';
 
+    displayManager.desktopManagerHandlesLidAndPower = false;
     displayManager.sessionCommands = ''
       nitrogen --restore &
       dropbox &
@@ -109,5 +127,6 @@
     home = "/home/ryan";
     description = "Ryan McGowan";
     extraGroups = ["wheel" "networkmanager"];
+    shell = "/run/current-system/sw/bin/zsh";
   };
 }
