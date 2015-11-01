@@ -1,1 +1,2 @@
 alias aws-quick-instances="aws ec2 describe-instances | jq '.Reservations[].Instances[] | {InstanceId, PublicDnsName}'"
+alias sshfs_tardis="sshfs maestro@10.0.0.31:/media/Tardis\ Memory\ Ba/ ~/mnt/tardis"
