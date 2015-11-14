@@ -1,6 +1,12 @@
 {
   allowBroken = true;
   allowUnfree = true;
+
+  chromium = {
+    enablePepperFlash = true;
+    enablePepperPDF = true;
+  };
+
   packageOverrides = pkgs: rec {
     dmenu = pkgs.dmenu.overrideDerivation (oldAttrs: {
       name = "dmenu-4.5_custom";
