@@ -8,7 +8,7 @@ filetype off
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 if has("nvim")
   set backupdir=~/.config/nvim/backups
-  set undodir=~/.config/nvi/undo
+  set undodir=~/.config/nvim/undo
   execute pathogen#infect('bundle/{}', 'n-bundle/{}')
 else
   set backupdir=~/.vim/backups
