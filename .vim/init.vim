@@ -1,9 +1,4 @@
-" Ryan McGowan's .vimrc
-
-let s:vimrc_head = expand('$HOME/.vimrc_head')
-if filereadable(s:vimrc_head)
-  exec ':source' . s:vimrc_head
-endif
+" Ryan McGowan's init.vim
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
