@@ -1,4 +1,5 @@
 # Custom cross-shell init file (works for bash and zsh)
+[ -s "$HOME/.profile" ] && . "$HOME/.profile"
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
