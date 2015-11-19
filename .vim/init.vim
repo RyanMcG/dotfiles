@@ -7,8 +7,12 @@ set nocompatible
 filetype off
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 if has("nvim")
+  set backupdir=~/.config/nvim/backups
+  set undodir=~/.config/nvi/undo
   execute pathogen#infect('bundle/{}', 'n-bundle/{}')
 else
+  set backupdir=~/.vim/backups
+  set undodir=~/.vim/undo
   execute pathogen#infect('bundle/{}', 'v-bundle/{}')
 endif
 
@@ -23,7 +27,6 @@ endif
 set ruler                " show the cursor position all the time
 set showcmd                " display incomplete commands
 set incsearch                " do incremental searching
-set backupdir=~/.vim/backups
 
 set printfont=Inconsolata\ 12
 
@@ -173,7 +176,6 @@ set history=1000
 set undolevels=1000
 set undoreload=10000
 set undofile
-set undodir=~/.vim/undo
 
 set scrolloff=6 sidescrolloff=12
 "Ignore case unless there's a capital
