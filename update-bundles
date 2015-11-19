@@ -25,8 +25,3 @@ cd ../v-bundle
 update_bundles
 
 cd `dirname $0`
-
-# Attempt an incremental commit
-git reset HEAD
-git add .
-git commit -m "Incremental commit."
