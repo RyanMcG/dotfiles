@@ -272,6 +272,10 @@ inoremap <C-space> <Plug>snipMateNextOrTrigger
 snoremap <C-space> <Plug>snipMateNextOrTrigger
 
 "Ack
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
 nnoremap <leader>a/ :Ack!<space>
 nnoremap <leader>a* :Ack! -w <C-R><C-W><space>
 nnoremap <leader>aa :AckAdd<space>
