@@ -1,16 +1,7 @@
-#CHANGE DIRECTORIES
-alias cweb="cd ~/cur/web/"
-alias cwrk="cd ~/cur/work/"
-alias cwww="cd ~/www/"
-alias ccur="cd ~/cur/rent/"
-alias cpro="cd ~/cur/rent/CSE\ 560/project"
-
 #SSHFS/RSYNC
 alias sshfs="sshfs -o reconnect -o allow_other -o follow_symlinks"
 alias asshfs="sshfs -o ssh_command='autossh -M $MY_AUTOSSH_PORT' -o allow_other -o follow_symlinks"
 alias assh="autossh -M $MY_AUTOSSH_PORT"
-alias rsync-vonnie-pull="rsync -azP -e 'ssh' ryanm_vonnie@ssh.phx.nearlyfreespeech.net:wordpress/wp-content/themes/vonnie/ ~/cur/web/vonnie/themes/vonnie"
-alias rsync-wow-put="rsync -azP --delete -e 'ssh' /home/roin/cur/work/StudioCT/Drupaly/themes/wow/ wow:/var/www/vhosts/wow/themes/wow --exclude 'tags' --exclude '.git*' --exclude '*.sass*' --exclude '*.swp' --exclude '*.scss' --exclude 'uploaded' --exclude 'NOTES.txt' --exclude 'demo' --exclude 'mmcschol_drp11.sql' --exclude 'wowpics*'"
 alias sssh="TERM=screen ssh"
 
 #PACAKGE MANAGERS
@@ -22,17 +13,10 @@ fi
 alias cl="clear"
 alias cls="clear && ls"
 alias lg="ll | grep"
-alias svim="sudo -E vim"
-alias sgvim="sudo -E gvim"
-alias gvimr="gvim --remote-silent"
-alias sgvimr="sudo -E gvim --remote-silent"
 alias :q="exit"
-alias umplayer="urxvt -e mplayer"
-alias shutd="sudo shutdown -h now"
 alias ncm="ncmpcpp"
 alias ncml="ncmpcpp -h localhost"
 alias mpc="mpc -f \"[[[%artist% - ]%album% - ]%title%]\""
-alias relbash="source ~/.profile"
 alias sudo="sudo -E"
 
 # DVCS shortcuts
@@ -41,27 +25,15 @@ alias h="hg"
 alias git-delete-merged-branches="git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d"
 
 alias lp="lp -o cpi=17 -o lpi=8"
-alias scn="screen -DR"
-alias dodj="djmount ~/mnt/upnp"
-alias ftp="tnftp"
-alias relterm="export TERM=$TERM"
-alias dodj="djmount ~/mnt/upnp"
-alias ftp="tnftp"
-alias cdiff="colordiff"
+alias tmd="tmux attach -d"
 alias fif="find -type f -print0 | xargs -0 grep --color -n"
 alias intersection="grep -Fx -f"
 alias in2not1="grep -Fxv -f"
-alias jrs="jruby -S"
-alias jgem="jruby -S gem"
 alias be="bundle exec"
-alias hpi="hub pull-request -i"
-alias rlf="cd; cd -"
 alias xkcdpwd="shuf -n4 /usr/share/dict/words"
 alias xclipb="xclip -selection clipboard"
 alias kmosh="mosh --ssh=\"ssh -o GSSAPITrustDns=no\""
-alias emc="emacsclient"
 alias sxev="xev | grep -A2 --line-buffered '^KeyRelease' | sed -n '/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p'"
-alias truec="truecrypt -t"
 
 # Custom Functions
 function wiki() { dig +short txt $1.wp.dg.cx ; }
