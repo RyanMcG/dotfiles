@@ -1,2 +1,5 @@
 /*.log
 mpdscribble.conf
+mpd.db
+mpd.state
+sticker.sql
