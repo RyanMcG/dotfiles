@@ -45,7 +45,7 @@
 	rilt = rebase -i --autosquash HEAD~10
 	rp   = rebase -p
 	rom  = rebase -p origin/master
-	rim  = rebase -i origin/master
+	rim  = rebase -i --autosquash origin/master
 	rl   = reflog --decorate
 	rs   = remote show
 	s    = status
