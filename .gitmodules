@@ -208,9 +208,6 @@
 [submodule ".vim/bundle/jedi-vim"]
 	path = .vim/bundle/jedi-vim
 	url = git://github.com/davidhalter/jedi-vim.git
-[submodule ".vim/bundle/python-mode"]
-	path = .vim/bundle/python-mode
-	url = git://github.com/klen/python-mode.git
 [submodule ".vim/bundle/vim-yaml"]
 	path = .vim/bundle/vim-yaml
 	url = git://github.com/avakhov/vim-yaml.git
@@ -325,3 +322,12 @@
 [submodule ".vim/bundle/vdebug"]
 	path = .vim/bundle/vdebug
 	url = git@github.com:joonty/vdebug.git
+[submodule ".vim/bundle/deoplete-jedi"]
+	path = .vim/n-bundle/deoplete-jedi
+	url = git@github.com:zchee/deoplete-jedi.git
+[submodule ".vim/bundle/deoplete.nvim"]
+	path = .vim/n-bundle/deoplete.nvim
+	url = git@github.com:Shougo/deoplete.nvim.git
+[submodule ".vim/bundle/echodoc.vim"]
+	path = .vim/n-bundle/echodoc.vim
+	url = git@github.com:Shougo/echodoc.vim.git

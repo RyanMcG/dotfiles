@@ -414,17 +414,12 @@ let tcl_extended_syntax=1
 "Python
 let python_highlight_all = 1
 " turn off pymode's lint and rope
-let g:pymode_lint = 0 " Use syntastic
-let g:pymode_rope = 0 " Use jedi
-let g:pymode_doc = 0 " Use jedi
 let g:jedi#popup_on_dot = 0
-let g:jedi#auto_vim_configuration = 0
+" let g:jedi#auto_vim_configuration = 0
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#popup_select_first = 0
-let g:pymode_lint_checker = "pep8"
-let g:pymode_breakpoint_cmd = "import ipdb; ipdb.set_trace()  # XXX BREAKPOINT"
-"let g:ipy_perform_mappings = 0
-let g:ipy_completefunc = 'local'
+" let g:ipy_perform_mappings = 0
+" let g:ipy_completefunc = 'local'
 
 "Ruby
 let ruby_operators = 1
