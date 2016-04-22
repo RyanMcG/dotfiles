@@ -414,6 +414,7 @@ let c_space_errors = 1
 let tcl_extended_syntax=1
 
 "Python
+let python_version_2 = 1
 let python_highlight_all = 1
 " turn off pymode's lint and rope
 let g:jedi#popup_on_dot = 0
