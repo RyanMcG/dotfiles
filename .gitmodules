@@ -202,9 +202,6 @@
 [submodule ".vim/bundle/vim-ipython"]
 	path = .vim/bundle/vim-ipython
 	url = git://github.com/ivanov/vim-ipython.git
-[submodule ".vim/bundle/python.vim--Vasiliev"]
-	path = .vim/bundle/python.vim--Vasiliev
-	url = git://github.com/vim-scripts/python.vim--Vasiliev.git
 [submodule ".vim/bundle/jedi-vim"]
 	path = .vim/bundle/jedi-vim
 	url = git://github.com/davidhalter/jedi-vim.git
@@ -331,3 +328,6 @@
 [submodule ".vim/bundle/echodoc.vim"]
 	path = .vim/n-bundle/echodoc.vim
 	url = git@github.com:Shougo/echodoc.vim.git
+[submodule ".vim/bundle/python-syntax"]
+	path = .vim/bundle/python-syntax
+	url = git@github.com:hdima/python-syntax.git
