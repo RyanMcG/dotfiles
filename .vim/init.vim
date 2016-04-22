@@ -517,3 +517,5 @@ function! InlineVariable()
   :let @b = l:tmp_b
 endfunction
 nnoremap <leader>ri :call InlineVariable()<cr>
+
+set modeline
