@@ -181,16 +181,10 @@ bindsym      XF86AudioRaiseVolume exec --no-startup-id pamixer --increase 3
 bindsym      XF86AudioMedia       exec --no-startup-id pavucontrol
 
 # Screen switching
-bindsym       $mod+XF86Display exec --no-startup-id ~/.screenlayout/vga-top-margin-right.sh
-bindsym $mod+Shift+XF86Display exec --no-startup-id ~/.screenlayout/eDP1-only.sh
-bindsym       $mod+F8          exec --no-startup-id ~/.screenlayout/docked.sh
-bindsym $mod+Shift+F8          exec --no-startup-id ~/.screenlayout/only.sh
+bindsym   XF86Display   exec --no-startup-id ~/.screenlayout/only.sh
+bindsym   XF86HomePage  exec --no-startup-id ~/.screenlayout/docked.sh
 
 # Brightness
-bindsym Scroll_Lock exec --no-startup-id fucking_autobots -25
-bindsym Pause       exec --no-startup-id fucking_autobots +25
-bindsym $mod+F5     exec --no-startup-id fucking_autobots -25
-bindsym $mod+F6     exec --no-startup-id fucking_autobots +25
 bindsym $super+Down exec --no-startup-id sudo fucking_autobots -25
 bindsym $super+Up   exec --no-startup-id sudo fucking_autobots +25
 
