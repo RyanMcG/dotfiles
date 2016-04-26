@@ -364,7 +364,7 @@ nnoremap <leader>wh :FixWhitespace<cr>
 vnoremap <leader>wh :FixWhitespace<cr>
 
 " Supertab
-set completeopt=menuone
+" set completeopt=menuone
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
