@@ -213,6 +213,10 @@ endif
 "
 " Plugin Config
 
+" Rainbow
+let g:rainbow_active = 0
+nmap <leader>r :RainbowToggle<CR>
+
 " Deoplete
 let g:deoplete#enable_at_startup = 1
 
