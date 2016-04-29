@@ -79,3 +79,5 @@
 	keepBackup = false
 [receive]
 	denyCurrentBranch = warn
+[include]
+	path = ~/.gitconfig-local
