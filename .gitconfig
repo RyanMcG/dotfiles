@@ -34,6 +34,7 @@
 	leng = log --pretty=epic-exact
 	lf   = log --graph --pretty=epic-friend
 	lfng = log --pretty=epic-friend
+	lmd  = log --pretty=markdown-bullets
 	lng  = log --decorate
 	lt   = log --graph --pretty=epic-friend -10 --first-parent
 	m    = merge
@@ -75,6 +76,7 @@
 [pretty]
 	epic-exact = %C(yellow)%h%Cred %ci%Creset%Creset%C(bold red) ~%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%C(bold green)%d%Creset
 	epic-friend = %C(yellow)%h%Creset %C(cyan)%an%Creset%C(bold cyan),%Creset %s%Cred %ar%C(bold green)%d%Creset
+	markdown-bullets = * %s%n%n%w(80, 2, 2)%-b
 [mergetool]
 	keepBackup = false
 [receive]
