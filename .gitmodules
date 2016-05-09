@@ -328,3 +328,6 @@
 [submodule ".vim/bundle/rainbow"]
 	path = .vim/bundle/rainbow
 	url = git@github.com:luochen1990/rainbow.git
+[submodule ".vim/bundle/vim-cider"]
+	path = .vim/bundle/vim-cider
+	url = git@github.com:Deraen/vim-cider.git
