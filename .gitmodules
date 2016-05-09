@@ -196,9 +196,6 @@
 [submodule ".vim/bundle/wmgraphviz.vim"]
 	path = .vim/bundle/wmgraphviz.vim
 	url = git://github.com/wannesm/wmgraphviz.vim.git
-[submodule ".vim/bundle/vim-ipython"]
-	path = .vim/bundle/vim-ipython
-	url = git://github.com/ivanov/vim-ipython.git
 [submodule ".vim/bundle/jedi-vim"]
 	path = .vim/bundle/jedi-vim
 	url = git://github.com/davidhalter/jedi-vim.git
