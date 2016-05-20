@@ -10,6 +10,7 @@ keysym 8 = asterisk    8
 keysym 9 = parenleft   9
 keysym 0 = parenright  0
 
-! Swap caps lock and escape
-keycode 1 = Caps_Lock
-keycode 58 = Escape
+clear Lock
+keycode 9 = Caps_Lock
+keycode 66 = Escape
+clear Lock
