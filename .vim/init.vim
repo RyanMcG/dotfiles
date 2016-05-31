@@ -419,13 +419,14 @@ let tcl_extended_syntax=1
 "Python
 let python_version_2 = 1
 let python_highlight_all = 1
-" turn off pymode's lint and rope
+
 let g:jedi#popup_on_dot = 0
-" let g:jedi#auto_vim_configuration = 0
+let g:jedi#auto_vim_configuration = 0
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#popup_select_first = 0
-" let g:ipy_perform_mappings = 0
-" let g:ipy_completefunc = 'local'
+
+" Deoplete Jedi
+let deoplete#sources#jedi#show_docstring = 1
 
 "Ruby
 let ruby_operators = 1
