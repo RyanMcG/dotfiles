@@ -126,3 +126,10 @@ if [[ $(uname) != "Darwin" ]]; then
 		export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
 	fi
 fi
+
+if [ -f /usr/local/bin/virtualenvwrapper_lazy.sh ]; then
+	export VIRTUALENVWRAPPER_PYTHON=`which python`
+	export WORKON_HOME=$HOME/.virtualenvs
+	export PROJECT_HOME=$HOME/work
+	export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
+fi
