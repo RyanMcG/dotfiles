@@ -53,6 +53,7 @@
 	sl   = stash list --pretty=epic-exact
 	sn   = show --stat --decorate
 	wc   = whatchanged --decorate --graph
+	pushnv = push --no-verify
 [core]
 	pager = less -FXR
 	editor = nvim
