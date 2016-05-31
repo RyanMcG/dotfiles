@@ -50,7 +50,7 @@ vi-mode
 #python
 # pythonbrew
 #pip
-#virtualenvwrapper
+virtualenvwrapper
 #github
 #gem
 #cap
