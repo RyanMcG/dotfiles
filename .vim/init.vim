@@ -154,8 +154,8 @@ if has("autocmd")
 
   augroup writing
     autocmd!
-    autocmd FileType text,markdown,rst call pencil#init()
-          \ | call litecorrect#init()
+    " autocmd FileType text,markdown,rst call pencil#init()
+    "       \ | call litecorrect#init()
   augroup END
 endif " has("autocmd")
 
