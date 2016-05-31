@@ -461,7 +461,6 @@ let g:terminalkeys_loaded = 1
 "Get rid of highlighting after search with space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 "Forget sudo? Here ya go!
-cmap w!! w !sudo tee % >/dev/null
 set pastetoggle=<F12>
 
 " Retag with ctags
@@ -492,7 +491,5 @@ command! -bar -nargs=0 AutoindentToggle call AutoindentToggle()
 nnoremap <silent> <leader>ai        :AutoindentToggle<CR>
 
 nnoremap <silent> <leader>cd         :lcd %:p:h<CR>:pwd<CR>
-
-command! -nargs=0 Mkdir echon '"'.expand("%:h").'/" made directory' | silent !mkdir -p %:h
 
 set modeline
