@@ -1,6 +1,7 @@
 [user]
 	name = Ryan McGowan
 	email = ryan@ryanmcg.com
+	signingkey = CF843016
 [color]
 	ui = auto
 [merge]
