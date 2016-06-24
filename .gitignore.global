@@ -22,7 +22,6 @@ javadoc*
 .checkstyle
 .fbprefs
 .netrwhist
-/notes.*
 /todo.*
 .iws
 .ipr
