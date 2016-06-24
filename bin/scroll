@@ -1,0 +1,6 @@
+#!/bin/bash
+
+PAGE=$1
+OFFSET=${2:-0}
+
+head -n $(($PAGE + ($PAGE * $OFFSET))) | tail -n $PAGE
