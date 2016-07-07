@@ -26,7 +26,7 @@ BMAG="\[\033[45m\]" # background magenta
 BCYN="\[\033[46m\]" # background cyan
 BWHT="\[\033[47m\]" # background white
 
-P_COLOR=$FCYN
+P_COLOR=$HC$FBLE
 
 
 parse_git_branch() {
