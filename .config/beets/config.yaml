@@ -2,6 +2,8 @@ color: yes
 import:
   move: yes
   write: yes
+library: /media/tardis/beets.blb
+directory: /media/tardis/Music
 log: ~/.config/beets/import.log
 paths:
   default: $albumartist/$album%aunique{}/%if{$disc,$disc-}$track. $artist $title

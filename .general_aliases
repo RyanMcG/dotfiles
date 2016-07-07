@@ -38,7 +38,7 @@ alias sxev="xev | grep -A2 --line-buffered '^KeyRelease' | sed -n '/keycode /s/^
 # Custom Functions
 function wiki() { dig +short txt $1.wp.dg.cx ; }
 function gi() { curl http://www.gitignore.io/api/$@ ; }
-prettyjson() { python -m json.tool }
+prettyjson() { python -m json.tool ; }
 
 # Some extra aliases
 if [ -f ~/.general_aliases_extra ]; then
