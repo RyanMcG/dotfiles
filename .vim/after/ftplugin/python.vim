@@ -8,5 +8,5 @@ omap iy <Plug>(textobj-python-function-i)
 
 nnoremap <leader>B Oimport pdb; pdb.set_trace()<esc>
 nnoremap <leader>b oimport pdb; pdb.set_trace()<esc>
-nnoremap <leader>T Ofrom nose.tools import set_trace; set_trace()<esc>
-nnoremap <leader>t ofrom nose.tools import set_trace; set_trace()<esc>
+nnoremap <leader>T Oimport pytest; pytest.set_trace()<esc>
+nnoremap <leader>t oimport pytest; pytest.set_trace()<esc>
