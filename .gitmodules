@@ -307,9 +307,6 @@
 [submodule ".vim/bundle/fzf"]
 	path = .vim/bundle/fzf
 	url = git@github.com:junegunn/fzf.git
-[submodule ".vim/bundle/phpcomplete.vim"]
-	path = .vim/bundle/phpcomplete.vim
-	url = git@github.com:shawncplus/phpcomplete.vim.git
 [submodule ".vim/bundle/vdebug"]
 	path = .vim/bundle/vdebug
 	url = git@github.com:joonty/vdebug.git
@@ -337,3 +334,6 @@
 [submodule ".vim/bundle/nvim-ipy"]
 	path = .vim/bundle/nvim-ipy
 	url = git@github.com:bfredl/nvim-ipy.git
+[submodule ".vim/bundle/vim-swift"]
+	path = .vim/bundle/vim-swift
+	url = https://github.com/kballard/vim-swift
