@@ -145,6 +145,11 @@ if has("autocmd")
     au BufReadPost,BufNewFile *.cljs setlocal filetype=clojure
   augroup END
 
+  augroup sls
+    au!
+    au BufReadPost,BufNewFile *.sls setlocal filetype=yaml
+  augroup END
+
   if has("nvim")
     augroup custom_neomake
       au!
