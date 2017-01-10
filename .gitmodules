@@ -337,3 +337,9 @@
 [submodule ".vim/bundle/vim-swift"]
 	path = .vim/bundle/vim-swift
 	url = https://github.com/kballard/vim-swift
+[submodule ".vim/bundle/vim-go"]
+	path = .vim/bundle/vim-go
+	url = git@github.com:fatih/vim-go.git
+[submodule ".vim/bundle/deoplete-go"]
+	path = .vim/bundle/deoplete-go
+	url = git@github.com:zchee/deoplete-go.git
