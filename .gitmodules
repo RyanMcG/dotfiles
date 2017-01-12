@@ -341,5 +341,5 @@
 	path = .vim/bundle/vim-go
 	url = git@github.com:fatih/vim-go.git
 [submodule ".vim/bundle/deoplete-go"]
-	path = .vim/bundle/deoplete-go
+	path = .vim/n-bundle/deoplete-go
 	url = git@github.com:zchee/deoplete-go.git
