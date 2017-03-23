@@ -6,7 +6,7 @@ library: /media/tardis/beets.blb
 directory: /media/tardis/Music
 log: ~/.config/beets/import.log
 paths:
-  default: $albumartist/$album%aunique{}/%if{$disc,$disc-}$track. $artist $title
+  default: $albumartist/$album%aunique{}/%if{$disc,$disc-}$track. $artist - $title
   singleton: Non-Album/$artist/$artist - $title
   comp: Compilations/$album%aunique{}/$track. $artist - $title
 
