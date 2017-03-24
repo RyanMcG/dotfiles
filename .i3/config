@@ -155,13 +155,13 @@ exec --no-startup-id ~/.config/autostart.sh
 bindsym $mod+Escape exec lock
 bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+Return exec urxvt -name urxvt-larger
-bindsym $mod+$ctrl+Return exec urxvt -name urxvt-bg
+bindsym $mod+$ctl+Return exec urxvt -name urxvt-bg
 
 bindsym $mod+space exec --no-startup-id mydmenu
 
 # Printing
-bindsym           Print exec --no-startup-id "scrot -q 100 -e 'mv $f ~/Pictures/Screenshots/'"
-bindsym      $alt+Print exec --no-startup-id "scrot -q 100 -se 'mv $f ~/Pictures/Screenshots/'"
+# bindsym      $mod+F4 exec --no-startup-id "scrot -q 100 -e 'mv $f ~/Images/Screenshots/'"
+bindsym      $mod+F4 exec --no-startup-id "scrot -q 100 -se 'mv $f ~/Images/Screenshots/'"
 # Does not work:
 # bindsym $mod+$alt+Print exec "cloudunapp ~/Pictures/Screenshots/CloudApp"
 
@@ -185,8 +185,8 @@ bindsym   XF86Display   exec --no-startup-id ~/.screenlayout/only.sh
 bindsym   XF86HomePage  exec --no-startup-id ~/.screenlayout/docked.sh
 
 # Brightness
-bindsym $super+Down exec --no-startup-id sudo fucking_autobots -25
-bindsym $super+Up   exec --no-startup-id sudo fucking_autobots +25
+bindsym $super+Down exec --no-startup-id sudo fucking_autobots -10
+bindsym $super+Up   exec --no-startup-id sudo fucking_autobots +10
 
 # Misc
 bindsym $mod+Shift+x exec --no-startup-id "xmodmap ~/.Xmodmap"
