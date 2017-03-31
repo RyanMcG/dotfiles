@@ -340,3 +340,6 @@
 [submodule ".vim/bundle/vim-go"]
 	path = .vim/bundle/vim-go
 	url = git@github.com:fatih/vim-go.git
+[submodule ".vim/bundle/vim-jsx"]
+	path = .vim/bundle/vim-jsx
+	url = git@github.com:mxw/vim-jsx.git
