@@ -167,3 +167,8 @@ memoize
 ciphertext
 base64
 fernet
+killswitches
+killswitch
+OAuth2
+signup
+auth
