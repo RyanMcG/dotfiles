@@ -334,6 +334,7 @@ if has("nvim")
   " Disable various filetypes
   let g:neomake_sh_enabled_makers = []
   let g:neomake_zsh_enabled_makers = []
+  let g:neomake_jsx_enabled_makers = ['eslint']
 endif
 
 "CtrlP
@@ -439,6 +440,7 @@ nmap <silent> <C-k> <C-w>k
 nmap <silent> <C-j> <C-w>j
 nmap <silent> <C-l> <C-w>l
 nmap <silent> <C-h> <C-w>h
+nmap <silent> <BS> <C-w>h
 let g:terminalkeys_loaded = 1
 
 "Get rid of highlighting after search with space
