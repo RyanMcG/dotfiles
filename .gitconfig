@@ -16,9 +16,11 @@
 	caar = commit -a --amend --reuse-message=HEAD
 	caf  = commit -a --fixup
 	cam  = commit -am
+	cm   = commit -m
+	kam  = "commit -am \"(>'')>\""
+	km   = "commit -m \"<(''<)\""
 	car  = commit --amend --reuse-message=HEAD
 	cf   = commit --fixup
-	cm   = commit -m
 	co   = checkout
 	d    = diff
 	dc   = diff --cached
