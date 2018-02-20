@@ -317,8 +317,6 @@ mpd_host = alarmpi.local
 ##
 progressbar_look = ━╾
 #
-progressbar_boldness = no
-#
 ## Available values: database, playlist.
 ##
 #default_place_to_search_in = database
@@ -331,7 +329,7 @@ data_fetching_delay = no
 #
 ## Available values: artist, album_artist, date, genre, composer, performer.
 ##
-#media_library_primary_tag = artist
+media_library_primary_tag = album_artist
 #
 ## Available values: wrapped, normal.
 ##
@@ -474,13 +472,10 @@ state_flags_color = blue
 main_window_color = default
 color1 = default
 color2 = cyan
-main_window_highlight_color = green
 progressbar_color = blue
 progressbar_elapsed_color = blue
 statusbar_color = green
-active_column_color = default
 window_border_color = yellow
 #alternative_ui_separator_color = black
-#active_column_color = red
 #visualizer_color = yellow
 #active_window_border = red
