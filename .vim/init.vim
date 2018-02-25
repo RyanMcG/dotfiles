@@ -330,6 +330,10 @@ nmap <leader>gch :Git dc<CR>
 if has("nvim")
   let g:neomake_error_sign = {'texthl': 'DiffDelete'}
   let g:neomake_warning_sign = {'texthl': 'DiffChange'}
+  let g:neomake_open_list = 2
+
+  " Custom python makers
+  let g:neomake_python_enabled_makers = ['python', 'flake8', 'mypy']
 
   " Disable various filetypes
   let g:neomake_sh_enabled_makers = []

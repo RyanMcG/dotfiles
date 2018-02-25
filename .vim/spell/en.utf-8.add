@@ -175,3 +175,12 @@ auth
 ToS
 texting
 versioned
+persistedchallenges
+v1
+email
+CSRF
+spoofable
+un
+SMS
+onboarding
+kibana

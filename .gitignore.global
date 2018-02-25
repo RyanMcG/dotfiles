@@ -1,6 +1,6 @@
 ..
 /env*/
-/venv/
+/venv
 tags
 tags.lock
 tags.temp
