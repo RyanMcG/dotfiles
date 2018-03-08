@@ -13,7 +13,7 @@ case $HOSTN in
 	zenbook)
 		GAMMA="0.9:0.95:0.8"
 		HI=5200
-		LO=4300
+		LO=4000
 		;;
 esac
 
