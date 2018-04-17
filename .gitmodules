@@ -331,9 +331,6 @@
 [submodule ".vim/bundle/vim-eunuch"]
 	path = .vim/bundle/vim-eunuch
 	url = git@github.com:tpope/vim-eunuch.git
-[submodule ".vim/bundle/nvim-ipy"]
-	path = .vim/bundle/nvim-ipy
-	url = git@github.com:bfredl/nvim-ipy.git
 [submodule ".vim/bundle/vim-swift"]
 	path = .vim/bundle/vim-swift
 	url = https://github.com/kballard/vim-swift
