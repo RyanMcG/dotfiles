@@ -1,1 +1,1 @@
-export PATH=$HOME/bin:$HOME/.cargo/bin:$PATH
+export PATH=$HOME/bin:$HOME/.cargo/bin:$PATH:/usr/local/opt/node@8/bin
