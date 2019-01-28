@@ -16,9 +16,6 @@
 [submodule ".vim/bundle/cscope.vim"]
 	path = .vim/bundle/cscope.vim
 	url = git://github.com/vim-scripts/cscope.vim.git
-[submodule ".vim/bundle/tagbar"]
-	path = .vim/bundle/tagbar
-	url = git://github.com/majutsushi/tagbar.git
 [submodule ".vim/bundle/detectindent"]
 	path = .vim/bundle/detectindent
 	url = git://github.com/ciaranm/detectindent.git
@@ -43,9 +40,6 @@
 [submodule ".vim/bundle/vim-powerline"]
 	path = .vim/bundle/vim-powerline
 	url = git://github.com/Lokaltog/vim-powerline.git
-[submodule ".vim/bundle/vim-yankring"]
-	path = .vim/bundle/vim-yankring
-	url = git://github.com/chrismetcalf/vim-yankring.git
 [submodule ".vim/bundle/vim-trailing-whitespace"]
 	path = .vim/bundle/vim-trailing-whitespace
 	url = git://github.com/bronson/vim-trailing-whitespace.git
@@ -136,18 +130,12 @@
 [submodule ".vim/bundle/vim-lion"]
 	path = .vim/bundle/vim-lion
 	url = git://github.com/tommcdo/vim-lion.git
-[submodule ".vim/bundle/vim-projectionist"]
-	path = .vim/bundle/vim-projectionist
-	url = git://github.com/tpope/vim-projectionist.git
 [submodule ".vim/bundle/vim-vinegar"]
 	path = .vim/bundle/vim-vinegar
 	url = git://github.com/tpope/vim-vinegar.git
 [submodule ".vim/bundle/vim-jdaddy"]
 	path = .vim/bundle/vim-jdaddy
 	url = git://github.com/tpope/vim-jdaddy.git
-[submodule ".vim/bundle/vim-colors-solarized"]
-	path = .vim/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule ".vim/bundle/xoria256.vim"]
 	path = .vim/bundle/xoria256.vim
 	url = git://github.com/vim-scripts/xoria256.vim.git
@@ -175,24 +163,9 @@
 [submodule ".vim/bundle/vim-clojure-static"]
 	path = .vim/bundle/vim-clojure-static
 	url = git://github.com/guns/vim-clojure-static.git
-[submodule ".vim/bundle/vim-classpath"]
-	path = .vim/bundle/vim-classpath
-	url = git://github.com/tpope/vim-classpath.git
-[submodule ".vim/bundle/vim-fireplace"]
-	path = .vim/bundle/vim-fireplace
-	url = git://github.com/tpope/vim-fireplace.git
-[submodule ".vim/bundle/vim-slamhound"]
-	path = .vim/bundle/vim-slamhound
-	url = git://github.com/guns/vim-slamhound.git
-[submodule ".vim/bundle/vim-leiningen"]
-	path = .vim/bundle/vim-leiningen
-	url = git://github.com/tpope/vim-leiningen.git
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = git://github.com/tpope/vim-markdown.git
-[submodule ".vim/bundle/vim-octopress"]
-	path = .vim/bundle/vim-octopress
-	url = git://github.com/tangledhelix/vim-octopress.git
 [submodule ".vim/bundle/wmgraphviz.vim"]
 	path = .vim/bundle/wmgraphviz.vim
 	url = git://github.com/wannesm/wmgraphviz.vim.git
@@ -205,9 +178,6 @@
 [submodule ".vim/bundle/html5.vim"]
 	path = .vim/bundle/html5.vim
 	url = git://github.com/othree/html5.vim.git
-[submodule ".vim/bundle/vim-haml"]
-	path = .vim/bundle/vim-haml
-	url = git://github.com/tpope/vim-haml.git
 [submodule ".vim/bundle/vim-less"]
 	path = .vim/bundle/vim-less
 	url = git://github.com/groenewege/vim-less.git
@@ -220,9 +190,6 @@
 [submodule ".vim/bundle/vim-coffee-script"]
 	path = .vim/bundle/vim-coffee-script
 	url = git://github.com/kchmck/vim-coffee-script.git
-[submodule ".vim/bundle/vim-jade"]
-	path = .vim/bundle/vim-jade
-	url = git://github.com/digitaltoad/vim-jade.git
 [submodule ".vim/bundle/vim-nodejs-errorformat"]
 	path = .vim/bundle/vim-nodejs-errorformat
 	url = git://github.com/felixge/vim-nodejs-errorformat.git
@@ -235,9 +202,6 @@
 [submodule ".vim/bundle/vim-ruby"]
 	path = .vim/bundle/vim-ruby
 	url = git://github.com/vim-ruby/vim-ruby.git
-[submodule ".vim/bundle/vim-rails"]
-	path = .vim/bundle/vim-rails
-	url = git://github.com/tpope/vim-rails.git
 [submodule ".vim/bundle/vim-endwise"]
 	path = .vim/bundle/vim-endwise
 	url = git://github.com/tpope/vim-endwise.git
@@ -286,9 +250,6 @@
 [submodule ".vim/bundle/gtags.vim"]
 	path = .vim/bundle/gtags.vim
 	url = git@github.com:vim-scripts/gtags.vim.git
-[submodule ".vim/bundle/vim-lfe"]
-	path = .vim/bundle/vim-lfe
-	url = git@github.com:lfex/vim-lfe.git
 [submodule ".vim/bundle/vim-gutentags"]
 	path = .vim/bundle/vim-gutentags
 	url = git@github.com:RyanMcG/vim-gutentags.git
@@ -298,15 +259,6 @@
 [submodule ".vim/bundle/vim-addon-nix"]
 	path = .vim/bundle/vim-addon-nix
 	url = git@github.com:MarcWeber/vim-addon-nix.git
-[submodule ".vim/bundle/vim-nix"]
-	path = .vim/bundle/vim-nix
-	url = git@github.com:LnL7/vim-nix.git
-[submodule ".vim/bundle/fzf.vim"]
-	path = .vim/bundle/fzf.vim
-	url = git@github.com:junegunn/fzf.vim.git
-[submodule ".vim/bundle/fzf"]
-	path = .vim/bundle/fzf
-	url = git@github.com:junegunn/fzf.git
 [submodule ".vim/bundle/vdebug"]
 	path = .vim/bundle/vdebug
 	url = git@github.com:joonty/vdebug.git
