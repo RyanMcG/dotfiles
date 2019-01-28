@@ -19,7 +19,7 @@
 #
 ##### connection settings #####
 #
-mpd_host = alarmpi.local
+# mpd_host = alarmpi.local
 #
 #mpd_port = 6600
 #
@@ -454,11 +454,11 @@ display_bitrate = yes
 #
 #search_engine_default_search_mode = 1
 #
-external_editor = gvim
+external_editor = nvim
 #
 ## Note: set to yes if external editor is a console application.
 ##
-use_console_editor = no
+use_console_editor = yes
 #
 ##### colors definitions #####
 #

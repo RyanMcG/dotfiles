@@ -43,6 +43,8 @@ if &t_Co > 2 || has("gui_running")
   set background=dark
 endif
 
+set maxmempattern=9999
+
 set colorcolumn=80
 "Set our colorscheme
 if has("gui_running")
