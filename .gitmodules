@@ -169,9 +169,6 @@
 [submodule ".vim/bundle/wmgraphviz.vim"]
 	path = .vim/bundle/wmgraphviz.vim
 	url = git://github.com/wannesm/wmgraphviz.vim.git
-[submodule ".vim/bundle/jedi-vim"]
-	path = .vim/bundle/jedi-vim
-	url = git://github.com/davidhalter/jedi-vim.git
 [submodule ".vim/bundle/vim-yaml"]
 	path = .vim/bundle/vim-yaml
 	url = git://github.com/avakhov/vim-yaml.git
@@ -298,3 +295,6 @@
 [submodule ".vim/bundle/nvim-typescript"]
 	path = .vim/bundle/nvim-typescript
 	url = git@github.com:mhartington/nvim-typescript.git
+[submodule ".vim/bundle/LanguageClient-neovim"]
+	path = .vim/bundle/LanguageClient-neovim
+	url = git@github.com:autozimu/LanguageClient-neovim.git
