@@ -341,6 +341,16 @@ if has("nvim")
   let g:neomake_sh_enabled_makers = []
   let g:neomake_zsh_enabled_makers = []
   let g:neomake_jsx_enabled_makers = ['eslint']
+  let g:LanguageClient_serverCommands = {
+        \ 'go': ['go-langserver', '-gocodecompletion'],
+        \ 'python': ['pyls'],
+        \ }
+
+  nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+  " Or map each action separately
+  nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+  nnoremap <silent> <leader>d :call LanguageClient#textDocument_definition()<CR>
+  nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 endif
 
 "CtrlP
@@ -406,7 +416,7 @@ let tcl_extended_syntax=1
 "Python
 " let g:python_host_prog = '/usr/local/bin/python2'
 " let g:loaded_python_provider = 1  " disbale python 2
-" let g:python3_host_prog = '/usr/local/bin/python3'
+" let g:python3_host_prog = '/usr/local/bin/python'
 let python_version_2 = 1
 let python_highlight_all = 1
 

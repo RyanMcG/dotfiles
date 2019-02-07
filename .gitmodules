@@ -259,9 +259,6 @@
 [submodule ".vim/bundle/vdebug"]
 	path = .vim/bundle/vdebug
 	url = git@github.com:joonty/vdebug.git
-[submodule ".vim/bundle/deoplete-jedi"]
-	path = .vim/n-bundle/deoplete-jedi
-	url = git@github.com:zchee/deoplete-jedi.git
 [submodule ".vim/bundle/deoplete.nvim"]
 	path = .vim/n-bundle/deoplete.nvim
 	url = git@github.com:Shougo/deoplete.nvim.git

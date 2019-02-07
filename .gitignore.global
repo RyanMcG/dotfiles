@@ -49,3 +49,4 @@ GRTAGS
 GPATH
 /.mypy_cache
 *.bak
+.kak.*
