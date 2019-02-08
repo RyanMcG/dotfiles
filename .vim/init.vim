@@ -343,7 +343,7 @@ if has("nvim")
   let g:neomake_jsx_enabled_makers = ['eslint']
   let g:LanguageClient_serverCommands = {
         \ 'go': ['go-langserver', '-gocodecompletion'],
-        \ 'python': ['pyls'],
+        \ 'python': ['pyls', '-v']
         \ }
 
   nnoremap <F5> :call LanguageClient_contextMenu()<CR>
@@ -414,9 +414,10 @@ let c_space_errors = 1
 let tcl_extended_syntax=1
 
 "Python
-" let g:python_host_prog = '/usr/local/bin/python2'
-" let g:loaded_python_provider = 1  " disbale python 2
-" let g:python3_host_prog = '/usr/local/bin/python'
+let g:python_host_prog = '/usr/local/bin/python2'
+let g:python3_host_prog = '/usr/local/bin/python'
+
+" Vim settings
 let python_version_2 = 1
 let python_highlight_all = 1
 
