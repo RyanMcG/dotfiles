@@ -256,9 +256,6 @@
 [submodule ".vim/bundle/vim-addon-nix"]
 	path = .vim/bundle/vim-addon-nix
 	url = git@github.com:MarcWeber/vim-addon-nix.git
-[submodule ".vim/bundle/vdebug"]
-	path = .vim/bundle/vdebug
-	url = git@github.com:joonty/vdebug.git
 [submodule ".vim/bundle/deoplete.nvim"]
 	path = .vim/n-bundle/deoplete.nvim
 	url = git@github.com:Shougo/deoplete.nvim.git
