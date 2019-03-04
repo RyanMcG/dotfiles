@@ -1,0 +1,15 @@
+{
+  "pyls": {
+    "configurationSources": [
+      "flake8"
+    ],
+    "plugins": {
+      "pyflakes": {
+        "enabled": false
+      },
+      "pydocstyle": {
+        "enabled": false
+      }
+    }
+  }
+}

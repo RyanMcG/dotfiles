@@ -114,7 +114,7 @@ if [[ $(uname) != "Darwin" ]]; then
 fi
 
 if [ -f /usr/local/bin/virtualenvwrapper_lazy.sh ]; then
-	export VIRTUALENVWRAPPER_PYTHON=`which python3.6`
+	export VIRTUALENVWRAPPER_PYTHON=`which python3`
 	export WORKON_HOME=$HOME/.virtualenvs
 	export PROJECT_HOME=$HOME/work
 	export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh

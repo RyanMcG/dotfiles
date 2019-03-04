@@ -222,7 +222,7 @@ endif
 
 " Rainbow
 let g:rainbow_active = 0
-nmap <leader>r :RainbowToggle<CR>
+nmap <leader>n :RainbowToggle<CR>
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
@@ -335,22 +335,31 @@ if has("nvim")
   let g:neomake_open_list = 2
 
   " Custom python makers
-  let g:neomake_python_enabled_makers = ['python', 'flake8', 'mypy']
+  let g:neomake_python_enabled_makers = ['python', 'flake8']
+  " let g:neomake_python_enabled_makers = ['python', 'flake8', 'mypy']
 
   " Disable various filetypes
   let g:neomake_sh_enabled_makers = []
   let g:neomake_zsh_enabled_makers = []
   let g:neomake_jsx_enabled_makers = ['eslint']
+  let g:LanguageClient_settingsPath = expand('~/.config/nvim/lsp.json')
   let g:LanguageClient_serverCommands = {
         \ 'go': ['go-langserver', '-gocodecompletion'],
-        \ 'python': ['pyls', '-v']
+        \ 'python': ['pyls']
         \ }
 
-  nnoremap <F5> :call LanguageClient_contextMenu()<CR>
-  " Or map each action separately
-  nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-  nnoremap <silent> <leader>d :call LanguageClient#textDocument_definition()<CR>
-  nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+  function LC_maps()
+    if has_key(g:LanguageClient_serverCommands, &filetype)
+      nnoremap <buffer> <leader>m :call LanguageClient_contextMenu()<CR>
+      " Or map each action separately
+      nnoremap <buffer> K :call LanguageClient#textDocument_hover()<CR>
+      nnoremap <buffer> <leader>d :call LanguageClient#textDocument_definition()<CR>
+      nnoremap <buffer> <leader>rn :call LanguageClient#textDocument_rename()<CR>
+      nnoremap <buffer> <leader>rs :call LanguageClient#textDocument_references()<CR>
+    endif
+  endfunction
+
+  autocmd FileType * call LC_maps()
 endif
 
 "CtrlP
@@ -414,8 +423,8 @@ let c_space_errors = 1
 let tcl_extended_syntax=1
 
 "Python
-let g:python_host_prog = '/usr/local/bin/python2'
-let g:python3_host_prog = '/usr/local/bin/python'
+let g:python_host_prog = expand('~/.virtualenvs/neovim2/bin/python')
+let g:python3_host_prog = expand('~/.virtualenvs/neovim3/bin/python')
 
 " Vim settings
 let python_version_2 = 1
