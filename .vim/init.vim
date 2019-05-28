@@ -196,7 +196,7 @@ set title
 set showmatch
 
 "Completeion in command mode
-set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,.DS_Store,*.aux,*.out,*.toc,*.pyc,*node_modules*,*/venv/*,*/build/*
+set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,.DS_Store,*.aux,*.out,*.toc,*.pyc,*node_modules*,*/venv/*,*/build/*,*/vendor/*
 set wildmenu
 set wildmode=list:longest,full
 
@@ -289,9 +289,9 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
-nnoremap <leader>a/ :Ack!<space>
-nnoremap <leader>a* :Ack! -w <C-R><C-W><space>
-nnoremap <leader>aa :AckAdd<space>
+nnoremap <leader>a/ :LAck!<space>
+nnoremap <leader>a* :LAck! -w <C-R><C-W><space>
+nnoremap <leader>aa :LAckAdd<space>
 
 " Open and close the location and quickfix list
 nmap <leader>cc :cclose<CR>
@@ -336,7 +336,7 @@ if has("nvim")
 
   " Custom python makers
   let g:neomake_python_enabled_makers = ['python', 'flake8']
-  " let g:neomake_python_enabled_makers = ['python', 'flake8', 'mypy']
+  let g:neomake_go_enabled_makers = ['go']
 
   " Disable various filetypes
   let g:neomake_sh_enabled_makers = []
@@ -344,8 +344,9 @@ if has("nvim")
   let g:neomake_jsx_enabled_makers = ['eslint']
   let g:LanguageClient_settingsPath = expand('~/.config/nvim/lsp.json')
   let g:LanguageClient_serverCommands = {
-        \ 'go': ['go-langserver', '-gocodecompletion'],
-        \ 'python': ['pyls']
+        \ 'go': ['gopls'],
+        \ 'python': ['pyls'],
+        \ 'clojure': ['clojure-lsp'],
         \ }
 
   function LC_maps()

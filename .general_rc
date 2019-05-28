@@ -14,11 +14,6 @@ export GOPATH=$HOME/repo/gocode
 export POWERLINE_COMMAND=$HOME/repo/dotfiles/powerline/scripts/powerline
 export POWERLINE_CONFIG_COMMAND=$HOME/repo/dotfiles/powerline/scripts/powerline-config
 
-if [[ $(uname) == "Darwin" ]]; then
-	export PATH=/Applications/Emacs.app/Contents/MacOS/bin:$PATH
-fi
-
-export CLASSPATH=.:src/:bin/
 export PYTHONDOCS=/usr/share/doc/python2/html/
 export ACKRC=".ackrc" # Allow directory level .ackrc.
 export CLOJURESCRIPT_HOME=$HOME/repo/clojurescript
@@ -119,3 +114,5 @@ if [ -f /usr/local/bin/virtualenvwrapper_lazy.sh ]; then
 	export PROJECT_HOME=$HOME/work
 	export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
 fi
+
+eval "$(pyenv init -)"

@@ -50,3 +50,5 @@ GPATH
 /.mypy_cache
 *.bak
 .kak.*
+/.python-version
+/.lsp/*.db

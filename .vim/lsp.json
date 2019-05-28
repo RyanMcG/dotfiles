@@ -4,6 +4,9 @@
       "flake8"
     ],
     "plugins": {
+      "pylint": {
+        "enabled": false
+      },
       "pyflakes": {
         "enabled": false
       },
