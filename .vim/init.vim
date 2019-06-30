@@ -428,7 +428,7 @@ let g:python_host_prog = expand('~/.virtualenvs/neovim2/bin/python')
 let g:python3_host_prog = expand('~/.virtualenvs/neovim3/bin/python')
 
 " Vim settings
-let python_version_2 = 1
+" let python_version_2 = 1
 let python_highlight_all = 1
 
 let g:jedi#popup_on_dot = 0
