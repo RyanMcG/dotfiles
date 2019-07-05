@@ -348,6 +348,7 @@ if has("nvim")
         \ 'python': ['pyls'],
         \ 'clojure': ['clojure-lsp'],
         \ }
+  let g:LanguageClient_autoStart = 1
 
   function LC_maps()
     if has_key(g:LanguageClient_serverCommands, &filetype)
