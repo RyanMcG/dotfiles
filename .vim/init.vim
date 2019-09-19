@@ -352,6 +352,7 @@ if has("nvim")
 
   function LC_maps()
     if has_key(g:LanguageClient_serverCommands, &filetype)
+
       nnoremap <buffer> <leader>m :call LanguageClient_contextMenu()<CR>
       " Or map each action separately
       nnoremap <buffer> K :call LanguageClient#textDocument_hover()<CR>
@@ -362,6 +363,7 @@ if has("nvim")
   endfunction
 
   autocmd FileType * call LC_maps()
+  autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
 endif
 
 "CtrlP

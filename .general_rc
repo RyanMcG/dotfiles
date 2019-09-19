@@ -114,5 +114,3 @@ if [ -f /usr/local/bin/virtualenvwrapper_lazy.sh ]; then
 	export PROJECT_HOME=$HOME/work
 	export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
 fi
-
-eval "$(pyenv init -)"

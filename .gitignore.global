@@ -52,3 +52,4 @@ GPATH
 .kak.*
 /.python-version
 /.lsp/*.db
+.envrc

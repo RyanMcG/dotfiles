@@ -88,4 +88,8 @@
 [include]
 	path = ~/.gitconfig-local
 [url "git@github.com:"]
-    insteadOf = https://github.com/
+	insteadOf = https://github.com/
+[url "git@github.lyft.net:"]
+	insteadOf = https://github.lyft.net/
+[init]
+	templateDir = /lyft/.git-template

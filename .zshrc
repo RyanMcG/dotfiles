@@ -74,7 +74,3 @@ bindkey -M vicmd v edit-command-line
 
 # Turn off ZSH autocorrection
 unsetopt correct_all
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-PATH=$PATH:/Users/rmcgowan/.lyftkube-bin
