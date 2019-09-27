@@ -35,7 +35,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 #
 plugins=(
-git
+# git
 archlinux
 #nyan
 lein
