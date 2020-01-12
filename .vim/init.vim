@@ -349,9 +349,11 @@ if has("nvim")
         \ 'clojure': ['clojure-lsp'],
         \ }
   let g:LanguageClient_autoStart = 1
+  let g:LanguageClient_hasSnippetSupport = 0
 
   function LC_maps()
     if has_key(g:LanguageClient_serverCommands, &filetype)
+      setlocal formatexpr=LanguageClient#textDocument_rangeFormatting_sync()
 
       nnoremap <buffer> <leader>m :call LanguageClient_contextMenu()<CR>
       " Or map each action separately
