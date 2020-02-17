@@ -344,7 +344,7 @@ if has("nvim")
   let g:neomake_jsx_enabled_makers = ['eslint']
   let g:LanguageClient_settingsPath = expand('~/.config/nvim/lsp.json')
   let g:LanguageClient_serverCommands = {
-        \ 'go': ['gopls'],
+        \ 'go': ['gopls -tags=integration'],
         \ 'python': ['pyls'],
         \ 'clojure': ['clojure-lsp'],
         \ }
@@ -353,8 +353,6 @@ if has("nvim")
 
   function LC_maps()
     if has_key(g:LanguageClient_serverCommands, &filetype)
-      setlocal formatexpr=LanguageClient#textDocument_rangeFormatting_sync()
-
       nnoremap <buffer> <leader>m :call LanguageClient_contextMenu()<CR>
       " Or map each action separately
       nnoremap <buffer> K :call LanguageClient#textDocument_hover()<CR>
@@ -481,7 +479,7 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 set pastetoggle=<F12>
 
 " Retag with ctags
-noremap <Leader>ct :!ctags -R *<CR><CR>
+noremap <Leader>ct :!ctags --exclude=vendor -R *<CR><CR>
 
 "
 " Some Custom functions
