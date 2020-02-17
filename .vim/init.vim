@@ -225,7 +225,9 @@ let g:rainbow_active = 0
 nmap <leader>n :RainbowToggle<CR>
 
 " Deoplete
+
 let g:deoplete#enable_at_startup = 1
+call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
 
 " Instant Markdown
 " Do not enable by default
@@ -237,6 +239,8 @@ autocmd User GoyoLeave Limelight!
 
 " Airline
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#languageclient#enabled = 1
+let g:airline#extensions#neomake#enabled = 1
 
 " minibufexpl
 "let g:miniBufExplVSplit = 25
@@ -328,7 +332,13 @@ nmap <leader>gcm :Gcommit<CR>
 nmap <leader>gd :Gdiff<CR>
 nmap <leader>gch :Git dc<CR>
 
-" Neomake
+" vimgo
+
+" Prefer LanguageClient
+let g:go_gopls_enabled = 0
+let g:go_code_completion_enabled = 0
+
+" Nvim
 if has("nvim")
   let g:neomake_error_sign = {'texthl': 'DiffDelete'}
   let g:neomake_warning_sign = {'texthl': 'DiffChange'}
@@ -344,7 +354,7 @@ if has("nvim")
   let g:neomake_jsx_enabled_makers = ['eslint']
   let g:LanguageClient_settingsPath = expand('~/.config/nvim/lsp.json')
   let g:LanguageClient_serverCommands = {
-        \ 'go': ['gopls -tags=integration'],
+        \ 'go': ['env', 'GOFLAGS=-tags=integration', 'gopls'],
         \ 'python': ['pyls'],
         \ 'clojure': ['clojure-lsp'],
         \ }
@@ -356,7 +366,7 @@ if has("nvim")
       nnoremap <buffer> <leader>m :call LanguageClient_contextMenu()<CR>
       " Or map each action separately
       nnoremap <buffer> K :call LanguageClient#textDocument_hover()<CR>
-      nnoremap <buffer> <leader>d :call LanguageClient#textDocument_definition()<CR>
+      nnoremap <buffer> gd :call LanguageClient#textDocument_definition()<CR>
       nnoremap <buffer> <leader>rn :call LanguageClient#textDocument_rename()<CR>
       nnoremap <buffer> <leader>rs :call LanguageClient#textDocument_references()<CR>
     endif
