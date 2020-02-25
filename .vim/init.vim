@@ -307,10 +307,10 @@ nmap <leader>lo :lopen<CR>
 nnoremap <leader>gg :GitGutterToggle<CR>
 let g:gitgutter_sign_modified = 'Δ'
 
-nmap [h <Plug>GitGutterPrevHunk
-nmap ]h <Plug>GitGutterNextHunk
-nmap <Leader>hs <Plug>GitGutterStageHunk
-nmap <Leader>hr <Plug>GitGutterRevertHunk
+nmap [h <Plug>(GitGutterPrevHunk)
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap <Leader>hs <Plug>(GitGutterStageHunk)
+nmap <Leader>hr <Plug>(GitGutterRevertHunk)
 
 let g:gitgutter_sign_modified_removed = 'Δ_'
 "let g:gitgutter_diff_args = '-w'
@@ -365,10 +365,11 @@ if has("nvim")
     if has_key(g:LanguageClient_serverCommands, &filetype)
       nnoremap <buffer> <leader>m :call LanguageClient_contextMenu()<CR>
       " Or map each action separately
-      nnoremap <buffer> K :call LanguageClient#textDocument_hover()<CR>
-      nnoremap <buffer> gd :call LanguageClient#textDocument_definition()<CR>
-      nnoremap <buffer> <leader>rn :call LanguageClient#textDocument_rename()<CR>
-      nnoremap <buffer> <leader>rs :call LanguageClient#textDocument_references()<CR>
+      nnoremap <buffer> <silent> K :call LanguageClient#textDocument_hover()<cr>
+      nnoremap <buffer> <silent> gd :call LanguageClient#textDocument_definition()<CR>
+      nnoremap <buffer> <silent> <leader>rn :call LanguageClient#textDocument_rename()<CR>
+      nnoremap <buffer> <silent> <leader>rs :call LanguageClient#textDocument_references()<CR>
+      setlocal omnifunc=LanguageClient#complete
     endif
   endfunction
 
