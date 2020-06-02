@@ -47,7 +47,7 @@ eclipse-bin/
 GTAGS
 GRTAGS
 GPATH
-/.mypy_cache
+.mypy_cache/
 *.bak
 .kak.*
 /.python-version

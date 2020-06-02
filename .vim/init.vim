@@ -345,8 +345,8 @@ if has("nvim")
   let g:neomake_open_list = 2
 
   " Custom python makers
-  let g:neomake_python_enabled_makers = ['python', 'flake8']
-  let g:neomake_go_enabled_makers = ['go']
+  let g:neomake_python_enabled_makers = []
+  let g:neomake_go_enabled_makers = []
 
   " Disable various filetypes
   let g:neomake_sh_enabled_makers = []

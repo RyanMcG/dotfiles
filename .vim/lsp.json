@@ -1,9 +1,13 @@
 {
   "pyls": {
-    "configurationSources": [
-      "flake8"
-    ],
     "plugins": {
+      "pyls_mypy": {
+        "enabled": true,
+        "live_mode": false
+      },
+      "pycodestyle": {
+        "enabled": false
+      },
       "pylint": {
         "enabled": false
       },
