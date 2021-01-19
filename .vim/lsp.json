@@ -5,6 +5,9 @@
         "enabled": true,
         "live_mode": false
       },
+      "flake8": {
+        "enabled": true
+      },
       "pycodestyle": {
         "enabled": false
       },

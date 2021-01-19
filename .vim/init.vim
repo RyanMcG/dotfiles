@@ -275,7 +275,7 @@ nnoremap <silent> <F4> :AutornuOnOff<CR>
 let g:clojure_align_multiline_strings = 0
 " Set *.cljs files to the clojure filetype
 
-let mapleader = '\'
+let mapleader = ';'
 " Paredit
 let g:paredit_shortmaps = 1
 
@@ -345,7 +345,7 @@ if has("nvim")
   let g:neomake_open_list = 2
 
   " Custom python makers
-  let g:neomake_python_enabled_makers = []
+  let g:neomake_python_enabled_makers = ['flake8']
   let g:neomake_go_enabled_makers = []
 
   " Disable various filetypes
