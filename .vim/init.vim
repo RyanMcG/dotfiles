@@ -374,7 +374,7 @@ if has("nvim")
   endfunction
 
   autocmd FileType * call LC_maps()
-  autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
+  " autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
 endif
 
 "CtrlP
