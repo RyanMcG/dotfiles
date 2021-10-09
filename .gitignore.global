@@ -53,3 +53,6 @@ GPATH
 /.python-version
 /.lsp/*.db
 .envrc
+.pytest_cache/
+.activate.sh
+.deactivate.sh
