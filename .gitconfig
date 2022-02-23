@@ -91,3 +91,5 @@
 	insteadOf = https://github.com/
 [url "git@github.lyft.net:"]
 	insteadOf = https://github.lyft.net/
+[init]
+	templateDir = /opt/lyft/.git-template
