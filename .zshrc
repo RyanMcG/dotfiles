@@ -36,9 +36,9 @@ DISABLE_AUTO_UPDATE="true"
 #
 plugins=(
 # git
-archlinux
+#archlinux
 #nyan
-lein
+#lein
 # heroku
 #rbenv
 #bundler
@@ -50,7 +50,7 @@ vi-mode
 #python
 # pythonbrew
 #pip
-virtualenvwrapper
+#virtualenvwrapper
 #github
 #gem
 #cap
