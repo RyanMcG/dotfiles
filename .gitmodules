@@ -262,3 +262,9 @@
 [submodule ".vim/bundle/vim-jinja"]
 	path = .vim/bundle/vim-jinja
 	url = git@github.com:lepture/vim-jinja.git
+[submodule ".vim/bundle/vim-rego"]
+	path = .vim/bundle/vim-rego
+	url = git@github.com:tsandall/vim-rego.git
+[submodule ".vim/bundle/neoformat"]
+	path = .vim/bundle/neoformat
+	url = git@github.com:sbdchd/neoformat.git

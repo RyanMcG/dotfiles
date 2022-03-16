@@ -1,0 +1,2 @@
+#!/bin/zsh
+opa check -f json $@ 2>&1 | jq -r '.errors[] | .location.file + ":" + (.location.row | @text) + ":" + (.location.col | @text) + ": " + .code + ": " + .message'

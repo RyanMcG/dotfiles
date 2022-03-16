@@ -159,10 +159,9 @@ if has("autocmd")
     augroup END
   endif
 
-  augroup writing
-    autocmd!
-    " autocmd FileType text,markdown,rst call pencil#init()
-    "       \ | call litecorrect#init()
+  augroup fmt
+    au!
+    au BufWritePre * | Neoformat
   augroup END
 endif " has("autocmd")
 
@@ -338,6 +337,16 @@ nmap <leader>gch :Git dc<CR>
 let g:go_gopls_enabled = 0
 let g:go_code_completion_enabled = 0
 
+" Neoformat
+let g:neoformat_only_msg_on_error = 1
+
+let g:neoformat_rego_opa = {
+      \ 'exe': 'opa',
+      \ 'args': ['fmt'],
+      \ 'stdin': 1,
+      \ }
+let g:neoformat_enabled_rego = ['opa']
+
 " Nvim
 if has("nvim")
   let g:neomake_error_sign = {'texthl': 'DiffDelete'}
@@ -351,6 +360,12 @@ if has("nvim")
   " Disable various filetypes
   let g:neomake_sh_enabled_makers = []
   let g:neomake_zsh_enabled_makers = []
+  let g:neomake_opa_maker = {
+     \ 'exe': 'opa-vim-check',
+     \ 'args': [],
+     \ 'errorformat': '%f:%l:%c: %m',
+     \ }
+  let g:neomake_rego_enabled_makers = ['opa']
   let g:neomake_jsx_enabled_makers = ['eslint']
   let g:LanguageClient_settingsPath = expand('~/.config/nvim/lsp.json')
   let g:LanguageClient_serverCommands = {
