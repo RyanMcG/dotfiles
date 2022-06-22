@@ -159,10 +159,10 @@ if has("autocmd")
     augroup END
   endif
 
-  augroup fmt
-    au!
-    au BufWritePre * | Neoformat
-  augroup END
+  " augroup fmt
+  "   au!
+  "   au BufWritePre * | Neoformat
+  " augroup END
 endif " has("autocmd")
 
 " allow backspacing over everything in insert mode
@@ -326,7 +326,7 @@ map <Leader>u :GundoToggle<CR>
 
 " Fugitive
 nmap <leader>gl :Glog<CR>
-nmap <leader>gs :Gstatus<CR>
+nmap <leader>gs :Git<CR>
 nmap <leader>gcm :Gcommit<CR>
 nmap <leader>gd :Gdiff<CR>
 nmap <leader>gch :Git dc<CR>
