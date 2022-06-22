@@ -22,4 +22,11 @@ to some sort folder structure.
 Setup
 =====
 
-Run `./setup.sh`.
+Run `./setup.sh` to link directories.
+
+If git submodules are not downloaded yet, run:
+
+```
+git submodule init
+git submodule update
+```

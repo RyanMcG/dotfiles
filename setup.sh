@@ -2,7 +2,6 @@
 
 DOTFILES=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 
-
 ln -s $DOTFILES/.bash_aliases ~/
 ln -s $DOTFILES/.bash_profile ~/
 ln -s $DOTFILES/.bashrc ~/
