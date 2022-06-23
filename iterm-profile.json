@@ -1,9 +1,5 @@
 {
-  "Ansi 3 Color" : {
-    "Green Component" : "0.627451",
-    "Red Component" : "0.7686275",
-    "Blue Component" : "0"
-  },
+  "Horizontal Spacing" : 1,
   "Tags" : [
 
   ],
@@ -33,10 +29,18 @@
     "Red Component" : "0.9372549",
     "Blue Component" : "0.1607843"
   },
-  "Horizontal Spacing" : 1,
+  "Ansi 4 Color" : {
+    "Green Component" : "0.3960784",
+    "Red Component" : "0.2039216",
+    "Blue Component" : "0.6431373"
+  },
   "Rows" : 25,
   "Default Bookmark" : "No",
-  "Right Option Key Sends" : 0,
+  "Ansi 5 Color" : {
+    "Green Component" : "0.3137255",
+    "Red Component" : "0.4588235",
+    "Blue Component" : "0.4823529"
+  },
   "Cursor Guide Color" : {
     "Red Component" : 0.70213186740875244,
     "Color Space" : "sRGB",
@@ -314,34 +318,12 @@
     "Blue Component" : "1"
   },
   "Transparency" : 0,
-  "Ansi 1 Color" : {
-    "Green Component" : "0",
-    "Red Component" : "0.8",
-    "Blue Component" : "0"
-  },
+  "Guid" : "00661CB2-E054-46DF-9885-9CD9078D6982",
   "Ansi 2 Color" : {
     "Green Component" : "0.6039215999999999",
     "Red Component" : "0.3058824",
     "Blue Component" : "0.02352941"
   },
-  "Custom Directory" : "No",
-  "Ansi 4 Color" : {
-    "Green Component" : "0.3960784",
-    "Red Component" : "0.2039216",
-    "Blue Component" : "0.6431373"
-  },
-  "Ansi 5 Color" : {
-    "Green Component" : "0.3137255",
-    "Red Component" : "0.4588235",
-    "Blue Component" : "0.4823529"
-  },
-  "Use Non-ASCII Font" : false,
-  "Ansi 6 Color" : {
-    "Green Component" : "0.5960785",
-    "Red Component" : "0.02352941",
-    "Blue Component" : "0.6039215999999999"
-  },
-  "Normal Font" : "InconsolataForPowerline-g 14",
   "Link Color" : {
     "Red Component" : 0,
     "Color Space" : "sRGB",
@@ -354,5 +336,23 @@
     "Red Component" : "0",
     "Blue Component" : "0"
   },
-  "Guid" : "00661CB2-E054-46DF-9885-9CD9078D6982"
+  "Custom Directory" : "No",
+  "Use Non-ASCII Font" : false,
+  "Ansi 6 Color" : {
+    "Green Component" : "0.5960785",
+    "Red Component" : "0.02352941",
+    "Blue Component" : "0.6039215999999999"
+  },
+  "Normal Font" : "Inconsolata-Regular 20",
+  "Ansi 3 Color" : {
+    "Green Component" : "0.627451",
+    "Red Component" : "0.7686275",
+    "Blue Component" : "0"
+  },
+  "Ansi 1 Color" : {
+    "Green Component" : "0",
+    "Red Component" : "0.8",
+    "Blue Component" : "0"
+  },
+  "Right Option Key Sends" : 0
 }
