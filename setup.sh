@@ -21,6 +21,7 @@ ln -s $DOTFILES/.zshrc ~/
 ln -s $DOTFILES/.ackrc ~/
 ln -s $DOTFILES/.oh-my-zsh ~/
 ln -s $DOTFILES/.ncmpcpp ~/
+ln -s $DOTFILES/.config ~/
 
 mkdir -p ~/bin
 ln -s $DOTFILES/bin/git-gcbranches ~/bin/
