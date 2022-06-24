@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ -t 0 ]; then
+	echo "$*" | sed -e $'s/\\\\t/	/g' -e $'s/\\\\n/\
+/g'
+else
+	sed -e $'s/\\\\t/	/g' -e $'s/\\\\n/\
+/g'
+fi
