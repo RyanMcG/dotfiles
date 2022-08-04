@@ -369,7 +369,7 @@ if has("nvim")
   let g:neomake_jsx_enabled_makers = ['eslint']
   let g:LanguageClient_settingsPath = expand('~/.config/nvim/lsp.json')
   let g:LanguageClient_serverCommands = {
-        \ 'go': ['env', 'GOFLAGS=-tags=integration', 'gopls'],
+        \ 'go': ['gopls'],
         \ 'python': ['pyls'],
         \ 'clojure': ['clojure-lsp'],
         \ }

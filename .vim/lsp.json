@@ -1,4 +1,8 @@
 {
+  "gopls": {
+    "buildFlags": ["-tags=integration,dynamodb_integration,elasticsearch_integration"],
+    "env": {"GOFLAGS": "-tags=integration,dynamodb_integration,elasticsearch_integration"}
+  },
   "pyls": {
     "plugins": {
       "pyls_mypy": {

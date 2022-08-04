@@ -253,9 +253,6 @@
 [submodule ".vim/bundle/yats.vim"]
 	path = .vim/bundle/yats.vim
 	url = git@github.com:HerringtonDarkholme/yats.vim.git
-[submodule ".vim/bundle/nvim-typescript"]
-	path = .vim/bundle/nvim-typescript
-	url = git@github.com:mhartington/nvim-typescript.git
 [submodule ".vim/bundle/LanguageClient-neovim"]
 	path = .vim/bundle/LanguageClient-neovim
 	url = git@github.com:autozimu/LanguageClient-neovim.git
