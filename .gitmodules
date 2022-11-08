@@ -268,3 +268,6 @@
 [submodule ".vim/bundle/plantuml-syntax"]
 	path = .vim/bundle/plantuml-syntax
 	url = git@github.com:aklt/plantuml-syntax
+[submodule ".vim/bundle/vim-rhubarb"]
+	path = .vim/bundle/vim-rhubarb
+	url = git@github.com:tpope/vim-rhubarb.git
