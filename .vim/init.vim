@@ -225,7 +225,7 @@ nmap <leader>n :RainbowToggle<CR>
 
 " Deoplete
 
-let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 0
 call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
 
 " Instant Markdown
