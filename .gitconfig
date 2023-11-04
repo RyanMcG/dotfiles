@@ -90,3 +90,5 @@
 	insteadOf = https://github.com/
 [commit]
 	gpgsign = true
+[gpg]
+	format = ssh
