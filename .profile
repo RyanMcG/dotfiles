@@ -9,3 +9,4 @@ export GO111MODULE='on'
 export CGO_CPPFLAGS="-Wno-error -Wno-nullability-completeness -Wno-expansion-to-defined -Wno-builtin-requires-header"
 eval $(/opt/homebrew/bin/brew shellenv)
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
