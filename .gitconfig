@@ -1,7 +1,6 @@
 [user]
 	name = Ryan McGowan
 	email = ryan@ryanmcg.com
-	signingkey = CF843016
 [color]
 	ui = auto
 [merge]
@@ -89,5 +88,5 @@
 	path = ~/.gitconfig-local
 [url "git@github.com:"]
 	insteadOf = https://github.com/
-[url "git@github.lyft.net:"]
-	insteadOf = https://github.lyft.net/
+[commit]
+	gpgsign = true
