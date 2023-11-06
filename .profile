@@ -10,3 +10,7 @@ export CGO_CPPFLAGS="-Wno-error -Wno-nullability-completeness -Wno-expansion-to-
 eval $(/opt/homebrew/bin/brew shellenv)
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+
+if [ -f ~/.profile_local ]; then
+    source ~/.profile_local
+fi
