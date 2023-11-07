@@ -3,7 +3,7 @@
     "buildFlags": ["-tags=integration,dynamodb_integration,elasticsearch_integration"],
     "env": {"GOFLAGS": "-tags=integration,dynamodb_integration,elasticsearch_integration"}
   },
-  "pyls": {
+  "pylsp": {
     "plugins": {
       "pyls_mypy": {
         "enabled": true,

@@ -28,7 +28,7 @@ set ruler                " show the cursor position all the time
 set showcmd                " display incomplete commands
 set incsearch                " do incremental searching
 
-set printfont=Inconsolata\ 12
+" set printfont=Inconsolata\ 12
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
@@ -367,28 +367,29 @@ if has("nvim")
      \ }
   let g:neomake_rego_enabled_makers = ['opa']
   let g:neomake_jsx_enabled_makers = ['eslint']
-  let g:LanguageClient_settingsPath = expand('~/.config/nvim/lsp.json')
-  let g:LanguageClient_serverCommands = {
-        \ 'go': ['gopls'],
-        \ 'python': ['pyls'],
-        \ 'clojure': ['clojure-lsp'],
-        \ }
-  let g:LanguageClient_autoStart = 1
-  let g:LanguageClient_hasSnippetSupport = 0
 
-  function LC_maps()
-    if has_key(g:LanguageClient_serverCommands, &filetype)
-      nnoremap <buffer> <leader>m :call LanguageClient_contextMenu()<CR>
-      " Or map each action separately
-      nnoremap <buffer> <silent> K :call LanguageClient#textDocument_hover()<cr>
-      nnoremap <buffer> <silent> gd :call LanguageClient#textDocument_definition()<CR>
-      nnoremap <buffer> <silent> <leader>rn :call LanguageClient#textDocument_rename()<CR>
-      nnoremap <buffer> <silent> <leader>rs :call LanguageClient#textDocument_references()<CR>
-      setlocal omnifunc=LanguageClient#complete
-    endif
-  endfunction
+  " let g:LanguageClient_settingsPath = expand('~/.config/nvim/lsp.json')
+  " let g:LanguageClient_serverCommands = {
+  "       \ 'go': ['gopls'],
+  "       \ 'python': ['pyright-langserver', '--stdio'],
+  "       \ 'clojure': ['clojure-lsp'],
+  "       \ }
+  " let g:LanguageClient_autoStart = 0
+  " let g:LanguageClient_hasSnippetSupport = 0
 
-  autocmd FileType * call LC_maps()
+  " function LC_maps()
+  "   if has_key(g:LanguageClient_serverCommands, &filetype)
+  "     nnoremap <buffer> <leader>m :call LanguageClient_contextMenu()<CR>
+  "     " Or map each action separately
+  "     nnoremap <buffer> <silent> K :call LanguageClient#textDocument_hover()<cr>
+  "     nnoremap <buffer> <silent> gd :call LanguageClient#textDocument_definition()<CR>
+  "     nnoremap <buffer> <silent> <leader>rn :call LanguageClient#textDocument_rename()<CR>
+  "     nnoremap <buffer> <silent> <leader>rs :call LanguageClient#textDocument_references()<CR>
+  "     setlocal omnifunc=LanguageClient#complete
+  "   endif
+  " endfunction
+
+  " autocmd FileType * call LC_maps()
   " autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
 endif
 
@@ -453,8 +454,8 @@ let c_space_errors = 1
 let tcl_extended_syntax=1
 
 "Python
-let g:python_host_prog = expand('/usr/bin/python3')
-let g:python3_host_prog = expand('/usr/bin/python3')
+let g:python_host_prog = expand('/Users/ryan/.pyenv/shims/python')
+let g:python3_host_prog = expand('/Users/ryan/.pyenv/shims/python')
 
 " Vim settings
 " let python_version_2 = 1
@@ -534,3 +535,5 @@ nnoremap <silent> <leader>ai        :AutoindentToggle<CR>
 nnoremap <silent> <leader>cd         :lcd %:p:h<CR>:pwd<CR>
 
 set modeline
+
+lua require("lsp")
