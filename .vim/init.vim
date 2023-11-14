@@ -530,5 +530,9 @@ nnoremap <silent> <leader>cd         :lcd %:p:h<CR>:pwd<CR>
 
 set modeline
 
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
+set nofoldenable
+
 lua require("lsp")
 lua require("aerial_setup")
