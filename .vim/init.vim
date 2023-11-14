@@ -257,13 +257,7 @@ let g:slime_paste_file = tempname()
 
 "Syntastic
 let g:syntastic_enable_signs=1
-"let g:syntastic_auto_jump=1
-"let g:syntastic_auto_loc_list=1 " Default is 2
 let g:syntastic_stl_format = '[%E{E: %fe #%e}%B{, }%W{W: %fw #%w}]'
-"let g:syntastic_mode_map = { 'mode': 'active',
-"\ 'passive_filetypes': ['haml', 'sass'] }
-"let g:syntastic_quiet_warnings=1 "Breaks everything!
-nnoremap <silent> <leader>se :Errors<CR>
 
 " Autornu
 let g:autornu_enable = 0
@@ -537,3 +531,4 @@ nnoremap <silent> <leader>cd         :lcd %:p:h<CR>:pwd<CR>
 set modeline
 
 lua require("lsp")
+lua require("aerial_setup")
