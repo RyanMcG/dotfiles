@@ -506,7 +506,7 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 set pastetoggle=<F12>
 
 " Retag with ctags
-noremap <Leader>ct :!ctags --exclude=vendor -R *<CR><CR>
+noremap <Leader>ct :!ctags --exclude=node_modules --exclude=vendor -R *<CR><CR>
 
 "
 " Some Custom functions

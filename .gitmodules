@@ -127,12 +127,6 @@
 [submodule ".vim/bundle/vim-vinegar"]
 	path = .vim/bundle/vim-vinegar
 	url = git@github.com:tpope/vim-vinegar.git
-[submodule ".vim/bundle/xoria256.vim"]
-	path = .vim/bundle/xoria256.vim
-	url = git@github.com:vim-scripts/xoria256.vim.git
-[submodule ".vim/bundle/vim-wombat256i"]
-	path = .vim/bundle/vim-wombat256i
-	url = git@github.com:twe4ked/vim-wombat256i.git
 [submodule ".vim/bundle/seoul256.vim"]
 	path = .vim/bundle/seoul256.vim
 	url = git@github.com:junegunn/seoul256.vim.git
@@ -166,9 +160,6 @@
 [submodule ".vim/bundle/vim-javascript-syntax"]
 	path = .vim/bundle/vim-javascript-syntax
 	url = git@github.com:jelera/vim-javascript-syntax.git
-[submodule ".vim/bundle/vim-coffee-script"]
-	path = .vim/bundle/vim-coffee-script
-	url = git@github.com:kchmck/vim-coffee-script.git
 [submodule ".vim/bundle/vim-nodejs-errorformat"]
 	path = .vim/bundle/vim-nodejs-errorformat
 	url = git@github.com:felixge/vim-nodejs-errorformat.git
@@ -271,3 +262,6 @@
 [submodule ".vim/bundle/nvim-lspconfig"]
 	path = .vim/bundle/nvim-lspconfig
 	url = git@github.com:neovim/nvim-lspconfig.git
+[submodule ".vim/bundle/aerial.nvim"]
+	path = .vim/bundle/aerial.nvim
+	url = git@github.com:stevearc/aerial.nvim.git
