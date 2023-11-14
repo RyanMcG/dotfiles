@@ -1,9 +1,3 @@
-#SSHFS/RSYNC
-alias sshfs="sshfs -o reconnect -o allow_other -o follow_symlinks"
-alias asshfs="sshfs -o ssh_command='autossh -M $MY_AUTOSSH_PORT' -o allow_other -o follow_symlinks"
-alias assh="autossh -M $MY_AUTOSSH_PORT"
-alias sssh="TERM=screen ssh"
-
 #PACAKGE MANAGERS
 if [ -f ~/.general_aliases_pkg ]; then
 	. ~/.general_aliases_pkg
