@@ -1,7 +1,10 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
+
+-- Python
 lspconfig.pyright.setup {}
-lspconfig.tsserver.setup {}
+
+-- Rust
 lspconfig.rust_analyzer.setup {
   -- Server-specific settings. See `:help lspconfig-setup`
   settings = {
@@ -9,6 +12,10 @@ lspconfig.rust_analyzer.setup {
   },
 }
 
+-- Typescript / JavaScript
+require("typescript-tools").setup {}
+-- lspconfig.tsserver.setup {}
+-- lspconfig.vtsls.setup{}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

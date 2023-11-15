@@ -187,9 +187,6 @@
 [submodule ".vim/bundle/vim-typedclojure"]
 	path = .vim/bundle/vim-typedclojure
 	url = git@github.com:typedclojure/vim-typedclojure.git
-[submodule ".vim/bundle/vim-airline"]
-	path = .vim/bundle/vim-airline
-	url = git@github.com:bling/vim-airline.git
 [submodule ".vim/bundle/neomake"]
 	path = .vim/n-bundle/neomake
 	url = git@github.com:benekastah/neomake.git
@@ -268,3 +265,15 @@
 [submodule ".vim/bundle/nvim-treesitter"]
 	path = .vim/bundle/nvim-treesitter
 	url = git@github.com:nvim-treesitter/nvim-treesitter.git
+[submodule ".vim/bundle/plenary.nvim"]
+	path = .vim/bundle/plenary.nvim
+	url = git@github.com:nvim-lua/plenary.nvim.git
+[submodule ".vim/bundle/typescript-tools.nvim"]
+	path = .vim/bundle/typescript-tools.nvim
+	url = git@github.com:pmizio/typescript-tools.nvim.git
+[submodule ".vim/bundle/tokyonight.nvim"]
+	path = .vim/bundle/tokyonight.nvim
+	url = git@github.com:folke/tokyonight.nvim.git
+[submodule ".vim/bundle/lualine.nvim"]
+	path = .vim/bundle/lualine.nvim
+	url = git@github.com:nvim-lualine/lualine.nvim.git
