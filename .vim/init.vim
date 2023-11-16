@@ -399,19 +399,6 @@ nnoremap <leader>f :CtrlPBuffer<cr>
 nnoremap <leader>wh :FixWhitespace<cr>
 vnoremap <leader>wh :FixWhitespace<cr>
 
-" Supertab
-let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabContextDefaultCompletionType = "<c-n>"
-
-"NERDTree
-nnoremap <silent> <F7> :NERDTreeToggle<CR>
-let NERDTreeHijackNetrw = 0
-
-"Tagbar
-nnoremap <silent> <F8> :TagbarToggle<CR>
-let g:tagbar_foldlevel = 2
-let g:tagbar_width = 30
-
 "DetectIndent
 nmap <silent> <leader>di :DetectIndent<CR>
 
@@ -533,6 +520,7 @@ set modeline
 
 set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
+set foldlevel=1
 set nofoldenable
 
 lua require("lsp")
