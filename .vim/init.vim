@@ -68,7 +68,7 @@ if has("gui_running")
   highlight SignColumn guibg=#073642
 elseif &t_Co >= 256
   let g:seoul256_background = 234
-  colorscheme tokyonight-night
+  colorscheme tokyonight-moon
 
 
   " let s:left_color = 16
