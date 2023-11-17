@@ -3,6 +3,8 @@
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
+let mapleader = ';'
+
 " Make sure filetype is off for pathogen
 filetype off
 runtime bundle/vim-pathogen/autoload/pathogen.vim
@@ -159,11 +161,6 @@ if has("autocmd")
       au BufWritePost * Neomake
     augroup END
   endif
-
-  " augroup fmt
-  "   au!
-  "   au BufWritePre * | Neoformat
-  " augroup END
 endif " has("autocmd")
 
 " allow backspacing over everything in insert mode
@@ -221,7 +218,7 @@ endif
 " Plugin Config
 
 " Rainbow
-let g:rainbow_active = 0
+let g:rainbow_active = 1
 nmap <leader>n :RainbowToggle<CR>
 
 " Deoplete
@@ -262,14 +259,11 @@ let g:syntastic_stl_format = '[%E{E: %fe #%e}%B{, }%W{W: %fw #%w}]'
 
 " Autornu
 let g:autornu_enable = 0
-nnoremap <silent> <F3> :AutornuToggle<CR>
-nnoremap <silent> <F4> :AutornuOnOff<CR>
 
 "Vim clojure static
 let g:clojure_align_multiline_strings = 0
 " Set *.cljs files to the clojure filetype
 
-let mapleader = ';'
 " Paredit
 let g:paredit_shortmaps = 1
 
@@ -332,16 +326,6 @@ nmap <leader>gch :Git dc<CR>
 let g:go_gopls_enabled = 0
 let g:go_code_completion_enabled = 0
 
-" Neoformat
-let g:neoformat_only_msg_on_error = 1
-
-let g:neoformat_rego_opa = {
-      \ 'exe': 'opa',
-      \ 'args': ['fmt'],
-      \ 'stdin': 1,
-      \ }
-let g:neoformat_enabled_rego = ['opa']
-
 " Nvim
 if has("nvim")
   let g:neomake_error_sign = {'texthl': 'DiffDelete'}
@@ -362,30 +346,6 @@ if has("nvim")
      \ }
   let g:neomake_rego_enabled_makers = ['opa']
   let g:neomake_jsx_enabled_makers = ['eslint']
-
-  " let g:LanguageClient_settingsPath = expand('~/.config/nvim/lsp.json')
-  " let g:LanguageClient_serverCommands = {
-  "       \ 'go': ['gopls'],
-  "       \ 'python': ['pyright-langserver', '--stdio'],
-  "       \ 'clojure': ['clojure-lsp'],
-  "       \ }
-  " let g:LanguageClient_autoStart = 0
-  " let g:LanguageClient_hasSnippetSupport = 0
-
-  " function LC_maps()
-  "   if has_key(g:LanguageClient_serverCommands, &filetype)
-  "     nnoremap <buffer> <leader>m :call LanguageClient_contextMenu()<CR>
-  "     " Or map each action separately
-  "     nnoremap <buffer> <silent> K :call LanguageClient#textDocument_hover()<cr>
-  "     nnoremap <buffer> <silent> gd :call LanguageClient#textDocument_definition()<CR>
-  "     nnoremap <buffer> <silent> <leader>rn :call LanguageClient#textDocument_rename()<CR>
-  "     nnoremap <buffer> <silent> <leader>rs :call LanguageClient#textDocument_references()<CR>
-  "     setlocal omnifunc=LanguageClient#complete
-  "   endif
-  " endfunction
-
-  " autocmd FileType * call LC_maps()
-  " autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
 endif
 
 "CtrlP
@@ -409,14 +369,6 @@ let g:indent_guides_color_change_percent = 3
 let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_detect_filetype = 1
 
-"Configure EasyTag
-"let g:easytags_auto_update = 0
-"let g:easytags_autorecurse = 1
-"let g:easytags_on_cursorhold = 0 "Turns auto everything off
-"let g:easytags_dynamic_files = 1
-
-" Netrw
-nnoremap <silent> <F9> :Explore<CR>
 
 "Configure language specifc options
 "PHP
@@ -425,12 +377,9 @@ let php_sql_query = 1
 let php_folding = 2
 let php_parent_error_close = 1
 let php_parent_error_open = 1
-"let php_baselib = 1
 
 "C
-"let g:syntastic_c_compiler_options = ' -std=gnu99'
 let c_space_errors = 1
-"let c_syntax_for_h = 1
 
 " TCL
 let tcl_extended_syntax=1
@@ -479,7 +428,6 @@ nmap <silent> <C-k> <C-w>k
 nmap <silent> <C-j> <C-w>j
 nmap <silent> <C-l> <C-w>l
 nmap <silent> <C-h> <C-w>h
-nmap <silent> <BS> <C-w>h
 let g:terminalkeys_loaded = 1
 
 "Get rid of highlighting after search with space

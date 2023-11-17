@@ -247,9 +247,6 @@
 [submodule ".vim/bundle/vim-rego"]
 	path = .vim/bundle/vim-rego
 	url = git@github.com:tsandall/vim-rego.git
-[submodule ".vim/bundle/neoformat"]
-	path = .vim/bundle/neoformat
-	url = git@github.com:sbdchd/neoformat.git
 [submodule ".vim/bundle/plantuml-syntax"]
 	path = .vim/bundle/plantuml-syntax
 	url = git@github.com:aklt/plantuml-syntax
@@ -277,3 +274,6 @@
 [submodule ".vim/bundle/lualine.nvim"]
 	path = .vim/bundle/lualine.nvim
 	url = git@github.com:nvim-lualine/lualine.nvim.git
+[submodule ".vim/bundle/conform.nvim"]
+	path = .vim/bundle/conform.nvim
+	url = git@github.com:stevearc/conform.nvim.git
