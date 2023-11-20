@@ -31,6 +31,9 @@
 [submodule ".vim/bundle/vim-surround"]
 	path = .vim/bundle/vim-surround
 	url = git@github.com:tpope/vim-surround.git
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
+	url = git@github.com:kien/ctrlp.vim.git
 [submodule ".vim/bundle/vim-powerline"]
 	path = .vim/bundle/vim-powerline
 	url = git@github.com:Lokaltog/vim-powerline.git
@@ -274,6 +277,3 @@
 [submodule ".vim/bundle/conform.nvim"]
 	path = .vim/bundle/conform.nvim
 	url = git@github.com:stevearc/conform.nvim.git
-[submodule ".vim/bundle/telescope.nvim"]
-	path = .vim/bundle/telescope.nvim
-	url = git@github.com:nvim-telescope/telescope.nvim.git
