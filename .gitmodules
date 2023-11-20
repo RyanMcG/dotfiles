@@ -274,3 +274,6 @@
 [submodule ".vim/bundle/conform.nvim"]
 	path = .vim/bundle/conform.nvim
 	url = git@github.com:stevearc/conform.nvim.git
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
+	url = git@github.com:ctrlpvim/ctrlp.vim.git
