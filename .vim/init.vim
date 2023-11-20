@@ -352,7 +352,7 @@ endif
 nnoremap <leader><space> <cmd>Telescope find_files<cr>
 nnoremap <leader>f <cmd>Telescope buffers<cr>
 nnoremap <leader>. <cmd>Telescope live_grep<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>ht <cmd>Telescope help_tags<cr>
 
 " FixWhitespace
 nnoremap <leader>wh :FixWhitespace<cr>
@@ -435,7 +435,7 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 set pastetoggle=<F12>
 
 " Retag with ctags
-noremap <Leader>ct :!ctags --exclude=node_modules --exclude=vendor -R *<CR><CR>
+noremap <Leader>ct :!git ls-files --exclude-standard \| ctags -R --links=no -L -<CR>
 
 "
 " Some Custom functions
