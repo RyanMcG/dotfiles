@@ -29,5 +29,3 @@ require("conform").setup({
     lsp_fallback = true,
   },
 })
-
-require('telescope').load_extension('fzy_native')
