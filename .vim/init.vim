@@ -349,6 +349,7 @@ if has("nvim")
 endif
 
 "CtrlP
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 let g:ctrlp_map = '<leader><space>'
 let g:ctrlp_working_path_mode = 0
 nnoremap <leader>. :CtrlPTag<cr>
