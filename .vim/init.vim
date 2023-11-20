@@ -348,12 +348,11 @@ if has("nvim")
   let g:neomake_jsx_enabled_makers = ['eslint']
 endif
 
-"CtrlP
-let g:ctrlp_map = '<leader><space>'
-let g:ctrlp_working_path_mode = 0
-nnoremap <leader>. :CtrlPTag<cr>
-nnoremap <leader>, :CtrlPMRU<cr>
-nnoremap <leader>f :CtrlPBuffer<cr>
+" Telescope
+nnoremap <leader><space> <cmd>Telescope find_files<cr>
+nnoremap <leader>f <cmd>Telescope buffers<cr>
+nnoremap <leader>. <cmd>Telescope live_grep<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " FixWhitespace
 nnoremap <leader>wh :FixWhitespace<cr>
