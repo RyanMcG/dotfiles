@@ -12,6 +12,9 @@ vim.keymap.set("n", "<leader>ae", "<cmd>AerialToggle!<CR>")
 require('lualine').setup {
   options = {
     theme = 'tokyonight'
+  },
+  sections = {
+    lualine_c = { { 'filename', path = 1 } }
   }
 }
 
