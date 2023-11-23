@@ -2,7 +2,40 @@
 local lspconfig = require('lspconfig')
 
 -- Python
+lspconfig.jedi_language_server.setup{}
+-- lspconfig.pylsp.setup {
+--   settings = {
+--     pylsp = {
+--       plugins = {
+--         pylsp_mypy = {
+-- 	  enabled = false,
+-- 	  dmypy = true
+--         },
+-- 	flake8 = {
+-- 	  enabled = true
+-- 	},
+-- 	isort = {
+-- 	  enabled = false
+-- 	},
+-- 	black = {
+-- 	  enabled = false,
+--           -- cache_config = true
+-- 	},
+--         pycodestyle = {
+-- 	  enabled = false
+-- 	},
+--         mccabe = {
+-- 	  enabled = false
+-- 	},
+--         pyflakes = {
+-- 	  enabled = false
+-- 	}
+--       }
+--     }
+--   }
+-- }
 lspconfig.pyright.setup {}
+
 
 -- Rust
 lspconfig.rust_analyzer.setup {
