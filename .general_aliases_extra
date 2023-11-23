@@ -1,1 +1,2 @@
 alias ape=". poetry-venv-3.10/bin/activate"
+alias prn="poetry run nvim"
