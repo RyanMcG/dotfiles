@@ -283,3 +283,6 @@
 [submodule ".vim/bundle/trouble.nvim"]
 	path = .vim/bundle/trouble.nvim
 	url = git@github.com:folke/trouble.nvim.git
+[submodule ".vim/bundle/nvim-web-devicons"]
+	path = .vim/bundle/nvim-web-devicons
+	url = git@github.com:nvim-tree/nvim-web-devicons.git
