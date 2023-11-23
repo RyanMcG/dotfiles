@@ -244,11 +244,6 @@ let g:airline#extensions#neomake#enabled = 1
 "let g:miniBufExplorerMoreThanOne = 0
 "let g:miniBufExplUseSingleClick = 1
 
-" yankring
-let g:yankring_replace_n_pkey = '<leader>['
-let g:yankring_replace_n_nkey = '<leader>]'
-nmap <leader>y :YRShow<cr>
-
 "Slime
 let g:slime_target = "tmux"
 let g:slime_paste_file = tempname()
