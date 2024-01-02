@@ -340,7 +340,7 @@ if has("nvim")
      \ 'errorformat': '%f:%l:%c: %m',
      \ }
   let g:neomake_rego_enabled_makers = ['opa']
-  let g:neomake_jsx_enabled_makers = ['eslint']
+  let g:neomake_jsx_enabled_makers = []
 endif
 
 "CtrlP
