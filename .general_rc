@@ -13,9 +13,7 @@ export VISUAL=$EDITOR
 export POWERLINE_COMMAND=$HOME/repo/dotfiles/powerline/scripts/powerline
 export POWERLINE_CONFIG_COMMAND=$HOME/repo/dotfiles/powerline/scripts/powerline-config
 
-export PYTHONDOCS=/usr/share/doc/python2/html/
 export ACKRC=".ackrc" # Allow directory level .ackrc.
-export CLOJURESCRIPT_HOME=$HOME/repo/clojurescript
 
 #Custom Var to enable composite manager
 export NODENAME=$(hostname)

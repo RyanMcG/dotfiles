@@ -19,7 +19,7 @@ ln -s $DOTFILES/.vim ~/
 ln -s $DOTFILES/.vimrc ~/
 ln -s $DOTFILES/.zshrc ~/
 ln -s $DOTFILES/.ackrc ~/
-ln -s $DOTFILES/.oh-my-zsh ~/
+ln -s $DOTFILES/.p10k.zsh ~/
 ln -s $DOTFILES/.ncmpcpp ~/
 ln -s $DOTFILES/.config ~/
 

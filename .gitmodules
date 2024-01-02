@@ -1,6 +1,3 @@
-[submodule ".oh-my-zsh"]
-	path = .oh-my-zsh
-	url = git@github.com:RyanMcG/oh-my-zsh.git
 [submodule "urxvt-perls"]
 	path = urxvt-perls
 	url = git@github.com:muennich/urxvt-perls.git
