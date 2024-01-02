@@ -359,7 +359,7 @@ vnoremap <leader>wh :FixWhitespace<cr>
 nmap <silent> <leader>di :DetectIndent<CR>
 
 " Indent guides
-let g:indent_guides_color_change_percent = 3
+let g:indent_guides_color_change_percent = 5
 
 "Gist
 let g:gist_clip_command = 'xclip -selection clipboard'
@@ -432,7 +432,9 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 set pastetoggle=<F12>
 
 " Retag with ctags
-noremap <Leader>ct :!ctags --exclude=node_modules --exclude=vendor -R *<CR><CR>
+noremap <Leader>ct :!git ls-files --exclude-standard <Bar> ctags -R --links=no -L -<CR><CR>
+" Copy path to clipboard
+noremap <Leader>pb :silent !echo '%' <Bar> pbcopy<CR><CR>
 
 "
 " Some Custom functions
