@@ -56,3 +56,6 @@ GPATH
 .pytest_cache/
 .activate.sh
 .deactivate.sh
+.nvimrc
+.nvim.lua
+.exrc
