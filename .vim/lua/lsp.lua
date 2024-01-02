@@ -2,7 +2,7 @@
 local lspconfig = require('lspconfig')
 
 -- Python
-lspconfig.jedi_language_server.setup{}
+-- lspconfig.jedi_language_server.setup{}
 -- lspconfig.pylsp.setup {
 --   settings = {
 --     pylsp = {
