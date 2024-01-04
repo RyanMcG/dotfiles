@@ -1,0 +1,2 @@
+#!/bin/bash
+git ls-files --exclude-standard | ctags -R --links=no -L -

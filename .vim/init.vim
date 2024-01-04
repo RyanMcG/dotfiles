@@ -345,7 +345,8 @@ endif
 
 "FzFLua
 nnoremap <leader><space> :FzfLua<cr>
-nnoremap <leader>. :FzfLua live_grep<cr>
+nnoremap <leader>. :FzfLua live_grep_native<cr>
+nnoremap <leader>, :FzfLua tags_grep_cword<cr>
 nnoremap <leader>f :FzfLua files<cr>
 nnoremap <leader>b :FzfLua buffers<cr>
 
@@ -430,7 +431,7 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 set pastetoggle=<F12>
 
 " Retag with ctags
-noremap <Leader>ct :!git ls-files --exclude-standard <Bar> ctags -R --links=no -L -<CR><CR>
+noremap <Leader>ct :call jobstart('git ctags-files')<CR><CR>
 " Copy path to clipboard
 noremap <Leader>pb :silent !echo '%' <Bar> pbcopy<CR><CR>
 
