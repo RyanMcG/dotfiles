@@ -343,13 +343,11 @@ if has("nvim")
   let g:neomake_jsx_enabled_makers = []
 endif
 
-"CtrlP
-let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
-let g:ctrlp_map = '<leader><space>'
-let g:ctrlp_working_path_mode = 0
-nnoremap <leader>. :CtrlPTag<cr>
-nnoremap <leader>, :CtrlPMRU<cr>
-nnoremap <leader>f :CtrlPBuffer<cr>
+"FzFLua
+nnoremap <leader><space> :FzfLua<cr>
+nnoremap <leader>. :FzfLua live_grep<cr>
+nnoremap <leader>f :FzfLua files<cr>
+nnoremap <leader>b :FzfLua buffers<cr>
 
 " FixWhitespace
 nnoremap <leader>wh :FixWhitespace<cr>
