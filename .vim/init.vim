@@ -276,9 +276,19 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
-nnoremap <leader>a/ :LAck!<space>
-nnoremap <leader>a* :LAck! -w <C-R><C-W><space>
-nnoremap <leader>aa :LAckAdd<space>
+if executable('rg')
+  set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
+  set grepformat=%f:%l:%c:%m
+endif
+
+augroup quickfix
+    autocmd!
+    autocmd QuickFixCmdPost [^l]* cwindow
+    autocmd QuickFixCmdPost l* lwindow
+augroup END
+
+nnoremap <leader>rr :silent grep!<space>
+nnoremap <leader>rw :silent grep! -w <C-R><C-W><space>
 
 " Open and close the location and quickfix list
 nmap <leader>cc :cclose<CR>
