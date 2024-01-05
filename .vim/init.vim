@@ -355,10 +355,11 @@ endif
 
 "FzFLua
 nnoremap <leader><space> :FzfLua<cr>
-nnoremap <leader>. :FzfLua live_grep_native<cr>
-nnoremap <leader>, :FzfLua tags_grep_cword<cr>
-nnoremap <leader>f :FzfLua files<cr>
-nnoremap <leader>b :FzfLua buffers<cr>
+nnoremap <leader><space><space> :FzfLua<cr>
+nnoremap <leader><space>g :FzfLua live_grep_native<cr>
+nnoremap <leader><space>t :FzfLua tags_grep_cword<cr>
+nnoremap <leader><space>f :FzfLua files<cr>
+nnoremap <leader><space>b :FzfLua buffers<cr>
 
 " FixWhitespace
 nnoremap <leader>wh :FixWhitespace<cr>
