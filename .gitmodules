@@ -280,3 +280,6 @@
 [submodule ".vim/bundle/fzf-lua"]
 	path = .vim/bundle/fzf-lua
 	url = git@github.com:ibhagwan/fzf-lua.git
+[submodule ".vim/bundle/nvim-ghost.nvim"]
+	path = .vim/bundle/nvim-ghost.nvim
+	url = git@github.com:subnut/nvim-ghost.nvim.git
