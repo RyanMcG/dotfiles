@@ -30,8 +30,6 @@ set ruler                " show the cursor position all the time
 set showcmd                " display incomplete commands
 set incsearch                " do incremental searching
 
-" set printfont=Inconsolata\ 12
-
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
@@ -213,6 +211,8 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 if has("nvim")
   tnoremap <Esc> <C-\><C-n>
 endif
+
+packadd cfilter
 
 "
 " Plugin Config
