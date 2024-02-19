@@ -1,5 +1,4 @@
 export GOPATH=$HOME/repo/gocode
-export RIPGREP_CONFIG_PATH=.
 eval $(/opt/homebrew/bin/brew shellenv)
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
