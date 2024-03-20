@@ -46,6 +46,8 @@ lspconfig.rust_analyzer.setup {
   },
 }
 
+lspconfig.gopls.setup{}
+
 -- Typescript / JavaScript
 require("typescript-tools").setup {}
 -- lspconfig.tsserver.setup {}
