@@ -2,7 +2,15 @@ export GOPATH=$HOME/repo/gocode
 eval $(/opt/homebrew/bin/brew shellenv)
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
-export PATH=$HOME/bin:$HOME/.cargo/bin:$GOPATH/bin:$PATH
+path_prepend() {
+    for arg in "$@"; do
+        if [[ ":${PATH}:" != *":${arg}:"* ]]; then
+            export PATH="${arg}${PATH:+":$PATH"}"
+        fi
+    done
+}
+
+path_prepend "$HOME/bin" "$HOME/.cargo/bin" "$GOPATH/bin"
 
 if [ -f ~/.profile_local ]; then
     source ~/.profile_local
