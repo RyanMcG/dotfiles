@@ -15,3 +15,7 @@ path_prepend "$HOME/bin" "$HOME/.cargo/bin" "$GOPATH/bin"
 if [ -f ~/.profile_local ]; then
     source ~/.profile_local
 fi
+
+unset HISTSIZE HISTFILESIZE
+export HISTFILESIZE=9999999999
+export HISTSIZE=9999999999

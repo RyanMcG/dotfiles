@@ -14,6 +14,9 @@ if [ -f ~/.general_rc ]; then
 	source ~/.general_rc
 fi
 bindkey "^R" history-incremental-search-backward
+setopt INC_APPEND_HISTORY
+setopt EXTENDED_HISTORY
+setopt HIST_FIND_NO_DUPS
 
 # Vim mode
 

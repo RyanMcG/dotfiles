@@ -33,9 +33,6 @@ fi
 # Use rednose by default
 export NOSE_REDNOSE=1
 
-unset HISTSIZE HISTFILESIZE
-export HISTSIZE=20001
-
 #Set editing type to vi
 set -o vi
 
