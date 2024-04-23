@@ -46,7 +46,9 @@ lspconfig.rust_analyzer.setup {
   },
 }
 
-lspconfig.gopls.setup{}
+lspconfig.gopls.setup{
+  cmd_env = {GOFLAGS="-tags=integration"}
+}
 
 -- Typescript / JavaScript
 require("typescript-tools").setup {}
