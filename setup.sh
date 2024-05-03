@@ -26,3 +26,5 @@ ln -s $DOTFILES/.config ~/
 mkdir -p ~/bin
 ln -s $DOTFILES/bin/git-gcbranches ~/bin/
 ln -s $DOTFILES/bin/git-ctags-files ~/bin/
+
+brew install tmux neovim autojump
