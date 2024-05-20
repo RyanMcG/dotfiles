@@ -27,4 +27,4 @@ mkdir -p ~/bin
 ln -s $DOTFILES/bin/git-gcbranches ~/bin/
 ln -s $DOTFILES/bin/git-ctags-files ~/bin/
 
-brew install tmux neovim autojump
+brew install tmux neovim autojump powerlevel10k
