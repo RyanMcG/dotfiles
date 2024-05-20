@@ -1,7 +1,7 @@
 [user]
 	name = Ryan McGowan
 	email = ryan@ryanmcg.com
-	signingkey = /Users/ryan/.ssh/id_ed25519.pub
+	signingkey = /Users/rmcgowan/.ssh/id_ed25519.pub
 [color]
 	ui = auto
 [merge]
