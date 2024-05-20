@@ -1,7 +1,7 @@
 [user]
 	name = Ryan McGowan
 	email = ryan@ryanmcg.com
-	signingkey = /Users/rmcgowan/.ssh/id_ed25519.pub
+	signingkey = /Users/ryan/.ssh/id_ed25519.pub
 [color]
 	ui = auto
 [merge]
@@ -85,11 +85,11 @@
 	keepBackup = false
 [receive]
 	denyCurrentBranch = warn
-[include]
-	path = ~/.gitconfig-local
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [commit]
 	gpgsign = true
 [gpg]
 	format = ssh
+[include]
+	path = ~/.gitconfig-local
