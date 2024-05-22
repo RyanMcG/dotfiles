@@ -22,6 +22,11 @@ setopt HIST_FIND_NO_DUPS
 
 bindkey -M vicmd v edit-command-line
 
+# pyenv setup
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # Turn off ZSH autocorrection
 unsetopt correct_all
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
