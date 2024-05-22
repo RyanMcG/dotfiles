@@ -283,3 +283,6 @@
 [submodule ".vim/bundle/nvim-ghost.nvim"]
 	path = .vim/bundle/nvim-ghost.nvim
 	url = git@github.com:subnut/nvim-ghost.nvim.git
+[submodule ".vim/pack/github/start/copilot.vim"]
+	path = .vim/pack/github/start/copilot.vim
+	url = git@github.com:github/copilot.vim.git
