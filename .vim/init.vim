@@ -152,13 +152,6 @@ if has("autocmd")
     au!
     au BufReadPost,BufNewFile *.sls setlocal filetype=yaml
   augroup END
-
-  if has("nvim")
-    augroup custom_neomake
-      au!
-      au BufWritePost * Neomake
-    augroup END
-  endif
 endif " has("autocmd")
 
 " allow backspacing over everything in insert mode
@@ -237,7 +230,6 @@ autocmd User GoyoLeave Limelight!
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#languageclient#enabled = 1
-let g:airline#extensions#neomake#enabled = 1
 
 " minibufexpl
 "let g:miniBufExplVSplit = 25
@@ -332,26 +324,6 @@ let g:go_gopls_enabled = 0
 let g:go_code_completion_enabled = 0
 
 " Nvim
-if has("nvim")
-  let g:neomake_error_sign = {'texthl': 'DiffDelete'}
-  let g:neomake_warning_sign = {'texthl': 'DiffChange'}
-  let g:neomake_open_list = 2
-
-  " Custom python makers
-  let g:neomake_python_enabled_makers = ['flake8']
-  let g:neomake_go_enabled_makers = []
-
-  " Disable various filetypes
-  let g:neomake_sh_enabled_makers = []
-  let g:neomake_zsh_enabled_makers = []
-  let g:neomake_opa_maker = {
-     \ 'exe': 'opa-vim-check',
-     \ 'args': [],
-     \ 'errorformat': '%f:%l:%c: %m',
-     \ }
-  let g:neomake_rego_enabled_makers = ['opa']
-  let g:neomake_jsx_enabled_makers = []
-endif
 
 "FzFLua
 nnoremap <leader><space> :FzfLua<cr>
