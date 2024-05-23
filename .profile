@@ -18,6 +18,7 @@ eval "$(pyenv init -)"
 if [ -f ~/.profile_local ]; then
     source ~/.profile_local
 fi
+autoload -Uz compinit && compinit
 
 unset HISTSIZE HISTFILESIZE
 export HISTFILESIZE=9999999999
