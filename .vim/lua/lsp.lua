@@ -35,7 +35,7 @@ lspconfig.pylsp.setup {
     }
   }
 }
--- lspconfig.pyright.setup {}
+lspconfig.pyright.setup {}
 
 
 -- Rust
