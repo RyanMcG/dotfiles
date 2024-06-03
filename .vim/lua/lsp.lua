@@ -3,38 +3,38 @@ local lspconfig = require('lspconfig')
 
 -- Python
 -- lspconfig.jedi_language_server.setup{}
-lspconfig.pylsp.setup {
-  settings = {
-    pylsp = {
-      configurationSources = {"flake8"},
-      plugins = {
-        pylsp_mypy = {
-	  enabled = false,
-	  dmypy = true
-        },
-	flake8 = {
-	  enabled = true
-	},
-	isort = {
-	  enabled = true
-	},
-	black = {
-	  enabled = false,
-          cache_config = true
-	},
-        pycodestyle = {
-	  enabled = false
-	},
-        mccabe = {
-	  enabled = false
-	},
-        pyflakes = {
-	  enabled = false
-	}
-      }
-    }
-  }
-}
+-- lspconfig.pylsp.setup {
+--   settings = {
+--     pylsp = {
+--       configurationSources = {"flake8"},
+--       plugins = {
+--         pylsp_mypy = {
+-- 	  enabled = false,
+-- 	  dmypy = true
+--         },
+-- 	flake8 = {
+-- 	  enabled = true
+-- 	},
+-- 	isort = {
+-- 	  enabled = true
+-- 	},
+-- 	black = {
+-- 	  enabled = false,
+--           cache_config = true
+-- 	},
+--         pycodestyle = {
+-- 	  enabled = false
+-- 	},
+--         mccabe = {
+-- 	  enabled = false
+-- 	},
+--         pyflakes = {
+-- 	  enabled = false
+-- 	}
+--       }
+--     }
+--   }
+-- }
 local on_attach = function(client, bufnr)
   if client.name == 'ruff' then
     -- Disable hover in favor of Pyright
@@ -75,9 +75,9 @@ lspconfig.gopls.setup{
 }
 
 -- Typescript / JavaScript
-require("typescript-tools").setup {}
+-- require("typescript-tools").setup {}
 -- lspconfig.tsserver.setup {}
--- lspconfig.vtsls.setup{}
+lspconfig.vtsls.setup{}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

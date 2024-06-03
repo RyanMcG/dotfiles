@@ -250,9 +250,6 @@
 [submodule ".vim/bundle/plenary.nvim"]
 	path = .vim/bundle/plenary.nvim
 	url = git@github.com:nvim-lua/plenary.nvim.git
-[submodule ".vim/bundle/typescript-tools.nvim"]
-	path = .vim/bundle/typescript-tools.nvim
-	url = git@github.com:pmizio/typescript-tools.nvim.git
 [submodule ".vim/bundle/tokyonight.nvim"]
 	path = .vim/bundle/tokyonight.nvim
 	url = git@github.com:folke/tokyonight.nvim.git
