@@ -59,3 +59,4 @@ GPATH
 .nvim.lua
 .exrc
 .ignore
+.watchman-cookie*
