@@ -73,7 +73,8 @@
 [web]
 	browser = chromium
 [push]
-	default = upstream
+	default = current
+	autoSetupRemote = true
 [mergetool "fugitive"]
 	cmd = "$EDITOR -f $MERGED -c 'Gdiff'"
 	trustExitCode = true
