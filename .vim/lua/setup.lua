@@ -1,5 +1,8 @@
 require("aerial").setup({
   -- optionally use on_attach to set keymaps when aerial has attached to a buffer
+  disable_max_lines = 30000,
+  disable_max_size = 2000000,
+
   on_attach = function(bufnr)
     -- Jump forwards/backwards with '{' and '}'
     vim.keymap.set("n", "{", "<cmd>AerialPrev<CR>", { buffer = bufnr })
@@ -8,6 +11,16 @@ require("aerial").setup({
 })
 -- You probably also want to set a keymap to toggle aerial
 vim.keymap.set("n", "<leader>ae", "<cmd>AerialToggle!<CR>")
+
+require'nvim-treesitter.configs'.setup {
+  -- Automatically install missing parsers when entering buffer
+  -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
+  auto_install = true,
+  highlight = {
+    enable = true,
+    disable = { "python", "thrift", },
+  }
+}
 
 require('lualine').setup {
   options = {
@@ -22,7 +35,7 @@ require("conform").setup({
   formatters_by_ft = {
     lua = { "stylua" },
     -- Conform will run multiple formatters sequentially
-    python = { "ruff_fix", "black" },
+    python = { "ruff_fix", "ruff_format" },
     -- Use a sub-list to run only the first available formatter
     javascript = { { } },
     typescript = { { } },
@@ -33,7 +46,7 @@ require("conform").setup({
     if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
       return
     end
-    return { timeout_ms = 500, lsp_fallback = true }
+    return { timeout_ms = 1000, lsp_fallback = true }
   end,
 })
 

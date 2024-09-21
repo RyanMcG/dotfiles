@@ -363,8 +363,8 @@ let c_space_errors = 1
 let tcl_extended_syntax=1
 
 "Python
-let g:python_host_prog = expand('/Users/ryan/.pyenv/shims/python')
-let g:python3_host_prog = expand('/Users/ryan/.pyenv/shims/python')
+let g:python_host_prog = expand('~/.pyenv/shims/python')
+let g:python3_host_prog = expand('~/.pyenv/shims/python')
 
 " Vim settings
 " let python_version_2 = 1
