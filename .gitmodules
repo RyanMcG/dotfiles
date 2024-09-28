@@ -115,9 +115,6 @@
 [submodule ".vim/bundle/vim-vinegar"]
 	path = .vim/bundle/vim-vinegar
 	url = git@github.com:tpope/vim-vinegar.git
-[submodule ".vim/bundle/seoul256.vim"]
-	path = .vim/bundle/seoul256.vim
-	url = git@github.com:junegunn/seoul256.vim.git
 [submodule ".vim/bundle/vim-scala"]
 	path = .vim/bundle/vim-scala
 	url = git@github.com:derekwyatt/vim-scala.git
