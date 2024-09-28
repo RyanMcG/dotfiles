@@ -65,20 +65,11 @@ if has("gui_running")
   highlight CursorLine guibg=#06323D
   highlight SignColumn guibg=#073642
 elseif &t_Co >= 256
-  let g:seoul256_background = 234
   colorscheme tokyonight-moon
-
-
-  " let s:left_color = 16
-  " highlight Visual ctermbg=23
-  " highlight ColorColumn ctermbg=235
-  " highlight SignColumn ctermbg=235
-  " highlight LineNr ctermbg=235
-
-  " " Make highlighting better for git gutter
-  " highlight DiffAdd ctermfg=151 ctermbg=235
-  " highlight DiffChange ctermfg=172 ctermbg=235
-  " highlight DiffDelete ctermfg=160 ctermbg=235
+  " Indent guides
+  let g:indent_guides_auto_colors = 0
+  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#1e2030
+  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#2f334d
 
   if &term == 'rxvt-unicode-256color'
     highlight Comment cterm=italic
@@ -339,9 +330,6 @@ vnoremap <leader>wh :FixWhitespace<cr>
 
 "DetectIndent
 nmap <silent> <leader>di :DetectIndent<CR>
-
-" Indent guides
-let g:indent_guides_color_change_percent = 5
 
 "Gist
 let g:gist_clip_command = 'xclip -selection clipboard'
