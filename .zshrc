@@ -8,7 +8,7 @@ setopt EXTENDED_HISTORY
 setopt HIST_FIND_NO_DUPS
 
 # Vim mode
-
+autoload edit-command-line; zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
 (( ${+commands[direnv]} )) && emulate zsh -c "$(direnv export zsh)"
