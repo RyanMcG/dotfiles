@@ -447,3 +447,6 @@ lua require("setup")
 nnoremap <leader>xx <cmd>TroubleToggle<cr>
 nnoremap <leader>xw <cmd>TroubleToggle workspace_diagnostics<cr>
 nnoremap <leader>xd <cmd>TroubleToggle document_diagnostics<cr>
+
+" Close all buffers
+nnoremap <leader>cb :%bd <bar> e# <bar> bd# <CR>
