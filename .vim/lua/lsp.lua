@@ -76,7 +76,15 @@ lspconfig.gopls.setup{
 -- Typescript / JavaScript
 -- require("typescript-tools").setup {}
 -- lspconfig.tsserver.setup {}
-lspconfig.vtsls.setup{}
+lspconfig.vtsls.setup{
+  settings = {
+    typescript = {
+      tsserver = {
+        maxTsServerMemory = 6144,
+      },
+    },
+  },
+}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

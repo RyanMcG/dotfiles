@@ -324,10 +324,6 @@ nnoremap <leader><space>t :FzfLua tags_grep_cword<cr>
 nnoremap <leader><space>f :FzfLua files<cr>
 nnoremap <leader><space>b :FzfLua buffers<cr>
 
-" FixWhitespace
-nnoremap <leader>wh :FixWhitespace<cr>
-vnoremap <leader>wh :FixWhitespace<cr>
-
 "DetectIndent
 nmap <silent> <leader>di :DetectIndent<CR>
 
