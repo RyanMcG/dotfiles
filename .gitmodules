@@ -224,7 +224,7 @@
 	path = .vim/bundle/nvim-lspconfig
 	url = git@github.com:neovim/nvim-lspconfig.git
 [submodule ".vim/bundle/aerial.nvim"]
-	path = .vim/bundle/aerial.nvim
+	path = .vim/n-bundle/aerial.nvim
 	url = git@github.com:stevearc/aerial.nvim.git
 [submodule ".vim/bundle/nvim-treesitter"]
 	path = .vim/bundle/nvim-treesitter
