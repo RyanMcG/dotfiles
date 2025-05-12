@@ -1,41 +1,6 @@
 -- Setup language servers.
-local lspconfig = require('lspconfig')
-
--- Python
--- lspconfig.jedi_language_server.setup{}
--- lspconfig.pylsp.setup {
---   settings = {
---     pylsp = {
---       configurationSources = {"flake8"},
---       plugins = {
---         pylsp_mypy = {
--- 	  enabled = false,
--- 	  dmypy = true
---         },
--- 	flake8 = {
--- 	  enabled = true
--- 	},
--- 	isort = {
--- 	  enabled = true
--- 	},
--- 	black = {
--- 	  enabled = false,
---           cache_config = true
--- 	},
---         pycodestyle = {
--- 	  enabled = false
--- 	},
---         mccabe = {
--- 	  enabled = false
--- 	},
---         pyflakes = {
--- 	  enabled = false
--- 	}
---       }
---     }
---   }
--- }
-lspconfig.pyright.setup {
+--
+vim.lsp.config('pyright', {
   settings = {
     pyright = {
       -- Using Ruff's import organizer
@@ -48,7 +13,7 @@ lspconfig.pyright.setup {
       },
     },
   },
-}
+})
 
 local on_attach = function(client, bufnr)
   if client.name == 'ruff' then
@@ -57,26 +22,26 @@ local on_attach = function(client, bufnr)
   end
 end
 
-lspconfig.ruff.setup {
+vim.lsp.config('ruff', {
   on_attach = on_attach,
-}
+})
 
 -- Rust
-lspconfig.rust_analyzer.setup {
+vim.lsp.config('rust_analyzer', {
   -- Server-specific settings. See `:help lspconfig-setup`
   settings = {
     ['rust-analyzer'] = {},
   },
-}
+})
 
-lspconfig.gopls.setup{
+vim.lsp.config('gopls', {
   cmd_env = {GOFLAGS="-tags=integration"}
-}
+})
 
 -- Typescript / JavaScript
 -- require("typescript-tools").setup {}
 -- lspconfig.tsserver.setup {}
-lspconfig.vtsls.setup{
+vim.lsp.config('vtsls', {
   settings = {
     typescript = {
       tsserver = {
@@ -84,7 +49,14 @@ lspconfig.vtsls.setup{
       },
     },
   },
-}
+})
+
+vim.lsp.enable('pyright')
+vim.lsp.enable('ty')
+vim.lsp.enable('ruff')
+vim.lsp.enable('rust_analyzer')
+vim.lsp.enable('gopls')
+vim.lsp.enable('vtsls')
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
