@@ -245,7 +245,7 @@
 	path = .vim/n-bundle/nvim-web-devicons
 	url = git@github.com:nvim-tree/nvim-web-devicons.git
 [submodule ".vim/bundle/fzf-lua"]
-	path = .vim/bundle/fzf-lua
+	path = .vim/n-bundle/fzf-lua
 	url = git@github.com:ibhagwan/fzf-lua.git
 [submodule ".vim/bundle/nvim-ghost.nvim"]
 	path = .vim/n-bundle/nvim-ghost.nvim
