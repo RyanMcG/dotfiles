@@ -222,15 +222,6 @@ autocmd User GoyoLeave Limelight!
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#languageclient#enabled = 1
 
-" minibufexpl
-"let g:miniBufExplVSplit = 25
-"let g:miniBufExplorerMoreThanOne = 0
-"let g:miniBufExplUseSingleClick = 1
-
-"Slime
-let g:slime_target = "tmux"
-let g:slime_paste_file = tempname()
-
 "Syntastic
 let g:syntastic_enable_signs=1
 let g:syntastic_stl_format = '[%E{E: %fe #%e}%B{, }%W{W: %fw #%w}]'
@@ -297,18 +288,6 @@ highlight! link GitGutterDelete GitGutterDeleteLine
 sign define QFS_VCS_CHANGE text=Δ texthl=gitcommitUnmergedFile
 sign define QFS_VCS_ADD text=+ texthl=gitcommitSelectedFile
 sign define QFS_VCS_DEL text=- texthl=gitcommitDiscardedFile
-
-"Gundo
-map <Leader>u :GundoToggle<CR>
-
-" Fugitive
-nmap <leader>gl :Glog<CR>
-nmap <leader>gs :Git<CR>
-nmap <leader>gcm :Gcommit<CR>
-nmap <leader>gd :Gdiff<CR>
-nmap <leader>gch :Git dc<CR>
-
-" vimgo
 
 " Prefer LanguageClient
 let g:go_gopls_enabled = 0
@@ -439,7 +418,7 @@ lua require("lsp")
 lua require("setup")
 
 " Trouble setup
-nnoremap <leader>xx <cmd>Trouble toggle<cr>
+nnoremap <leader>xx <cmd>Trouble toggle diagnostics<cr>
 
 " Close all buffers
 nnoremap <leader>cb :%bd <bar> e# <bar> bd# <CR>
