@@ -394,8 +394,6 @@ let g:terminalkeys_loaded = 1
 
 "Get rid of highlighting after search with space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
-"Forget sudo? Here ya go!
-set pastetoggle=<F12>
 
 " Retag with ctags
 noremap <Leader>ct :call jobstart('git ctags-files')<CR><CR>
