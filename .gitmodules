@@ -274,3 +274,6 @@
 [submodule ".vim/pack/github/start/copilot.vim"]
 	path = .vim/pack/github/start/copilot.vim
 	url = git@github.com:github/copilot.vim.git
+[submodule ".vim/bundle/copilot-chat.vim"]
+	path = .vim/bundle/copilot-chat.vim
+	url = git@github.com:DanBradbury/copilot-chat.vim.git
