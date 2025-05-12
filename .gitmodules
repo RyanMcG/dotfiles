@@ -227,19 +227,19 @@
 	path = .vim/n-bundle/aerial.nvim
 	url = git@github.com:stevearc/aerial.nvim.git
 [submodule ".vim/bundle/plenary.nvim"]
-	path = .vim/bundle/plenary.nvim
+	path = .vim/n-bundle/plenary.nvim
 	url = git@github.com:nvim-lua/plenary.nvim.git
 [submodule ".vim/bundle/tokyonight.nvim"]
-	path = .vim/bundle/tokyonight.nvim
+	path = .vim/n-bundle/tokyonight.nvim
 	url = git@github.com:folke/tokyonight.nvim.git
 [submodule ".vim/bundle/lualine.nvim"]
-	path = .vim/bundle/lualine.nvim
+	path = .vim/n-bundle/lualine.nvim
 	url = git@github.com:nvim-lualine/lualine.nvim.git
 [submodule ".vim/bundle/conform.nvim"]
-	path = .vim/bundle/conform.nvim
+	path = .vim/n-bundle/conform.nvim
 	url = git@github.com:stevearc/conform.nvim.git
 [submodule ".vim/bundle/trouble.nvim"]
-	path = .vim/bundle/trouble.nvim
+	path = .vim/n-bundle/trouble.nvim
 	url = git@github.com:folke/trouble.nvim.git
 [submodule ".vim/bundle/nvim-web-devicons"]
 	path = .vim/n-bundle/nvim-web-devicons
