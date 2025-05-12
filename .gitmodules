@@ -226,9 +226,6 @@
 [submodule ".vim/bundle/aerial.nvim"]
 	path = .vim/n-bundle/aerial.nvim
 	url = git@github.com:stevearc/aerial.nvim.git
-[submodule ".vim/bundle/nvim-treesitter"]
-	path = .vim/n-bundle/nvim-treesitter
-	url = git@github.com:nvim-treesitter/nvim-treesitter.git
 [submodule ".vim/bundle/plenary.nvim"]
 	path = .vim/bundle/plenary.nvim
 	url = git@github.com:nvim-lua/plenary.nvim.git
