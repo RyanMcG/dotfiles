@@ -221,13 +221,13 @@
 	path = .vim/bundle/vim-rhubarb
 	url = git@github.com:tpope/vim-rhubarb.git
 [submodule ".vim/bundle/nvim-lspconfig"]
-	path = .vim/bundle/nvim-lspconfig
+	path = .vim/n-bundle/nvim-lspconfig
 	url = git@github.com:neovim/nvim-lspconfig.git
 [submodule ".vim/bundle/aerial.nvim"]
 	path = .vim/n-bundle/aerial.nvim
 	url = git@github.com:stevearc/aerial.nvim.git
 [submodule ".vim/bundle/nvim-treesitter"]
-	path = .vim/bundle/nvim-treesitter
+	path = .vim/n-bundle/nvim-treesitter
 	url = git@github.com:nvim-treesitter/nvim-treesitter.git
 [submodule ".vim/bundle/plenary.nvim"]
 	path = .vim/bundle/plenary.nvim
@@ -245,13 +245,13 @@
 	path = .vim/bundle/trouble.nvim
 	url = git@github.com:folke/trouble.nvim.git
 [submodule ".vim/bundle/nvim-web-devicons"]
-	path = .vim/bundle/nvim-web-devicons
+	path = .vim/n-bundle/nvim-web-devicons
 	url = git@github.com:nvim-tree/nvim-web-devicons.git
 [submodule ".vim/bundle/fzf-lua"]
 	path = .vim/bundle/fzf-lua
 	url = git@github.com:ibhagwan/fzf-lua.git
 [submodule ".vim/bundle/nvim-ghost.nvim"]
-	path = .vim/bundle/nvim-ghost.nvim
+	path = .vim/n-bundle/nvim-ghost.nvim
 	url = git@github.com:subnut/nvim-ghost.nvim.git
 [submodule ".vim/pack/github/start/copilot.vim"]
 	path = .vim/pack/github/start/copilot.vim
