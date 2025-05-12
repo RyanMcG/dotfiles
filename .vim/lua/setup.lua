@@ -66,5 +66,7 @@ end, {
 })
 
 fzf = require('fzf-lua')
-fzf.setup {}
+fzf.setup({})
 fzf.register_ui_select()
+
+require('trouble').setup({})

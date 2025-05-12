@@ -380,6 +380,7 @@ set laststatus=2
 "Some mappin'
 "Easily edit and source vim
 nnoremap <silent> <leader>ev :e $MYVIMRC<CR>
+nnoremap <silent> <leader>el :e $HOME/.vim/lua/setup.lua<CR>
 nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
 
 " Expand %% to the directory of the current buffer in command mode
@@ -438,9 +439,7 @@ lua require("lsp")
 lua require("setup")
 
 " Trouble setup
-nnoremap <leader>xx <cmd>TroubleToggle<cr>
-nnoremap <leader>xw <cmd>TroubleToggle workspace_diagnostics<cr>
-nnoremap <leader>xd <cmd>TroubleToggle document_diagnostics<cr>
+nnoremap <leader>xx <cmd>Trouble toggle<cr>
 
 " Close all buffers
 nnoremap <leader>cb :%bd <bar> e# <bar> bd# <CR>
