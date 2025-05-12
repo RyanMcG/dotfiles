@@ -64,3 +64,7 @@ vim.api.nvim_create_user_command("ConformEnable", function()
 end, {
   desc = "Re-enable autoformat-on-save",
 })
+
+fzf = require('fzf-lua')
+fzf.setup {}
+fzf.register_ui_select()
