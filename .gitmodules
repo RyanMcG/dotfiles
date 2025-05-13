@@ -253,3 +253,6 @@
 [submodule ".vim/bundle/nvim-treesitter-context"]
 	path = .vim/n-bundle/nvim-treesitter-context
 	url = git@github.com:nvim-treesitter/nvim-treesitter-context.git
+[submodule ".vim/bundle/CopilotChat.nvim"]
+	path = .vim/n-bundle/CopilotChat.nvim
+	url = git@github.com:CopilotC-Nvim/CopilotChat.nvim.git
