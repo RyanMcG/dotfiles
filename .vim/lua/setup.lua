@@ -1,4 +1,4 @@
-require("aerial").setup({
+require("aerial").setup {
   -- optionally use on_attach to set keymaps when aerial has attached to a buffer
   disable_max_lines = 30000,
   disable_max_size = 2000000,
@@ -8,7 +8,7 @@ require("aerial").setup({
     vim.keymap.set("n", "{", "<cmd>AerialPrev<CR>", { buffer = bufnr })
     vim.keymap.set("n", "}", "<cmd>AerialNext<CR>", { buffer = bufnr })
   end,
-})
+}
 -- You probably also want to set a keymap to toggle aerial
 vim.keymap.set("n", "<leader>ae", "<cmd>AerialToggle!<CR>")
 
@@ -31,7 +31,7 @@ require('lualine').setup {
   }
 }
 
-require("conform").setup({
+require("conform").setup {
   formatters_by_ft = {
     lua = { "stylua" },
     -- Conform will run multiple formatters sequentially
@@ -45,7 +45,7 @@ require("conform").setup({
     end
     return { timeout_ms = 1000, lsp_fallback = true }
   end,
-})
+}
 
 vim.api.nvim_create_user_command("ConformDisable", function(args)
   if args.bang then
@@ -66,7 +66,9 @@ end, {
 })
 
 fzf = require('fzf-lua')
-fzf.setup({})
+fzf.setup {}
 fzf.register_ui_select()
 
-require('trouble').setup({})
+require("CopilotChat").setup {}
+
+require('trouble').setup {}
