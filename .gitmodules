@@ -91,9 +91,6 @@
 [submodule ".vim/bundle/vim-textobj-python"]
 	path = .vim/bundle/vim-textobj-python
 	url = git@github.com:bps/vim-textobj-python.git
-[submodule ".vim/bundle/vim-autornu"]
-	path = .vim/bundle/vim-autornu
-	url = git@github.com:RyanMcG/vim-autornu.git
 [submodule ".vim/bundle/vim-fenced-code-blocks"]
 	path = .vim/bundle/vim-fenced-code-blocks
 	url = git@github.com:amiorin/vim-fenced-code-blocks.git
@@ -247,9 +244,6 @@
 [submodule ".vim/bundle/fzf-lua"]
 	path = .vim/n-bundle/fzf-lua
 	url = git@github.com:ibhagwan/fzf-lua.git
-[submodule ".vim/bundle/nvim-ghost.nvim"]
-	path = .vim/n-bundle/nvim-ghost.nvim
-	url = git@github.com:subnut/nvim-ghost.nvim.git
 [submodule ".vim/pack/github/start/copilot.vim"]
 	path = .vim/pack/github/start/copilot.vim
 	url = git@github.com:github/copilot.vim.git
