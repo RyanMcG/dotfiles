@@ -182,7 +182,8 @@ set wildmode=list:longest,full
 set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
 
 " Add charater to front of wrapped lines
-set showbreak=↪
+let &showbreak='↪  '
+set cpoptions+=n
 
 " Highlight VCS conflict markers
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
