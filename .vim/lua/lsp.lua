@@ -56,6 +56,7 @@ vim.lsp.enable('ruff')
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('gopls')
 vim.lsp.enable('vtsls')
+vim.lsp.enable('jdtls')
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
