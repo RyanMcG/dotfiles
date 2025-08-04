@@ -247,3 +247,6 @@
 [submodule ".vim/bundle/copilot.vim"]
 	path = .vim/bundle/copilot.vim
 	url = git@github.com:github/copilot.vim.git
+[submodule ".vim/n-bundle/nvim-aider"]
+	path = .vim/n-bundle/nvim-aider
+	url = git@github.com:GeorgesAlkhouri/nvim-aider.git

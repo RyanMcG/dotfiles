@@ -4,4 +4,4 @@ REPO=$1
 PROJECT=`basename $REPO .git`
 
 cd `dirname $0`
-git submodule add --force $REPO .vim/bundle/$PROJECT
+git submodule add --force $REPO .vim/n-bundle/$PROJECT
