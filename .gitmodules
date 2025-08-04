@@ -250,3 +250,6 @@
 [submodule ".vim/n-bundle/nvim-aider"]
 	path = .vim/n-bundle/nvim-aider
 	url = git@github.com:GeorgesAlkhouri/nvim-aider.git
+[submodule ".vim/n-bundle/snacks.nvim"]
+	path = .vim/n-bundle/snacks.nvim
+	url = git@github.com:folke/snacks.nvim.git
