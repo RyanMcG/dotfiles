@@ -8,7 +8,6 @@ ln -s $DOTFILES/.bashrc ~/
 ln -s $DOTFILES/.ctags ~/
 ln -s $DOTFILES/.fonts ~/
 ln -s $DOTFILES/.general_aliases ~/
-ln -s $DOTFILES/.general_aliases_extra ~/
 ln -s $DOTFILES/.general_rc ~/
 ln -s $DOTFILES/.gitconfig ~/
 ln -s $DOTFILES/.gitignore.global ~/
