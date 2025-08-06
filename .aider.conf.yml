@@ -18,7 +18,7 @@
 # Main model:
 
 ## Specify the model to use for the main chat
-model: gpt-4o
+model: openai/gpt-4o
 
 ########################
 # API Keys and settings:
@@ -102,7 +102,7 @@ model: gpt-4o
 #auto-accept-architect: true
 
 ## Specify the model to use for commit messages and chat history summarization (default depends on --model)
-#weak-model: xxx
+weak-model: openai/gpt-4o-mini
 
 ## Specify the model to use for editor tasks (default depends on --model)
 #editor-model: xxx
