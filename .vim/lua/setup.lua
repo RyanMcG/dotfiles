@@ -69,13 +69,4 @@ fzf = require('fzf-lua')
 fzf.setup {}
 fzf.register_ui_select()
 
-require("CopilotChat").setup {
-  mappings = {
-    reset = {
-      normal = '<LocalLeader>r',
-      insert = '<C-S-r>',
-    },
-  }
-}
-
 require('trouble').setup {}

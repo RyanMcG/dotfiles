@@ -241,12 +241,6 @@
 [submodule ".vim/bundle/nvim-treesitter-context"]
 	path = .vim/n-bundle/nvim-treesitter-context
 	url = git@github.com:nvim-treesitter/nvim-treesitter-context.git
-[submodule ".vim/bundle/CopilotChat.nvim"]
-	path = .vim/n-bundle/CopilotChat.nvim
-	url = git@github.com:CopilotC-Nvim/CopilotChat.nvim.git
-[submodule ".vim/bundle/copilot.vim"]
-	path = .vim/bundle/copilot.vim
-	url = git@github.com:github/copilot.vim.git
 [submodule ".vim/n-bundle/nvim-aider"]
 	path = .vim/n-bundle/nvim-aider
 	url = git@github.com:GeorgesAlkhouri/nvim-aider.git
