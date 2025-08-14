@@ -253,3 +253,6 @@
 [submodule ".vim/n-bundle/snacks.nvim"]
 	path = .vim/n-bundle/snacks.nvim
 	url = git@github.com:folke/snacks.nvim.git
+[submodule ".vim/n-bundle/windsurf.vim"]
+	path = .vim/n-bundle/windsurf.vim
+	url = git@github.com:Exafunction/windsurf.vim.git
