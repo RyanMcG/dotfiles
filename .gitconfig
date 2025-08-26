@@ -12,6 +12,7 @@
 	ai   = add -i
 	ap   = add -p
 	b    = branch
+	bsc  = branch --show-current
 	ca   = commit -a
 	caar = commit -a --amend --reuse-message=HEAD
 	caf  = commit -a --fixup
