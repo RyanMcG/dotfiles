@@ -1,4 +1,3 @@
-export GOPATH=$HOME/repo/gocode
 export PYENV_ROOT="$HOME/.pyenv"
 eval $(/opt/homebrew/bin/brew shellenv)
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
@@ -20,6 +19,7 @@ if [ -f ~/.profile_local ]; then
 fi
 autoload -Uz compinit && compinit
 
-unset HISTSIZE HISTFILESIZE
-export HISTFILESIZE=9999999999
-export HISTSIZE=9999999999
+unset HISTSIZE HISTFILESIZE SAVEHIST
+export HISTSIZE=100000
+export HISTFILESIZE=$HISTSIZE
+export SAVEHIST=$HISTSIZE
