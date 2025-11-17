@@ -29,11 +29,10 @@
 	ds   = diff --stat
 	f    = fetch
 	fo   = fetch origin
+	fob  = "fetch origin $(git branch --show-current)"
 	g    = grep -n
 	l    = log --decorate --graph
 	l1   = log --graph --pretty=epic-exact -1
-	lcr  = log --pretty=cr
-	lcri = log --pretty=cri
 	le   = log --graph --pretty=epic-exact
 	leng = log --pretty=epic-exact
 	lf   = log --graph --pretty=epic-friend

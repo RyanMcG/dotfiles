@@ -174,6 +174,9 @@ set title
 " let loaded_matchparen = 0 "Uncomment to turn off
 set showmatch
 
+"Do not fix eol (newline at end of file)
+set nofixeol
+
 "Completeion in command mode
 set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,.DS_Store,*.aux,*.out,*.toc,*.pyc,*node_modules*,*/venv/*,*/build/*,*/vendor/*
 set wildmenu
