@@ -62,3 +62,5 @@ GPATH
 .watchman-cookie*
 .aider.*
 .aiderignore
+.claude/
+mutagen.yml*
