@@ -134,11 +134,6 @@ if has("autocmd")
       \ endif
   endif
 
-  augroup cljs
-    au!
-    au BufReadPost,BufNewFile *.cljs setlocal filetype=clojure
-  augroup END
-
   augroup sls
     au!
     au BufReadPost,BufNewFile *.sls setlocal filetype=yaml
@@ -205,18 +200,6 @@ packadd cfilter
 "
 " Plugin Config
 
-" Rainbow
-let g:rainbow_active = 1
-nmap <leader>n :RainbowToggle<CR>
-
-" Deoplete
-
-let g:deoplete#enable_at_startup = 0
-call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
-
-" Instant Markdown
-" Do not enable by default
-let g:instant_markdown_autostart = 0
 
 " Limelight
 autocmd User GoyoEnter Limelight
@@ -232,18 +215,6 @@ let g:syntastic_stl_format = '[%E{E: %fe #%e}%B{, }%W{W: %fw #%w}]'
 
 " Autornu
 let g:autornu_enable = 0
-
-"Vim clojure static
-let g:clojure_align_multiline_strings = 0
-" Set *.cljs files to the clojure filetype
-
-" Paredit
-let g:paredit_shortmaps = 1
-
-" Fireplace (Clojure)
-set viminfo+=! "Not actually a fireplace option, but presists cached cp
-nnoremap <silent><buffer> cpR :Require!<CR>
-let g:leiningen_no_auto_repl = 1
 
 "Snipmate
 inoremap <C-space> <Plug>snipMateNextOrTrigger
@@ -310,11 +281,6 @@ nnoremap <leader><space>b :FzfLua buffers<cr>
 "DetectIndent
 nmap <silent> <leader>di :DetectIndent<CR>
 
-"Gist
-let g:gist_clip_command = 'xclip -selection clipboard'
-let g:gist_detect_filetype = 1
-
-
 "Configure language specifc options
 "PHP
 let php_htmlInStrings = 1
@@ -341,14 +307,6 @@ let g:jedi#popup_on_dot = 0
 let g:jedi#auto_vim_configuration = 0
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#popup_select_first = 0
-
-" Deoplete Jedi
-let deoplete#sources#jedi#show_docstring = 1
-
-"Ruby
-let ruby_operators = 1
-let ruby_space_errors = 1
-" let ruby_no_expensive = 1
 
 "Configure Eclim
 let g:EclimSignLevel = 0

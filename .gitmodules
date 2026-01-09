@@ -19,9 +19,6 @@
 [submodule ".vim/bundle/syntastic"]
 	path = .vim/v-bundle/syntastic
 	url = git@github.com:scrooloose/syntastic.git
-[submodule ".vim/bundle/gist-vim"]
-	path = .vim/bundle/gist-vim
-	url = git@github.com:mattn/gist-vim.git
 [submodule ".vim/bundle/vim-surround"]
 	path = .vim/bundle/vim-surround
 	url = git@github.com:tpope/vim-surround.git
@@ -40,9 +37,6 @@
 [submodule ".vim/bundle/vim-rsi"]
 	path = .vim/bundle/vim-rsi
 	url = git@github.com:tpope/vim-rsi.git
-[submodule ".vim/bundle/vim-guifontzoom"]
-	path = .vim/bundle/vim-guifontzoom
-	url = git@github.com:RyanMcG/vim-guifontzoom.git
 [submodule ".vim/bundle/vim-repeat"]
 	path = .vim/bundle/vim-repeat
 	url = git@github.com:tpope/vim-repeat.git
@@ -64,30 +58,6 @@
 [submodule ".vim/bundle/vim-textobj-user"]
 	path = .vim/bundle/vim-textobj-user
 	url = git@github.com:kana/vim-textobj-user.git
-[submodule ".vim/bundle/vim-textobj-function"]
-	path = .vim/bundle/vim-textobj-function
-	url = git@github.com:kana/vim-textobj-function.git
-[submodule ".vim/bundle/vim-textobj-indent"]
-	path = .vim/bundle/vim-textobj-indent
-	url = git@github.com:kana/vim-textobj-indent.git
-[submodule ".vim/bundle/vim-textobj-underscore"]
-	path = .vim/bundle/vim-textobj-underscore
-	url = git@github.com:kana/vim-textobj-underscore.git
-[submodule ".vim/bundle/vim-textobj-syntax"]
-	path = .vim/bundle/vim-textobj-syntax
-	url = git@github.com:kana/vim-textobj-syntax.git
-[submodule ".vim/bundle/vim-textobj-dash"]
-	path = .vim/bundle/vim-textobj-dash
-	url = git@github.com:RyanMcG/vim-textobj-dash.git
-[submodule ".vim/bundle/vim-textobj-line"]
-	path = .vim/bundle/vim-textobj-line
-	url = git@github.com:kana/vim-textobj-line.git
-[submodule ".vim/bundle/vim-textobj-lastpat"]
-	path = .vim/bundle/vim-textobj-lastpat
-	url = git@github.com:kana/vim-textobj-lastpat.git
-[submodule ".vim/bundle/vim-fenced-code-blocks"]
-	path = .vim/bundle/vim-fenced-code-blocks
-	url = git@github.com:amiorin/vim-fenced-code-blocks.git
 [submodule ".vim/bundle/vitality.vim"]
 	path = .vim/bundle/vitality.vim
 	url = git@github.com:sjl/vitality.vim.git
@@ -103,63 +73,21 @@
 [submodule ".vim/bundle/vim-vinegar"]
 	path = .vim/bundle/vim-vinegar
 	url = git@github.com:tpope/vim-vinegar.git
-[submodule ".vim/bundle/vim-scala"]
-	path = .vim/bundle/vim-scala
-	url = git@github.com:derekwyatt/vim-scala.git
-[submodule ".vim/bundle/vim-sexp"]
-	path = .vim/bundle/vim-sexp
-	url = git@github.com:guns/vim-sexp.git
-[submodule ".vim/bundle/vim-sexp-mappings-for-regular-people"]
-	path = .vim/bundle/vim-sexp-mappings-for-regular-people
-	url = git@github.com:tpope/vim-sexp-mappings-for-regular-people.git
-[submodule ".vim/bundle/vim-clojure-static"]
-	path = .vim/bundle/vim-clojure-static
-	url = git@github.com:guns/vim-clojure-static.git
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = git@github.com:tpope/vim-markdown.git
 [submodule ".vim/bundle/vim-yaml"]
 	path = .vim/bundle/vim-yaml
 	url = git@github.com:avakhov/vim-yaml.git
-[submodule ".vim/bundle/vim-less"]
-	path = .vim/bundle/vim-less
-	url = git@github.com:groenewege/vim-less.git
 [submodule ".vim/bundle/vim-javascript"]
 	path = .vim/bundle/vim-javascript
 	url = git@github.com:pangloss/vim-javascript.git
-[submodule ".vim/bundle/vim-javascript-syntax"]
-	path = .vim/bundle/vim-javascript-syntax
-	url = git@github.com:jelera/vim-javascript-syntax.git
-[submodule ".vim/bundle/vim-nodejs-errorformat"]
-	path = .vim/bundle/vim-nodejs-errorformat
-	url = git@github.com:felixge/vim-nodejs-errorformat.git
-[submodule ".vim/bundle/vim-stylus"]
-	path = .vim/bundle/vim-stylus
-	url = git@github.com:wavded/vim-stylus.git
-[submodule ".vim/bundle/vim-ruby"]
-	path = .vim/bundle/vim-ruby
-	url = git@github.com:vim-ruby/vim-ruby.git
-[submodule ".vim/bundle/vim-endwise"]
-	path = .vim/bundle/vim-endwise
-	url = git@github.com:tpope/vim-endwise.git
-[submodule ".vim/bundle/vimerl"]
-	path = .vim/bundle/vimerl
-	url = git@github.com:jimenezrick/vimerl.git
 [submodule "scripts/dpi.py"]
 	path = scripts/dpi.py
 	url = git@github.com:RyanMcG/dpi.py.git
 [submodule "center_dmenu"]
 	path = center_dmenu
 	url = git@github.com:RyanMcG/center_dmenu.git
-[submodule ".vim/bundle/terminalkeys.vim"]
-	path = .vim/bundle/terminalkeys.vim
-	url = git@github.com:nacitar/terminalkeys.vim.git
-[submodule ".vim/bundle/vim-typedclojure"]
-	path = .vim/bundle/vim-typedclojure
-	url = git@github.com:typedclojure/vim-typedclojure.git
-[submodule ".vim/bundle/vim-instant-markdown"]
-	path = .vim/bundle/vim-instant-markdown
-	url = git@github.com:suan/vim-instant-markdown.git
 [submodule ".vim/bundle/goyo.vim"]
 	path = .vim/bundle/goyo.vim
 	url = git@github.com:junegunn/goyo.vim.git
@@ -175,39 +103,18 @@
 [submodule ".vim/bundle/vim-addon-nix"]
 	path = .vim/bundle/vim-addon-nix
 	url = git@github.com:MarcWeber/vim-addon-nix.git
-[submodule ".vim/bundle/deoplete.nvim"]
-	path = .vim/n-bundle/deoplete.nvim
-	url = git@github.com:Shougo/deoplete.nvim.git
-[submodule ".vim/bundle/echodoc.vim"]
-	path = .vim/n-bundle/echodoc.vim
-	url = git@github.com:Shougo/echodoc.vim.git
 [submodule ".vim/bundle/python-syntax"]
 	path = .vim/bundle/python-syntax
 	url = git@github.com:hdima/python-syntax.git
-[submodule ".vim/bundle/rainbow"]
-	path = .vim/bundle/rainbow
-	url = git@github.com:luochen1990/rainbow.git
-[submodule ".vim/bundle/vim-swift"]
-	path = .vim/bundle/vim-swift
-	url = git@github.com:kballard/vim-swift
 [submodule ".vim/bundle/vim-go"]
 	path = .vim/bundle/vim-go
 	url = git@github.com:fatih/vim-go.git
-[submodule ".vim/bundle/vim-jsx"]
-	path = .vim/bundle/vim-jsx
-	url = git@github.com:mxw/vim-jsx.git
 [submodule ".vim/bundle/yats.vim"]
 	path = .vim/bundle/yats.vim
 	url = git@github.com:HerringtonDarkholme/yats.vim.git
 [submodule ".vim/bundle/vim-jinja"]
 	path = .vim/bundle/vim-jinja
 	url = git@github.com:lepture/vim-jinja.git
-[submodule ".vim/bundle/vim-rego"]
-	path = .vim/bundle/vim-rego
-	url = git@github.com:tsandall/vim-rego.git
-[submodule ".vim/bundle/plantuml-syntax"]
-	path = .vim/bundle/plantuml-syntax
-	url = git@github.com:aklt/plantuml-syntax
 [submodule ".vim/bundle/vim-rhubarb"]
 	path = .vim/bundle/vim-rhubarb
 	url = git@github.com:tpope/vim-rhubarb.git
