@@ -12,16 +12,6 @@ require("aerial").setup {
 -- You probably also want to set a keymap to toggle aerial
 vim.keymap.set("n", "<leader>ae", "<cmd>AerialToggle!<CR>")
 
--- require'nvim-treesitter.configs'.setup {
---   -- Automatically install missing parsers when entering buffer
---   -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
---   auto_install = true,
---   highlight = {
---     enable = true,
---     disable = { "python", "thrift", },
---   }
--- }
-
 require('lualine').setup {
   options = {
     theme = 'tokyonight'
