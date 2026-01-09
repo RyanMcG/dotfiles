@@ -241,12 +241,6 @@
 [submodule ".vim/bundle/nvim-treesitter-context"]
 	path = .vim/n-bundle/nvim-treesitter-context
 	url = git@github.com:nvim-treesitter/nvim-treesitter-context.git
-[submodule ".vim/n-bundle/nvim-aider"]
-	path = .vim/n-bundle/nvim-aider
-	url = git@github.com:GeorgesAlkhouri/nvim-aider.git
-[submodule ".vim/n-bundle/snacks.nvim"]
-	path = .vim/n-bundle/snacks.nvim
-	url = git@github.com:folke/snacks.nvim.git
 [submodule ".vim/n-bundle/windsurf.vim"]
 	path = .vim/n-bundle/windsurf.vim
 	url = git@github.com:Exafunction/windsurf.vim.git

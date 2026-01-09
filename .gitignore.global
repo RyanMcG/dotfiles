@@ -60,7 +60,5 @@ GPATH
 .exrc
 .ignore
 .watchman-cookie*
-.aider.*
-.aiderignore
 .claude/
 mutagen.yml*
