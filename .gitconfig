@@ -45,11 +45,7 @@
 	p    = pull
 	pr   = pull --rebase
 	r    = reset
-	ri   = rebase -i --autosquash
-	rilt = rebase -i --autosquash HEAD~10
-	rp   = rebase -p
-	rom  = rebase -p origin/master
-	rim  = rebase -i --autosquash origin/master
+	rom  = "rebase $(git merge-base origin/master HEAD) HEAD --onto origin/master"
 	rl   = reflog --decorate
 	rs   = remote show
 	s    = status
