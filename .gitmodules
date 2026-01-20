@@ -130,9 +130,6 @@
 [submodule ".vim/bundle/conform.nvim"]
 	path = .vim/n-bundle/conform.nvim
 	url = git@github.com:stevearc/conform.nvim.git
-[submodule ".vim/bundle/trouble.nvim"]
-	path = .vim/n-bundle/trouble.nvim
-	url = git@github.com:folke/trouble.nvim.git
 [submodule ".vim/bundle/nvim-web-devicons"]
 	path = .vim/n-bundle/nvim-web-devicons
 	url = git@github.com:nvim-tree/nvim-web-devicons.git

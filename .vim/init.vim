@@ -277,6 +277,8 @@ nnoremap <leader><space>g :FzfLua live_grep_native<cr>
 nnoremap <leader><space>t :FzfLua tags_grep_cword<cr>
 nnoremap <leader><space>f :FzfLua files<cr>
 nnoremap <leader><space>b :FzfLua buffers<cr>
+nnoremap <leader><space>d :FzfLua diagnostics_document<cr>
+nnoremap <leader><space>w :FzfLua diagnostics_workspace<cr>
 
 "DetectIndent
 nmap <silent> <leader>di :DetectIndent<CR>
@@ -387,9 +389,6 @@ set exrc
 
 lua require("lsp")
 lua require("setup")
-
-" Trouble setup
-nnoremap <leader>xx <cmd>Trouble toggle diagnostics<cr>
 
 " Close all buffers
 nnoremap <leader>cb :%bd <bar> e# <bar> bd# <CR>
