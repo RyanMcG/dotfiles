@@ -68,3 +68,13 @@ end, { desc = 'Toggle diagnostic virtual_lines' })
 vim.diagnostic.config({
   virtual_text = true
 })
+
+-- Optional: Add a keymap to manually open/close the location list
+vim.keymap.set("n", "<LocalLeader>dl", function()
+    -- Toggle the location list
+    if vim.fn.win_getid(vim.fn.bufnr("$"), 1) == -1 then
+        vim.cmd("lopen")
+    else
+        vim.cmd("lclose")
+    end
+end, { desc = "Toggle location list with diagnostics" })

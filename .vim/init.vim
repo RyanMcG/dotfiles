@@ -236,8 +236,8 @@ augroup quickfix
     autocmd QuickFixCmdPost l* lwindow
 augroup END
 
-nnoremap <leader>rr :silent lgrep!<space>
-nnoremap <leader>rw :silent lgrep! -w <C-R><C-W><space>
+nnoremap <leader>rr :silent grep!<space>
+nnoremap <leader>rw :silent grep! -w <C-R><C-W><space>
 
 " Open and close the location and quickfix list
 nmap <leader>cc :cclose<CR>
