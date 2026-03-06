@@ -51,19 +51,13 @@ vim.lsp.config('vtsls', {
   },
 })
 
-vim.lsp.enable('pyright')
+-- vim.lsp.enable('pyright')
+vim.lsp.enable('ty')
 vim.lsp.enable('ruff')
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('gopls')
 vim.lsp.enable('vtsls')
 vim.lsp.enable('jdtls')
-
--- Global mappings.
--- See `:help vim.diagnostic.*` for documentation on any of the below functions
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
 
 -- Use LspAttach autocommand to only map the following keys
 -- after the language server attaches to the current buffer

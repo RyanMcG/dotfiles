@@ -353,6 +353,11 @@ noremap <Leader>ct :call jobstart('git ctags-files')<CR><CR>
 " Copy path to clipboard
 noremap <Leader>pb :silent !echo '%' <Bar> pbcopy<CR><CR>
 
+" Close all buffers
+command! BufOnly silent! execute "%bd|e#|bd#"
+nnoremap <leader>cb :BufOnly<cr>
+
+
 "
 " Some Custom functions
 "
@@ -389,6 +394,3 @@ set exrc
 
 lua require("lsp")
 lua require("setup")
-
-" Close all buffers
-nnoremap <leader>cb :%bd <bar> e# <bar> bd# <CR>

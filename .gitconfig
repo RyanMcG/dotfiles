@@ -14,7 +14,8 @@
 	b    = branch
 	bsc  = branch --show-current
 	ca   = commit -a
-	caar = commit -a --amend --reuse-message=HEAD
+	can = commit --amend --no-edit
+	caan = commit -a --amend --no-edit
 	caf  = commit -a --fixup
 	cam  = commit -am
 	cm   = commit -m
