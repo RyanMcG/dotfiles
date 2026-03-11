@@ -15,6 +15,15 @@ vim.lsp.config('pyright', {
   },
 })
 
+vim.lsp.config('ty', {
+  settings = {
+    ty = {
+      -- Using Ruff's import organizer
+      diagnosticMode = "openFilesOnly",
+    },
+  },
+})
+
 local on_attach = function(client, bufnr)
   if client.name == 'ruff' then
     -- Disable hover in favor of Pyright
