@@ -142,3 +142,12 @@
 [submodule ".vim/n-bundle/windsurf.vim"]
 	path = .vim/n-bundle/windsurf.vim
 	url = git@github.com:Exafunction/windsurf.vim.git
+[submodule ".vim/n-bundle/nvim-treesitter"]
+	path = .vim/n-bundle/nvim-treesitter
+	url = git@github.com:nvim-treesitter/nvim-treesitter
+[submodule ".vim/n-bundle/mini.nvim"]
+	path = .vim/n-bundle/mini.nvim
+	url = git@github.com:nvim-mini/mini.nvim
+[submodule ".vim/n-bundle/render-markdown.nvim"]
+	path = .vim/n-bundle/render-markdown.nvim
+	url = git@github.com:MeanderingProgrammer/render-markdown.nvim.git
