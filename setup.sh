@@ -27,5 +27,5 @@ mkdir -p ~/bin
 ln -s $DOTFILES/bin/git-gcbranches ~/bin/
 ln -s $DOTFILES/bin/git-ctags-files ~/bin/
 
-brew install tmux neovim autojump powerlevel10k fzf fd ripgrep ruff
+brew install tmux neovim autojump powerlevel10k fzf fd ripgrep ruff tree-sitter
 npm install -g @vtsls/language-server pyright
