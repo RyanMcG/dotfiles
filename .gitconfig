@@ -50,6 +50,7 @@
 	rl   = reflog --decorate
 	rs   = remote show
 	s    = status
+	su   = status -u no
 	sl   = stash list --pretty=epic-exact
 	sn   = show --stat --decorate
 	wc   = whatchanged --decorate --graph

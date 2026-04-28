@@ -151,3 +151,6 @@
 [submodule ".vim/n-bundle/render-markdown.nvim"]
 	path = .vim/n-bundle/render-markdown.nvim
 	url = git@github.com:MeanderingProgrammer/render-markdown.nvim.git
+[submodule ".vim/n-bundle/markdown-preview.nvim"]
+	path = .vim/n-bundle/markdown-preview.nvim
+	url = git@github.com:iamcco/markdown-preview.nvim.git
