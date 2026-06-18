@@ -1,5 +1,16 @@
 -- Setup language servers.
---
+
+local on_attach = function(client, bufnr)
+  if client.name == 'ruff' then
+    -- Disable hover in favor of Pyright
+    client.server_capabilities.hoverProvider = false
+  end
+end
+
+vim.lsp.config('ruff', {
+  on_attach = on_attach,
+})
+
 vim.lsp.config('pyright', {
   settings = {
     pyright = {
@@ -22,17 +33,6 @@ vim.lsp.config('ty', {
       diagnosticMode = "openFilesOnly",
     },
   },
-})
-
-local on_attach = function(client, bufnr)
-  if client.name == 'ruff' then
-    -- Disable hover in favor of Pyright
-    client.server_capabilities.hoverProvider = false
-  end
-end
-
-vim.lsp.config('ruff', {
-  on_attach = on_attach,
 })
 
 -- Rust
@@ -60,40 +60,11 @@ vim.lsp.config('vtsls', {
   },
 })
 
+vim.lsp.enable('ruff')
 -- vim.lsp.enable('pyright')
 vim.lsp.enable('ty')
-vim.lsp.enable('ruff')
+
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('gopls')
 vim.lsp.enable('vtsls')
 vim.lsp.enable('jdtls')
-
--- Use LspAttach autocommand to only map the following keys
--- after the language server attaches to the current buffer
-vim.api.nvim_create_autocmd('LspAttach', {
-  group = vim.api.nvim_create_augroup('UserLspConfig', {}),
-  callback = function(ev)
-    -- Enable completion triggered by <c-x><c-o>
-    vim.bo[ev.buf].omnifunc = 'v:lua.vim.lsp.omnifunc'
-
-    -- Buffer local mappings.
-    -- See `:help vim.lsp.*` for documentation on any of the below functions
-    local opts = { buffer = ev.buf }
-    vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
-    vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
-    vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
-    vim.keymap.set('n', '<leader>sh', vim.lsp.buf.signature_help, opts)
-    vim.keymap.set('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, opts)
-    vim.keymap.set('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, opts)
-    vim.keymap.set('n', '<leader>wl', function()
-      print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-    end, opts)
-    vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, opts)
-    vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
-    vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, opts)
-    vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
-    vim.keymap.set('n', '<leader>m', function()
-      vim.lsp.buf.format { async = true }
-    end, opts)
-  end,
-})
