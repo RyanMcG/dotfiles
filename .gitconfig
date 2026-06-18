@@ -50,7 +50,7 @@
 	rl   = reflog --decorate
 	rs   = remote show
 	s    = status
-	su   = status -u no
+	su   = status -uno
 	sl   = stash list --pretty=epic-exact
 	sn   = show --stat --decorate
 	wc   = whatchanged --decorate --graph
@@ -94,3 +94,9 @@
 	path = ~/.gitconfig-local
 [init]
 	defaultBranch = main
+[credential "https://github.com"]
+	helper = !/usr/local/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/usr/local/bin/gh auth git-credential
+[credential]
+	helper = !gh auth git-credential

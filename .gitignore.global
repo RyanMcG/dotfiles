@@ -64,3 +64,4 @@ GPATH
 mutagen.yml*
 .env
 .mcp.json
+/local_docs
