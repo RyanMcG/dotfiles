@@ -60,7 +60,6 @@ GPATH
 .exrc
 .ignore
 .watchman-cookie*
-.claude/
 mutagen.yml*
 .env
 .mcp.json

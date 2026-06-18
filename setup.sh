@@ -21,7 +21,8 @@ ln -s $DOTFILES/.ackrc ~/
 ln -s $DOTFILES/.p10k.zsh ~/
 ln -s $DOTFILES/.ncmpcpp ~/
 ln -s $DOTFILES/.config ~/
-ln -s $DOTFILES/.aider.conf.yml ~/
+ln -s $DOTFILES/.claude/CLAUDE.md ~/.claude/CLAUDE.md
+ln -s $DOTFILES/.claude/settings.json ~/.claude/settings.json
 
 mkdir -p ~/bin
 ln -s $DOTFILES/bin/git-gcbranches ~/bin/
