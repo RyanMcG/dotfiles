@@ -10,3 +10,5 @@ Instead it should only describe the added added/updated that are relevant, very 
 
 When creating a PR, create as a draft, not "ready for review".
 
+When launching a subagent, run in the background unless there is a specific reason not to.
+It never makes sense to launch a single subagent in the foreground.
