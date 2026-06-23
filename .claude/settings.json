@@ -3,6 +3,6 @@
   "alwaysThinkingEnabled": false,
   "skipDangerousModePermissionPrompt": true,
   "editorMode": "vim",
-  "effortLevel": "high"
+  "effortLevel": "high",
   "skillListingBudgetFraction": 0.02
 }
