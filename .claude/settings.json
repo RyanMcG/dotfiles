@@ -4,5 +4,5 @@
   "skipDangerousModePermissionPrompt": true,
   "editorMode": "vim",
   "effortLevel": "high"
-  "skillListingBudgetFraction": 0.02,
+  "skillListingBudgetFraction": 0.02
 }
