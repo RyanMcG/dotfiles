@@ -1,6 +1,8 @@
 {
-  "model": "global.anthropic.claude-opus-4-6-v1",
+  "model": "us.anthropic.claude-opus-4-8",
   "alwaysThinkingEnabled": false,
   "skipDangerousModePermissionPrompt": true,
-  "editorMode": "vim"
+  "editorMode": "vim",
+  "effortLevel": "high"
+  "skillListingBudgetFraction": 0.02,
 }
