@@ -1,8 +1,10 @@
 {
+  "skillListingBudgetFraction": 0.02,
   "model": "us.anthropic.claude-opus-4-8",
+  "enabledPlugins": {},
+  "extraKnownMarketplaces": {},
   "alwaysThinkingEnabled": false,
-  "skipDangerousModePermissionPrompt": true,
-  "editorMode": "vim",
   "effortLevel": "high",
-  "skillListingBudgetFraction": 0.02
+  "skipDangerousModePermissionPrompt": true,
+  "editorMode": "vim"
 }
