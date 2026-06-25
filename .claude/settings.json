@@ -4,7 +4,7 @@
   "enabledPlugins": {},
   "extraKnownMarketplaces": {},
   "alwaysThinkingEnabled": false,
-  "effortLevel": "high",
+  "effortLevel": "xhigh",
   "skipDangerousModePermissionPrompt": true,
   "editorMode": "vim"
 }
