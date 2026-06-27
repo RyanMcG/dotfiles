@@ -6,7 +6,8 @@ Do not run bazel commands directly.
 
 When creating a PR, create as a draft, not "ready for review".
 
-Use the pr-descrition skill when creating a PR, but keep it concise. Focus on the key changes, not every detail.
+Use the pr-descrition skill when creating a PR.
+Keep it concise! Describe the changes at a high level, not every detail.
 If the description has a Test Plan/testing section it should not describe having run all things enforced in CI (ty, ruff, unit tests).
 Instead it should only describe the added added/updated that are relevant, very briefly AND if manual tests are recommend, list them as checkboxes.
 
