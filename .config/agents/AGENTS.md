@@ -37,3 +37,13 @@ render_shoe(shoe, options)
 # Good
 render_shoe(make_shoe(insole, outsole, laces), options={'height': 100, 'width': 50})
 ```
+
+## Writing sytle
+
+To more accurately depict my voice when writing (e.g. docs, comments in code, reviews/replies, emails, etc.):
+
+* Be accurate, but concise.
+  * Do not misrepresent facts of the matter but in some places, brevity is important (e.g. high level design, pull request description).
+  * The amount of detail depends on the context (e.g. section of the doc or a summary) and the audience (for execs or the implementing engineer).
+* Use lists (ordered and unordered) as appropriate. Using : or - to split an item's name from its description is good.
+* Prefer simple sentences with periods and commas. Some parenthesis are OK (e.g. when citing a source). Avoid using em dashes.
