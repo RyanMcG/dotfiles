@@ -1,6 +1,4 @@
-
 Do not run bazel commands directly.
-
 
 When launching a subagent, run in the background unless there is a specific reason not to.
 It never makes sense to launch a single subagent in the foreground.
@@ -46,4 +44,6 @@ To more accurately depict my voice when writing (e.g. docs, comments in code, re
   * Do not misrepresent facts of the matter but in some places, brevity is important (e.g. high level design, pull request description).
   * The amount of detail depends on the context (e.g. section of the doc or a summary) and the audience (for execs or the implementing engineer).
 * Use lists (ordered and unordered) as appropriate. Using : or - to split an item's name from its description is good.
-* Prefer simple sentences with periods and commas. Some parenthesis are OK (e.g. when citing a source). Avoid using em dashes.
+* Prefer simple sentences with periods and commas. Some parenthesis are OK (e.g. when citing a source).
+  * Avoid using em dashes.
+  * Periods should not be used on incomplete sentences.
