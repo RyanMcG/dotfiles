@@ -1,10 +1,20 @@
 {
   "skillListingBudgetFraction": 0.02,
   "model": "us.anthropic.claude-opus-4-8",
-  "enabledPlugins": {},
-  "extraKnownMarketplaces": {},
+  "enabledPlugins": {
+    "basic-sdd@global-agent-plugins": true,
+    "claude-md-management@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "global-agent-plugins": {
+      "source": {
+        "source": "file",
+        "path": "/Users/rmcgowan/.agents/plugins/marketplace.json"
+      }
+    }
+  },
   "alwaysThinkingEnabled": false,
-  "effortLevel": "xhigh",
+  "effortLevel": "high",
   "skipDangerousModePermissionPrompt": true,
   "editorMode": "vim"
 }

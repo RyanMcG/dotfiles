@@ -18,6 +18,8 @@ Generally, do not comment as me on github without my explicit approval of the me
 When you are asked to auto reply to a PR, comments/replies should have a heading like ```### Coding agent```
 If a github reply references changes, those changes should be pushed before the reply is made.
 
+If replying to a helix code review agent, add `@helix review` to the reply if helix should take another look.
+
 
 ## Coding style
 
@@ -47,3 +49,4 @@ To more accurately depict my voice when writing (e.g. docs, comments in code, re
 * Prefer simple sentences with periods and commas. Some parenthesis are OK (e.g. when citing a source).
   * Avoid using em dashes.
   * Periods should not be used on incomplete sentences.
+* DO NOT start a paragraph with a sentence fragment (e.g. "The signal. Success if flat ...").

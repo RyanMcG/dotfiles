@@ -23,6 +23,8 @@ ln -s $DOTFILES/.ncmpcpp ~/
 ln -s $DOTFILES/.config ~/
 ln -s $DOTFILES/.claude/CLAUDE.md ~/.claude/CLAUDE.md
 ln -s $DOTFILES/.claude/settings.json ~/.claude/settings.json
+mkdir -p ~/.codex
+ln -s $DOTFILES/.codex/AGENTS.md ~/.codex/AGENTS.md
 
 mkdir -p ~/bin
 ln -s $DOTFILES/bin/git-gcbranches ~/bin/
